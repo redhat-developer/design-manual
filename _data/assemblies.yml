@@ -1,0 +1,9 @@
+toc:
+  - title: Overview
+    subfolderitems:
+    - page: All Products Listing
+      url: /docs/content/patterns/assemblies/all-product-listing
+    - page: All Assemblies
+      url: /docs/content/patterns/assemblies/all-assemblies
+    - page: Featured Products
+      url: /docs/content/patterns/assemblies/featured_products

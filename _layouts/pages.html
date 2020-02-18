@@ -1,0 +1,36 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html class="pf-m-redhat-font" data-current="{{ page.section }}" lang="en-us">
+
+  {% include head.html %}
+
+  <body class="rhddx line-numbers">
+    <div class="pf-c-page">
+      {% include header.html %}
+      <div class="pf-c-page__sidebar pf-m-dark">
+        <div class="pf-c-page__sidebar-body">
+          <nav class="pf-c-nav pf-m-dark" id="expandable-vertical-nav">
+            {% include sidenavs/sidenav-pages.html component=site.data.pages %}
+          </nav>
+        </div>
+      </div>
+      <main class="pf-c-page__main" role="main" tab-index="-1">
+        <section class="pf-c-page__main-section pf-m-light pf-m-fill">
+          <div class="pf-l-grid pf-c-content">
+            <div class="pf-l-grid__item pf-m-12-col" id="main">
+              <h1>{{ page.title }}</h1>
+              <blockquote>{% include page-intro.html %}</blockquote>
+              {{ content }}
+            </div>
+          </div>
+        </section>
+        {% include footer.html %}
+      </main>
+    </div>
+
+  </body>
+
+</html>

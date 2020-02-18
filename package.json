@@ -1,0 +1,54 @@
+{
+  "name": "design-manual",
+  "version": "1.0.0",
+  "description": "Documentation and source files for RHD brand standards & design systems.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=10.10.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "jekyll": "bundle exec jekyll build",
+    "install": "bundle install",
+    "deployment": "gulp deploy",
+    "development": "gulp development",
+    "changelog": "gren release -P --override && gren changelog --override",
+    "release": "scripts/./release.sh prerelease",
+    "prodDeploy": "npm run deployment && npm run release",
+    "netlify": "netlify dev",
+    "build-netlify": "npm run build && rm -rf docs && mkdir docs && rm -rf _site/docs && cp -r _site/** docs"
+  },
+  "sass": {
+    "includePaths": [
+      "./node_modules"
+    ]
+  },
+  "repository": "https://github.com/redhat-developer/design-manual.git",
+  "url": "https://redhat-developer.github.io/design-manual/",
+  "author": "Adam J. Jolicoeur",
+  "license": "MIT",
+  "devDependencies": {
+    "@patternfly/patternfly": "2.65.2",
+    "@skpm/child_process": "0.4.1",
+    "autoprefixer": "9.7.3",
+    "browser-sync": "2.26.7",
+    "cssnano": "4.1.10",
+    "del": "5.1.0",
+    "flat-map": "1.0.0",
+    "github-release-notes": "0.17.1",
+    "gulp": "4.0.2",
+    "gulp-clean": "0.4.0",
+    "gulp-exec": "4.0.0",
+    "gulp-header": "2.0.9",
+    "gulp-imagemin": "6.2.0",
+    "gulp-newer": "1.4.0",
+    "gulp-noop": "1.0.0",
+    "gulp-postcss": "8.0.0",
+    "gulp-sass": "4.0.2",
+    "gulp-scale-images": "2.0.1",
+    "gulp-size": "3.0.0",
+    "gulp-sourcemaps": "2.6.5",
+    "imagemin-mozjpeg": "8.0.0",
+    "imagemin-pngquant": "8.0.0"
+  }
+}
