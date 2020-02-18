@@ -1,0 +1,106 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Red Hat Developers Design Manual
+email: adamj@redhat.com
+description: >- # this means to ignore newlines until "baseurl:"
+  This guide will serve as a home base for the Red Hat Developer story, messaging, and visual brand language. It’s a place you can always return to when you have questions about how to best represent Red Hat Developer through messaging or visual elements.
+baseurl: "/design-manual" # change to GitHub project repo name i.e. mindreeper2420/rhddx for GitHub pages w/no custom domain
+url: "https://redhat-developer.github.io/design-manual/"
+version: 1.0.0
+NODE_VERSION: 10.16.0
+NPM_VERSION: 6.13.2
+RUBY_VERSION: 2.6.3
+
+# Permalink format (/blog/ is ignored for pages)
+permalink: /blog/:title
+
+# Enable the Publish Mode
+# The publish_mode option allows you to enable "Editorial Workflow" mode for
+# more control over the content publishing phases. All unpublished entries will be
+# arranged in a board according to their status, and they can be further reviewed and edited before going live.
+publish_mode: editorial_workflow
+
+# Enable section IDs in frontmatter, useful for identifying current page
+# (used as a hook for styling etc)
+section: true
+
+# set to 'true' to enable Netlify CMS (/admin) in production builds
+netlifycms: true
+
+# set to 'true' to enable Google Analytics tracking code in production builds
+analytics: false
+
+# Compress HTML (in liquid via layouts/compress.html)
+compress_html:
+  clippings: all
+
+# set some common post defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post" # set the correct default template for a post
+      section: "post" # set the root section name
+
+# Build settings
+markdown: kramdown
+
+# Collections
+collection:
+  logo:
+    output: true
+    permalink: /brand-assets/RHD_Full_Logo/:name
+
+# Kramdown options
+kramdown:
+  # Prevent IDs from being added to h1-h6 tags
+  auto_ids:   false
+
+#include:
+#  - _redirects
+#  - _headers
+
+sass:
+  sass_dir:   _sass
+  style:      :compressed
+  load_paths:
+    - node_modules
+
+# Keep files in the _site directory
+keep_files:
+  - assets
+  - themes
+
+# Exclude from processing.
+# The following items will not be processed.
+exclude:
+  - LICENSE.txt
+  - netlify.toml
+  - feed.xml
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - node_modules
+  - CHANGELOG.md
+  - _sass
+  - assets
+  - styles
+  - developers.redhat.com
+  - scripts

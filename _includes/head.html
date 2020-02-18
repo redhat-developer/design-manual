@@ -1,0 +1,17 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="{{ site.description }}">
+  <title>{% if page.section == "home" %}{{ site.title }}{% else %} Design Manual: {{ page.title | default: site.title }}{% endif %}</title>
+  <link rel="icon" type="image/png" size="32x32" href="{{ site.baseurl }}/assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" size="32x32" href="{{ site.baseurl }}/assets/img/favicon-16x16.png">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.ico">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/rhdp.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
+  {% if jekyll.environment == 'production' and site.analytics %}
+    {% include analytics.html %}
+  {% endif %}
+  <script async src="{{ site.baseurl }}/assets/js/site.js"></script>
+  <script src="https://kit.fontawesome.com/58cac63e31.js" crossorigin="anonymous"></script>
+  <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>

@@ -1,0 +1,127 @@
+.rhddx-c-button {
+  padding: .5em .875em;
+  border: 0;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.1s;
+  &.rhddx-m-edit {
+    position: fixed;
+    right: 1rem;
+    bottom: 7rem;
+    min-width: 48px;
+    min-height: 40px;
+    color: #fff !important;
+    &:hover {
+      .rhddx-c-button--edit_text {
+        display: inline;
+      }
+    }
+    .rhddx-c-button--edit_text {
+      display: none;
+    }
+    &:hover .rhddx-c-button--edit_icon {
+      padding-left: .5em;
+      border-left: 1px solid #80b9e7;
+      margin-left: .5em;
+    }
+  }
+  &.rhddx-m-new {
+    position: fixed;
+    right: 1rem;
+    bottom: 4rem;
+    min-width: 48px;
+    min-height: 40px;
+    color: #fff !important;
+    &:hover {
+      .rhddx-c-button--new_text {
+        display: inline;
+      }
+    }
+    .rhddx-c-button--new_text {
+      display: none;
+    }
+    &:hover .rhddx-c-button--new_icon {
+      padding-right: .2em; // keep new icon inline with larger edit icon
+      padding-left: .7em;
+      border-left: 1px solid hsl(207, 68%, 70%);
+      margin-left: .5em;
+    }
+  }
+}
+.rhddx-c-button--3d {
+  border: none;
+  background-color: hsl(240, 14%, 93%);
+  -webkit-tap-highlight-color: hsla(0, 0%, 100%, 0);
+  user-select: none;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+
+  //shadow
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 10px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    transition: transform 0.6s cubic-bezier(0,.90,.13,.90);
+    transform: translate3D(0, 0, 0);
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(235,235,240);
+    z-index: -1;
+  }
+  &:hover, &:focus {
+    &:before {
+      transform: translate3D(10px, 0, 0);
+    }
+  }
+  &:active {
+    &:before {
+      transform: translate3D(0, 0, 0);
+    }
+  }
+  // End Shadow
+  &:focus, &:active {
+    outline: none;
+  }
+  .rhddx-c-button--3d__text {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #333;
+    padding: 1em 1.5em;
+    background-color: #fbfbfb;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0,.90,.13,.90);
+    position: relative;
+  }
+  &:hover, &:focus {
+    .rhddx-c-button--3d__text {
+      transform: translate3D(0, -10px, 0);
+    }
+  }
+  &:active .rhddx-c-button--3d__text {
+    transform: translate3D(0, 0, 0);
+  }
+  &:hover, &:focus {
+    .rhddx-c-button--3d__text {
+      background-color: #fff;
+    }
+  }
+}

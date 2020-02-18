@@ -1,0 +1,24 @@
+{% assign navurl = page.url | remove: 'index.html' %}
+<ul class="pf-c-nav__horizontal-list">
+<!-- {% for item in site.data.navigation.items %}
+  <li class="pf-c-nav__item">
+    <a href="{{ item.url | prepend: site.baseurl  }}" {% if page.title == item.title %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="{{item.title}}">{{ item.name }}</a>
+  </li>
+{% endfor %} -->
+  <li class="pf-c-nav__item">
+    <a href="{{ site.baseurl }}/getting-started" {% if page.section == 'getting-started' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Getting Started">Getting Started</a>
+  </li>
+  <li class="pf-c-nav__item">
+    <a href="{{ site.baseurl }}/design" {% if page.section == 'design'' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Design">Design</a>
+  </li>
+  <li class="pf-c-nav__item">
+    <a href="{{ site.baseurl }}/components" {% if page.section == 'components' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Components">Components</a>
+  </li>
+  <li class="pf-c-nav__item">
+    <a href="{{ site.baseurl }}/pages" {% if page.section == 'pages' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Pages">Pages</a>
+  </li>
+  <li class="pf-c-nav__item">
+    <a href="{{ site.baseurl }}/assemblies" {% if page.section == 'assemblies' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Assemblies">Assemblies</a>
+  </li>
+</ul>
+

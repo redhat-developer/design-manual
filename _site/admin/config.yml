@@ -1,0 +1,277 @@
+# Everything you need to know about configuring the CMS can be found here:-
+# https://www.netlifycms.org/docs/configuration-options/
+
+backend:
+  # name: git-gateway # Netlify’s Git Gateway connects to Git provider’s API
+  name: github # Netlify’s Git Gateway connects to Git provider’s API
+  repo: redhat-developer/design-manual
+  branch: master # Branch to update (master by default)
+  squash_merges: true
+  commit_messages:
+    create: Create "{{slug}}" page
+    update: Update "{{slug}}" page
+    delete: Delete "{{slug}}" page
+    uploadMedia: Upload "{{path}}"
+    deleteMedia: Delete "{{path}}"
+
+logo_url: https://redhat-developer.github.io/design-manual/assets/img/NewRHDFullLogo_black.png
+publish_mode: editorial_workflow # Enable drafts
+media_folder: "assets/uploads" # Folder where user uploaded files should go
+pull_request_url: https://github.com/redhat-developer/design-manual/pulls
+
+collections: # A list of collections the CMS should be able to edit
+  # POSTS
+  # - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+  #   label: "Post" # Used in the UI, ie.: "New Post"
+  #   folder: "_posts" # The path to the folder where the documents are stored
+  #   sort: "date:desc" # Default is title:asc
+  #   create: false # Allow users to create new Posts in the admin UI
+  #   slug: "{{month}}-{{day}}-{{year}}-{{slug}}"
+  #   fields: # The fields each document in this collection have
+  #     - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+  #     - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+  #     - label: "Author"
+  #       name: "author"
+  #       widget: "select"
+  #       options:
+  #         - { label: "Adam Jolicoeur", value: "adam_jolicoeur" }
+  #     - {label: "Publish Date", name: "date", widget: "datetime", format: "MM-DD-YYYY HH:mm:ss"}
+  #     - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+  #     - {label: "Body", name: "body", widget: "markdown", required: false}
+  #     - {label: "Categories", name: "categories", widget: "string", required: false}
+  # COMPONENTS
+  # - name: "components"
+  #   label: "Components"
+  #   folder: "pages/components"
+  #   sort: "title:asc"
+  #   create: false # Allow users to create new Components in the admin UI
+  #   slug: "{{slug}}"
+  #   fields:
+  #     - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+  #     - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
+  #     - {label: "Permalink", name: "permalink", widget: "string", required: true}
+  #     - {label: "Section", name: "section", widget: "string", default: "{{State the area that you'd like this to live under}}"}
+  #     - {label: "Category", name: "category", width: "string", default: "components", required: true}
+  #     - {label: "Status", name: "status", width: "string", default: "{{ set released or unreleased }}", required: true}
+  #     - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+  #     - {label: "Body", name: "body", widget: "code", required: true}
+  # PAGES
+  - name: "page"
+    label: "Overview Pages"
+    folder: "pages"
+    sort: "title:asc"
+    create: true # Allow users to create new Overview Pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "select"
+        hint: "Select a layout to use (should match Section)"
+        options:
+          - { label: "Example pages", value: "pages" }
+          - { label: "Design pages", value: "design" }
+          - { label: "Getting Started", value: "getting-started" }
+          - { label: "Assembly Examples", value: "assemblies" }
+          - { label: "Contact pages", value: "contact" }
+          - { label: "About pages", value: "page" }
+        required: true
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title and link to the page"
+        tagname: "h1"
+        required: true
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/{{page-title}}"
+        hint: "If applicable, replace {{page-title}} with the title of the page"
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "select"
+        hint: "The area (section) where this page will live"
+        options:
+          - { label: "Example pages", value: "pages" }
+          - { label: "Design pages", value: "design" }
+          - { label: "Getting Started", value: "getting-started" }
+          - { label: "Assembly Examples", value: "assemblies" }
+          - { label: "Contact pages", value: "contact" }
+          - { label: "About pages", value: "page" }
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
+  - name: "design"
+    label: "Design Pages"
+    folder: "pages/design"
+    sort: "title:asc"
+    create: true # Allow users to create new Design pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        hint: "Select a layout to use (should match Section)"
+        default: "design"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title and link to the page"
+        tagname: "h1"
+        required: true
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/{{page-title}}"
+        hint: "If applicable, replace {{page-title}} with the title of the page"
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "select"
+        hint: "The area (section) where this page will live"
+        options:
+          - { label: "Example pages", value: "pages" }
+          - { label: "Design pages", value: "design" }
+          - { label: "Getting Started", value: "getting-started" }
+          - { label: "Assembly Examples", value: "assemblies" }
+          - { label: "Contact pages", value: "contact" }
+          - { label: "About pages", value: "page" }
+        required: true
+      - {label: "Date", name: "date", widget: "datetime", format: "MM-DD-YYYY HH:mm:ss", required: true}
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
+  - name: "getting-started"
+    label: "Getting Started Pages"
+    folder: "pages/getting-started"
+    sort: "title:asc"
+    create: true # Allow users to create new Getting Started pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        hint: "Select a layout to use (should match Section)"
+        default: "getting-started"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title and link to the page"
+        tagname: "h1"
+        required: true
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/{{page-title}}"
+        hint: "If applicable, replace {{page-title}} with the title of the page"
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "select"
+        hint: "The area (section) where this page will live"
+        options:
+          - { label: "Example pages", value: "pages" }
+          - { label: "Design pages", value: "design" }
+          - { label: "Getting Started", value: "getting-started" }
+          - { label: "Assembly Examples", value: "assemblies" }
+          - { label: "Contact pages", value: "contact" }
+          - { label: "About pages", value: "page" }
+        required: true
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
+  - name: "pages"
+    label: "Page Example Pages"
+    folder: "pages/pages"
+    sort: "title:asc"
+    create: true # Allow users to create new Page example pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        hint: "Select a layout to use (should match Section)"
+        default: "pages"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title and link to the page"
+        tagname: "h1"
+        required: true
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/{{page-title}}"
+        hint: "If applicable, replace {{page-title}} with the title of the page"
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "select"
+        hint: "The area (section) where this page will live"
+        options:
+          - { label: "Example pages", value: "pages" }
+          - { label: "Design pages", value: "design" }
+          - { label: "Getting Started", value: "getting-started" }
+          - { label: "Assembly Examples", value: "assemblies" }
+          - { label: "Contact pages", value: "contact" }
+          - { label: "About pages", value: "page" }
+        required: true
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
+  - name: "examplesubpages"
+    label: "Example Pages"
+    folder: "pages/examples"
+    sort: "title:asc"
+    create: true # Allow users to create new Example pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        hint: "Select a layout to use (should match Section)"
+        default: "page"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title and link to the page"
+        tagname: "h1"
+        required: true
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/{{page-title}}"
+        hint: "If applicable, replace {{page-title}} with the title of the page"
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "select"
+        hint: "The area (section) where this page will live"
+        options:
+          - { label: "Example pages", value: "pages" }
+          - { label: "Design pages", value: "design" }
+          - { label: "Getting Started", value: "getting-started" }
+          - { label: "Assembly Examples", value: "assemblies" }
+          - { label: "Contact pages", value: "contact" }
+          - { label: "About pages", value: "page" }
+        required: true
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
+  # Navigation
+  - name: "options"
+    label: "Navigations"
+    editor:
+      preview: true
+    files:
+      - label: "Assemblies Page Navigation"
+        name: "assemblies-nav"
+        file: "_data/assemblies.yml"
+        fields:
+          - label: "Assemblies Page Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Name", name: name, widget: string}
+              - {label: URL, name: url, widget: string}
+              - {label: "Title", name: title, width: string}
