@@ -1,0 +1,24 @@
+/*
+** Add the link URL after the link when the page is printed
+*/
+@media print {
+  a[href]:after {
+    content: " (" attr(href) ") ";
+  }
+  a[href*="github.com"]:after,
+  a[href*="codepen.io"]:after {
+    content: " (" attr(href) ") " !important; /* remove icon and replac with URL when printing */
+  }
+  .rhddx-c-navigation--horizontal,
+  .pf-c-page__sidebar,
+  .rhddx-c-button.rhddx-m-edit,
+  .rhddx-c-button.rhddx-m-new,
+  i, .fa,
+  footer,
+  iframe {
+    display: none;
+  }
+  img {
+    width: 30%;
+  }
+}

@@ -10,6 +10,12 @@ intro_paragraph: >
 Supported languages:
  Markup / HTML / SVG / CSS / JavaScript / Git / AsciiDoc / Bash + Shell / JSON / SCSS / Liquid / Markdown / TOML / Twig / YAML
 
+## Inline Code
+
+This is an `$ inline code example`, styled to match the large code block snippets.
+
+## Code Blocks
+
 {% highlight html %}
 <a href="#" class="pf-m-link">demo link</a>
 {% endhighlight %}

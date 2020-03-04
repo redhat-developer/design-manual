@@ -125,3 +125,8 @@
     }
   }
 }
+.rhddx {
+  a.rhddx-m-download_assets[href*="github.com"]:after {
+    content: "";
+  }
+}

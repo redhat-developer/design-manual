@@ -15,4 +15,4 @@ The RHDDX site is the reference environment for developers.redhat.com. We strive
 
 If you wish to contribute to the RHD Frontend project, read their [Getting Started guide](https://github.com/redhat-developer/developers.redhat.com/blob/master/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/README.md).
 
-To contribute to this documentation site, see [Updating this documentation](/getting-started/update-this-documentation).
+To contribute to this documentation site, see [Updating this documentation](/design-manual/getting-started/update-this-documentation).

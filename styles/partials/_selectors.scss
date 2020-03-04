@@ -9,26 +9,26 @@
   /*
   ** Add the external link icon to any URLs that contain 'patternfly.org', signifying that the user is leaving for the PatternFly site.
   */
-  a[href*="patternfly.org"]:after {
-    content: '';
-    display: inline-block;
-    background-image: url(../../assets/img/PF_logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 16px;
-    width: 17px;
-    margin-left: 4px;
-    .pf-c-nav__list > .pf-c-nav__item & {
-      content: '';
-      display: inline-block;
-      background-image: url(../../assets/img/PF_logo.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      height: 16px;
-      width: 17px;
-      margin-left: 4px;
-    }
-  }
+  // a[href*="patternfly.org"]:after {
+  //   content: '';
+  //   display: inline-block;
+  //   background-image: url(../../assets/img/PF_logo.png);
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   height: 16px;
+  //   width: 17px;
+  //   margin-left: 4px;
+  //   .pf-c-nav__list > .pf-c-nav__item & {
+  //     content: '';
+  //     display: inline-block;
+  //     background-image: url(../../assets/img/PF_logo.png);
+  //     background-size: contain;
+  //     background-repeat: no-repeat;
+  //     height: 16px;
+  //     width: 17px;
+  //     margin-left: 4px;
+  //   }
+  // }
 
   /*
   ** Add the GitHub icon to any URLs that contain 'github.com', signifying that the user is leaving the site and proceeding to GitHub.
@@ -67,6 +67,16 @@
   }
 
   /*
+  ** Add the Marvel icon to any URLs that contain 'marvel.com'
+  */
+  a[href*="marvelapp.com"]:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: "\f53f";
+    margin-left: 4px;
+  }
+
+  /*
   ** Customize text selection/highlight colors
   */
   ::-moz-selection { /* Code for Firefox */
@@ -81,17 +91,26 @@
 
   .highlighter-rouge {
     font-family: Fira Coda, 'Andale Mono', 'Ubuntu Mono', monospace;
-    padding: .2em;
-    margin: .5em 0;
-    background-color: #2a3035;
-    border: 2px solid #2a3035;
-    color: #fff;
+    padding: 4px 8px;
+    background-color: #fff;
+    border: 2px solid #f0f0f0;
+    color: #2a3035;
     border-radius: 3px;
     line-height: 1.5;
+    &::-moz-selection { /* Code for Firefox */
+      color: #2a3035;
+      background-color: #cfe0f3;
+    }
+
+    &::selection {
+      color: #2a3035;
+      background-color: #cfe0f3;
+    }
   }
   [class*="language-"].highlighter-rouge {
     background-color: #fff;
-    border: 0;
+    border: 2px solid #f0f0f0;
+    color: #2a3035;
   }
 
   /*
@@ -163,13 +182,22 @@
 
   figure.highlight {
     position: relative;
-    margin: 24px 0 48px 0;
+    margin: 36px 0;
+    padding-top: 32px;
+    &::-moz-selection { /* Code for Firefox */
+      color: #2a3035;
+      background-color: #cfe0f3;
+    }
+    &::selection {
+      color: #2a3035;
+      background-color: #cfe0f3;
+    }
     pre {
       code {
         &[data-lang]::before {
           content: "\f121   "attr(data-lang)""; // extra spaces provide spacing between icon and text
           font-family: "Font Awesome 5 Free";
-          font-weight: 400;
+          font-weight: 700;
           text-transform: uppercase;
           position: absolute;
           top: -40px;
@@ -181,21 +209,22 @@
           color: #72767b;
           background-color: #fff;
         }
+        &[data-lang] {
+          &::-moz-selection { /* Code for Firefox */
+            color: #2a3035;
+            background-color: #cfe0f3;
+          }
+          &::selection {
+            color: #2a3035;
+            background-color: #cfe0f3;
+          }
+        }
       }
     }
   }
   table.highlight {
     tr {
       border-bottom: 0 !important;
-    }
-  }
-
-  /*
-  ** Add the link URL after the link when the page is printed
-  */
-  @media print {
-    a[href]:after {
-      content: " (" attr(href) ") ";
     }
   }
 }
