@@ -4,6 +4,7 @@ title: Full Logos
 permalink: brand-assets/RHD_Full_Logo/full-logo
 active_header: Full Logos
 section: design
+download_url: https://github.com/redhat-developer/design-manual/tree/site-demo/brand-assets/RHD_Full_Logo
 image1: NewRHDFullLogo_color.png
 image2: NewRHDFullLogo_color_white-wordmark.png
 image3: NewRHDFullLogo_4-color.png

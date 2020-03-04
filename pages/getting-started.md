@@ -4,7 +4,7 @@ title: Getting Started Overview
 permalink: /getting-started
 section: getting-started
 intro_paragraph: >
-  Like the RHDDX library, our Getting Started guide is based off of the <a href="https://www.patternfly.org/v4/get-started/about" target="top">PatternFly</a> Getting Started guide.
+  Getting Started guide is based off of the <a href="https://www.patternfly.org/v4/get-started/about" target="top">PatternFly</a> Getting Started guide.
 ---
 
 ## Basic structure

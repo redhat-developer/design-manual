@@ -123,6 +123,55 @@ color: #06586D;
   cursor: help;
 }
 
+.token.selector > .token.class,
+.token.hexcode.color,
+.token.unit,
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata,
+.token.punctuation,
+.token.namespace,
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted,
+.token.boolean,
+.token.number,
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted,
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable,
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name,
+.token.keyword,
+.token.regex,
+.token.important,
+.token.important,
+.token.bold,
+.token.italic,
+.token.entity {
+  &::-moz-selection { /* Code for Firefox */
+    color: #2a3035;
+    background-color: #cfe0f3;
+  }
+  &::selection {
+    color: #2a3035;
+    background-color: #cfe0f3;
+  }
+}
+
 pre[class*="language-"].line-numbers {
   padding-left: 3.8em;
   counter-reset: linenumber;

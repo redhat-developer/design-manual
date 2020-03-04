@@ -1,7 +1,7 @@
 [build]
   base = "/"
   publish = "docs/"
-  command = "npm run build && rm -rf docs && mkdir docs && rm -rf _site/docs && cp -r _site/** docs"
+  command = "scripts/./submodule.sh && npm run build && rm -rf docs && mkdir docs && rm -rf _site/docs && cp -r _site/** docs"
 
 [build.environment]
   JEKYLL_ENV = "production"
@@ -9,15 +9,18 @@
 # Production context: all deploys from the Production branch set in your site's
 # deploy contexts will inherit these settings.
 [context.production]
+  environment = { JEKYLL_ENV = "production" }
+  base = "/"
   publish = "docs/"
-  command = "npm run build && rm -rf docs && mkdir docs && rm -rf _site/docs && cp -r _site/** docs"
+  command = "scripts/./submodule.sh && npm run build && rm -rf docs && mkdir docs && rm -rf _site/docs && cp -r _site/** docs"
 
 # Deploy Preview context: all deploys generated from a pull/merge request will
 # inherit these settings.
 [context.deploy-preview]
+  environment = { JEKYLL_ENV = "development" }
   base = "/"
   publish = "docs/"
-  command = "npm run build && rm -rf docs && mkdir docs && rm -rf _site/docs && cp -r _site/** docs"
+  command = "scripts/./submodule.sh && npm run build && rm -rf docs && mkdir docs && rm -rf _site/docs && cp -r _site/** docs"
 
 # If skip_processing = true, all other settings are ignored
 [build.processing]
@@ -38,8 +41,8 @@
 [context.deploy-preview.processing]
   skip_processing = true
 
-[[redirects]]
-  from = "/"
-  to = "/design-manual"
-  status = 302
-  force = true
+# [[redirects]]
+#   from = "/"
+#   to = "/design-manual/"
+#   status = 302
+#   force = true
