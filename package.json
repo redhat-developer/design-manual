@@ -27,7 +27,7 @@
   "url": "https://redhat-developer.github.io/design-manual/",
   "author": "Adam J. Jolicoeur",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@patternfly/patternfly": "2.65.2",
     "@skpm/child_process": "0.4.1",
     "autoprefixer": "9.7.3",
