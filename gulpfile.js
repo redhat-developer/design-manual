@@ -9,7 +9,7 @@ const
   dir = {
     src    : './',
     dev    : './',
-    build  : './_site/',
+    build  : './docs/',
     node   : './node_modules/'
   },
 
@@ -59,7 +59,7 @@ const
 
     dev         : dir.dev + 'styles/**/*.scss',
     watch       : dir.src + 'styles/**/*.scss',
-    build       : dir.src + '_site/assets',
+    build       : dir.src + 'docs/assets',
 
     sassOpts: {
       sourceMap       : devBuild,
@@ -159,11 +159,11 @@ const
   // Only touches .jpg, .jpeg, .png, and .svg files
   function minimizeImages(cb) {
     return gulp.src('./assets/img/**/*.{jpg,jpeg,png,svg}')
-      .pipe(newer('./_site/assets/img/'))
+      .pipe(newer('./docs/assets/img/'))
       .pipe(flatMap(retinaVersions))
       .pipe(scaleImages(imageFileName))
       .pipe(imagemin([mozjpeg(), pngquant()]))
-      .pipe(gulp.dest('./_site/assets/img/'));
+      .pipe(gulp.dest('./docs/assets/img/'));
   }
 
   function minimizeBrandAssets(cb) {
@@ -175,15 +175,15 @@ const
 
   function copyStatic(cb) {
     gulp.src('./assets/img/favicon.{png,ico}')
-      .pipe(gulp.dest('./_site/assets/img/'));
+      .pipe(gulp.dest('./docs/assets/img/'));
     gulp.src('./assets/themes/custom/rhdp2/fonts/patternfly/**/*.*')
-      .pipe(gulp.dest('./_site/themes/custom/rhdp2/fonts/patternfly/'));
+      .pipe(gulp.dest('./docs/themes/custom/rhdp2/fonts/patternfly/'));
     cb();
   }
 
   function jsDev(cb) {
     gulp.src('./assets/js/*.*')
-      .pipe(gulp.dest('./_site/assets/js/'));
+      .pipe(gulp.dest('./docs/assets/js/'));
     cb();
   }
 
@@ -211,9 +211,26 @@ const
     });
   }
 
+  function buildJekyllProd(cb) {
+    cp.exec('JEKYLL_ENV=production jekyll build', function(err, stdout, stderr) {
+      console.log(stdout);
+      console.log(stderr);
+      cb(err);
+    });
+  }
+
+  // Task to serve the website locally in development mode
+  // function serveJekyll(cb) {
+  //   cp.exec('bundle exec jekyll serve --livereload', function(err, stdout, stderr) {
+  //     console.log(stdout);
+  //     console.log(stderr);
+  //     cb(err);
+  //   });
+  // }
+
   // Task to serve the website locally
   function serveJekyll(cb) {
-    cp.exec('bundle exec jekyll serve --livereload', function(err, stdout, stderr) {
+    cp.exec('JEKYLL_ENV=production jekyll serve --livereload', function(err, stdout, stderr) {
       console.log(stdout);
       console.log(stderr);
       cb(err);
@@ -227,6 +244,7 @@ const
   exports.watch            =  watchSass;
   exports.watchJS          =  watchJS;
   exports.jekyll           =  buildJekyll;
+  exports.prod             =  buildJekyllProd;
   exports.serve            =  serveJekyll;
   exports.clean            =  cleanJekyll;
   exports.copyStatic       =  copyStatic;
@@ -251,7 +269,8 @@ const
     copyStatic,
     minimizeImages,
     jsDev,
-    buildSass,
-    buildJekyll
+    rhdpCSS,
+    cssDev,
+    buildJekyllProd
   );
 })();

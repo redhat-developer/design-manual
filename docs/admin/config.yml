@@ -2,13 +2,9 @@
 # https://www.netlifycms.org/docs/configuration-options/
 
 backend:
-  # name: git-gateway # Netlify’s Git Gateway connects to Git provider’s API
-  name: github # Netlify’s Git Gateway connects to Git provider’s API
-  # repo: redhat-developer/design-manual
-  repo: mindreeper2420/design-manual
+  name: git-gateway # Netlify’s Git Gateway connects to Git provider’s API
+  repo: redhat-developer/design-manual
   branch: master # Branch to update (master by default)
-  base_url: https://api.netlify.com
-  open_authoring: true
   squash_merges: true
   commit_messages:
     create: Create "{{slug}}" page
@@ -17,12 +13,10 @@ backend:
     uploadMedia: Upload "{{path}}"
     deleteMedia: Delete "{{path}}"
 
-# logo_url: https://redhat-developer.github.io/design-manual/assets/img/NewRHDFullLogo_black.png
-logo_url: https://mindreeper2420.github.io/design-manual/assets/img/NewRHDFullLogo_black.png
+logo_url: https://redhat-developer.github.io/design-manual/assets/img/NewRHDFullLogo_black.png
 publish_mode: editorial_workflow # Enable drafts
 media_folder: "assets/uploads" # Folder where user uploaded files should go
-# pull_request_url: https://github.com/redhat-developer/design-manual/pulls
-pull_request_url: https://github.com/mindreeper2420/design-manual/pulls
+pull_request_url: https://github.com/redhat-developer/design-manual/pulls
 
 collections: # A list of collections the CMS should be able to edit
   # POSTS

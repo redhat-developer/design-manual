@@ -1,32 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Red Hat Developer Design Manual Admin Portal</title>
-    <!--- This example uses jQuery: -->
-    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+<head>
+  <title>Red Hat Developer Design Manual Admin Portal</title>
 
-    <!-- Make sure to include Nelify's authentication library -->
-    <!-- Also available via npm as netlify-auth-providers -->
-    <script src="https://unpkg.com/netlify-auth-providers"></script>
+  <!-- include the widget -->
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+// Open the modal
+netlifyIdentity.open();
 
-    <script>
-      $(function() {
-        $("#login").on("click", function(e) {
-          e.preventDefault();
-          var authenticator = new netlify.default ({});
-          authenticator.authenticate({provider:"github", scope: "user"}, function(err, data) {
-            if (err) {
-              return $("#output").text("Error Authenticating with GitHub: " + err);
-            }
-            $("#output").text("Authenticated with GitHub. Access Token: " + data.token);
-          });
-        });
-      });
-    </script>
-  </head>
-  <body>
-    <h1>GitHub Auth Demo:</h1>
-    <p><a href="#" id="login">Authenticate</a></p>
-    <p id="output"></p>
-  </body>
+// Get the current user:
+const user = netlifyIdentity.currentUser();
+
+// Bind to events
+netlifyIdentity.on('init', user => console.log('init', user));
+netlifyIdentity.on('login', user => console.log('login', user));
+netlifyIdentity.on('logout', () => console.log('Logged out'));
+netlifyIdentity.on('error', err => console.error('Error', err));
+netlifyIdentity.on('open', () => console.log('Widget opened'));
+netlifyIdentity.on('close', () => console.log('Widget closed'));
+
+// Close the modal
+netlifyIdentity.close();
+
+// Log out the user
+netlifyIdentity.logout();
+  </script>
+</head>
+<body>
+  <!-- Add a menu:
+   Log in / Sign up - when the user is not logged in
+   Username / Log out - when the user is logged in
+  -->
+  <div data-netlify-identity-menu></div>
+
+  <!-- Add a simpler button:
+    Simple button that will open the modal.
+  -->
+  <div data-netlify-identity-button>Login with Netlify Identity</div>
+</body>
 </html>
