@@ -16,7 +16,7 @@
     "release": "scripts/./release.sh prerelease",
     "prodDeploy": "npm run deployment && npm run release",
     "netlify": "netlify dev",
-    "build-netlify": "npm run build && rm -rf docs && mkdir docs && rm -rf _site/docs && cp -r _site/** docs"
+    "build-netlify": "gulp deploy"
   },
   "sass": {
     "includePaths": [
