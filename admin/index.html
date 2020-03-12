@@ -1,42 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Red Hat Developer Design Manual Admin Portal</title>
-
-  <!-- include the widget -->
-  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
-// Open the modal
-netlifyIdentity.open();
-
-// Get the current user:
-const user = netlifyIdentity.currentUser();
-
-// Bind to events
-netlifyIdentity.on('init', user => console.log('init', user));
-netlifyIdentity.on('login', user => console.log('login', user));
-netlifyIdentity.on('logout', () => console.log('Logged out'));
-netlifyIdentity.on('error', err => console.error('Error', err));
-netlifyIdentity.on('open', () => console.log('Widget opened'));
-netlifyIdentity.on('close', () => console.log('Widget closed'));
-
-// Close the modal
-netlifyIdentity.close();
-
-// Log out the user
-netlifyIdentity.logout();
-  </script>
-</head>
-<body>
-  <!-- Add a menu:
-   Log in / Sign up - when the user is not logged in
-   Username / Log out - when the user is logged in
-  -->
-  <div data-netlify-identity-menu></div>
-
-  <!-- Add a simpler button:
-    Simple button that will open the modal.
-  -->
-  <div data-netlify-identity-button>Login with Netlify Identity</div>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Hat Developer Design Manual Admin Portal</title>
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:500,700|Red+Hat+Text:400,500&display=swap" rel="stylesheet">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      CMS.registerPreviewStyle("/admin.css");
+    </script>
+  </head>
+  <body>
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  </body>
 </html>
