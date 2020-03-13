@@ -26,14 +26,21 @@ layout: compress
               {{ content }}
             </div>
             <div class="rhddx-m-float">
-              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="{{ site.baseurl }}/admin/#/collections/{{ page.section }}/entries/{{ page.path | split: '/' | last | replace: '.md', '' }}" title="Edit this page in Netlify CMS">
+              {% if page.title == 'Getting Started Overview' %}
+              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://github.com/redhat-developer/design-manual/tree/master/pages/{{ page.path | split: '/' | last }}" title="Edit this page on GitHub">
                 <span class="rhddx-c-button--edit_text">Edit this page</span>
                 <span class="fad fa-user-edit rhddx-c-button--edit_icon"></span>
               </a>
-              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-new" href="{{ site.baseurl }}/admin/#/collections/{{ page.section }}/new" title="Add a new RHDDX page in Netlify CMS">
+              {% else %}
+              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://github.com/redhat-developer/design-manual/tree/master/pages/getting-started/{{ page.path | split: '/' | last }}" title="Edit this page on GitHub">
+                <span class="rhddx-c-button--edit_text">Edit this page</span>
+                <span class="fad fa-user-edit rhddx-c-button--edit_icon"></span>
+              </a>
+              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-new" href="https://github.com/redhat-developer/design-manual/new/master/pages/getting-started" title="Add a new page on GitHub">
                 <span class="rhddx-c-button--new_text">Add a new page</span>
                 <span class="fad fa-plus rhddx-c-button--new_icon"></span>
               </a>
+              {% endif %}
             </div>
           </div>
         </section>
