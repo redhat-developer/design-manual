@@ -258,6 +258,13 @@ const
     buildJekyll
   );
 
+  exports.buildLocal = gulp.series(
+    cleanJekyll,
+    gulp.parallel(copyStatic, minimizeImages, jsDev, rhdpCSS),
+    cssDev,
+    buildJekyllProd
+  );
+
   exports.development = gulp.series(
     gulp.parallel(copyStatic, minimizeImages, rhdpCSS),
     jsDev,
