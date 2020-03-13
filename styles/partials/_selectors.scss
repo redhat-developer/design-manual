@@ -6,30 +6,10 @@
 }
 
 .rhddx {
-  /*
-  ** Add the external link icon to any URLs that contain 'patternfly.org', signifying that the user is leaving for the PatternFly site.
-  */
-  // a[href*="patternfly.org"]:after {
-  //   content: '';
-  //   display: inline-block;
-  //   background-image: url(../../assets/img/PF_logo.png);
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  //   height: 16px;
-  //   width: 17px;
-  //   margin-left: 4px;
-  //   .pf-c-nav__list > .pf-c-nav__item & {
-  //     content: '';
-  //     display: inline-block;
-  //     background-image: url(../../assets/img/PF_logo.png);
-  //     background-size: contain;
-  //     background-repeat: no-repeat;
-  //     height: 16px;
-  //     width: 17px;
-  //     margin-left: 4px;
-  //   }
-  // }
-
+  a.pf-c-button.pf-m-primary.rhddx-c-button.rhddx-m-edit[href*="github.com"]:after,
+  a.pf-c-button.pf-m-primary.rhddx-c-button.rhddx-m-new[href*="github.com"]:after {
+    content: "";
+  }
   /*
   ** Add the GitHub icon to any URLs that contain 'github.com', signifying that the user is leaving the site and proceeding to GitHub.
   */
