@@ -1,0 +1,21 @@
+uuid: 1bbcf7d8-a4d4-45f5-8c29-ba42b60e0a3b
+langcode: en
+status: true
+dependencies: {  }
+id: coding_resource_reviewer
+label: 'Coding Resource reviewer'
+weight: -2
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access image_browser entity browser pages'
+  - 'access media overview'
+  - 'access media_browser entity browser pages'
+  - 'delete any coding_resource content'
+  - 'edit any coding_resource content'
+  - 'use 00c7e3ae transition draft_published'
+  - 'use 00c7e3ae transition needs_review_draft'
+  - 'use 00c7e3ae transition needs_review_published'
+  - 'use 00c7e3ae transition published_archived'
+  - 'use 00c7e3ae transition published_published'
+  - 'view moderation states'

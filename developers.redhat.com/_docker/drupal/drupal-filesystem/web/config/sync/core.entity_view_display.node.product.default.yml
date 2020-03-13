@@ -1,0 +1,323 @@
+uuid: a9290134-ce7e-4aeb-a1b4-21182eebfa20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.product.field_call_to_action_link
+    - field.field.node.product.field_card_image
+    - field.field.node.product.field_content
+    - field.field.node.product.field_downloads_page_content
+    - field.field.node.product.field_getting_started_content
+    - field.field.node.product.field_image
+    - field.field.node.product.field_meta_tags
+    - field.field.node.product.field_product_categories
+    - field.field.node.product.field_product_category
+    - field.field.node.product.field_product_machine_name
+    - field.field.node.product.field_product_pages
+    - field.field.node.product.field_product_short_name
+    - field.field.node.product.field_product_summary
+    - field.field.node.product.field_product_technology_group
+    - field.field.node.product.field_share_image
+    - field.field.node.product.field_short_description
+    - field.field.node.product.field_stackoverflow_product_refe
+    - field.field.node.product.field_tags
+    - field.field.node.product.field_tax_audience_segment
+    - field.field.node.product.field_tax_business_unit
+    - field.field.node.product.field_tax_campaign
+    - field.field.node.product.field_tax_lifecycle
+    - field.field.node.product.field_tax_product
+    - field.field.node.product.field_tax_product_line
+    - field.field.node.product.field_tax_project
+    - field.field.node.product.field_tax_promotion
+    - field.field.node.product.field_tax_region
+    - field.field.node.product.field_tax_stage
+    - field.field.node.product.field_topics
+    - field.field.node.product.field_url_product_name
+    - field.field.node.product.field_use_new_product_page
+    - node.type.product
+  module:
+    - entity_reference_revisions
+    - fences
+    - field_layout
+    - layout_discovery
+    - link
+    - metatag
+    - options
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+_core:
+  default_config_hash: adWuMzk0qGvrafgJTVIHF62W_zf8GKKCFSXI8zcLamw
+id: node.product.default
+targetEntityType: node
+bundle: product
+mode: default
+content:
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_call_to_action_link:
+    weight: 10
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: link
+    region: content
+  field_card_image:
+    weight: 9
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: link
+    region: content
+  field_content:
+    weight: 14
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_downloads_page_content:
+    weight: 12
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_getting_started_content:
+    weight: 13
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_meta_tags:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: metatag_empty_formatter
+    region: content
+  field_product_category:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: list_default
+    region: content
+  field_product_machine_name:
+    weight: 3
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+  field_product_pages:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    region: content
+  field_product_short_name:
+    weight: 4
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+  field_product_summary:
+    weight: 1
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+  field_product_technology_group:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: list_default
+    region: content
+  field_stackoverflow_product_refe:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+  field_url_product_name:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+  field_use_new_product_page:
+    weight: 15
+    label: above
+    settings:
+      format: default
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: boolean
+    region: content
+  workbench_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_image: true
+  field_product_categories: true
+  field_share_image: true
+  field_short_description: true
+  field_tags: true
+  field_tax_audience_segment: true
+  field_tax_business_unit: true
+  field_tax_campaign: true
+  field_tax_lifecycle: true
+  field_tax_product: true
+  field_tax_product_line: true
+  field_tax_project: true
+  field_tax_promotion: true
+  field_tax_region: true
+  field_tax_stage: true
+  field_topics: true
+  langcode: true
+  links: true
+  published_at: true

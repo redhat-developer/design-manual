@@ -1,0 +1,21 @@
+uuid: 25f6f8d8-d7fd-4988-9308-1cdf9bae5fd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: DjUQklO0E6GooRkQMvrDjgn-vWClOTF41wDHuZTBypY
+id: paragraph.field_featured_connectors
+field_name: field_featured_connectors
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

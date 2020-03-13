@@ -1,0 +1,21 @@
+uuid: 34bf76c4-e584-47af-8ca1-fb6c402a0fdb
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: 7CMsaEvH_mAIyv0L_QQQlS3DmSxVH7dAbM5807uYrbU
+id: node.field_epub
+field_name: field_epub
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

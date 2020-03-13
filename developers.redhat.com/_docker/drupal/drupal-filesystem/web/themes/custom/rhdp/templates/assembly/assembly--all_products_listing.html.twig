@@ -1,0 +1,16 @@
+<section{{ attributes.addClass('assembly') }}{{ audience_selection }}>
+    <div class="container">
+        <header>
+            {{ content.field_title }}
+        </header>
+        {{ content.content }}
+        <div>
+            {% if content %}
+                {{- content|without('field_title', 'content') -}}
+            {% endif %}
+        </div>
+    </div>
+    {% if background_image_url %}
+        <div class="background" style="background-image: url({{ background_image_url }});"></div>
+    {% endif %}
+</section>

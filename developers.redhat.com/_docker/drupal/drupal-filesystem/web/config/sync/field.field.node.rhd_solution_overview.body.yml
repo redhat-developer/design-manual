@@ -1,0 +1,24 @@
+uuid: a917ab47-582d-49c3-b0e9-fd3359663e6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.rhd_solution_overview
+  module:
+    - text
+_core:
+  default_config_hash: 3PWVd1MzREmHUrk78tAePDnDoMMJTFPEvHRV52FErm8
+id: node.rhd_solution_overview.body
+field_name: body
+entity_type: node
+bundle: rhd_solution_overview
+label: Body
+description: 'Main content of the technology page'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

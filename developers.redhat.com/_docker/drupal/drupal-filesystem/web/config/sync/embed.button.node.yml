@@ -1,0 +1,22 @@
+uuid: 6e43b154-934b-4f75-bfb5-0de18820fe10
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_embed
+    - node
+_core:
+  default_config_hash: xgvZUh-eaMilacE1XYCQ9nLH-2-meOjCyofXSO82gqg
+label: Node
+id: node
+type_id: entity
+type_settings:
+  entity_type: node
+  bundles: {  }
+  display_plugins:
+    - 'view_mode:node.full'
+    - 'view_mode:node.teaser'
+  entity_browser: ''
+  entity_browser_settings:
+    display_review: false
+icon_uuid: null

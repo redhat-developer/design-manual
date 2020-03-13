@@ -1,0 +1,21 @@
+uuid: dcb0a8c3-ab77-46b3-865a-0eb408ee8d4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categories
+    - node.type.books
+_core:
+  default_config_hash: '-G1SNhM1dc0ul5kaTE2xcXdy2vWkntOKVKcCgdHe4mI'
+id: node.books.field_categories
+field_name: field_categories
+entity_type: node
+bundle: books
+label: Categories
+description: 'A comma separated list of categories related to the book topic'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

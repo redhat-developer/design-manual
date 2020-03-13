@@ -1,0 +1,29 @@
+toc:
+  - title: Pages Overview
+    subfolderitems:
+      - page: Articles
+        url: /pages/articles
+      - page: Cheatsheets
+        url: /pages/cheatsheets
+      - page: Collection
+        url: /pages/collection
+      - page: eBooks
+        url: /pages/ebooks
+      - page: Katacoda
+        url: /pages/katacoda
+      - page: Products
+        url: /pages/products
+      - page: Topics
+        url: /pages/topics
+      - page: Videos
+        url: /pages/videos
+  - title: Layouts
+    subfolderitems:
+      - page: Homepage example
+        url: /pages/docs/content/patterns/layout/home
+      - page: Responsive Grid
+        url: /pages/docs/content/patterns/layout/grid
+  - title: Examples
+    subfolderitems:
+      - page: Code Snippets
+        url: /examples/code-snippets

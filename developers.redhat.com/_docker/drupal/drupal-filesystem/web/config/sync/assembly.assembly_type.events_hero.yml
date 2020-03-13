@@ -1,0 +1,9 @@
+uuid: 01178a9a-e2bc-4172-a6b7-53f84f56ce72
+langcode: en
+status: true
+dependencies: {  }
+id: events_hero
+label: 'Events Hero'
+description: ''
+visual_styles: "light|Light|Displays a light background image for the hero.\r\nno-padding-top|No padding top|Remove top padding from this assembly\r\nno-padding-bottom|No padding-bottom|Remove bottom padding from this assembly"
+new_revision: true

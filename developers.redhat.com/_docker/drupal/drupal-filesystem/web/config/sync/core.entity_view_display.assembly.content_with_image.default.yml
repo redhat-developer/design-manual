@@ -1,0 +1,84 @@
+uuid: c4034904-ee20-4a83-bda7-87155d9cf574
+langcode: en
+status: true
+dependencies:
+  config:
+    - assembly.assembly_type.content_with_image
+    - field.field.assembly.content_with_image.field_audience_selection
+    - field.field.assembly.content_with_image.field_background_image
+    - field.field.assembly.content_with_image.field_background_svg
+    - field.field.assembly.content_with_image.field_content
+    - field.field.assembly.content_with_image.field_image
+    - field.field.assembly.content_with_image.field_image_link
+    - field.field.assembly.content_with_image.field_navigation_title
+    - field.field.assembly.content_with_image.field_title
+    - image.style.large
+  module:
+    - fences
+    - field_layout
+    - image
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+id: assembly.content_with_image.default
+targetEntityType: assembly
+bundle: content_with_image
+mode: default
+content:
+  field_content:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: text_default
+    region: content
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: image
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: header
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+hidden:
+  field_audience_selection: true
+  field_background_image: true
+  field_background_svg: true
+  field_image_link: true
+  field_navigation_title: true
+  langcode: true
+  name: true
+  user_id: true

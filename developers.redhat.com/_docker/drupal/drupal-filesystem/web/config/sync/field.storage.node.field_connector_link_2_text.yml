@@ -1,0 +1,23 @@
+uuid: fce88a7d-3c2d-4955-a8f6-6fcf288c4018
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Z42imKVwwfENb8SBJ-Bl_Ln9oa0xv5AU14jZx6c0QBA
+id: node.field_connector_link_2_text
+field_name: field_connector_link_2_text
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

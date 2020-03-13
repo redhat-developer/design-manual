@@ -1,0 +1,20 @@
+uuid: e80b6695-6bf4-44ec-91c8-68675c3baaa1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: FAU9Su5lZxPiyjyxW_inn-Zjt-OUVdv4kWpPwVT-Ohc
+name: 'Cheat Sheet'
+type: cheat_sheet
+description: 'A page promoting a cheat-sheet containing a title, body, an image, tags and two call to action buttons.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

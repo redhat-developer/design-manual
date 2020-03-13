@@ -1,0 +1,25 @@
+uuid: c364ad28-8eb9-4afa-bcd6-4e7d2d984869
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_image
+    - node.type.events
+  module:
+    - options
+_core:
+  default_config_hash: H6Iv0JRkbS7YG-npu8XhYSqXtc5j3E2oKCBZ_sUFS2M
+id: node.events.field_event_image
+field_name: field_event_image
+entity_type: node
+bundle: events
+label: 'Event Image'
+description: '*Legacy support* for background images hosted on the CDN '
+required: false
+translatable: false
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

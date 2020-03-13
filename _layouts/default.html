@@ -1,0 +1,26 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html class="pf-m-redhat-font" data-current="{{ page.section }}" lang="en-us">
+
+  {% include head.html %}
+
+  <body class="rhddx line-numbers">
+    <div class="pf-c-page">
+      {% include header.html %}
+      <main class="pf-c-page__main" role="main" tab-index="-1">
+        <section class="pf-c-page__main-section pf-m-light pf-m-fill">
+          <div class="pf-l-grid pf-c-content">
+            <div class="pf-l-grid__item pf-u-py-md pf-u-pl-md" id="main">
+              {{ content }}
+            </div>
+          </div>
+        </section>
+        {% include footer.html %}
+      </main>
+    </div>
+  </body>
+
+</html>

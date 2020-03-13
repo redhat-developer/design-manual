@@ -1,0 +1,21 @@
+uuid: 079c8dea-2d31-4c65-a509-6790099622cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: ICTfb51E147CI1Ek4S1Ds8vB9p-Wcn3GY93JEmXcbIs
+id: node.field_orange_card
+field_name: field_orange_card
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

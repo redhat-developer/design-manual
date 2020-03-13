@@ -1,0 +1,22 @@
+uuid: cfdd2d12-52aa-405e-b931-f3627e91fb87
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: glN0eYKYt1OjHUibMtK2NB98HCfuvdW9UCHzyNN0k4w
+id: node.field_video_resource_tags
+field_name: field_video_resource_tags
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

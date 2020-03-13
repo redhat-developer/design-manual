@@ -1,0 +1,53 @@
+uuid: cc06039f-9e22-441d-ad33-cb110addd1d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: xeAEd19lAnTGRreU4ZH2_hnp6YkXcF1dskWg0rM00PE
+id: node.field_event_image
+field_name: field_event_image
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: default
+      label: Default
+    -
+      value: vjbug_generic
+      label: vJBug
+    -
+      value: javaone_generic
+      label: Javaone
+    -
+      value: devoxx_generic
+      label: Devoxx
+    -
+      value: devnation_generic
+      label: devNation
+    -
+      value: jbug_generic
+      label: JBug
+    -
+      value: devoxx4kids_generic
+      label: Devoxx4kids
+    -
+      value: openshiftroadshow
+      label: 'OpenShift Roadshow'
+    -
+      value: judcon2016brno
+      label: 'Judcon 2016 Brno'
+    -
+      value: build2016_generic
+      label: 'Build 2016'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,24 @@
+uuid: 80a24744-5570-4b5c-804e-a56e62d97393
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.video_resource
+  module:
+    - text
+_core:
+  default_config_hash: CJBpr_E6GFi_vpsth1cl1KUs9kKIc71j97gCph51ToE
+id: node.video_resource.body
+field_name: body
+entity_type: node
+bundle: video_resource
+label: Description
+description: 'Optional description of the video.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,23 @@
+uuid: 31740b65-fc42-4ace-8202-1b32c264fb8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_type
+    - node.type.events
+  module:
+    - options
+_core:
+  default_config_hash: J9FxusDz84IUh_5Llc9YyRWshNSToQ-x4RZeI7Za1v8
+id: node.events.field_event_type
+field_name: field_event_type
+entity_type: node
+bundle: events
+label: 'Event Type'
+description: 'Type of event (Community, Industry, Red Hat)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

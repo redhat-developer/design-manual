@@ -1,0 +1,23 @@
+uuid: 14ee6b0e-4627-4cc4-81d6-fa509579f4a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grey_card
+    - node.type.topic
+  module:
+    - text
+_core:
+  default_config_hash: AcHoPujcO2aC5ZbWc-uX1hErt_kthcUfCjQuvBYlrBE
+id: node.topic.field_grey_card
+field_name: field_grey_card
+entity_type: node
+bundle: topic
+label: 'Grey Card'
+description: 'Grey Card on the left, typically contains the "Follow Red Hat" text'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

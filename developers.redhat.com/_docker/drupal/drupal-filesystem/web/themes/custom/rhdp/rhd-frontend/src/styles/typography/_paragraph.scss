@@ -1,0 +1,21 @@
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  @include mobile-landscape-and-down {
+    font-size: 14px;
+  }
+  &.sm {
+    font-size: 12px;
+    @include tablet-landscape {
+      font-size: 14px;
+    }
+  }
+  &.lg {
+    color: $dark-gray;
+    font-size: 16px;
+    @include tablet-landscape {
+      font-size: 20px;
+    }
+  }
+}

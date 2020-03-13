@@ -1,0 +1,82 @@
+uuid: 3a31da8d-1384-4d98-b4d2-9c1f24900f4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.rhd_solution_overview.body
+    - field.field.node.rhd_solution_overview.field_solution_name
+    - field.field.node.rhd_solution_overview.field_solution_tag_line
+    - node.type.rhd_solution_overview
+  module:
+    - fences
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+_core:
+  default_config_hash: nH0EcMAp6wSinBzwNjPwIBPEtWkFNpz3dX1LaiGo2ww
+id: node.rhd_solution_overview.default
+targetEntityType: node
+bundle: rhd_solution_overview
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_solution_name:
+    type: string
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    region: content
+  field_solution_tag_line:
+    type: string
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    region: content
+  workbench_moderation_control:
+    weight: -20
+    region: content
+hidden:
+  langcode: true
+  links: true
+  published_at: true

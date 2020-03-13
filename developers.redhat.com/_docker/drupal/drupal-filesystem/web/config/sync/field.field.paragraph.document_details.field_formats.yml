@@ -1,0 +1,23 @@
+uuid: bf99feca-8ccf-4518-8481-7cf8452260b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_formats
+    - paragraphs.paragraphs_type.document_details
+  module:
+    - options
+_core:
+  default_config_hash: E_xHVmQoQIQrKfrtB3iAteEzPN08krM5w_1qazZhQeM
+id: paragraph.document_details.field_formats
+field_name: field_formats
+entity_type: paragraph
+bundle: document_details
+label: Formats
+description: 'Available formats of the document'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

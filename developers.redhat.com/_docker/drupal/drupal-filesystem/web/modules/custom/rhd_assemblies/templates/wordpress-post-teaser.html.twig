@@ -1,0 +1,23 @@
+{% set classes = [
+    'rhd-list-entry',
+] %}
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }}>
+    <div class="text-content">
+        <h3 class="rhd-list-entry--title"><a href="{{ post.link }}">{{ post.title.rendered|raw }}</a></h3>
+        <div class="rhd-list-entry--date">{{ date }}</div>
+        <div class="rhd-list-entry--summary">{{ post.excerpt.rendered|raw }}</div>
+    </div>
+    {% if media and media.media_type == 'image' %}
+        <div class="rhd-list-entry--image">
+            {% set tmpUrl = media.source_url %}
+            {% if '.jpg' in tmpUrl or '.jpeg' in tmpUrl  or '.gif' in tmpUrl  or '.png' in tmpUrl %}
+              {% set cacheImg = {'#theme':'imagecache_external', '#uri':tmpUrl, '#style_name':'teaser', '#alt':post.title.rendered|replace({'"':''}), } %}
+              {{ cacheImg }}
+            {% else %}
+              <img src="{{ tmpUrl }}" alt="{{ post.title.rendered|replace({'"':''}) }}" />
+            {% endif %}
+            {{ drupal_image(tmpUrl, {alt: 'Insert alternative text here', title: 'The title text'}) }}
+        </div>
+    {% endif %}
+</article>

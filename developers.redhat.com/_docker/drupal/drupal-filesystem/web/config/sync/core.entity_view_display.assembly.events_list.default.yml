@@ -1,0 +1,82 @@
+uuid: b5258f1f-30e0-4db7-bbb7-bd1e2ed937fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - assembly.assembly_type.events_list
+    - field.field.assembly.events_list.field_audience_selection
+    - field.field.assembly.events_list.field_cta_link
+    - field.field.assembly.events_list.field_event
+    - field.field.assembly.events_list.field_navigation_title
+    - field.field.assembly.events_list.field_title
+  module:
+    - fences
+    - field_layout
+    - layout_discovery
+    - rhd_assemblies
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+id: assembly.events_list.default
+targetEntityType: assembly
+bundle: events_list
+mode: default
+content:
+  field_cta_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: '80'
+      class: ''
+      url_only: 0
+      url_plain: 0
+      rel: 0
+      target: 0
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: cta-link
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: link_class
+    region: content
+  field_event:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: 'pf-l-grid__item pf-m-12-col'
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: entity_reference_entity_view
+    region: content
+  field_title:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: pf-c-title
+        fences_field_item_tag: h2
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+hidden:
+  field_audience_selection: true
+  field_navigation_title: true
+  langcode: true
+  name: true
+  user_id: true

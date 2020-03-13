@@ -1,0 +1,26 @@
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }}>
+  <a href="{{ url }}">
+    <div class="card-image">
+      <div class="table">
+        <div class="cell">
+          {{ content.field_cover_image.0 | with('#image_style', 'card_small') }}
+        </div>
+      </div>
+    </div>
+    <div class="content-block">
+      <div class="asset-type">{% if login_req %}<span class="login-required" title="Free for members"><span class="fas fa-users"></span></span>{% endif %}Cheat Sheet</div>
+      <h3 class="card-title">{{ label }}</h3>
+    </div>
+  </a>
+</article>

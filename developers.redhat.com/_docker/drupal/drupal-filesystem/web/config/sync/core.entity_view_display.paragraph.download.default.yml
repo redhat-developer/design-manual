@@ -1,0 +1,115 @@
+uuid: 35175db7-5f3b-4380-8687-0cacb6746610
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.download.field_offer_subscription
+    - field.field.paragraph.download.field_overview_hide_get_started
+    - field.field.paragraph.download.field_overview_main_content
+    - field.field.paragraph.download.field_overview_url
+    - field.field.paragraph.download.field_page_description
+    - field.field.paragraph.download.field_para_download_imp_info
+    - field.field.paragraph.download.field_subscription_link
+    - field.field.paragraph.download.field_upstream_section
+    - field.field.paragraph.download.field_xpaas_link
+    - paragraphs.paragraphs_type.download
+  module:
+    - field_layout
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+_core:
+  default_config_hash: FmWGx-9ZAk2TmGUhzf0YcHs07mOHb6L4D3JszjSkBdA
+id: paragraph.download.default
+targetEntityType: paragraph
+bundle: download
+mode: default
+content:
+  field_offer_subscription:
+    weight: 3
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_overview_hide_get_started:
+    weight: 1
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_overview_main_content:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_overview_url:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_page_description:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_para_download_imp_info:
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_subscription_link:
+    weight: 7
+    label: hidden
+    settings:
+      trim_length: 80
+      rel: nofollow
+      url_only: false
+      url_plain: false
+      target: '0'
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_upstream_section:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_xpaas_link:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  created: true
+  uid: true

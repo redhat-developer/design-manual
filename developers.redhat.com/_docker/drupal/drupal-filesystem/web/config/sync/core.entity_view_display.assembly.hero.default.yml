@@ -1,0 +1,61 @@
+uuid: 32a474db-3fe4-43de-ba78-ed957ee99d28
+langcode: en
+status: true
+dependencies:
+  config:
+    - assembly.assembly_type.hero
+    - field.field.assembly.hero.field_audience_selection
+    - field.field.assembly.hero.field_background_image
+    - field.field.assembly.hero.field_content
+    - field.field.assembly.hero.field_navigation_title
+    - field.field.assembly.hero.field_title
+  module:
+    - fences
+    - field_layout
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+id: assembly.hero.default
+targetEntityType: assembly
+bundle: hero
+mode: default
+content:
+  field_content:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+hidden:
+  field_audience_selection: true
+  field_background_image: true
+  field_navigation_title: true
+  langcode: true
+  name: true
+  user_id: true

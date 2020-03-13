@@ -1,0 +1,110 @@
+uuid: bb5a5c43-cd7b-4616-832c-349b6004ec3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - assembly.assembly_type.call_to_action
+    - field.field.assembly.call_to_action.field_audience_selection
+    - field.field.assembly.call_to_action.field_background_image
+    - field.field.assembly.call_to_action.field_cta_content
+    - field.field.assembly.call_to_action.field_cta_link
+    - field.field.assembly.call_to_action.field_display_cta_timer
+    - field.field.assembly.call_to_action.field_display_cta_timer_label
+    - field.field.assembly.call_to_action.field_navigation_title
+    - field.field.assembly.call_to_action.field_title
+  module:
+    - datetime
+    - fences
+    - field_layout
+    - layout_discovery
+    - rhd_assemblies
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+id: assembly.call_to_action.default
+targetEntityType: assembly
+bundle: call_to_action
+mode: default
+content:
+  field_cta_content:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: text_default
+    region: content
+  field_cta_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: ''
+      class: 'button heavy-cta'
+      url_only: false
+      url_plain: false
+      rel: 0
+      target: 0
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: link_class
+    region: content
+  field_display_cta_timer:
+    type: datetime_default
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      timezone_override: UTC
+      format_type: html_datetime
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+  field_display_cta_timer_label:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: header
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+hidden:
+  field_audience_selection: true
+  field_background_image: true
+  field_navigation_title: true
+  langcode: true
+  name: true
+  user_id: true

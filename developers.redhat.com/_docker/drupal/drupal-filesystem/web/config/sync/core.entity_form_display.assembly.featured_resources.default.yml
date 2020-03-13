@@ -1,0 +1,95 @@
+uuid: 9000a735-1f19-4d39-8785-9589d6d6e451
+langcode: en
+status: true
+dependencies:
+  config:
+    - assembly.assembly_type.featured_resources
+    - field.field.assembly.featured_resources.field_audience_selection
+    - field.field.assembly.featured_resources.field_links
+    - field.field.assembly.featured_resources.field_navigation_title
+    - field.field.assembly.featured_resources.field_resources
+    - field.field.assembly.featured_resources.field_title
+  module:
+    - field_layout
+    - layout_discovery
+    - link
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+id: assembly.featured_resources.default
+targetEntityType: assembly
+bundle: featured_resources
+mode: default
+content:
+  field_audience_selection:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_links:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_navigation_title:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_resources:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 5
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  visual_styles:
+    type: options_select
+    multiple: true
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  moderation_state: true
+  user_id: true

@@ -1,0 +1,16 @@
+uuid: 4f686538-985b-4006-8638-1015361a1e28
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: -10
+is_admin: false
+permissions:
+  - 'access content'
+  - 'never autoplay videos'
+  - 'search content'
+  - 'view media'
+  - 'view published assembly entities'

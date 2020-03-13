@@ -1,0 +1,25 @@
+uuid: 8e78e93a-4056-4971-856b-5ff636e54ff8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pdf_link
+    - node.type.books
+  module:
+    - link
+_core:
+  default_config_hash: Jj2C9pZXMXOgegIfzNVcQfkQCFAqC66IqFzqQObPDCw
+id: node.books.field_pdf_link
+field_name: field_pdf_link
+entity_type: node
+bundle: books
+label: 'PDF Link'
+description: 'Link the PDF version of the book'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

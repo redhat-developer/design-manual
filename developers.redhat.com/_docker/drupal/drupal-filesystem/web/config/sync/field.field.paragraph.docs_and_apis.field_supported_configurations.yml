@@ -1,0 +1,23 @@
+uuid: 38fb6456-570c-47fe-b6c4-e30ef4c5a378
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_supported_configurations
+    - paragraphs.paragraphs_type.docs_and_apis
+  module:
+    - text
+_core:
+  default_config_hash: E1gaQKa4ERGLy6C2ESmsfT4XANlksp-uDMd8YjDtEMw
+id: paragraph.docs_and_apis.field_supported_configurations
+field_name: field_supported_configurations
+entity_type: paragraph
+bundle: docs_and_apis
+label: 'Supported Configurations'
+description: 'A quick list and explanation of the supported configuration clusters'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

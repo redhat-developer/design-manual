@@ -1,0 +1,38 @@
+<section{{ attributes.addClass('assembly') }}{{ audience_selection }}>
+  <div class="container {% if (content.latest_comments == false and content.field_links|render == false) %}narrow{% endif %}">
+    {{ content.field_title }}
+    <div class="grid">
+      {% if content %}
+        <div>
+          {{- content|without('field_title', 'latest_comments', 'field_links', 'field_cta_link') -}}
+        </div>
+      {% endif %}
+
+      {% if (content.latest_comments or content.field_links|render) %}
+        <aside class="sidebar">
+          {% if content.latest_comments %}
+          <div class="disqus">
+            <h5 class="header"><span class="fa fa-comment"></span> Latest Comments</h5>
+            {{ content.latest_comments }}
+          </div>
+          {% endif %}
+
+          {% if content.field_links|render %}
+          <div class="related-topics">
+            <label>Related Topics</label>
+            {{ content.field_links }}
+          </div>
+          {% endif %}
+        </aside>
+      {% endif %}
+    </div>
+
+    <div class="cta-link">
+      {{ content.field_cta_link }}
+    </div>
+
+  </div>
+  {% if background_image_url %}
+    <div class="background" style="background-image: url({{ background_image_url }});"></div>
+  {% endif %}
+</section>

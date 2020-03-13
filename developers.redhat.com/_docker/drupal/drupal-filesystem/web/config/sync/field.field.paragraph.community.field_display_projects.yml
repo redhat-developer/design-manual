@@ -1,0 +1,25 @@
+uuid: 9b4635a7-90c6-46e0-ac6a-df49509cce97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_projects
+    - paragraphs.paragraphs_type.community
+_core:
+  default_config_hash: aLmv1V7ZvJjIS3UUbxQ5bhxkpCjRekd66XtjpLXB2sM
+id: paragraph.community.field_display_projects
+field_name: field_display_projects
+entity_type: paragraph
+bundle: community
+label: 'Display Projects'
+description: 'Check to determine if upstream projects should be found and displayed'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

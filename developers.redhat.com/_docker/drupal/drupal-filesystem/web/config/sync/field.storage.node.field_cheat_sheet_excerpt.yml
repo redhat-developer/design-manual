@@ -1,0 +1,21 @@
+uuid: 893c4d13-3f60-4e56-8bfe-22b0b80e10ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: BL9m44gmm-ehbl-Yp6C5rax0QIRe5UoKsvMSZunRDro
+id: node.field_cheat_sheet_excerpt
+field_name: field_cheat_sheet_excerpt
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,108 @@
+version: '2'
+services:
+  update-composer:
+    image: images.paas.redhat.com/rhdp/developer-base:rhel-76.3
+    volumes:
+      - ../drupal-filesystem/composer.json:/drupal/composer.json
+      - ../drupal-filesystem/composer.lock:/drupal/composer.lock
+      - ../drupal-filesystem/patches:/drupal/patches
+      - ../drupal-filesystem/scripts/ScriptHandler.php:/drupal/scripts/ScriptHandler.php
+    command: ["/bin/bash"]
+    environment:
+      - COMPOSER_MEMORY_LIMIT=-1
+    working_dir: /drupal
+
+  seed_env:
+    build:
+      context: ../managed-platform/ansible/testing/rhdp-data-seed
+    environment:
+      - DEPLOYMENT_ID=1
+      - DUID=${DUID}
+    volumes:
+      - ./drupal-workspace:/drupal-workspace
+    depends_on:
+      - mysql
+
+  bootstrap_env:
+    build:
+      context: ../
+      dockerfile: Dockerfile.mp
+      args:
+        - composer_profile=development
+    command: ["/bin/bash", "-c", "ansible-playbook /ansible/bootstrap-env.yml"]
+    user: ${DUID}:0
+    environment:
+    - DEPLOYMENT_ID=1
+    volumes:
+    - ./env.yml:/credentials/ansible/env.yml
+    - ./drupal-workspace:/drupal-workspace
+    depends_on:
+    - mysql
+
+  bootstrap_drupal:
+    build:
+      context: ../
+      dockerfile: Dockerfile.mp
+      args:
+        - composer_profile=development
+    command: ["/bin/bash", "-c", "ansible-playbook /ansible/bootstrap-drupal.yml"]
+    user: ${DUID}:0
+    environment:
+    - DEPLOYMENT_ID=1
+    volumes:
+    - ./env.yml:/credentials/ansible/env.yml
+    - ./edgerc:/credentials/akamai/edgerc
+    - ./drupal-workspace/drupal_1/drupal/credentials/rhd.settings.php:/var/www/drupal/web/sites/default/rhd.settings.php
+    - ./drupal-workspace/drupal_1/drupal/config/active:/var/www/drupal/web/config/active:cached
+    - ../drupal-filesystem/web/config/sync:/var/www/drupal/web/config/sync:cached
+    - ./drupal-workspace/drupal_1/drupal/sites/default/files:/var/www/drupal/web/sites/default/files
+    - ./drupal-workspace:/drupal-workspace
+    depends_on:
+    - mysql
+
+  drupal:
+    build:
+     context: ../
+     dockerfile: Dockerfile.mp
+     args:
+      - composer_profile=development
+    command: ["/bin/bash", "-c", "/var/www/drupal/run-httpd.sh"]
+    user: ${DUID}:0
+    ports:
+      - "80:8080"
+      - "443:8443"
+    environment:
+      - DEPLOYMENT_ID=1
+    volumes:
+      - ./env.yml:/credentials/ansible/env.yml
+      - ./edgerc:/credentials/akamai/edgerc
+      - ./localhost.pem:/ssl/tls.crt
+      - ./localhost-key.pem:/ssl/tls.key
+      - ./drupal-workspace/drupal_1/drupal/credentials/rhd.settings.php:/var/www/drupal/web/sites/default/rhd.settings.php
+      - ./drupal-workspace/drupal_1/drupal/sites/default/files:/var/www/drupal/web/sites/default/files
+      - ./drupal-workspace/drupal_1/drupal/apache/drupal.conf:/opt/rh/httpd24/root/etc/httpd/conf.d/drupal.conf
+      - ./drupal-workspace/drupal_1/drupal/config/active:/var/www/drupal/web/config/active
+      - ../drupal-filesystem/web/config/sync:/var/www/drupal/web/config/sync
+      - ./drupal-workspace:/drupal-workspace
+      - ../drupal-filesystem/web/modules/custom:/var/www/drupal/web/modules/custom
+      - ../drupal-filesystem/web/themes/custom:/var/www/drupal/web/themes/custom
+      - ./development.services.yml:/var/www/drupal/web/sites/development.services.yml
+
+  memcached-0:
+    image: registry.redhat.io/rhel8/memcached
+    environment:
+      - MEMCACHED_MAX_MEMORY=256
+
+  memcached-1:
+    image: registry.redhat.io/rhel8/memcached
+    environment:
+      - MEMCACHED_MAX_MEMORY=256
+
+  mysql:
+    image: mariadb:10.3.9-bionic
+    environment:
+    - MYSQL_ROOT_PASSWORD=password
+    ports:
+    - "3306:3306"
+    expose:
+    - 3306

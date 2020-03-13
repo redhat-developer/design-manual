@@ -1,0 +1,98 @@
+uuid: 81e9596c-39c5-411a-98f7-8e8285fc434d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.promotion_card.field_container_external_link
+    - field.field.node.promotion_card.field_container_tags
+    - field.field.node.promotion_card.field_containers_short_summary
+    - node.type.promotion_card
+    - workflows.workflow.00c7e3ae
+  module:
+    - content_moderation
+    - field_layout
+    - layout_discovery
+    - link
+    - path
+    - publication_date
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+_core:
+  default_config_hash: WlUkit8ZmwD59VFmt2jGDl54Ty1abjf-K61pnhGos8w
+id: node.promotion_card.default
+targetEntityType: node
+bundle: promotion_card
+mode: default
+content:
+  field_container_external_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_container_tags:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_containers_short_summary:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: moderation_state_default
+    region: content
+  path:
+    type: path
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  published_at:
+    type: publication_date_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

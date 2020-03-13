@@ -1,0 +1,45 @@
+.assembly-type-learning_paths {
+
+  .description {
+    text-align: center;
+    p:first-child {
+      margin-top: 0;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .item-list {
+    margin-top: 2rem;
+  }
+
+  .cta-link {
+    margin-top: 2rem;
+    text-align: center;
+    a {
+      display: inline-block;
+    }
+  }
+
+  .content-card-list {
+    &>li {
+      list-style-type: none;
+      margin: 0;
+    }
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-gap: $gutter $gutter;
+    grid-template-columns: 1fr;
+    @include tablet-portrait {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include tablet-landscape {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @include desktop-small {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}

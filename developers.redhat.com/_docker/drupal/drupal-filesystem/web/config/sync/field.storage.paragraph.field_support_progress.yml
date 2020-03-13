@@ -1,0 +1,20 @@
+uuid: eafa2933-bac3-4f7c-95ad-12a54e200a8f
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 7UtMXX0VUxW8rU8Qqk0k1-g5LGDaqxr-OitPBB5kqY4
+id: paragraph.field_support_progress
+field_name: field_support_progress
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

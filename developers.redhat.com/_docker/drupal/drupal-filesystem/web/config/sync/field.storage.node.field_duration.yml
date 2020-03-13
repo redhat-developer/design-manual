@@ -1,0 +1,21 @@
+uuid: e40285f2-8aaf-4ef2-9670-d38d01839944
+langcode: en
+status: true
+dependencies:
+  module:
+    - interval
+    - node
+_core:
+  default_config_hash: O5QMQwmQyMKkqDsSLB6MimLcfYBjrjkXO4sl7J8Bp0M
+id: node.field_duration
+field_name: field_duration
+entity_type: node
+type: interval
+settings: {  }
+module: interval
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

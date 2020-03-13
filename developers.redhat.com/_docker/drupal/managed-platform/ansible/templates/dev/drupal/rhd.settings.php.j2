@@ -1,0 +1,193 @@
+<?php
+
+$settings['hash_salt'] = 'xuAWpK0fmrZ6UGofFcP3lBkcmdpdumWMLqvCbnYjFY85OgRXYvEKPItJDH66vs4UpeYORQXLHQ';
+
+/**
+    Setup environment specific host and service configuration. This configuration used to live in rhd.settings.yml, but
+    has now been moved into here directly to avoid having to parse YAML on a per-request basis. We still need to determine
+    if all of this configuration is actually still needed.
+*/
+
+$config['redhat_developers']['environment'] = 'dev';
+$config['redhat_developers']['broker'] = 'https://broker.staging.redhat.com/partner/drc/userMapping?redirect=';
+$config['redhat_developers']['sentry_track'] = false;
+$config['redhat_developers']['sentry_script'] = 'https://cdn.ravenjs.com/3.23.1/raven.min.js';
+$config['redhat_developers']['sentry_code'] = '{{ drupal_sentry_code }}';
+$config['redhat_developers']['rhd_base_url'] = 'developers.dev.redhat.com';
+$config['redhat_developers']['rhd_final_base_url'] = 'developers.dev.redhat.com';
+$config['redhat_developers']['downloadManager']['baseUrl'] = 'https://developers.stage.redhat.com';
+$config['redhat_developers']['downloadManager']['fileBaseUrl'] = '//developers.stage.redhat.com/download-manager/file/';
+$config['redhat_developers']['keycloak']['accountUrl'] = 'https://sso.stage.redhat.com/auth/realms/redhat-external/account/';
+$config['redhat_developers']['keycloak']['authUrl'] = 'https://sso.stage.redhat.com/auth/';
+$config['redhat_developers']['keycloak']['client_id'] = 'rhd-web';
+$config['redhat_developers']['keycloak']['realm'] = 'redhat-external';
+$config['redhat_developers']['drupal']['host'] = 'https://developers.dev.redhat.com';
+$config['redhat_developers']['searchisko']['protocol'] = 'https';
+$config['redhat_developers']['searchisko']['host'] = 'dcp.stage.jboss.org';
+$config['redhat_developers']['searchisko']['port'] = '443';
+$config['redhat_developers']['searchisko']['baseProtocolRelativeUrl'] = 'dcp.stage.jboss.org:443';
+$config['redhat_developers']['cache']['engine'] = 'memcached';
+$config['redhat_developers']['swel']['url'] = 'https://api.developers.stage.redhat.com/swel';
+$config['redhat_developers']['fusion']['url'] = 'https://api.developers.stage.redhat.com/search';
+
+/**
+    SSO Integration for Content Editor Authentication
+*/
+$config["openid_connect.settings.keycloak"]["settings"]["redirect_url"] = 'https://developers.dev.redhat.com/openid-connect/keycloak';
+$config["openid_connect.settings.keycloak"]["settings"]["client_id"] = 'rhd-web-cms';
+$config["openid_connect.settings.keycloak"]["settings"]["client_secret"] = '{{ drupal_content_editor_sso_client_secret }}';
+$config["openid_connect.settings.keycloak"]["settings"]["keycloak_base"] = 'https://sso.stage.redhat.com/auth';
+$config["openid_connect.settings.keycloak"]["settings"]["keycloak_realm"] = 'redhat-external';
+$config["openid_connect.settings.keycloak"]["settings"]["authorization_endpoint_kc"] = 'https://sso.stage.redhat.com/auth/realms/redhat-external/protocol/openid-connect/auth';
+$config["openid_connect.settings.keycloak"]["settings"]["token_endpoint_kc"] = 'https://sso.stage.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token';
+$config["openid_connect.settings.keycloak"]["settings"]["userinfo_endpoint_kc"] = 'https://sso.stage.redhat.com/auth/realms/redhat-external/protocol/openid-connect/userinfo';
+
+
+/**
+    Database configuration
+*/
+
+$databases['default']['default'] = array (
+  'database' => '{{ deployment_dbs[0] }}',
+  'username' => '{{ drupal_db_user }}',
+  'password' => '{{ drupal_db_password }}',
+  'prefix' => 'lightning_',
+  'host' => '{{ drupal_db_host }}',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+  'pdo' => [
+      \PDO::MYSQL_ATTR_SSL_CA => '/etc/pki/ca-trust/source/anchors/RH-IT-pki-validation-chain.pem',
+      \PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => false
+  ]
+);
+
+/**
+    Relax Transaction Isolation to READ-COMMITTED: https://www.drupal.org/project/drupal/issues/2833539
+*/
+$databases['default']['default']['init_commands']['isolation'] = "SET SESSION tx_isolation='READ-COMMITTED'";
+
+/**
+    Automatic runs of Drupal cron are disabled so that we do not trigger it based upon user requests. We run cron
+    via our own Kubernetes CronJob. Do not re-enable this.
+*/
+$config['automated_cron.settings']['interval'] = 0;
+
+/**
+    Trusted host configuration allows for the next, previous and current urls
+*/
+$settings['trusted_host_patterns'] = [
+    '^{{ drupal_url }}',
+    '^{{ drupal_previous_url }}',
+    '^{{ drupal_next_url }}'
+];
+
+/**
+    Set the base URL to be used when generating the sitemap.xml for this site
+*/
+$config['simple_sitemap.settings']['base_url'] = "https://{{ drupal_url }}";
+
+/**
+    Set the Akamai network that purge requests should go to
+*/
+$config['akamai.settings']['domain']['production'] = false;
+$config['akamai.settings']['domain']['staging'] = true;
+
+/**
+     MWES-2462: Omit the vary: cookie HTTP header to better integrate with Akamai caching
+*/
+$settings['omit_vary_cookie'] = TRUE;
+
+/**
+    MWES-2910: Enable trailing_slash module in MP-based deployments
+*/
+$config['trailing_slash.settings']['enabled'] = TRUE;
+
+/**
+    DEVELOPER-5877: Added disqus settings to support emails to content author on new comments
+*/
+$config['rhd_disqus.disqussettings']['rhd_disqus_secret_key'] = "{{ drupal_disqus_secret_key }}";
+$config['rhd_disqus.disqussettings']['rhd_disqus_api_key'] = "{{ drupal_disqus_api_key }}";
+$config['rhd_disqus.disqussettings']['rhd_disqus_shortname'] = "{{ drupal_disqus_shortname }}";
+$config['rhd_disqus.disqussettings']['rhd_disqus_email_author_enabled'] = "{{ drupal_disqus_email_author_enabled }}";
+$config['rhd_disqus.disqussettings']['rhd_disqus_email_author_debug'] = "{{ drupal_disqus_email_author_debug }}";
+
+/*
+    MWES-2871: Adds support for using Memcached as the cache engine instead of the database.
+*/
+if($config['redhat_developers']['cache']['engine'] == 'memcached') {
+
+    $settings['cache']['default'] = 'cache.backend.memcache';
+    $settings['memcache']['servers'] = [];
+    {% for number in range(0, drupal_memcached_nodes) %}
+$settings['memcache']['servers'] += [
+       '{{ drupal_memcached_node_name_pattern | format(number) }}:11211' => 'default'
+    ];
+    {% endfor %}
+
+    $settings['memcache']['bins'] = ['default' => 'default'];
+    $settings['memcache']['key_prefix'] = '{{ drupal_deployment_dir }}_';
+    $settings['memcache']['options'] = [
+        Memcached::OPT_DISTRIBUTION => Memcached::DISTRIBUTION_CONSISTENT,
+        Memcached::OPT_COMPRESSION => FALSE,
+        Memcached::OPT_TCP_NODELAY => TRUE,
+        Memcached::OPT_LIBKETAMA_COMPATIBLE => TRUE,
+        Memcached::OPT_NO_BLOCK => FALSE
+    ];
+
+    /*
+        Load the memcached services
+    */
+    $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/memcached.services.yml';
+
+    /*
+        Taken from: https://git.drupalcode.org/project/memcache/blob/8.x-2.x/README.txt
+    */
+
+    $class_loader->addPsr4('Drupal\\memcache\\', 'modules/contrib/memcache/src');
+    // Define custom bootstrap container definition to use Memcache for cache.container.
+    $settings['bootstrap_container_definition'] = [
+      'parameters' => [],
+      'services' => [
+        # Dependencies.
+        'settings' => [
+          'class' => 'Drupal\Core\Site\Settings',
+          'factory' => 'Drupal\Core\Site\Settings::getInstance',
+        ],
+        'memcache.settings' => [
+          'class' => 'Drupal\memcache\MemcacheSettings',
+          'arguments' => ['@settings'],
+        ],
+        'memcache.factory' => [
+          'class' => 'Drupal\memcache\Driver\MemcacheDriverFactory',
+          'arguments' => ['@memcache.settings'],
+        ],
+        'memcache.timestamp.invalidator.bin' => [
+          'class' => 'Drupal\memcache\Invalidator\MemcacheTimestampInvalidator',
+          # Adjust tolerance factor as appropriate when not running memcache on localhost.
+          'arguments' => ['@memcache.factory', 'memcache_bin_timestamps', 0.001],
+        ],
+        'memcache.timestamp.invalidator.tag' => [
+          'class' => 'Drupal\memcache\Invalidator\MemcacheTimestampInvalidator',
+          # Remember to update your main service definition in sync with this!
+          # Adjust tolerance factor as appropriate when not running memcache on localhost.
+          'arguments' => ['@memcache.factory', 'memcache_tag_timestamps', 0.001],
+        ],
+        'memcache.backend.cache.container' => [
+          'class' => 'Drupal\memcache\DrupalMemcacheInterface',
+          'factory' => ['@memcache.factory', 'get'],
+          # Actual cache bin to use for the container cache.
+          'arguments' => ['container'],
+        ],
+        # Define a custom cache tags invalidator for the bootstrap container.
+        'cache_tags_provider.container' => [
+          'class' => 'Drupal\memcache\Cache\TimestampCacheTagsChecksum',
+          'arguments' => ['@memcache.timestamp.invalidator.tag'],
+        ],
+        'cache.container' => [
+          'class' => 'Drupal\memcache\MemcacheBackend',
+          'arguments' => ['container', '@memcache.backend.cache.container', '@cache_tags_provider.container', '@memcache.timestamp.invalidator.bin'],
+        ],
+      ],
+    ];
+}

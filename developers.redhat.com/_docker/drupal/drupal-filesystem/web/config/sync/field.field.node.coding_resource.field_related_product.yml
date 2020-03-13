@@ -1,0 +1,30 @@
+uuid: f65487c9-e0d8-4587-92a9-f19f7e711375
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_product
+    - node.type.coding_resource
+    - node.type.product
+_core:
+  default_config_hash: BjG-JRjcoxtCXVd1IIOLrp7gnHKGDVK3WtAg5QlRvHQ
+id: node.coding_resource.field_related_product
+field_name: field_related_product
+entity_type: node
+bundle: coding_resource
+label: 'Related Product'
+description: 'The product that this resource targets.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      product: product
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

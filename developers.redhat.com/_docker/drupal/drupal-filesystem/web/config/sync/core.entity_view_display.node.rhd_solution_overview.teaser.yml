@@ -1,0 +1,60 @@
+uuid: 0e09b577-6e5b-4f44-a80b-6b524c2287e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.rhd_solution_overview.body
+    - field.field.node.rhd_solution_overview.field_solution_name
+    - field.field.node.rhd_solution_overview.field_solution_tag_line
+    - node.type.rhd_solution_overview
+  module:
+    - fences
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+_core:
+  default_config_hash: FxiFp_Ad1QtDpQSMH33f22LYUEL3i7ZOZSVnNXJtq5E
+id: node.rhd_solution_overview.teaser
+targetEntityType: node
+bundle: rhd_solution_overview
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  workbench_moderation_control:
+    weight: -20
+    region: content
+hidden:
+  field_solution_name: true
+  field_solution_tag_line: true
+  langcode: true
+  published_at: true

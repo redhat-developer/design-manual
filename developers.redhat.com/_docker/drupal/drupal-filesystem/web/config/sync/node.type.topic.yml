@@ -1,0 +1,19 @@
+uuid: ef6d8b09-e100-45a3-9110-20712ac27110
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: MgVh0-aL08L1QpvfWdpDEn8R_Z6zmrMYmBdbem_ctz0
+name: 'Topic Page (Deprecated)'
+type: topic
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

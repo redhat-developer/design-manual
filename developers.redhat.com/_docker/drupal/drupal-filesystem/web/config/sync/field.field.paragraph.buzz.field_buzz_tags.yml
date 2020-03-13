@@ -1,0 +1,21 @@
+uuid: 485d574d-a9c0-4db9-ac81-8ea1ca576353
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_buzz_tags
+    - paragraphs.paragraphs_type.buzz
+_core:
+  default_config_hash: uGvvo37WFujQ8hchQ5xSs2INOtoYiT0Xehkxd0BjjjE
+id: paragraph.buzz.field_buzz_tags
+field_name: field_buzz_tags
+entity_type: paragraph
+bundle: buzz
+label: 'Buzz Tags'
+description: 'A comma separated list of buzz tags used to find buzz about the topic.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

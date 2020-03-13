@@ -1,0 +1,23 @@
+uuid: ca4e2770-114e-4213-909c-7882d73e1e45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_overview_main_content
+    - paragraphs.paragraphs_type.community
+  module:
+    - text
+_core:
+  default_config_hash: wIGXKFQy1oXX9wAvBMepzwoeGjNBxN5b_RdD1TaEk1g
+id: paragraph.community.field_overview_main_content
+field_name: field_overview_main_content
+entity_type: paragraph
+bundle: community
+label: 'Main Content'
+description: 'The main body of the subpage.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

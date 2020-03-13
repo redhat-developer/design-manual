@@ -1,0 +1,23 @@
+uuid: fe3e0e2c-4977-4016-9902-1072095a69f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 2oSKqyGm5CnjPGsKzxC7_v5Yf_1yvUkrfwKqqr6iSP4
+id: node.field_contributors
+field_name: field_contributors
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

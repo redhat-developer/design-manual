@@ -1,0 +1,79 @@
+uuid: 3de3e3a2-9ada-49d1-a890-88fea86b29ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.katacoda_individual_lesson.body
+    - field.field.node.katacoda_individual_lesson.field_katacoda_embed_id
+    - field.field.node.katacoda_individual_lesson.field_katacoda_scenario_author
+    - field.field.node.katacoda_individual_lesson.field_katacoda_scenario_time
+    - field.field.node.katacoda_individual_lesson.field_katacoda_skill_level
+    - field.field.node.katacoda_individual_lesson.field_tags
+    - field.field.node.katacoda_individual_lesson.field_tax_audience_segment
+    - field.field.node.katacoda_individual_lesson.field_tax_business_unit
+    - field.field.node.katacoda_individual_lesson.field_tax_campaign
+    - field.field.node.katacoda_individual_lesson.field_tax_lifecycle
+    - field.field.node.katacoda_individual_lesson.field_tax_product
+    - field.field.node.katacoda_individual_lesson.field_tax_product_line
+    - field.field.node.katacoda_individual_lesson.field_tax_project
+    - field.field.node.katacoda_individual_lesson.field_tax_promotion
+    - field.field.node.katacoda_individual_lesson.field_tax_region
+    - field.field.node.katacoda_individual_lesson.field_tax_stage
+    - field.field.node.katacoda_individual_lesson.field_topics
+    - node.type.katacoda_individual_lesson
+  module:
+    - fences
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+id: node.katacoda_individual_lesson.teaser
+targetEntityType: node
+bundle: katacoda_individual_lesson
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_katacoda_embed_id: true
+  field_katacoda_scenario_author: true
+  field_katacoda_scenario_time: true
+  field_katacoda_skill_level: true
+  field_tags: true
+  field_tax_audience_segment: true
+  field_tax_business_unit: true
+  field_tax_campaign: true
+  field_tax_lifecycle: true
+  field_tax_product: true
+  field_tax_product_line: true
+  field_tax_project: true
+  field_tax_promotion: true
+  field_tax_region: true
+  field_tax_stage: true
+  field_topics: true
+  langcode: true
+  published_at: true

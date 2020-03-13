@@ -1,0 +1,23 @@
+uuid: 757a79a1-e2fb-4cc1-bec0-0f59d5f5feff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.coding_resource
+  module:
+    - text
+_core:
+  default_config_hash: aRq7M-tP3UZslaBUPPRwpJlaL1uJA-76WLK9F3FaD0A
+id: node.coding_resource.field_description
+field_name: field_description
+entity_type: node
+bundle: coding_resource
+label: 'Resource Description'
+description: 'A quick description of what this resource talks about.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

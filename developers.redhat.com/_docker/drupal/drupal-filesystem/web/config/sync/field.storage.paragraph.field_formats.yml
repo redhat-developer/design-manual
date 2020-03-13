@@ -1,0 +1,35 @@
+uuid: 4acdef0b-086f-40fb-b69b-a2db52751194
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: OzzvufKPSbARo0Bpbzw2AS9-MnYe9XSm3aRY-_bXHYY
+id: paragraph.field_formats
+field_name: field_formats
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: single
+      label: 'Single Page HTML'
+    -
+      value: paged
+      label: 'Multi Page HTML'
+    -
+      value: pdf
+      label: PDF
+    -
+      value: epub
+      label: ePub
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 4
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

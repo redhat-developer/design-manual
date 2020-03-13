@@ -1,0 +1,24 @@
+uuid: c3e874d9-9bac-45a4-af67-b67aaa647f22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_connector_long_description
+    - node.type.connectors
+  module:
+    - text
+_core:
+  default_config_hash: E2NCAH2L28xqnrOI9mUKdBeEcmQd7fYWnfStLzXd75c
+id: node.connectors.field_connector_long_description
+field_name: field_connector_long_description
+entity_type: node
+bundle: connectors
+label: 'Connector Long Description'
+description: 'Optional long description for the specific connector, will be displayed in the connector overlay.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

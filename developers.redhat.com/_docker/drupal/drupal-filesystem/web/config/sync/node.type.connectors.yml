@@ -1,0 +1,20 @@
+uuid: 73657fdb-127f-4cc8-ad76-e6c702572b3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 7fM3qj4qN7f_G8eHv4hkM98P6vy6kWCko-guF_9tywQ
+name: Connectors
+type: connectors
+description: 'Connectors for JavaScript rendering'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,21 @@
+uuid: 77707583-9520-40cb-a67e-57df91c810e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blue_card_title
+    - node.type.topic
+_core:
+  default_config_hash: 7gX_yYlVaZg8a3VjviqFJ-n7LA36R0XqD__wZcZ_UY4
+id: node.topic.field_blue_card_title
+field_name: field_blue_card_title
+entity_type: node
+bundle: topic
+label: 'Blue Card Title'
+description: 'Large title displayed on the card.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

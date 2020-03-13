@@ -1,0 +1,21 @@
+uuid: 4453f3ca-2269-4fca-b59a-3119275c9f2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_connector_link_2_text
+    - node.type.connectors
+_core:
+  default_config_hash: obMKPaSNLs72tlhEcI43keCybMDEeaPgpUG0L4QDncg
+id: node.connectors.field_connector_link_2_text
+field_name: field_connector_link_2_text
+entity_type: node
+bundle: connectors
+label: 'Connector Link 2 Text'
+description: 'Text for Link 1.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,59 @@
+uuid: e3f4e175-11cc-4494-96c4-6eafe35854aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.product_categories.field_product_group_icon_svg
+    - taxonomy.vocabulary.product_categories
+  module:
+    - field_layout
+    - file
+    - layout_discovery
+    - path
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+id: taxonomy_term.product_categories.default
+targetEntityType: taxonomy_term
+bundle: product_categories
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_product_group_icon_svg:
+    weight: 32
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

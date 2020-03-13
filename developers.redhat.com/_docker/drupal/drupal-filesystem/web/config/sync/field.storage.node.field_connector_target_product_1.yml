@@ -1,0 +1,35 @@
+uuid: 06ad0fb1-b929-4c20-8dea-630a8680fa67
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: eOxnNlZG_Z5l0FlwhvyOMvCYFNCNEjU2AUifsgwA_lA
+id: node.field_connector_target_product_1
+field_name: field_connector_target_product_1
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: fuse
+      label: fuse
+    -
+      value: fsw
+      label: fsw
+    -
+      value: datavirt
+      label: datavirt
+    -
+      value: amq
+      label: amq
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

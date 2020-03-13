@@ -1,0 +1,27 @@
+uuid: c72d79af-43d7-4d02-8277-224989739910
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: 7dzKqiilGiV3zpTSFFtHrMmd8TkjQnGOo9qDT4aIaf8
+id: media_manager
+label: 'Media Manager'
+weight: -8
+is_admin: null
+permissions:
+  - 'access ckeditor_media_browser entity browser pages'
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access media overview'
+  - 'access media_browser entity browser pages'
+  - 'administer media'
+  - 'create media'
+  - 'delete any media'
+  - 'delete media'
+  - 'update any media'
+  - 'update media'

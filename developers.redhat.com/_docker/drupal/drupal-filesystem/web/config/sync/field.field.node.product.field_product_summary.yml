@@ -1,0 +1,21 @@
+uuid: ca17d6eb-6c7c-4737-ad4a-09fd14986a4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_summary
+    - node.type.product
+_core:
+  default_config_hash: 3L_aCidQ-azc5o1lwd8afwTjvQ-YwnNgUxdcPza1a10
+id: node.product.field_product_summary
+field_name: field_product_summary
+entity_type: node
+bundle: product
+label: Subtitle
+description: 'Text in the product header beneath the product name'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

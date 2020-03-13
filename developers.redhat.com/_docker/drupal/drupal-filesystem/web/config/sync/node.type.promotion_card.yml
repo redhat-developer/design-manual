@@ -1,0 +1,19 @@
+uuid: 9efa945f-e8a5-42cd-9236-481694e09ece
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: snMLVGKLNYUpnOiKYJvW07c6vyzA6ZmrXgz3m69HTgs
+name: 'Promotion Card (Deprecated)'
+type: promotion_card
+description: 'Blog posts, articles, links to be used in promo cards'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

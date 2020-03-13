@@ -1,0 +1,23 @@
+uuid: 82a78850-026c-440f-87ec-0983fc238c8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_format
+    - node.type.events
+  module:
+    - options
+_core:
+  default_config_hash: EH88MTvr6NcHAJfJDNdNIZeftXBEV1wjKHnlmg_os9s
+id: node.events.field_event_format
+field_name: field_event_format
+entity_type: node
+bundle: events
+label: 'Event Format'
+description: 'Format of event (webinar, workshop, conference, usergroup)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

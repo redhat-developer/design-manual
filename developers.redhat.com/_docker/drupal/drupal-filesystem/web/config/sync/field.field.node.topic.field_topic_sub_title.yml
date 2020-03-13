@@ -1,0 +1,21 @@
+uuid: cdd4d04d-376f-47e4-b9b9-1bed6b3848dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topic_sub_title
+    - node.type.topic
+_core:
+  default_config_hash: ZTIlvJIN7Wz_RPARypwM90CrUvI3rnD4GFrl-_60iGs
+id: node.topic.field_topic_sub_title
+field_name: field_topic_sub_title
+entity_type: node
+bundle: topic
+label: 'Topic Sub Title'
+description: 'Smaller, description title of the topic.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

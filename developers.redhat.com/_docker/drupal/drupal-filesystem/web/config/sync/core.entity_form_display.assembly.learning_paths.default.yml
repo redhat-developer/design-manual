@@ -1,0 +1,102 @@
+uuid: 11412737-1d41-450b-a41a-5620cb9e3003
+langcode: en
+status: true
+dependencies:
+  config:
+    - assembly.assembly_type.learning_paths
+    - field.field.assembly.learning_paths.field_audience_selection
+    - field.field.assembly.learning_paths.field_cta_link
+    - field.field.assembly.learning_paths.field_description
+    - field.field.assembly.learning_paths.field_navigation_title
+    - field.field.assembly.learning_paths.field_title
+  module:
+    - field_layout
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+id: assembly.learning_paths.default
+targetEntityType: assembly
+bundle: learning_paths
+mode: default
+content:
+  field_audience_selection:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_cta_link:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_description:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_navigation_title:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 5
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  visual_styles:
+    type: options_select
+    multiple: true
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

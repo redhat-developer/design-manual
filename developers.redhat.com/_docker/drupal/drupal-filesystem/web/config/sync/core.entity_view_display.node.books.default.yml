@@ -1,0 +1,472 @@
+uuid: 53c4974b-3a77-4358-807d-032d0e44938f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.books.field_author
+    - field.field.node.books.field_average_rating
+    - field.field.node.books.field_book_description
+    - field.field.node.books.field_book_excerpt
+    - field.field.node.books.field_book_url
+    - field.field.node.books.field_card_image
+    - field.field.node.books.field_categories
+    - field.field.node.books.field_cover_image
+    - field.field.node.books.field_difficulty
+    - field.field.node.books.field_epub
+    - field.field.node.books.field_isbn
+    - field.field.node.books.field_meta_tags
+    - field.field.node.books.field_mobi_link
+    - field.field.node.books.field_needs_own_page
+    - field.field.node.books.field_pdf_link
+    - field.field.node.books.field_preview_url
+    - field.field.node.books.field_publisher
+    - field.field.node.books.field_pull_from_google
+    - field.field.node.books.field_read_time
+    - field.field.node.books.field_related_product
+    - field.field.node.books.field_share_image
+    - field.field.node.books.field_short_description
+    - field.field.node.books.field_tags
+    - field.field.node.books.field_tax_audience_segment
+    - field.field.node.books.field_tax_business_unit
+    - field.field.node.books.field_tax_campaign
+    - field.field.node.books.field_tax_lifecycle
+    - field.field.node.books.field_tax_product
+    - field.field.node.books.field_tax_product_line
+    - field.field.node.books.field_tax_project
+    - field.field.node.books.field_tax_promotion
+    - field.field.node.books.field_tax_region
+    - field.field.node.books.field_tax_stage
+    - field.field.node.books.field_thumbnail_url
+    - field.field.node.books.field_topics
+    - field.field.node.books.field_web_reader_url
+    - node.type.books
+  module:
+    - fences
+    - field_layout
+    - interval
+    - layout_discovery
+    - link
+    - metatag
+    - options
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+_core:
+  default_config_hash: 6xYjc_xUKetNHubcZQ-HCVjelYp7JE6bmEGVhegbJT4
+id: node.books.default
+targetEntityType: node
+bundle: books
+mode: default
+content:
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_author:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+  field_average_rating:
+    weight: 10
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: list_default
+    region: content
+  field_book_description:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: text_default
+    region: content
+  field_book_excerpt:
+    weight: 14
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: text_default
+    region: content
+  field_book_url:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: link
+    region: content
+  field_card_image:
+    weight: 22
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: link
+    region: content
+  field_categories:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+  field_difficulty:
+    weight: 21
+    label: above
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: list_default
+    region: content
+  field_epub:
+    weight: 18
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: link
+    region: content
+  field_isbn:
+    weight: 12
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+  field_meta_tags:
+    weight: 25
+    label: above
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: metatag_empty_formatter
+    region: content
+  field_mobi_link:
+    weight: 17
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: link
+    region: content
+  field_needs_own_page:
+    weight: 19
+    label: hidden
+    settings:
+      format: default
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: boolean
+    region: content
+  field_pdf_link:
+    weight: 16
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: link
+    region: content
+  field_preview_url:
+    weight: 8
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: link
+    region: content
+  field_publisher:
+    weight: 9
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+  field_pull_from_google:
+    weight: 11
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: list_default
+    region: content
+  field_read_time:
+    weight: 20
+    label: above
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: interval_default
+    region: content
+  field_related_product:
+    weight: 15
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: entity_reference_entity_view
+    region: content
+  field_short_description:
+    weight: 24
+    label: above
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: basic_string
+    region: content
+  field_tags:
+    weight: 13
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: entity_reference_label
+    region: content
+  field_thumbnail_url:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: link
+    region: content
+  field_topics:
+    weight: 23
+    label: above
+    settings:
+      link: true
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: entity_reference_label
+    region: content
+  field_web_reader_url:
+    weight: 7
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: link
+    region: content
+hidden:
+  field_cover_image: true
+  field_share_image: true
+  field_tax_audience_segment: true
+  field_tax_business_unit: true
+  field_tax_campaign: true
+  field_tax_lifecycle: true
+  field_tax_product: true
+  field_tax_product_line: true
+  field_tax_project: true
+  field_tax_promotion: true
+  field_tax_region: true
+  field_tax_stage: true
+  langcode: true
+  links: true
+  published_at: true
+  workbench_moderation_control: true

@@ -1,0 +1,9 @@
+uuid: beab61c4-753a-4b7d-8bfd-c8bf39c4fc49
+langcode: en
+status: true
+dependencies: {  }
+id: content_image
+label: Image
+description: 'Image must be uploaded locally'
+visual_styles: "no-padding-top|No padding top|Remove top padding from this assembly\r\nno-padding-bottom|No padding-bottom|Remove bottom padding from this assembly"
+new_revision: true

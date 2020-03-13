@@ -1,0 +1,70 @@
+uuid: c79f19f6-d345-4bab-90c1-6cc279a51338
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.coding_resource.body
+    - field.field.node.coding_resource.field_author
+    - field.field.node.coding_resource.field_contributors
+    - field.field.node.coding_resource.field_description
+    - field.field.node.coding_resource.field_level
+    - field.field.node.coding_resource.field_related_product
+    - field.field.node.coding_resource.field_resource_type
+    - field.field.node.coding_resource.field_source_link
+    - field.field.node.coding_resource.field_tags
+    - field.field.node.coding_resource.field_tax_audience_segment
+    - field.field.node.coding_resource.field_tax_business_unit
+    - field.field.node.coding_resource.field_tax_campaign
+    - field.field.node.coding_resource.field_tax_lifecycle
+    - field.field.node.coding_resource.field_tax_product
+    - field.field.node.coding_resource.field_tax_product_line
+    - field.field.node.coding_resource.field_tax_project
+    - field.field.node.coding_resource.field_tax_promotion
+    - field.field.node.coding_resource.field_tax_region
+    - field.field.node.coding_resource.field_tax_stage
+    - field.field.node.coding_resource.field_technologies
+    - field.field.node.coding_resource.field_topics
+    - field.field.node.coding_resource.field_version
+    - node.type.coding_resource
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+_core:
+  default_config_hash: MUBX8_AuOPpetxoN1KE_aD0EdmVebkcUiD0SK-MDMK4
+id: node.coding_resource.card
+targetEntityType: node
+bundle: coding_resource
+mode: card
+content: {  }
+hidden:
+  body: true
+  field_author: true
+  field_contributors: true
+  field_description: true
+  field_level: true
+  field_related_product: true
+  field_resource_type: true
+  field_source_link: true
+  field_tags: true
+  field_tax_audience_segment: true
+  field_tax_business_unit: true
+  field_tax_campaign: true
+  field_tax_lifecycle: true
+  field_tax_product: true
+  field_tax_product_line: true
+  field_tax_project: true
+  field_tax_promotion: true
+  field_tax_region: true
+  field_tax_stage: true
+  field_technologies: true
+  field_topics: true
+  field_version: true
+  langcode: true
+  links: true
+  published_at: true

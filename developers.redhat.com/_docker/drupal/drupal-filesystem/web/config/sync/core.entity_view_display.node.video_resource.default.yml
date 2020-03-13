@@ -1,0 +1,387 @@
+uuid: a502ea5c-a47e-4be9-af13-0a04ab6a6c54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.video_resource.body
+    - field.field.node.video_resource.field_card_image
+    - field.field.node.video_resource.field_difficulty
+    - field.field.node.video_resource.field_duration
+    - field.field.node.video_resource.field_exclude_from_search
+    - field.field.node.video_resource.field_likes
+    - field.field.node.video_resource.field_meta_tags
+    - field.field.node.video_resource.field_related_content
+    - field.field.node.video_resource.field_share_image
+    - field.field.node.video_resource.field_short_description
+    - field.field.node.video_resource.field_slideshare_source
+    - field.field.node.video_resource.field_speakers
+    - field.field.node.video_resource.field_tags
+    - field.field.node.video_resource.field_tax_audience_segment
+    - field.field.node.video_resource.field_tax_business_unit
+    - field.field.node.video_resource.field_tax_campaign
+    - field.field.node.video_resource.field_tax_lifecycle
+    - field.field.node.video_resource.field_tax_product
+    - field.field.node.video_resource.field_tax_product_line
+    - field.field.node.video_resource.field_tax_project
+    - field.field.node.video_resource.field_tax_promotion
+    - field.field.node.video_resource.field_tax_region
+    - field.field.node.video_resource.field_tax_stage
+    - field.field.node.video_resource.field_topics
+    - field.field.node.video_resource.field_video_author
+    - field.field.node.video_resource.field_video_publish_date
+    - field.field.node.video_resource.field_video_related_links
+    - field.field.node.video_resource.field_video_resource
+    - field.field.node.video_resource.field_video_resource_tags
+    - field.field.node.video_resource.field_video_target_product
+    - field.field.node.video_resource.field_video_thumbnail_url
+    - field.field.node.video_resource.field_views
+    - node.type.video_resource
+  module:
+    - datetime
+    - fences
+    - field_layout
+    - interval
+    - layout_discovery
+    - link
+    - options
+    - text
+    - user
+    - video_embed_field
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+_core:
+  default_config_hash: 3mFNs-3g6qWwffS1ivVcS2aj4XYikbBf2eBQrLeC4lE
+id: node.video_resource.default
+targetEntityType: node
+bundle: video_resource
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    region: content
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_card_image:
+    weight: 16
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: link
+    region: content
+  field_difficulty:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: list_default
+    region: content
+  field_duration:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: interval_default
+    region: content
+  field_exclude_from_search:
+    weight: 20
+    label: above
+    settings:
+      format: default
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: boolean
+    region: content
+  field_likes:
+    weight: 6
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: number_integer
+    region: content
+  field_related_content:
+    weight: 15
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: entity_reference_entity_view
+    region: content
+  field_short_description:
+    weight: 18
+    label: above
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: basic_string
+    region: content
+  field_slideshare_source:
+    weight: 13
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: link
+    region: content
+  field_speakers:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+  field_topics:
+    weight: 17
+    label: above
+    settings:
+      link: true
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: entity_reference_label
+    region: content
+  field_video_author:
+    weight: 19
+    label: hidden
+    settings:
+      view_mode: short_teaser
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: authors
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: entity_reference_entity_view
+    region: content
+  field_video_publish_date:
+    weight: 10
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: datetime_default
+    region: content
+  field_video_related_links:
+    weight: 14
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: link
+    region: content
+  field_video_resource:
+    weight: 1
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: video_embed_field_video
+    region: content
+  field_video_resource_tags:
+    weight: 3
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: entity_reference_label
+    region: content
+  field_video_target_product:
+    weight: 7
+    label: hidden
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: entity_reference_entity_view
+    region: content
+  field_video_thumbnail_url:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+  field_views:
+    weight: 5
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: number_integer
+    region: content
+hidden:
+  field_meta_tags: true
+  field_share_image: true
+  field_tags: true
+  field_tax_audience_segment: true
+  field_tax_business_unit: true
+  field_tax_campaign: true
+  field_tax_lifecycle: true
+  field_tax_product: true
+  field_tax_product_line: true
+  field_tax_project: true
+  field_tax_promotion: true
+  field_tax_region: true
+  field_tax_stage: true
+  langcode: true
+  links: true
+  published_at: true
+  workbench_moderation_control: true

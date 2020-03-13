@@ -1,0 +1,78 @@
+uuid: 284e6e95-3453-494a-a2a0-c021b2e8e901
+langcode: en
+status: true
+dependencies:
+  config:
+    - assembly.assembly_type.videos
+    - field.field.assembly.videos.field_audience_selection
+    - field.field.assembly.videos.field_navigation_title
+    - field.field.assembly.videos.field_tags
+    - field.field.assembly.videos.field_title
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+id: assembly.videos.default
+targetEntityType: assembly
+bundle: videos
+mode: default
+content:
+  field_audience_selection:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_navigation_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tags:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  user_id: true
+  visual_styles: true

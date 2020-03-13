@@ -1,0 +1,23 @@
+uuid: 3eace5e6-8f35-44bd-8bb5-a325b5f95bf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_overview_url
+    - paragraphs.paragraphs_type.download
+_core:
+  default_config_hash: yhHf1o8MdwgPAaNxBElWdn-HOXfYbUxCyjRXNl4h3I8
+id: paragraph.download.field_overview_url
+field_name: field_overview_url
+entity_type: paragraph
+bundle: download
+label: Url
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: Download
+default_value_callback: ''
+settings: {  }
+field_type: string

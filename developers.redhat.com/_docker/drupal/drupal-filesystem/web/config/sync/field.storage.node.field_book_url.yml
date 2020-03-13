@@ -1,0 +1,21 @@
+uuid: d14d54bb-110a-4ec2-b80e-e1eaeb47c801
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: kqyntWnxMZg0pr91d72Dzp85IWRdIyPdilligb1-5Vk
+id: node.field_book_url
+field_name: field_book_url
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

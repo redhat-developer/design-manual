@@ -1,0 +1,93 @@
+toc:
+  - title: Components Overview
+    subfolderitems:
+      - page: Alerts
+        url: /components/alerts
+      - page: All Products Listing
+        url: /components/all-products-listing
+      - page: Author Tile
+        url: /components/author-tile
+      - page: Bonus Content Item
+        url: /components/bonus-content-item
+      - page: Button CTAs
+        url: /components/btn-cta
+      - page: Card in a Gallery Layout
+        url: /components/card-gallery
+      - page: Card in a Grid Layout
+        url: /components/card-grid
+      - page: Code Snippet
+        url: /components/code-snippet
+      - page: Collection
+        url: /components/collection
+      - page: Comment List Card
+        url: /components/comment-list-card
+      - page: Community
+        url: /components/community
+      - page: CTA
+        url: /components/cta
+      - page: CTA Form
+        url: /components/cta-form
+      - page: Curated Content
+        url: /components/curated-content
+      - page: Curated Events
+        url: /components/curated-events
+      - page: Curated Links
+        url: /components/curated-links
+      - page: Curated Products
+        url: /components/curated-products
+      - page: Dynamic Content
+        url: /components/dynamic-content
+      - page: Dynamic Content List
+        url: /components/dynamic-content-list
+      - page: Dynamic Content List (Compact)
+        url: /components/dynamic-content-list-compact
+      - page: Dynamic List
+        url: /components/dynamic-list
+      - page: Event Schedule Table
+        url: /components/event-schedule
+      - page: Events Hero
+        url: /components/events-hero
+      - page: Expandable Groups
+        url: /components/expandable-groups
+      - page: Featured Articles
+        url: /components/featured-articles
+      - page: Featured Evangelists
+        url: /components/featured-evangelists
+      - page: Featured Resources
+        url: /components/featured-resources
+      - page: Footer Resources
+        url: /components/footer
+      - page: Icons
+        url: /components/icons
+      - page: Jump-to Navigation
+        url: /components/jump-to-nav
+      - page: Logos
+        url: /components/logos
+      - page: Navigation Search
+        url: /components/nav-search
+      - page: Navigation References
+        url: /components/navigation
+      - page: Onebox
+        url: /components/Onebox
+      - page: Product Download Hero
+        url: /components/product-download-hero
+      - page: Product Download List
+        url: /components/product-download-list
+      - page: Product Try-it
+        url: /components/product-try-it
+      - page: Rich Text
+        url: /components/rich-text
+      - page: Rich Text Columns
+        url: /components/rich-text-columns
+      - page: Search
+        url: /components/search
+      - page: Search (unreleased)
+        url: /components/search-old
+      - page: Stack Overflow
+        url: /components/stack-overflow
+      - page: Template Component
+        url: /components/template
+      - page: Two Column Layout Hero
+        url: /components/two-col-hero-layout
+      - page: Video Hero
+        url: /components/video-hero

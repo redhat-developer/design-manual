@@ -1,0 +1,25 @@
+uuid: 418a1221-a621-40bf-ae99-81df3c3daa38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thumbnail_url
+    - node.type.books
+  module:
+    - link
+_core:
+  default_config_hash: eAKd8XvdDoqKKPidDJUCuTXZHbqYudtwqU7yG9uArA0
+id: node.books.field_thumbnail_url
+field_name: field_thumbnail_url
+entity_type: node
+bundle: books
+label: 'Search result thumbnail URL'
+description: 'The URL for the thumbnail displayed in the search results'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

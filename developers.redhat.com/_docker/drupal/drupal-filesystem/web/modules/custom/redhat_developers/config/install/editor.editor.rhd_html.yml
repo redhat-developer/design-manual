@@ -1,0 +1,78 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.rhd_html
+  module:
+    - ckeditor
+format: rhd_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Underline
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - media_browser
+            - node
+        -
+          name: 'Block Formatting'
+          items:
+            - Blockquote
+            - Format
+            - Styles
+        -
+          name: Tools
+          items:
+            - Source
+            - Maximize
+        -
+          name: Layout
+          items:
+            - AddLayout
+            - Table
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+  plugins:
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
+    language:
+      language_list: un
+    stylescombo:
+      styles: "a.button|Button\r\ncode.code-style|Code Style\r\na.caret-right|Link with right caret\r\ndiv.box.callout|Callout Box"
+    video_embed:
+      defaults:
+        children:
+          autoplay: false
+          responsive: true
+          width: '854'
+          height: '480'
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null
+

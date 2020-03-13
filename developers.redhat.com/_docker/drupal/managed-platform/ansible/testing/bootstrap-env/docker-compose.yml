@@ -1,0 +1,39 @@
+---
+version: '3'
+services:
+
+  local_seed:
+    build:
+      context: ../rhdp-data-seed
+    environment:
+      - DEPLOYMENT_ID=1
+      - DUID=${DUID}
+    volumes:
+      - drupal-workspace:/drupal-workspace
+
+  bootstrap_env:
+    image: images.paas.redhat.com/rhdp/developer-base:rhel-76.3
+    command: ["/bin/bash"]
+    working_dir: "/ansible"
+    user: root
+    environment:
+      - DEPLOYMENT_ID=1
+    volumes:
+      - ../../:/ansible
+      - ../env.yml:/credentials/ansible/env.yml
+      - drupal-workspace:/drupal-workspace
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mariadb:10.3.9-bionic
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+    ports:
+      - "3306:3306"
+    expose:
+      - 3306
+
+volumes:
+  drupal-workspace:
+   driver: local

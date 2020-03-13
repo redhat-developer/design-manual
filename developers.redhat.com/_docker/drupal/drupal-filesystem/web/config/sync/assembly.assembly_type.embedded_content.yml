@@ -1,0 +1,9 @@
+uuid: 21a0bdfe-3a97-490f-bf0c-7be56c28cfe5
+langcode: en
+status: true
+dependencies: {  }
+id: embedded_content
+label: 'Embedded Content'
+description: 'This is only external URLs'
+visual_styles: "no-padding-top|No padding top|Remove top padding from this assembly\r\nno-padding-bottom|No padding-bottom|Remove bottom padding from this assembly"
+new_revision: true

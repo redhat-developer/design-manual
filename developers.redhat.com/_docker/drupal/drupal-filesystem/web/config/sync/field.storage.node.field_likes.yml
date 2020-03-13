@@ -1,0 +1,22 @@
+uuid: 66ff92c5-7893-44ee-8f21-e921cb90f46e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Dg54aubw2Ch--nXCmb_TaTOkO2yD7-eyC9FisslF4jc
+id: node.field_likes
+field_name: field_likes
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

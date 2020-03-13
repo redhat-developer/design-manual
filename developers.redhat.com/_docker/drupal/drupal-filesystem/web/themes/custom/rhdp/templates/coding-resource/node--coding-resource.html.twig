@@ -1,0 +1,59 @@
+{% set repo_url = content.field_source_link[0]['#url'].uri %}
+
+<div class="row">
+    <div class="large-24 columns">
+        <h2 class="large-title" id="developer-materials">Developer Materials</h2>
+    </div>
+</div>
+
+<div class="row coding-resource" itemscope="" itemtype="http://schema.org/Article">
+    {# This should really include the columns class #}
+    <div class="collapse large-24 columns">
+        <h1 class="divider" id="start" itemprop="name">
+            {{ label }}
+        </h1>
+        <div class="gsi-meta">
+            <ul>
+                {% if content.field_author|render|striptags|trim is not empty %}
+                    <li><strong>Author:</strong> {{ content.field_author }}</li>
+                {% endif %}
+
+                {% if content.field_contributors|render|striptags|trim is not empty %}
+                    <li><strong> Contributors:</strong> {{ content.field_contributors }}</li>
+                {% endif %}
+
+                {% set calc_date = node.published_at %}
+                {% if calc_date and calc_date.value is not empty %}
+                    <li><strong> Published:</strong> <span itemprop="dateModified">{{calc_date.value|date("Y-m-d")}}</span></li>
+                {% endif %}
+
+                {% if content.field_level|render|striptags|trim is not empty %}
+                    <li><strong> Level:</strong> {{ content.field_level }}</li>
+                {% endif %}
+
+                {% if content.field_technologies|render|striptags|trim is not empty %}
+                    <li><strong> Technologies:</strong> {{ content.field_technologies }}</li>
+                {% endif %}
+
+                {% if content.field_related_product|render|striptags|trim is not empty %}
+                    <li><strong> Target Product:</strong> <span itemprop="about">{{ content.field_related_product }}</span></li>
+                {% endif %}
+            </ul>
+        </div>
+        <div class="row content">
+            <div class="large-24 columns">
+                <div class="medium-4 columns">
+                    <ul class="toc gsi-nav"></ul>
+                    <br>
+                </div>
+                <div class="medium-15 gsi columns">
+                    {{ content.body }}
+                </div>
+                <div class="medium-5 ctas columns">
+                    <a href="{{ repo_url }}/archive/{{ content.field_version.0 }}.zip" class="button">Download <i class="fas fa-download"></i></a><br/>
+                    <a href="{{ repo_url }}/tree/{{ content.field_version.0 }}"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+toc:
+  - title: Getting Started Overview
+    subfolderitems:
+      - page: Accessibility
+        url: /getting-started/accessibility
+      - page: Develop
+        url: /getting-started/develop
+      - page: Typography
+        url: /getting-started/typography
+      - page: Update this Documentation
+        url: /getting-started/update-this-documentation

@@ -1,0 +1,42 @@
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }}>
+  <a href="{{ url }}">
+    <div class="tile-image">
+      <div class="image-table">
+        <div class="image-cell">
+            {% set tmpUrl = content.field_video_thumbnail_url['#items'][0].value %}
+            {% if '.jpg' in tmpUrl or '.jpeg' in tmpUrl  or '.gif' in tmpUrl  or '.png' in tmpUrl %}
+              {% set cacheImg = {'#theme':'imagecache_external', '#uri':tmpUrl, '#style_name':'static_item', '#alt':node_title, } %}
+              {{ cacheImg }}
+            {% else %}
+              <img src="{{ tmpUrl }}" alt="{{ node_title }}" />
+            {% endif %}
+
+          
+
+          <div class="play-button">►</div>
+        </div>
+      </div>
+    </div>
+    <h3 class="tile-title">{{ label }}</h3>
+  </a>
+  {% if "developers.redhat.com" in url('entity.node.canonical', {'node': node.id}) %}
+  <div class="tile-comment-count hidden" data-disqus-thread-link="{{ url('entity.node.canonical', {'node': node.id}) }}" data-disqus-comment-count>
+    <a href="{{ url }}#comments">
+      <span class="fa fa-comment"></span>
+      <span class="comment-number" data-disqus-comment-count-number></span> 
+      <span class="count-verbage" data-disqus-comment-count-verbage>Comments</span>
+    </a>
+  </div>
+  {% endif %}
+</article>

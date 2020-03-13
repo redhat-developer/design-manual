@@ -1,0 +1,38 @@
+uuid: 7f65d023-3349-4b59-aefa-937ac023f7f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: 3IUkBHUktrnqy4XPvnUbNJJ2KxKXboG_0VDSLu77tX8
+id: node.field_region
+field_name: field_region
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: NA
+      label: NA
+    -
+      value: EMEA
+      label: EMEA
+    -
+      value: APAC
+      label: APAC
+    -
+      value: LATAM
+      label: LATAM
+    -
+      value: GLOBAL
+      label: GLOBAL
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: 2c88aa26-5f81-4a7b-92e0-baab56b6e166
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technologies
+    - node.type.coding_resource
+_core:
+  default_config_hash: zwo1nQ7ZrdreULPSOFZ_JdkDlYJXllSQvY9ruApHJ0c
+id: node.coding_resource.field_technologies
+field_name: field_technologies
+entity_type: node
+bundle: coding_resource
+label: 'Technologies Used'
+description: 'List of technologies used in the resource.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

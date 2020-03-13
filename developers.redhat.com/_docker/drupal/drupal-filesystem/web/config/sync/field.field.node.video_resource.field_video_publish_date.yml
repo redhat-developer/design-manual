@@ -1,0 +1,23 @@
+uuid: 7ab5fb80-b672-4f24-96dc-3f03f4790188
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_publish_date
+    - node.type.video_resource
+  module:
+    - datetime
+_core:
+  default_config_hash: VilxQqrK9PbtZnlgD21ovbYcngzqlhQgszGibixSVkU
+id: node.video_resource.field_video_publish_date
+field_name: field_video_publish_date
+entity_type: node
+bundle: video_resource
+label: 'Video Publish Date'
+description: 'Original date the video was published, should come from the provider.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

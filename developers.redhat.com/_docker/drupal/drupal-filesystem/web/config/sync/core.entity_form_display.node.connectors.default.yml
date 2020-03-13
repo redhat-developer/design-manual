@@ -1,0 +1,303 @@
+uuid: 621a66bd-9352-4294-a8cb-aea4abf77153
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_browser
+    - field.field.node.connectors.field_connector_details_url
+    - field.field.node.connectors.field_connector_id
+    - field.field.node.connectors.field_connector_image
+    - field.field.node.connectors.field_connector_link_1
+    - field.field.node.connectors.field_connector_link_1_text
+    - field.field.node.connectors.field_connector_link_2
+    - field.field.node.connectors.field_connector_link_2_text
+    - field.field.node.connectors.field_connector_long_description
+    - field.field.node.connectors.field_connector_priority
+    - field.field.node.connectors.field_connector_short_descriptio
+    - field.field.node.connectors.field_connector_target_product_1
+    - field.field.node.connectors.field_connector_target_product_2
+    - field.field.node.connectors.field_connector_target_product_3
+    - field.field.node.connectors.field_tags
+    - field.field.node.connectors.field_tax_audience_segment
+    - field.field.node.connectors.field_tax_business_unit
+    - field.field.node.connectors.field_tax_campaign
+    - field.field.node.connectors.field_tax_lifecycle
+    - field.field.node.connectors.field_tax_product
+    - field.field.node.connectors.field_tax_product_line
+    - field.field.node.connectors.field_tax_project
+    - field.field.node.connectors.field_tax_promotion
+    - field.field.node.connectors.field_tax_region
+    - field.field.node.connectors.field_tax_stage
+    - field.field.node.connectors.field_topics
+    - node.type.connectors
+    - workflows.workflow.00c7e3ae
+  module:
+    - compose
+    - content_moderation
+    - entity_browser
+    - field_group
+    - field_layout
+    - link
+    - publication_date
+    - text
+third_party_settings:
+  field_group:
+    group_purpose_attributes:
+      children:
+        - field_topics
+        - field_tax_audience_segment
+        - field_tax_business_unit
+        - field_tax_campaign
+        - field_tax_lifecycle
+        - field_tax_product
+        - field_tax_product_line
+        - field_tax_project
+        - field_tax_promotion
+        - field_tax_region
+        - field_tax_stage
+        - field_tags
+      parent_name: ''
+      weight: 17
+      format_type: details
+      format_settings:
+        label: 'Purpose Attributes'
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Purpose Attributes'
+      region: fields
+  field_layout:
+    id: compose_tabs
+    settings: {  }
+_core:
+  default_config_hash: SRpnm57aZnGL6k9j_zdNeKUPEorqLQLhXWCSQFZ-MzQ
+id: node.connectors.default
+targetEntityType: node
+bundle: connectors
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 0
+    region: settings
+    settings: {  }
+    third_party_settings: {  }
+  field_connector_details_url:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_connector_id:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_connector_image:
+    type: entity_browser_entity_reference
+    weight: 14
+    settings:
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: thumbnail
+      open: true
+      field_widget_replace: false
+    region: content
+    third_party_settings: {  }
+  field_connector_link_1:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_connector_link_1_text:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_connector_link_2:
+    weight: 12
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_connector_link_2_text:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_connector_long_description:
+    weight: 4
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_connector_priority:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_connector_short_descriptio:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_connector_target_product_1:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_connector_target_product_2:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_connector_target_product_3:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tags:
+    weight: 37
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: fields
+  field_tax_audience_segment:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: fields
+  field_tax_business_unit:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: fields
+  field_tax_campaign:
+    weight: 29
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: fields
+  field_tax_lifecycle:
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: fields
+  field_tax_product:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: fields
+  field_tax_product_line:
+    weight: 32
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: fields
+  field_tax_project:
+    weight: 33
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: fields
+  field_tax_promotion:
+    weight: 34
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: fields
+  field_tax_region:
+    weight: 35
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: fields
+  field_tax_stage:
+    weight: 36
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: fields
+  field_topics:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: fields
+  langcode:
+    type: language_select
+    weight: 2
+    region: fields
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: moderation_state_default
+    region: settings
+  published_at:
+    type: publication_date_timestamp
+    weight: 10
+    region: settings
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  url_redirects:
+    weight: 16
+    region: settings
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

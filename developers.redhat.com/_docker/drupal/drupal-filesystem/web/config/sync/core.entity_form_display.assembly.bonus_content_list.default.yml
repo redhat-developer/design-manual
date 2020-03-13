@@ -1,0 +1,79 @@
+uuid: 65d6c53c-4d52-42d0-8f4a-33e820110c58
+langcode: en
+status: true
+dependencies:
+  config:
+    - assembly.assembly_type.bonus_content_list
+    - field.field.assembly.bonus_content_list.field_audience_selection
+    - field.field.assembly.bonus_content_list.field_content_list
+    - field.field.assembly.bonus_content_list.field_title
+  module:
+    - entity_browser_entity_form
+    - field_layout
+    - inline_entity_form
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_disabled
+    settings: {  }
+id: assembly.bonus_content_list.default
+targetEntityType: assembly
+bundle: bonus_content_list
+mode: default
+content:
+  field_audience_selection:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_content_list:
+    weight: 4
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  visual_styles:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  user_id: true

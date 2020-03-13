@@ -1,0 +1,23 @@
+uuid: 26d60734-593f-4ad3-996a-57556291ec1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_overview_main_content
+    - paragraphs.paragraphs_type.resources
+  module:
+    - text
+_core:
+  default_config_hash: RwmqVu_iaAvy_AHJdhYkJ6QLSZQnCmZAiG5oWzH9PQY
+id: paragraph.resources.field_overview_main_content
+field_name: field_overview_main_content
+entity_type: paragraph
+bundle: resources
+label: 'Main Content'
+description: 'The main body of the subpage.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

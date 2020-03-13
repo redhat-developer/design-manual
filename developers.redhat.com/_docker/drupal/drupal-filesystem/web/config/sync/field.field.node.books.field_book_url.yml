@@ -1,0 +1,25 @@
+uuid: e2de8f71-811f-4b49-879f-4b687d319fbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_url
+    - node.type.books
+  module:
+    - link
+_core:
+  default_config_hash: xpCXHtYDTe5o_Ps2ZaNM7bSJ_TDwsBRJpyv4Lk6Gn1w
+id: node.books.field_book_url
+field_name: field_book_url
+entity_type: node
+bundle: books
+label: 'External Book URL'
+description: 'The URL to the book''s non RHDP homepage (or purchase page)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
