@@ -1,5 +1,0 @@
-administer rhd disqus:
-  title: 'Administer RHD Disqus'
-  description: 'Allow to access the administration form to configure Disqus.'
-  restrict access: true
-

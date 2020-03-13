@@ -1,4 +1,0 @@
-#
-# Configuration file for accessing preview environments on Managed Platform.
-#
-OC_USER=<your_managed_platform_username>

@@ -1,6 +1,0 @@
-# Drupal
-_docker/drupal/drupal-filesystem/*              @jordanpagewhite
-_docker/drupal/managed-platform/*              @robpblake
-
-# Tests
-_tests/*                                        @robpblake

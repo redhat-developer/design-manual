@@ -1,8 +1,0 @@
-rhd-disqus:
-  js:
-    js/disqusFetch.js: {}
-  dependencies:
-    - core/jquery
-    - core/drupal
-    - core/drupalSettings
-    - core/jquery.once

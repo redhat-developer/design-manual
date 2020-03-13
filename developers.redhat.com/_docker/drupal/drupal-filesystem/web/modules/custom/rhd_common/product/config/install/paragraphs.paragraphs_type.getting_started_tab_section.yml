@@ -1,5 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: getting_started_tab_section
-label: 'Hello World Tab Section'

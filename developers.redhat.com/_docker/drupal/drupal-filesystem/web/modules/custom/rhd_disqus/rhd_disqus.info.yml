@@ -1,5 +1,0 @@
-name: RHD Disqus
-type: module
-description: Disqus comments for RHD
-core: 8.x
-package: RHD

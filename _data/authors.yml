@@ -1,7 +1,0 @@
-# specify site authors in this file
-# you can add .yml files for any other global data in this folder
-
-adam_jolicoeur:
-    name: Adam Jolicoeur
-    email: mindreeper2420@gmail.com
-    web: https://www.adamjolicoeur.com

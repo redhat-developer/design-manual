@@ -1,8 +1,0 @@
-uuid: ad1ba7c6-b24b-4fd9-b434-7f958e70d3d1
-langcode: en
-status: true
-dependencies: {  }
-name: 'Bonus content types'
-vid: bonus_content_types
-description: 'A list of bonus content types used for bonus content assembly list'
-weight: 0
