@@ -1,7 +1,7 @@
 ---
 layout: getting-started
-title: Getting Started Overview
-permalink: /getting-started
+title: Overview of RHD Program goals
+permalink: /get-started
 section: getting-started
 intro_paragraph: >
   Getting Started guide is based off of the <a href="https://www.patternfly.org/v4/get-started/about" target="top">PatternFly</a> Getting Started guide.

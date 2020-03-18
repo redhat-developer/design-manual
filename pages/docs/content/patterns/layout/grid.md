@@ -1,8 +1,8 @@
 ---
-layout: pages
+layout: develop
 title: Responsive Grid
 permalink: /pages/docs/content/patterns/layout/grid
-section: pages
+section: develop
 category: pages
 intro_paragraph: >
 

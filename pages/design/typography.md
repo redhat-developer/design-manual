@@ -1,10 +1,10 @@
 ---
-layout: getting-started
+layout: design
 title: Typography
-permalink: /getting-started/typography
-section: getting-started
+permalink: /design/brand/typography
+section: design
 intro_paragraph: >
-  Fonts used by RHDDX.
+  Fonts used by the Red Hat Developer Design Team.
 ---
 
 <style>
