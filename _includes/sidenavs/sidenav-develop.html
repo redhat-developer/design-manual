@@ -1,0 +1,80 @@
+{% assign navurl = page.url | remove: 'index.html' %}
+<nav class="pf-c-nav pf-m-dark" aria-label="Global">
+<!-- Show Component navigation -->
+  {% for item in site.data.components.toc %}
+  <ul class="pf-c-nav__list">
+    <li class="pf-c-nav__item pf-m-expandable pf-m-expanded">
+      <a href="#" {% if page.title == item.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %} id="expandedNav">{{ item.title }}
+        <span class="pf-c-nav__toggle">
+          <i class="fas fa-angle-right" aria-hidden="true"></i>
+        </span>
+      </a>
+      {% for entry in item.subfolderitems %}
+      <section class="pf-c-nav__subnav" aria-labelledby="expandedNav">
+        <ul class="pf-c-nav__simple-list">
+          <li class="pf-c-nav__item">
+            {% if jekyll.environment == 'development' %}
+            <a href="{{ entry.url }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page}}</a>
+            {% elsif jekyll.environment == 'production' %}
+            <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page}}</a>
+            {% endif %}
+          </li>
+        </ul>
+      </section>
+      {% endfor %}
+    </li>
+  </ul>
+  {% endfor %}
+<!-- Show Assembly navigation -->
+  {% for item in site.data.assemblies.toc %}
+  <!-- <h2 class="pf-c-nav__section-title" id="grouped-title1">{{ item .title }}</h2> -->
+  <ul class="pf-c-nav__list">
+    <li class="pf-c-nav__item pf-m-expandable pf-m-expanded">
+      <a href="#" {% if page.title == item.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %} id="expandedNav">{{ item.title }}
+        <span class="pf-c-nav__toggle">
+          <i class="fas fa-angle-right" aria-hidden="true"></i>
+        </span>
+      </a>
+      {% for entry in item.subfolderitems %}
+      <section class="pf-c-nav__subnav" aria-labelledby="expandedNav">
+        <ul class="pf-c-nav__simple-list">
+          <li class="pf-c-nav__item">
+            {% if jekyll.environment == 'development' %}
+            <a href="{{ entry.url }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page}}</a>
+            {% elsif jekyll.environment == 'production' %}
+            <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page}}</a>
+            {% endif %}
+          </li>
+        </ul>
+      </section>
+      {% endfor %}
+    </li>
+  </ul>
+  {% endfor %}
+<!-- Show Develop section navigation -->
+  {% for item in site.data.develop.toc %}
+  <!-- <h2 class="pf-c-nav__section-title" id="grouped-title1">{{ item .title }}</h2> -->
+  <ul class="pf-c-nav__list">
+    <li class="pf-c-nav__item pf-m-expandable pf-m-expanded">
+      <a href="#" {% if page.title == item.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %} id="expandedNav">{{ item.title }}
+        <span class="pf-c-nav__toggle">
+          <i class="fas fa-angle-right" aria-hidden="true"></i>
+        </span>
+      </a>
+      {% for entry in item.subfolderitems %}
+      <section class="pf-c-nav__subnav" aria-labelledby="expandedNav">
+        <ul class="pf-c-nav__simple-list">
+          <li class="pf-c-nav__item">
+            {% if jekyll.environment == 'development' %}
+            <a href="{{ entry.url }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page}}</a>
+            {% elsif jekyll.environment == 'production' %}
+            <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page}}</a>
+            {% endif %}
+          </li>
+        </ul>
+      </section>
+      {% endfor %}
+    </li>
+  </ul>
+  {% endfor %}
+</nav>

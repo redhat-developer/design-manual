@@ -1,11 +1,17 @@
 toc:
-  - title: Getting Started Overview
+  - title: Get Started
     subfolderitems:
-      - page: Accessibility
-        url: /getting-started/accessibility
-      - page: Develop
-        url: /getting-started/develop
-      - page: Typography
-        url: /getting-started/typography
-      - page: Update this Documentation
-        url: /getting-started/update-this-documentation
+      - page: Overview of RHD Program goals
+        url: /getting-started
+      - page: Definitions of personas
+        url: /getting-started/personas
+      - page: Login to Drupal
+        url: /getting-started/drupal-login
+      # - page: Update Documentation
+      #   url: /getting-started/update-documentation
+      # - page: Fonts
+      #   url: /getting-started/fonts
+      # - page: Accessibility
+      #   url: /getting-started/accessibility
+      # - page: Develop
+      #   url: /getting-started/develop
