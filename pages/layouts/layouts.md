@@ -1,8 +1,8 @@
 ---
-layout: pages
-title: Layout Examples
+layout: develop
+title: Layouts
 permalink: /pages/layouts
-section: pages
+section: develop
 intro_paragraph: >
   Examples of various layouts available on CodePen.io
 ---
