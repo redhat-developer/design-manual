@@ -86,6 +86,7 @@ const
   function buildSass(cb) {
     return gulp.src([
       '!./styles/rhdp.scss', // ignore the rhdp.scss file due to filepath errors in automated builds
+      './styles/custom/*.scss', // include custom component styles
       './styles/partials/*.scss', // include the partial files for main.scss
       './styles/main.scss' // include the customized site file
     ])
@@ -114,6 +115,7 @@ const
     // return gulp.src(cssConfig.dev) // sets director to return as './styles/**/*.scss'
     return gulp.src([
       '!./styles/rhdp.scss', // ignore the rhdp.scss file due to filepath errors in automated builds
+      './styles/custom/*.scss', // include custom component styles
       './styles/partials/*.scss', // include the partial files for main.scss
       './styles/main.scss' // include the customized site file
     ])

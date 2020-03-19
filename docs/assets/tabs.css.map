@@ -1,0 +1,1 @@
+{"version":3,"sources":["tabs.scss"],"names":[],"mappings":"AAAA,iBACE,0BAA2B,CAC3B,yBAA0B,CAC1B,uBAAwB,CACxB,wBAAyB","file":"tabs.css","sourcesContent":[".pf-c-tabs__list {\n  list-style: none !important;\n  padding-left: 0 !important;\n  margin-top: 0 !important;\n  margin-left: 0 !important;\n}\n"]}

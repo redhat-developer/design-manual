@@ -13,7 +13,6 @@
   <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="/assets/rhdp.css">
   <link rel="stylesheet" href="/assets/main.css">
-  <script async src="/assets/js/site.js"></script>
   <script async src="/assets/js/ad.js"></script>
   {% elsif jekyll.environment == 'production' %}
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.ico">
@@ -24,12 +23,30 @@
   <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/rhdp.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
-  <script async src="{{ site.baseurl }}/assets/js/site.js"></script>
+  {% if page.custom_css %}
+    {% for css_file in page.custom_css %}
+      {% if jekyll.environment == 'development' %}
+      <link rel="stylesheet" href="/assets/{{ css_file }}.css">
+      {% elsif jekyll.environment == 'production' %}
+      <link rel="stylesheet" href="{{ site.baseurl }}/assets/{{ css_file }}.css">
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script async src="{{ site.baseurl }}/assets/js/ad.js"></script>
     {% include analytics.html %}
   {% endif %}
   <script src="https://kit.fontawesome.com/58cac63e31.js" crossorigin="anonymous"></script>
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  {% if page.custom_js %}
+    {% for js_file in page.custom_js %}
+      {% if jekyll.environment == 'development' %}
+      <script async src="/assets/js/{{ js_file }}.js"></script>
+      {% elsif jekyll.environment == 'production' %}
+      <script async src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
   <script>
     if( window.canRunAds === undefined ){
       // adblocker detected, show fallback

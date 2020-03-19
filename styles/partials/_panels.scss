@@ -1,0 +1,14 @@
+.overview-example-panel {
+  border: 1px solid #ddd;
+}
+.creation-tips-box {
+  display: block;
+  border: 1px solid #ddd;
+}
+.creation-tips {
+  transition: .5s;
+  opacity: 0;
+}
+.creation-tips-show {
+  opacity: 1;
+}

@@ -1,8 +1,5 @@
 {% assign navurl = page.url | remove: 'index.html' %}
 <ul class="pf-c-nav__horizontal-list">
-  <!-- {% if jekyll.environment == 'development' %}
-  {% elsif jekyll.environment == 'production' %}
-  {% endif %} -->
   {% if jekyll.environment == 'development' %}
   <li class="pf-c-nav__item">
     <a href="/get-started" {% if page.section == 'get-started' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Get Started">Get Started</a>

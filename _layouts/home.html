@@ -1,9 +1,20 @@
 ---
-layout: default
+layout: compress
 ---
 
-<h1>{{ page.title }}</h1>
+<!DOCTYPE html>
+<html class="pf-m-redhat-font" data-current="{{ page.section }}" lang="en-us">
 
-  {% include page-intro.html %}
+  {% include head.html %}
 
-  {{ content }}
+  <body class="rhddx line-numbers">
+    <div class="pf-c-page">
+      {% include header.html %}
+      <main class="pf-c-page__main" role="main" tab-index="-1">
+        {{ content }}
+        {% include footer.html %}
+      </main>
+    </div>
+  </body>
+
+</html>
