@@ -1,0 +1,54 @@
+.pf-c-page__main-section.rhddx-background-image {
+  background-color: transparent;
+  .pf-c-content {
+    color: #fff;
+    text-align: center;
+  }
+}
+.rhddx-background-image {
+  --rhddx-c-image--Background--xs: url("img/background-image-code-darkgray.png");
+  --rhddx-c-image--Background--sm: url("img/background-image-code-darkgray.png");
+  --rhddx-c-image--Background--md: url("img/background-image-code-darkgray.png");
+  --rhddx-c-image--Background--lg: url("img/background-image-code-darkgray.png");
+  --rhddx-c-image--Background--xl: url("img/background-image-code-darkgray.png");
+  --rhddx-c-background-image--Filter: url("img/background-filter.svg#image_overlay");
+
+  &::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    @media (max-width: 767.98px) {
+      height: 100%;
+    }
+    content: "";
+    background-color: rgba(15, 15, 15, 0.98);
+    background-image: var(--rhddx-c-image--Background--xs);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // /* stylelint-disable */
+    @media (min-width: 575.98px) {
+      background-image: var(--rhddx-c-image--Background--xs);
+    }
+
+    @media (min-width: 767.98px) {
+      background-image: var(--rhddx-c-image--Background--sm);
+    }
+
+    @media (min-width: 991.98px) {
+      background-image: var(--rhddx-c-image--Background--md);
+    }
+
+    @media (min-width: 1199.98px) {
+      background-image: var(--rhddx-c-image--Background--lg);
+    }
+    // /* stylelint-enable */
+
+    @media (min-width: 1200px) {
+    background-image: var(--rhddx-c-image--Background--xl);
+    }
+  }
+}

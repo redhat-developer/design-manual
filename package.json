@@ -30,6 +30,7 @@
   "dependencies": {
     "@patternfly/patternfly": "2.65.2",
     "@skpm/child_process": "0.4.1",
+    "@types/jquery": "^3.3.33",
     "autoprefixer": "9.7.3",
     "browser-sync": "2.26.7",
     "cssnano": "4.1.10",

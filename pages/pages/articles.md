@@ -1,10 +1,11 @@
 ---
 layout: pages
 title: Articles
+subtitle: Test article for design components
 permalink: /pages/articles
-section: pages
-intro_paragraph: >
-
+custom_js: panel
+custom_css: tabs
+section: design
 ---
 
 <section class="pf-c-content">
@@ -13,7 +14,6 @@ intro_paragraph: >
     <div class="pf-l-grid__item pf-m-12-col pf-u-pb-xl">
       <div class="pf-l-grid">
         <div class="pf-l-grid__item pf-m-12-col pf-u-my-0 pf-u-mx-0">
-          <h1>Test article for design components</h1>
           <small>
             <date>August 9, 2019</date>
           <i class="fab fa-twitter"></i><i class="fab fa-facebook-square"></i><i class="fab fa-linkedin"></i><i class="fas fa-envelope"></i>
