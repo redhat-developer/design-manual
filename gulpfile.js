@@ -212,7 +212,7 @@ const
   }
 
   function buildJekyllProd(cb) {
-    cp.exec('JEKYLL_ENV=production jekyll build', function(err, stdout, stderr) {
+    cp.exec('JEKYLL_ENV=production bundle exec jekyll build', function(err, stdout, stderr) {
       console.log(stdout);
       console.log(stderr);
       cb(err);
@@ -230,7 +230,7 @@ const
 
   // Task to serve the website locally
   function serveJekyll(cb) {
-    cp.exec('JEKYLL_ENV=production jekyll serve --livereload', function(err, stdout, stderr) {
+    cp.exec('JEKYLL_ENV=production bundle exec jekyll serve --livereload', function(err, stdout, stderr) {
       console.log(stdout);
       console.log(stderr);
       cb(err);
