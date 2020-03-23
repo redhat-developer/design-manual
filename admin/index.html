@@ -5,62 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Red Hat Developer Design Manual Admin Portal</title>
     <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:500,700|Red+Hat+Text:400,500&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      CMS.registerPreviewStyle("/admin.css");
+    </script>
   </head>
-  <style>
-    body {
-      height: 100vh;
-      font-family: 'Red Hat Text', sans-serif;
-      display: grid;
-      grid-template-areas:
-        "header"
-        "section";
-      grid-template-rows: 100px 1fr;
-      grid-template-columns: 1fr;
-      grid-gap: 5px;
-      justify-items: center;
-    }
-    header {
-      grid-area: header;
-      padding: 10px 0;
-    }
-    section {
-      grid-area: section;
-      padding: 10px 0;
-    }
-    h1 {
-      font-family: 'Red Hat Display', sans-serif;
-      margin: 15px 0;
-    }
-    .layout {
-      text-align: center;
-    }
-    a {
-      text-decoration: none;
-    }
-    .button {
-      padding: 8px 50px;
-      background: #fff;
-      border: 3px solid #06c;
-      color: #06c;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: 0.2s ease;
-      cursor: pointer;
-    }
-    .button:hover{
-      color: #fff;
-      background: #06c;
-      border-color: #fff;
-      transition: 0.2s ease;
-    }
-  </style>
   <body>
-    <header>
-      <h1>Red Hat Developer Design Manual Admin Portal</h1>
-    </header>
-    <section>
-      <a href="https://redhat-developer-design-manual.netlify.com/admin/" alt="Log in" class="button">Log in</a>
-    </section>
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   </body>
 </html>
