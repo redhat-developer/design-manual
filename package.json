@@ -16,7 +16,7 @@
     "release": "scripts/./release.sh prerelease",
     "prodDeploy": "npm run deployment && npm run release",
     "netlify": "netlify dev",
-    "build-netlify": "gulp deploy"
+    "build-netlify": "gulp netlify"
   },
   "sass": {
     "includePaths": [

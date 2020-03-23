@@ -280,4 +280,14 @@ const
     cssDev,
     buildJekyllProd
   );
+
+  exports.netlify = gulp.series(
+    copyStatic,
+    minimizeImages,
+    jsDev,
+    rhdpCSS,
+    cssDev,
+    buildJekyll
+  );
+
 })();

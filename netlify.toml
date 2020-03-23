@@ -5,12 +5,12 @@
   command = "scripts/./submodule.sh && npm run build-netlify"
 
 [build.environment]
-  JEKYLL_ENV = "production"
+  JEKYLL_ENV = "development"
 
 # Production context: all deploys from the Production branch set in your site's
 # deploy contexts will inherit these settings.
 [context.production]
-  environment = { JEKYLL_ENV = "production" }
+  environment = { JEKYLL_ENV = "development" }
   base = "/"
   publish = "docs/"
   # command = "scripts/./submodule.sh && npm run build && rm -rf docs && mkdir docs && rm -rf _site/docs && cp -r _site/** docs"
