@@ -1,8 +1,9 @@
 ---
 layout: design
-title: Design Overview / Getting Started
+category: design
+section: Design
 permalink: /design
-section: design
+title: Design Overview / Getting Started
 intro_paragraph: >
 
 ---

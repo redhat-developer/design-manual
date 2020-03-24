@@ -1,11 +1,14 @@
 ---
 layout: pages
+category: create
+section: Content Types
+permalink: /create/articles
 title: Articles
-subtitle: Test article for design components
-permalink: /pages/articles
+intro_paragraph: >
+
 custom_js: panel
 custom_css: tabs
-section: design
+compose_image: wordpress-articles.png
 ---
 
 <section class="pf-c-content">

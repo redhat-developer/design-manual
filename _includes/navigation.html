@@ -2,16 +2,16 @@
 <ul class="pf-c-nav__horizontal-list">
   {% if jekyll.environment == 'development' %}
   <li class="pf-c-nav__item">
-    <a href="/get-started" {% if page.section == 'get-started' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Get Started">Get Started</a>
+    <a href="/get-started" {% if page.category == 'get-started' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Get Started">Get Started</a>
   </li>
   <li class="pf-c-nav__item">
-    <a href="/design" {% if page.section == 'design'' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Design">Design</a>
+    <a href="/design" {% if page.category == 'design'' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Design">Design</a>
   </li>
   <li class="pf-c-nav__item">
-    <a href="/develop" {% if page.section == 'develop' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Develop">Develop</a>
+    <a href="/develop" {% if page.category == 'develop' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Develop">Develop</a>
   </li>
   <li class="pf-c-nav__item">
-    <a href="/create" {% if page.section == 'create' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Create">Create</a>
+    <a href="/create" {% if page.category == 'create' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Create">Create</a>
   </li>
   <!-- <li class="pf-c-nav__item">
     <a href="/assemblies" {% if page.section == 'assemblies' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Assemblies">Assemblies</a>
@@ -21,16 +21,16 @@
   </li> -->
   {% elsif jekyll.environment == 'production' %}
   <li class="pf-c-nav__item">
-    <a href="{{ site.baseurl }}/get-started" {% if page.section == 'get-started' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Get Started">Get Started</a>
+    <a href="{{ site.baseurl }}/get-started" {% if page.category == 'get-started' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Get Started">Get Started</a>
   </li>
   <li class="pf-c-nav__item">
-    <a href="{{ site.baseurl }}/design" {% if page.section == 'design'' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Design">Design</a>
+    <a href="{{ site.baseurl }}/design" {% if page.category == 'design'' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Design">Design</a>
   </li>
   <li class="pf-c-nav__item">
-    <a href="{{ site.baseurl }}/develop" {% if page.section == 'develop' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Develop">Develop</a>
+    <a href="{{ site.baseurl }}/develop" {% if page.category == 'develop' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Develop">Develop</a>
   </li>
   <li class="pf-c-nav__item">
-    <a href="{{ site.baseurl }}/create" {% if page.section == 'create' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Create">Create</a>
+    <a href="{{ site.baseurl }}/create" {% if page.category == 'create' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Create">Create</a>
   </li>
   <!-- <li class="pf-c-nav__item">
     <a href="{{ site.baseurl }}/assemblies" {% if page.section == 'assemblies' %} class="pf-c-nav__link pf-m-current" aria-current="page" {% else %} class="pf-c-nav__link" {% endif %} aria-label="Assemblies">Assemblies</a>

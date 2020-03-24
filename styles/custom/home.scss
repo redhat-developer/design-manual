@@ -1,0 +1,17 @@
+.rhddx-m-homepage {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: transparent;
+  & > * {
+    color: #fff;
+  }
+  .pf-l-flex__item {
+    margin-right: 0;
+  }
+  a {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+  }
+}

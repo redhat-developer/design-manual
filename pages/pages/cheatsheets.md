@@ -1,8 +1,9 @@
 ---
 layout: pages
-title: Cheatsheets
+category: create
+section: Content Types
 permalink: /pages/cheatsheets
-section: pages
+title: Cheatsheets
 intro_paragraph: >
 
 ---

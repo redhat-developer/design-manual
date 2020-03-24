@@ -1,7 +1,10 @@
 ---
 layout: design
 title: Design Mocks
+subtitle:
 permalink: /design/design-mocks
+custom_js:
+custom_css:
 section: design
 date: '02-17-2020'
 intro_paragraph: >

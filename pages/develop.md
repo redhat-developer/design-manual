@@ -1,8 +1,9 @@
 ---
 layout: develop
-title: Develop Overview / Getting Started
+category: develop
+section: Develop
 permalink: /develop
-section: develop
+title: Overview
 intro_paragraph: >
 
 ---

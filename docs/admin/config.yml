@@ -116,8 +116,14 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Title"
         name: "title"
         widget: "string"
-        hint: "The title and link to the page"
-        tagname: "h1"
+        hint: "The title of the page"
+        tagname: "h4"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "string"
+        hint: "Page category - matches what dropdown it should appear under"
+        tagname: "h3"
         required: true
       - label: "URL"
         name: "permalink"
@@ -125,6 +131,77 @@ collections: # A list of collections the CMS should be able to edit
         default: "/{{page-title}}"
         hint: "If applicable, replace {{page-title}} with the title of the page"
         required: true
+      - label: "Custom JS File"
+        name: "custom_js"
+        widget: "string"
+        default: ""
+        hint: "Add a custom JS file to the page."
+        required: false
+      - label: "Custom CSS File"
+        name: "custom_css"
+        widget: "string"
+        default: ""
+        hint: "Add a custom CSS file to the page."
+        required: false
+      - label: "Section"
+        name: "section"
+        widget: "select"
+        hint: "The area (section) where this page will live"
+        options:
+          - { label: "Example pages", value: "pages" }
+          - { label: "Design pages", value: "design" }
+          - { label: "Getting Started", value: "getting-started" }
+          - { label: "Assembly Examples", value: "assemblies" }
+          - { label: "Contact pages", value: "contact" }
+          - { label: "About pages", value: "page" }
+        required: true
+      - {label: "Date", name: "date", widget: "datetime", format: "MM-DD-YYYY HH:mm:ss", required: true}
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
+  - name: "develop"
+    label: "Develop Pages"
+    folder: "pages/develop"
+    sort: "title:asc"
+    create: true # Allow users to create new Design pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        hint: "Select a layout to use (should match Section)"
+        default: "design"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title and link to the page"
+        tagname: "h4"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "string"
+        hint: "Page category - matches what dropdown it should appear under"
+        tagname: "h3"
+        required: true
+        required: false
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/{{page-title}}"
+        hint: "If applicable, replace {{page-title}} with the title of the page"
+        required: true
+      - label: "Custom JS File"
+        name: "custom_js"
+        widget: "string"
+        default: ""
+        hint: "Add a custom JS file to the page."
+        required: false
+      - label: "Custom CSS File"
+        name: "custom_css"
+        widget: "string"
+        default: ""
+        hint: "Add a custom CSS file to the page."
+        required: false
       - label: "Section"
         name: "section"
         widget: "select"
@@ -157,7 +234,13 @@ collections: # A list of collections the CMS should be able to edit
         name: "title"
         widget: "string"
         hint: "The title and link to the page"
-        tagname: "h1"
+        tagname: "h4"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "string"
+        hint: "Page category - matches what dropdown it should appear under"
+        tagname: "h3"
         required: true
       - label: "URL"
         name: "permalink"
@@ -165,6 +248,18 @@ collections: # A list of collections the CMS should be able to edit
         default: "/{{page-title}}"
         hint: "If applicable, replace {{page-title}} with the title of the page"
         required: true
+      - label: "Custom JS File"
+        name: "custom_js"
+        widget: "string"
+        default: ""
+        hint: "Add a custom JS file to the page."
+        required: false
+      - label: "Custom CSS File"
+        name: "custom_css"
+        widget: "string"
+        default: ""
+        hint: "Add a custom CSS file to the page."
+        required: false
       - label: "Section"
         name: "section"
         widget: "select"
@@ -196,7 +291,13 @@ collections: # A list of collections the CMS should be able to edit
         name: "title"
         widget: "string"
         hint: "The title and link to the page"
-        tagname: "h1"
+        tagname: "h4"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "string"
+        hint: "Page category - matches what dropdown it should appear under"
+        tagname: "h3"
         required: true
       - label: "URL"
         name: "permalink"
@@ -204,6 +305,18 @@ collections: # A list of collections the CMS should be able to edit
         default: "/{{page-title}}"
         hint: "If applicable, replace {{page-title}} with the title of the page"
         required: true
+      - label: "Custom JS File"
+        name: "custom_js"
+        widget: "string"
+        default: ""
+        hint: "Add a custom JS file to the page."
+        required: false
+      - label: "Custom CSS File"
+        name: "custom_css"
+        widget: "string"
+        default: ""
+        hint: "Add a custom CSS file to the page."
+        required: false
       - label: "Section"
         name: "section"
         widget: "select"
@@ -235,7 +348,13 @@ collections: # A list of collections the CMS should be able to edit
         name: "title"
         widget: "string"
         hint: "The title and link to the page"
-        tagname: "h1"
+        tagname: "h4"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "string"
+        hint: "Page category - matches what dropdown it should appear under"
+        tagname: "h3"
         required: true
       - label: "URL"
         name: "permalink"
@@ -243,6 +362,18 @@ collections: # A list of collections the CMS should be able to edit
         default: "/{{page-title}}"
         hint: "If applicable, replace {{page-title}} with the title of the page"
         required: true
+      - label: "Custom JS File"
+        name: "custom_js"
+        widget: "string"
+        default: ""
+        hint: "Add a custom JS file to the page."
+        required: false
+      - label: "Custom CSS File"
+        name: "custom_css"
+        widget: "string"
+        default: ""
+        hint: "Add a custom CSS file to the page."
+        required: false
       - label: "Section"
         name: "section"
         widget: "select"
@@ -268,9 +399,18 @@ collections: # A list of collections the CMS should be able to edit
         file: "_data/assemblies.yml"
         fields:
           - label: "Assemblies Page Items"
-            name: "items"
+            name: "toc"
             widget: "list"
             fields:
-              - {label: "Name", name: name, widget: string}
-              - {label: URL, name: url, widget: string}
-              - {label: "Title", name: title, width: string}
+              - {label: "Page", name: page, width: string}
+              - {label: "URL", name: url, widget: string}
+      - label: "Components Navigation"
+        name: "components-nav"
+        file: "_data/components.yml"
+        fields:
+          - label: "Components Items"
+            name: "toc"
+            widget: "list"
+            fields:
+              - {label: "Page", name: page, width: string}
+              - {label: "URL", name: url, widget: string}

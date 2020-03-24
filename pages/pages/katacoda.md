@@ -1,8 +1,9 @@
 ---
 layout: pages
-title: Katacoda
+category: create
+section: Content Types
 permalink: /pages/katacoda
-section: pages
+title: Katacoda
 intro_paragraph: >
   This is an example of the Katacoda page.
 ---
