@@ -1,8 +1,9 @@
 ---
 layout: pages
-title: Collection
+category: create
+section: Content Types
 permalink: /pages/collection
-section: pages
+title: Collection
 intro_paragraph: >
 
 ---

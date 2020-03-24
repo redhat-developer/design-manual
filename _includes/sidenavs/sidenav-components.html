@@ -1,9 +1,9 @@
 {% assign navurl = page.url | remove: 'index.html' %}
 {% for item in site.data.components.toc %}
-<nav class="pf-c-nav pf-m-dark" aria-label="Global">
+<nav class="pf-c-nav" aria-label="Global">
   <!-- <h2 class="pf-c-nav__section-title" id="grouped-title1">{{ item .title }}</h2> -->
   <ul class="pf-c-nav__list">
-    <li class="pf-c-nav__item pf-m-expandable pf-m-expanded">
+    <li class="pf-c-nav__item pf-m-expandable">
       <a href="#" {% if page.title == item.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %} id="expandedNav">{{ item.title }}
         <span class="pf-c-nav__toggle">
           <i class="fas fa-angle-right" aria-hidden="true"></i>

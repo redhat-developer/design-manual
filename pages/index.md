@@ -1,16 +1,52 @@
 ---
 layout: home
-title: Build here. Go anywhere.
+title:
+heading: Build here. Go anywhere.
+subheader: developers.redhat.com
+intro: >
+  This guide will serve as a home base for the Red Hat Developer story, messaging, and visual brand language. It’s a place you can always return to when you have questions about how to best represent Red Hat Developer through messaging or visual elements.
 permalink: /
 section: home
+custom_js: [cards, home]
+custom_css: [cards, home]
 ---
-
-<section class="pf-c-page__main-section rhddx-background-image pf-m-fill">
-  <div class="pf-l-grid pf-c-content">
-    <div class="pf-l-grid__item pf-u-py-md pf-u-pl-md">
-      <h1>{{ page.title }}</h1>
-      <h2>developers.redhat.com</h2>
-      <p>This guide will serve as a home base for the Red Hat Developer story, messaging, and visual brand language. It's a place you can always return to when you have questions about how to best represent Red Hat Developer through messaging or visual elements.</p>
+<div class="rhddx-background-image"></div>
+<section class="pf-c-page__main-section rhddx-m-homepage">
+  <div>
+    <div class="pf-l-flex pf-u-mb-lg pf-u-text-align-center" style="margin: 0 auto;">
+      <div class="pf-l-flex__item">
+        <h1>{{ page.heading }}</h1>
+        <a href="https://developers.redhat.com" target="top">{{ page.subheader }}</a>
+        <p class="pf-u-my-xl">{{ page.intro }}</p>
+      </div>
     </div>
+    <div class="pf-l-flex pf-m-justify-content-space-evenly">
+      <div class="pf-l-flex__item pf-m-3-col-on-md pf-u-py-xl pf-u-py-0-on-lg pf-u-pr-0 pf-u-pr-xl-on-md">
+        <div class="pf-c-card rhddx-c-card rhddx-m-developer">
+          <div class="pf-c-card__header">
+            <i class="fad fa-laptop-code fa-3x"></i>
+          </div>
+          <div class="pf-c-card__body">I'm a<br>developer.</div>
+        </div>
+      </div>
+      <div class="pf-l-flex__item pf-m-3-col-on-md pf-u-py-xl pf-u-py-0-on-lg pf-u-pr-0 pf-u-pr-xl-on-md">
+        <div class="pf-c-card rhddx-c-card rhddx-m-designer">
+          <div class="pf-c-card__header">
+            <i class="fad fa-swatchbook fa-3x"></i>
+          </div>
+          <div class="pf-c-card__body">I'm a<br>designer.</div>
+        </div>
+      </div>
+      <div class="pf-l-flex__item pf-m-3-col-on-md pf-u-py-xl pf-u-py-0-on-lg pf-u-pr-0">
+        <div class="pf-c-card rhddx-c-card rhddx-m-creator">
+          <div class="pf-c-card__header">
+            <i class="fad fa-pencil-alt fa-3x"></i>
+          </div>
+          <div class="pf-c-card__body">I'm a<br>content creator.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
   </div>
 </section>

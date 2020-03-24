@@ -1,8 +1,9 @@
 ---
 layout: pages
-title: Ebooks
+category: create
+section: Content Types
 permalink: /pages/ebooks
-section: pages
+title: Ebooks
 intro_paragraph: >
 
 ---

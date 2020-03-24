@@ -1,6 +1,12 @@
 toc:
   - title: Content types
     subfolderitems:
+      - page: Articles
+        url: /create/articles
+      - page: Products
+        url: /create/products
+      - page: Topics
+        url: /create/topics
       - page: Name
         url:
       - page: Example

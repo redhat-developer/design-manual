@@ -1,8 +1,11 @@
 ---
 layout: design
-title: Red Hat Developer Story and Messaging
+category: design
+section: RHD Brand Elements
 permalink: brand-assets/RHD_Story_Messaging/story-messaging
-section: design
+title: Story / Messaging
+intro_paragraph: >
+
 image1: 01_RHD_Brand_Layers.jpg
 image2: 02_RHD_participants_plus_program.jpg
 image3: 03_RHD_the_journey.jpg
@@ -10,8 +13,6 @@ image4: 04_RHD_organizing_principles.jpg
 image5: 05_RHD_messaging_principles.jpg
 image6: 06_RHD_messaging_architecture.jpg
 image7: 07_RHD_supporting_headlines.jpg
-intro_paragraph: >
-
 ---
 
 ## {{ page.image1 }}

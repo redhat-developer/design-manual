@@ -1,8 +1,9 @@
 ---
 layout: create
-title: Create Overview / Getting Started
+category: create
+section: Create
 permalink: /create
-section: create
+title: Create Overview / Getting Started
 intro_paragraph: >
 
 ---

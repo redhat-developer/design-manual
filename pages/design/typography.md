@@ -1,10 +1,13 @@
 ---
 layout: design
-title: Typography
+category: design
+section: RHD Brand Elements
 permalink: /design/brand/typography
-section: design
+title: Typography
 intro_paragraph: >
   Fonts used by the Red Hat Developer Design Team.
+custom_js:
+custom_css:
 ---
 
 <style>

@@ -1,10 +1,14 @@
 ---
 layout: pages
-title: Videos
+category: create
+section: Content Types
 permalink: /pages/videos
-section: pages
+title: Videos
 intro_paragraph: >
 
+custom_js:
+custom_css:
+image:
 ---
 
 {% include missing-code.html %}
