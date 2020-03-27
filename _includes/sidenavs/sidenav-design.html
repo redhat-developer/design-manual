@@ -14,9 +14,9 @@
         <ul class="pf-c-nav__simple-list">
           <li class="pf-c-nav__item">
             {% if jekyll.environment == 'development' %}
-            <a href="{{ entry.url }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page}}</a>
+            <a href="{{ entry.url }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
             {% elsif jekyll.environment == 'production' %}
-            <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page}}</a>
+            <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
             {% endif %}
           </li>
         </ul>
@@ -38,9 +38,9 @@
         <ul class="pf-c-nav__simple-list">
           <li class="pf-c-nav__item">
             {% if jekyll.environment == 'development' %}
-            <a href="{{ entry.url }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page}}</a>
+            <a href="{{ entry.url }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
             {% elsif jekyll.environment == 'production' %}
-            <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page}}</a>
+            <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
             {% endif %}
           </li>
         </ul>
@@ -49,14 +49,14 @@
     </li>
   </ul>
   {% endfor %}
-<!-- Link off to Develop section -->
-<ul class="pf-c-nav__list">
-  <li class="pf-c-nav__item">
-    {% if jekyll.environment == 'development' %}
-    <a href="/develop" class="pf-c-nav__link">Develop</a>
-    {% elsif jekyll.environment == 'production' %}
-    <a href="{{ site.baseurl }}/develop" class="pf-c-nav__link">Develop</a>
-    {% endif %}
-  </li>
-</ul>
+  <!-- Link off to Develop section -->
+  <ul class="pf-c-nav__list">
+    <li class="pf-c-nav__item">
+      {% if jekyll.environment == 'development' %}
+      <a href="/develop" class="pf-c-nav__link">Develop</a>
+      {% elsif jekyll.environment == 'production' %}
+      <a href="{{ site.baseurl }}/develop" class="pf-c-nav__link">Develop</a>
+      {% endif %}
+    </li>
+  </ul>
 </nav>

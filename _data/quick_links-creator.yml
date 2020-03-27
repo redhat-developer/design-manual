@@ -1,0 +1,9 @@
+item:
+  - title: Quick links
+    subfolderitems:
+      - page: Articles
+        url: /create/articles
+      - page: Products
+        url: /create/products
+      - page: Topics
+        url: /create/topics

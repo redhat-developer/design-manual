@@ -1,0 +1,9 @@
+item:
+  - title: Quick links
+    subfolderitems:
+      - page: Components
+        url: /components
+      - page: Assemblies
+        url: /assemblies
+      - page: Layouts
+        url: /layouts

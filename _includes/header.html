@@ -1,14 +1,12 @@
 <header role="banner" class="pf-c-page__header rhddx-c-navigation--horizontal">
   <div class="pf-c-page__header-brand">
-    {% if jekyll.environment == 'development' %}
-    <a class="pf-c-page__header-brand-link" href="/">
-      <img class="pf-c-brand" src="/assets/img/NewRHDFullLogo_4-color_white-wordmark.png" alt="Red Hat Developers logo" />
-    </a>
-    {% elsif jekyll.environment == 'production' %}
     <a class="pf-c-page__header-brand-link" href="{{ '/' | relative_url }}">
+      {% if jekyll.environment == 'development' %}
+      <img class="pf-c-brand" src="/assets/img/NewRHDFullLogo_4-color_white-wordmark.png" alt="Red Hat Developers logo" />
+      {% elsif jekyll.environment == 'production' %}
       <img class="pf-c-brand" src="{{ site.baseurl }}/assets/img/NewRHDFullLogo_4-color_white-wordmark.png" alt="Red Hat Developers logo" />
+      {% endif %}
     </a>
-    {% endif %}
   </div>
   <div class="pf-c-page__header-nav">
     <nav class="pf-c-nav" aria-label="Global">
