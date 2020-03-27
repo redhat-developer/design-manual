@@ -1,3 +1,6 @@
+.rhddx-c-page__home {
+  background-color: transparent;
+}
 .rhddx-m-homepage {
   max-width: 1200px;
   margin: 0 auto;
@@ -5,13 +8,9 @@
   & > * {
     color: #fff;
   }
-  .pf-l-flex__item {
-    margin-right: 0;
-  }
-  a {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 34px;
+  .rhddx-l-card__intro {
+    .pf-l-flex__item {
+      margin-right: 0;
+    }
   }
 }

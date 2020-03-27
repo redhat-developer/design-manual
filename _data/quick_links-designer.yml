@@ -1,0 +1,9 @@
+item:
+  - title: Quick links
+    subfolderitems:
+      - page: RHD Brand elements
+        url: /
+      - page: Extended brand elements
+        url: /
+      - page: Campaings / Sub-brands
+        url: /

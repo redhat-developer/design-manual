@@ -5,7 +5,7 @@
   command = "scripts/./submodule.sh && npm run build-netlify"
 
 [build.environment]
-  JEKYLL_ENV = "development"
+  JEKYLL_ENV = "production"
 
 # Production context: all deploys from the Production branch set in your site's
 # deploy contexts will inherit these settings.

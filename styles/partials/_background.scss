@@ -6,11 +6,11 @@
   }
 }
 .rhddx-background-image {
-  --rhddx-c-image--Background--xs: url("img/hero_background.svg");
-  --rhddx-c-image--Background--sm: url("img/hero_background.svg");
-  --rhddx-c-image--Background--md: url("img/hero_background.svg");
-  --rhddx-c-image--Background--lg: url("img/hero_background.svg");
-  --rhddx-c-image--Background--xl: url("img/hero_background.svg");
+  --rhddx-c-image--Background--xs: url("img/hero_background.png");
+  --rhddx-c-image--Background--sm: url("img/hero_background.png");
+  --rhddx-c-image--Background--md: url("img/hero_background.png");
+  --rhddx-c-image--Background--lg: url("img/hero_background.png");
+  --rhddx-c-image--Background--xl: url("img/hero_background.png");
 
   &::before {
     position: fixed;

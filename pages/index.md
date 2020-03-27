@@ -1,6 +1,6 @@
 ---
 layout: home
-title:
+title: Design Manual
 heading: Build here. Go anywhere.
 subheader: developers.redhat.com
 intro: >
@@ -10,17 +10,16 @@ section: home
 custom_js: [cards, home]
 custom_css: [cards, home]
 ---
-<div class="rhddx-background-image"></div>
 <section class="pf-c-page__main-section rhddx-m-homepage">
   <div>
     <div class="pf-l-flex pf-u-mb-lg pf-u-text-align-center" style="margin: 0 auto;">
       <div class="pf-l-flex__item">
-        <h1>{{ page.heading }}</h1>
-        <a href="https://developers.redhat.com" target="top">{{ page.subheader }}</a>
-        <p class="pf-u-my-xl">{{ page.intro }}</p>
+        <h1 class="pf-c-title pf-m-4xl">{{ page.heading }}</h1>
+        <a href="https://developers.redhat.com" target="top" class="pf-c-title pf-m-3xl">{{ page.subheader }}</a>
+        <p class="pf-u-my-xl pf-m-lg">{{ page.intro }}</p>
       </div>
     </div>
-    <div class="pf-l-flex pf-m-justify-content-space-evenly">
+    <div class="pf-l-flex pf-m-justify-content-space-evenly rhddx-l-card__intro">
       <div class="pf-l-flex__item pf-m-3-col-on-md pf-u-py-xl pf-u-py-0-on-lg pf-u-pr-0 pf-u-pr-xl-on-md">
         <div class="pf-c-card rhddx-c-card rhddx-m-developer">
           <div class="pf-c-card__header">
@@ -47,6 +46,16 @@ custom_css: [cards, home]
       </div>
     </div>
   </div>
-  <div>
+  <div class="pf-u-my-2xl">
+    <div class="pf-l-flex">
+      <div class="pf-l-flex__item pf-m-grow">
+        <!-- I'm a developer -->
+        {% include developer-quicklink.html %}
+        <!-- I'm a designer -->
+        {% include designer-quicklink.html %}
+        <!-- I'm a content creator -->
+        {% include creator-quicklink.html %}
+      </div>
+    </div>
   </div>
 </section>
