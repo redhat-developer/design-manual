@@ -47,15 +47,15 @@
     &:hover .rhddx-c-button--new_icon {
       padding-right: .2em; // keep new icon inline with larger edit icon
       padding-left: .7em;
-      border-left: 1px solid hsl(207, 68%, 70%);
+      border-left: 1px solid rgba(126, 184, 231, 1);
       margin-left: .5em;
     }
   }
 }
 .rhddx-c-button--3d {
   border: none;
-  background-color: hsl(240, 14%, 93%);
-  -webkit-tap-highlight-color: hsla(0, 0%, 100%, 0);
+  background-color: rgba(235, 235, 240, 1);
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   user-select: none;
   position: relative;
   z-index: 1;
@@ -82,7 +82,7 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(235,235,240);
+    background-color: rgba(235, 235, 240, 1);
     z-index: -1;
   }
   &:hover, &:focus {

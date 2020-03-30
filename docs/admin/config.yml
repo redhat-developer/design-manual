@@ -58,8 +58,8 @@ collections: # A list of collections the CMS should be able to edit
       - label: "URL"
         name: "permalink"
         widget: "string"
-        default: "/{{category}}/{{page-title}}"
-        hint: "If applicable, replace {{page-title}} with the title of the page"
+        default: "/{{category}}/{{ page.title }}"
+        hint: "If applicable, replace {{ page.title }} with the title of the page"
         required: true
       - label: "Title"
         name: "title"
@@ -84,25 +84,19 @@ collections: # A list of collections the CMS should be able to edit
         required: true
       - label: "Category"
         name: "category"
-        widget: "select"
-        hint: "Select a category to use - should match primary nav that this page will reside under."
-        options:
-          - { label: "Getting Started", value: "getting-started" }
-          - { label: "Designer pages", value: "design" }
-          - { label: "Developer pages", value: "develop" }
-          - { label: "Creator pages", value: "create" }
-          - { label: "About pages", value: "page" }
+        widget: "hidden"
+        default: "getting-started"
         required: true
       - label: "Section"
         name: "section"
         widget: "string"
-        hint: "This should match the sidenav parent item."
+        hint: "This should match the sidenav parent item. If a parent, leave blank."
         required: false
       - label: "URL"
         name: "permalink"
         widget: "string"
-        default: "/{{category}}/{{page-title}}"
-        hint: "If applicable, replace {{page-title}} with the title of the page"
+        default: "/{{category}}/{{ page.title }}"
+        hint: "If applicable, replace {{ page.title }} with the title of the page"
         required: true
       - label: "Title"
         name: "title"
@@ -145,14 +139,8 @@ collections: # A list of collections the CMS should be able to edit
         required: true
       - label: "Category"
         name: "category"
-        widget: "select"
-        hint: "Select a category to use - should match primary nav that this page will reside under."
-        options:
-          - { label: "Getting Started", value: "getting-started" }
-          - { label: "Designer pages", value: "design" }
-          - { label: "Developer pages", value: "develop" }
-          - { label: "Creator pages", value: "create" }
-          - { label: "About pages", value: "page" }
+        widget: "hidden"
+        default: "design"
         required: true
       - label: "Section"
         name: "section"
@@ -163,8 +151,8 @@ collections: # A list of collections the CMS should be able to edit
       - label: "URL"
         name: "permalink"
         widget: "string"
-        default: "/{{category}}/{{page-title}}"
-        hint: "If applicable, replace {{page-title}} with the title of the page"
+        default: "/{{category}}/{{ page.title }}"
+        hint: "If applicable, replace {{ page.title }} with the title of the page"
         required: true
       - label: "Title"
         name: "title"
@@ -207,14 +195,8 @@ collections: # A list of collections the CMS should be able to edit
         required: true
       - label: "Category"
         name: "category"
-        widget: "select"
-        hint: "Select a category to use - should match primary nav that this page will reside under."
-        options:
-          - { label: "Getting Started", value: "getting-started" }
-          - { label: "Designer pages", value: "design" }
-          - { label: "Developer pages", value: "develop" }
-          - { label: "Creator pages", value: "create" }
-          - { label: "About pages", value: "page" }
+        widget: "hidden"
+        default: "category"
         required: true
       - label: "Section"
         name: "section"
@@ -225,8 +207,8 @@ collections: # A list of collections the CMS should be able to edit
       - label: "URL"
         name: "permalink"
         widget: "string"
-        default: "/{{category}}/{{page-title}}"
-        hint: "If applicable, replace {{page-title}} with the title of the page"
+        default: "/{{category}}/{{ page.title }}"
+        hint: "If applicable, replace {{ page.title }} with the title of the page"
         required: true
       - label: "Title"
         name: "title"
@@ -269,14 +251,8 @@ collections: # A list of collections the CMS should be able to edit
         required: true
       - label: "Category"
         name: "category"
-        widget: "select"
-        hint: "Select a category to use - should match primary nav that this page will reside under."
-        options:
-          - { label: "Getting Started", value: "getting-started" }
-          - { label: "Designer pages", value: "design" }
-          - { label: "Developer pages", value: "develop" }
-          - { label: "Creator pages", value: "create" }
-          - { label: "About pages", value: "page" }
+        widget: "hidden"
+        default: "create"
         required: true
       - label: "Section"
         name: "section"
@@ -287,8 +263,8 @@ collections: # A list of collections the CMS should be able to edit
       - label: "URL"
         name: "permalink"
         widget: "string"
-        default: "/{{category}}/{{page-title}}"
-        hint: "If applicable, replace {{page-title}} with the title of the page"
+        default: "/{{category}}/{{ page.title }}"
+        hint: "If applicable, replace {{ page.title }} with the title of the page"
         required: true
       - label: "Title"
         name: "title"
@@ -337,15 +313,15 @@ collections: # A list of collections the CMS should be able to edit
         required: true
       - label: "Category"
         name: "category"
-        widget: "string"
-        hint: "Page category - matches what dropdown it should appear under"
+        widget: "hidden"
+        default: "create"
         tagname: "h3"
         required: true
       - label: "URL"
         name: "permalink"
         widget: "string"
-        default: "/{{page-title}}"
-        hint: "If applicable, replace {{page-title}} with the title of the page"
+        default: "/{{ page.title }}"
+        hint: "If applicable, replace {{ page.title }} with the title of the page"
         required: true
       - label: "Custom JS File"
         name: "custom_js"
@@ -372,102 +348,3 @@ collections: # A list of collections the CMS should be able to edit
         required: true
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: true}
-  # Navigation
-  - name: "options"
-    label: "Navigations"
-    delete: false
-    editor:
-      preview: false
-    files:
-      - name: "assemblies"
-        label: "Assemblies Page Navigation"
-        file: "_data/assemblies.yml"
-        description: "Used for creating the vertival navigation on Assembly example pages."
-        fields:
-          - name: "toc"
-            label: "Assemblies"
-            widget: "list"
-            fields:
-              subfolderitems:
-                - { label: "Page", name: page, widget: string }
-                - { label: "URL", name: url, widget: string }
-      - label: "Components Navigation"
-        name: "components-nav"
-        file: "_data/components.yml"
-        fields:
-          - label: "Components Items"
-            name: "toc"
-            widget: "list"
-            fields:
-              - {label: "Page", name: page, widget: string}
-              - {label: "URL", name: url, widget: string}
-      - label: "Create section navigation"
-        name: "create-nav"
-        file: "_data/create.yml"
-        fields:
-          - label: "Create vertical navigation items"
-            name: "toc"
-            widget: "list"
-            fields:
-              - {label: "Page", name: page, widget: string}
-              - {label: "URL", name: url, widget: string}
-      - label: "Design section navigation"
-        name: "design-nav"
-        file: "_data/design.yml"
-        fields:
-          - label: "Design vertical navigation items"
-            name: "toc"
-            widget: "list"
-            fields:
-              - {label: "Page", name: page, widget: string}
-              - {label: "URL", name: url, widget: string}
-      - label: "Develop section navigation"
-        name: "develop-nav"
-        file: "_data/develop.yml"
-        fields:
-          - label: "Develop vertical navigation items"
-            name: "toc"
-            widget: "list"
-            fields:
-              - {label: "Page", name: page, widget: string}
-              - {label: "URL", name: url, widget: string}
-      - label: "Getting Started section navigation"
-        name: "getting-started-nav"
-        file: "_data/getting-started.yml"
-        fields:
-          - label: "Getting Started vertical navigation items"
-            name: "toc"
-            widget: "list"
-            fields:
-              - {label: "Page", name: page, widget: string}
-              - {label: "URL", name: url, widget: string}
-      - label: "Homepage section for Creator Quick Links"
-        name: "quick_links-creator"
-        file: "_data/quick_links-creator.yml"
-        fields:
-          - label: "Creator quick links"
-            name: "toc"
-            widget: "list"
-            fields:
-              - {label: "Page", name: page, widget: string}
-              - {label: "URL", name: url, widget: string}
-      - label: "Homepage section for Designer Quick Links"
-        name: "quick_links-designer"
-        file: "_data/quick_links-designer.yml"
-        fields:
-          - label: "Designer quick links"
-            name: "toc"
-            widget: "list"
-            fields:
-              - {label: "Page", name: page, widget: string}
-              - {label: "URL", name: url, widget: string}
-      - label: "Homepage section for Developer Quick Links"
-        name: "quick_links-developer"
-        file: "_data/quick_links-developer.yml"
-        fields:
-          - label: "Developer quick links"
-            name: "toc"
-            widget: "list"
-            fields:
-              - {label: "Page", name: page, widget: string}
-              - {label: "URL", name: url, widget: string}

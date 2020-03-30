@@ -1,4 +1,3 @@
-
 .rhddx-c-card {
   & > * {
     color: #fff;
@@ -44,7 +43,7 @@
 }
 .rhddx-c-card-content {
   opacity: .5;
-  border-top: 8px solid #d3d3d3;
+  border-top: 8px solid rgba(211, 211, 211, 1);
   transition-duration: .3s;
   &:hover {
     opacity: 1;

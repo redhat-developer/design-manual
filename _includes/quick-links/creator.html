@@ -1,13 +1,13 @@
-<div class="pf-c-card rhddx-c-card-content rhddx-m-developer">
+<div class="pf-c-card rhddx-c-card-content rhddx-m-creator pf-u-display-none">
   <div class="pf-c-card__body">
     <button class="pf-c-button pf-m-link pf-u-pl-0">
-      Developer Overview
+      Creator Overview
       <span class="pf-c-button__icon"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
     </button>
     <p class="pf-u-mb-lg">
-      Info on how to get started for developers in a blurb. Then we should list out the secondary nav items that live in this category.  Info on how to get started for developers in a blurb. Then we should list out the secondary nav items that live in this category.  Info on how to get started for developers in a blurb. Then we should list out the secondary nav items that live in this category.
+      Info on how to get started for creators in a blurb. Then we should list out the secondary nav items that live in this category.
     </p>
-    {% for item in site.data.quick_links-developer.item %}
+    {% for item in site.data.quick-links.creator.item %}
     <p class="pf-m-3xl pf-u-mb-sm">{{ item.title }}</p>
     <div class="pf-l-flex pf-m-column">
       {% for entry in item.subfolderitems %}

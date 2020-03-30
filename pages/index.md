@@ -50,11 +50,11 @@ custom_css: [cards, home]
     <div class="pf-l-flex">
       <div class="pf-l-flex__item pf-m-grow">
         <!-- I'm a developer -->
-        {% include developer-quicklink.html %}
+        {% include quick-links/developer.html %}
         <!-- I'm a designer -->
-        {% include designer-quicklink.html %}
+        {% include quick-links/designer.html %}
         <!-- I'm a content creator -->
-        {% include creator-quicklink.html %}
+        {% include quick-links/creator.html %}
       </div>
     </div>
   </div>
