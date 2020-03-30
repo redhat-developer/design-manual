@@ -28,7 +28,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    // /* stylelint-disable */
     @media (min-width: 575.98px) {
       background-image: var(--rhddx-c-image--Background--xs);
     }
@@ -44,7 +43,6 @@
     @media (min-width: 1199.98px) {
       background-image: var(--rhddx-c-image--Background--lg);
     }
-    // /* stylelint-enable */
 
     @media (min-width: 1200px) {
     background-image: var(--rhddx-c-image--Background--xl);

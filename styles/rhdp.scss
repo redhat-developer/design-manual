@@ -1,45 +1,6 @@
 @charset "utf-8.scss";
 
 // /* stylelint-ignore */
-// /// Post-2018 redesign styles
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/mixins.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/mq-mixins.scss";
-
-// /// Post-2018 redesign styles
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/colors/brand.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/colors/accent.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/colors/grayscale.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/colors/link.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/colors/product.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/colors/text.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/container.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/backgrounds.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/spacing.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/background.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/link-type.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/spacing.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/comments.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/slick.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/learning-paths.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/rhd-accordion.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/rh-universal-nav.scss";
-
-// //drupal admin override
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/drupal-user-login-form.scss";
-
-// // Drupal Akamai cache clear block styles
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/akamai-block.scss";
-
-// // Curated Links assembly type
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/curated-links.scss";
-
-// // Basic Page Styles
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/basic-page.scss";
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/2019/rh-universal-nav.scss";
-
-// //RHD theme
-// @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/rhd-theme/rhd-theme.scss";
-
 
 :root {$pf-global--font-path: '../themes/custom/rhdp2/fonts/patternfly';}
 @import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/rhd.scss";

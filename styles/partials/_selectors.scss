@@ -1,10 +1,3 @@
-:root {
-  --rhddx-code--highlight--XML-Color: #aef7b4;
-  --rhddx-code--highlight--XML-Color-alt: #ddfdd5f2;
-  --rhddx-code--highlight--TOML-Color: #f7b0ae;
-  --rhddx-code--highlight--TOML-Color-alt: #fdd6d5f2;
-}
-
 .rhddx {
   a.pf-c-button.pf-m-primary.rhddx-c-button.rhddx-m-edit[href*="github.com"]:after,
   a.pf-c-button.pf-m-primary.rhddx-c-button.rhddx-m-new[href*="github.com"]:after {
@@ -61,12 +54,12 @@
   */
   ::-moz-selection { /* Code for Firefox */
     color: #fff;
-    background-color: rgb(0, 116, 232);
+    background-color: rgba(0, 116, 232, 1);
   }
 
   ::selection {
     color: #fff;
-    background-color: rgb(0, 116, 232);
+    background-color: rgba(0, 116, 232, 1);
   }
 
   .highlighter-rouge {
@@ -121,7 +114,7 @@
       border-color: #f0f0f0;
       border-top: 0;
       border-bottom: 2px solid;
-      border-bottom-color: #8A8D90;
+      border-bottom-color: #8a8d90;
       box-shadow: inset -1px 0 0 0 #f0f0f0,
         inset 0 1px 0 0 #f0f0f0,
         inset 1px 0 0 0 #f0f0f0,
@@ -137,7 +130,7 @@
       &:hover,
       &:active,
       &:focus {
-        border-bottom-color: #0066CC;
+        border-bottom-color: #06c;
       }
       &::after {
         border-color: #f0f0f0;
@@ -154,7 +147,7 @@
   div.code-toolbar>.toolbar span {
     padding: 0;
     font-size: 16px;
-    color: #72767B;
+    color: #72767b;
     background: #fff;
     box-shadow: none;
     border-radius: 0;

@@ -3,6 +3,7 @@ layout: about
 title: About
 permalink: /about
 section: overview
+editable: true
 intro_paragraph: >
   About RHDDX and the RHD Frontend
 ---
