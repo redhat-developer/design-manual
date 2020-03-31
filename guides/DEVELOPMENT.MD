@@ -67,14 +67,29 @@ intro_paragraph: >
 
 Options for __layout__, __permalink__, and __section__ vary depending on where the file is located. The __intro_paragraph__ is optional and only used when you want to insert an introductory piece to a page.
 
- - __Layout and Section__
-The options __layout__ and __section__ should match, as they define both the proper layout for the page, as well as where it is located. The __section__ option is used for setting the top-level navigation, as well as grouping pages.
+ - __Layout__
+The __layout__ option defines what layout the particular page should use. This also sets the type of sidebar (navigation) that the page needs to use, as well as the whether or not any additional components are included.
+
+ - __Section__
+The __section__ option is used for setting the top-level navigation (i.e. the section of the site).
 
  - __Permalink__
 The __permalink__ option defines the link used to navigate to the page. This is matched with the `URL` field in the proper `_data/**.yml` file.
 
+- __Custom_js__
+The __custom_js__ option defines the JavaScript file that you want to include on the page. These are per-page customizations and are not loaded on every page across the site.
+
+If you do not specific a __custom_js__ variable, then no additional JavaScript files will be loaded.
+
+- __Custom_css__
+Like the __custom_js__ variable, the __custom_css__ option defines the additional CSS file that you want to include on the page. These are per-page customizations and are not loaded on every page across the site.
+
+If you do not specific a __custom_css__ variable, then no additional CSS files will be loaded.
+
  - __Intro Paragraph__
 The __intro_paragraph__ is an optional piece and used when you need to add additional information to the top of the page that is separate from the main content. It is presented as a callout, so that users will see it as separate content.
+
+See [Default Frontmatter Example](DEFAULT_FRONTMATTER.md) for additional information and examples.
 
 ----
 ## Browser support
