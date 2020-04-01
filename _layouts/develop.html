@@ -25,23 +25,25 @@ layout: compress
               {% include page-intro.html %}
               {{ content }}
             </div>
-            <div class="rhddx-m-float">
-              {% if page.title == 'Develop Overview' %}
-              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://github.com/redhat-developer/design-manual/tree/master/pages/{{ page.path | split: '/' | last }}" title="Edit this page on GitHub">
-                <span class="rhddx-c-button--edit_text">Edit this page</span>
-                <span class="fad fa-user-edit rhddx-c-button--edit_icon"></span>
-              </a>
-              {% else %}
-              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://github.com/redhat-developer/design-manual/tree/master/pages/develop/{{ page.path | split: '/' | last }}" title="Edit this page on GitHub">
-                <span class="rhddx-c-button--edit_text">Edit this page</span>
-                <span class="fad fa-user-edit rhddx-c-button--edit_icon"></span>
-              </a>
-              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-new" href="https://github.com/redhat-developer/design-manual/new/master/pages/develop" title="Add a new page on GitHub">
-                <span class="rhddx-c-button--new_text">Add a new page</span>
-                <span class="fad fa-plus rhddx-c-button--new_icon"></span>
-              </a>
-              {% endif% }
-            </div>
+            {% if page.editable %}
+              <div class="rhddx-m-float">
+                {% if page.title == 'Develop Overview' %}
+                <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://github.com/redhat-developer/design-manual/tree/master/pages/{{ page.path | split: '/' | last }}" title="Edit this page on GitHub">
+                  <span class="rhddx-c-button--edit_text">Edit this page</span>
+                  <span class="fad fa-user-edit rhddx-c-button--edit_icon"></span>
+                </a>
+                {% else %}
+                <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://github.com/redhat-developer/design-manual/tree/master/pages/develop/{{ page.path | split: '/' | last }}" title="Edit this page on GitHub">
+                  <span class="rhddx-c-button--edit_text">Edit this page</span>
+                  <span class="fad fa-user-edit rhddx-c-button--edit_icon"></span>
+                </a>
+                <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-new" href="https://github.com/redhat-developer/design-manual/new/master/pages/develop" title="Add a new page on GitHub">
+                  <span class="rhddx-c-button--new_text">Add a new page</span>
+                  <span class="fad fa-plus rhddx-c-button--new_icon"></span>
+                </a>
+                {% endif %}
+              </div>
+              {% endif %}
           </div>
         </section>
         {% include footer.html %}
