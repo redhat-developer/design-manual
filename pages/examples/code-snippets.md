@@ -1,10 +1,10 @@
 ---
-layout: pages
+layout: default
 title: Code Snippets
-permalink: /examples/code-snippets
-section: pages
+section:
 intro_paragraph: >
   Various code snippet examples for the Design Manual site.
+permalink: /examples/code-snippets
 ---
 
 Supported languages:
