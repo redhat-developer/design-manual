@@ -3,7 +3,7 @@ layout: design
 category: design
 section: Design
 permalink: /design
-title: Design Overview / Getting Started
+title: Overview
 intro_paragraph: >
 
 ---

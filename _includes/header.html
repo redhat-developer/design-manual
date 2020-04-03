@@ -21,9 +21,15 @@
   </div>
   <div class="pf-c-page__header-tools">
     <div class="pf-c-page__header-tools-group pf-m-icons">
-      <button class="pf-c-button pf-m-plain" type="button" aria-label="About" onclick="window.location.href = '/design-manual/about';">
+      {% if jekyll.environment == 'development' %}
+      <a {% if page.category == 'about' %} class="pf-c-button pf-m-plain pf-m-current" aria-current="page" {% else %} class="pf-c-button pf-m-plain pf-m-link" {% endif %} aria-label="About" href="/design-manual/about">
         <i class="fas fa-info-circle" aria-hidden="true" alt="About"></i>
-      </button>
+      </a>
+      {% elsif jekyll.environment == 'production' %}
+      <a {% if page.category == 'about' %} class="pf-c-button pf-m-plain pf-m-current" aria-current="page" {% else %} class="pf-c-button pf-m-plain pf-m-link" {% endif %} aria-label="About" href="{{ site.baseurl }}/about">
+        <i class="fas fa-info-circle" aria-hidden="true" alt="About"></i>
+      </a>
+      {% endif %}
       <button class="pf-c-button pf-m-plain" type="button" aria-label="GitHub URL" onclick="window.location.href = 'https://github.com/redhat-developer/design-manual';">
         <i class="fab fa-github" aria-hidden="true" alt="GitHub"></i>
       </button>

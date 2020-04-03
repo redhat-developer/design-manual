@@ -1,3 +1,14 @@
+.rhddx-m-link-header {
+  .rhddx-m-link-header__arrow-right {
+    visibility: hidden;
+    transition: .1s;
+  }
+  &:hover {
+    i {
+      visibility: visible;
+    }
+  }
+}
 .rhddx-c-button {
   padding: .5em .875em;
   border: 0;

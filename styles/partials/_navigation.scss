@@ -1,6 +1,7 @@
 .pf-c-page__header {
   .rhddx & {
     background-color: #151515;
+    box-shadow: rgba(3,3,3,0.07) 0 5px 5px 3px;
   }
 }
 .pf-c-nav__horizontal-list .pf-c-nav__link.pf-m-hover,
@@ -12,23 +13,139 @@
     --pf-c-nav__horizontal-list-link--Color: var(--pf-c-nav__horizontal-list-link--Color);
   }
 }
-
-.pf-c-nav__horizontal-list .pf-c-nav__link.pf-m-hover::after,
-.pf-c-nav__horizontal-list .pf-c-nav__link:hover::after,
-.pf-c-nav__horizontal-list .pf-c-nav__link:active::after,
-.pf-c-nav__horizontal-list .pf-c-nav__link:focus::after,
-.pf-c-nav__horizontal-list .pf-c-nav__link.pf-m-current::after,
-.pf-c-nav__list .pf-m-current.pf-c-nav__link::after,
-.pf-c-nav__list .pf-m-current > .pf-c-nav__link::after, {
-  .rhddx & {
-    background-color: #c00;
+.rhddx-c-navigation--horizontal {
+  .pf-c-page__header-nav {
+    margin-bottom: 10px;
+  }
+  .pf-c-nav__horizontal-list .pf-c-nav__link,
+  .pf-c-nav__horizontal-list .pf-c-nav__link {
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    border: 1px solid transparent;
+  }
+  .pf-c-nav__horizontal-list .pf-c-nav__link.pf-m-hover,
+  .pf-c-nav__horizontal-list .pf-c-nav__link:hover {
+    border: 1px solid #fff;
+    .pf-c-nav__link {
+      color: #fff;
+    }
+  }
+  .pf-c-nav__link.pf-m-current {
+    border-top-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: #c00;
+    border-left-color: #fff;
+  }
+  .pf-c-nav__link.pf-m-current:hover {
+    border-bottom-color: #c00;
+  }
+  .pf-c-nav__horizontal-list .pf-c-nav__link::after {
+    bottom: -1px;
+  }
+  .pf-c-nav__horizontal-list .pf-c-nav__link.pf-m-hover::after,
+  .pf-c-nav__horizontal-list .pf-c-nav__link:hover::after {
+    .rhddx & {
+      background-color: transparent;
+    }
+  }
+  .pf-c-nav__horizontal-list .pf-c-nav__link:active::after,
+  .pf-c-nav__horizontal-list .pf-c-nav__link:focus::after,
+  .pf-c-nav__horizontal-list .pf-c-nav__link.pf-m-current::after,
+  .pf-c-nav__list .pf-m-current.pf-c-nav__link::after,
+  .pf-c-nav__list .pf-m-current > .pf-c-nav__link::after, {
+    .rhddx & {
+      background-color: #c00;
+    }
+  }
+  .pf-c-nav__list .pf-c-nav__link.pf-m-hover::after,
+  .pf-c-nav__list .pf-c-nav__link:hover::after,
+  .pf-c-nav__list .pf-c-nav__link.pf-m-active::after,
+  .pf-c-nav__list .pf-c-nav__link:active::after {
+    .rhddx & {
+      background-color: #c00;
+    }
+  }
+  .pf-c-page__header-tools-group.pf-m-icons {
+    .pf-c-button.pf-m-plain {
+      border-width: 1px;
+      border-color: transparent;
+      border-style: solid;
+      border-radius: 0;
+      i {
+        color: #fff !important;
+        &:visited {
+          color: #fff !important;
+        }
+      }
+      &:hover {
+        border-color: #fff;
+      }
+      &:focus,
+      &:active,
+      &.pf-m-current {
+        box-shadow: #c00 0 -2px 0px 0px inset;
+        border-top-color: #fff;
+        border-right-color: #fff;
+        border-bottom-color: #c00;
+        border-left-color: #fff;
+      }
+      &:visited {
+        color: #fff;
+      }
+    }
   }
 }
-.pf-c-nav__list .pf-c-nav__link.pf-m-hover::after,
-.pf-c-nav__list .pf-c-nav__link:hover::after,
-.pf-c-nav__list .pf-c-nav__link.pf-m-active::after,
-.pf-c-nav__list .pf-c-nav__link:active::after {
-  .rhddx & {
+
+/*
+** Vertical Navigation
+*/
+
+.rhddx-c-nav--vertical {
+  .pf-c-nav__item.pf-m-expandable.pf-m-expanded {
+    a.pf-c-nav__link {
+      color: #c00;
+      font-weight: 400;
+    }
+    ul.pf-c-nav__simple-list {
+      a.pf-c-nav__link {
+        color: #000;
+        &.pf-m-current {
+          color: #c00;
+        }
+      }
+    }
+  }
+  .pf-c-nav__item.pf-m-expanded .pf-c-nav__toggle > * {
+    transform: rotate(180deg);
+  }
+
+  .pf-c-nav__list .pf-m-current.pf-c-nav__link::after,
+  .pf-c-nav__list .pf-m-current > .pf-c-nav__link::after,
+  .pf-c-nav__list .pf-c-nav__link.pf-m-hover::after,
+  .pf-c-nav__list .pf-c-nav__link:hover::after,
+  .pf-c-nav__list .pf-c-nav__link.pf-m-active::after,
+  .pf-c-nav__list .pf-c-nav__link:active::after,
+  .pf-c-nav__list .pf-c-nav__link.pf-m-focus::after,
+  .pf-c-nav__list .pf-c-nav__link:focus::after {
     background-color: #c00;
+  }
+  .pf-c-nav__list .pf-m-current.pf-c-nav__link,
+  .pf-c-nav__list .pf-m-current > .pf-c-nav__link,
+  .pf-c-nav__list .pf-c-nav__link.pf-m-hover::after,
+  .pf-c-nav__list .pf-c-nav__link:hover::after,
+  .pf-c-nav__list .pf-c-nav__link.pf-m-active,
+  .pf-c-nav__list .pf-c-nav__link:active,
+  .pf-c-nav__list .pf-c-nav__link.pf-m-hover,
+  .pf-c-nav__list .pf-c-nav__link:hover,
+  .pf-c-nav__list .pf-c-nav__link.pf-m-active,
+  .pf-c-nav__list .pf-c-nav__link:active,
+  .pf-c-nav__list .pf-c-nav__link.pf-m-focus,
+  .pf-c-nav__list .pf-c-nav__link:focus {
+    color: #c00;
+    font-weight: 400;
+  }
+  .pf-c-nav__item.pf-m-expanded .pf-c-nav__toggle > * {
+    content: '/f068';
   }
 }
