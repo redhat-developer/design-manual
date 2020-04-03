@@ -13,7 +13,7 @@ if [ -z "$(ls -A developers.redhat.com)" ]; then
   sleep 2
 
   echo "Update Submodule"
-  git submodule update
+  git submodule update --remote --merge
   sleep 2
 
   echo "Install Submodule Dependencies"

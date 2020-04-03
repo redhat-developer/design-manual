@@ -10,40 +10,55 @@ layout: compress
   <body class="rhddx line-numbers">
     <div class="pf-c-page">
       {% include header.html %}
-      <div class="pf-c-page__sidebar">
-        <div class="pf-c-page__sidebar-body">
-          <nav class="pf-c-nav" id="expandable-vertical-nav">
-            {% include sidenavs/getting-started.html component=site.data.getting-started %}
-          </nav>
-        </div>
-      </div>
       <main class="pf-c-page__main" role="main" tab-index="-1">
         <section class="pf-c-page__main-section pf-m-light pf-m-fill">
-          <div class="pf-l-grid pf-c-content">
-            <div class="pf-l-grid__item pf-m-11-col" id="main">
-              <h1>{{ page.title }}</h1>
-              <blockquote>{% include page-intro.html %}</blockquote>
-              {{ content }}
-            </div>
-            {% if page.editable %}
-              <div class="rhddx-m-float">
-                {% if page.title == 'Getting Started Overview' %}
-                <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://github.com/redhat-developer/design-manual/tree/master/pages/{{ page.path | split: '/' | last }}" title="Edit this page on GitHub">
-                  <span class="rhddx-c-button--edit_text">Edit this page</span>
-                  <span class="fad fa-user-edit rhddx-c-button--edit_icon"></span>
-                </a>
-                {% else %}
-                <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://github.com/redhat-developer/design-manual/tree/master/pages/getting-started/{{ page.path | split: '/' | last }}" title="Edit this page on GitHub">
-                  <span class="rhddx-c-button--edit_text">Edit this page</span>
-                  <span class="fad fa-user-edit rhddx-c-button--edit_icon"></span>
-                </a>
-                <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-new" href="https://github.com/redhat-developer/design-manual/new/master/pages/getting-started" title="Add a new page on GitHub">
-                  <span class="rhddx-c-button--new_text">Add a new page</span>
-                  <span class="fad fa-plus rhddx-c-button--new_icon"></span>
-                </a>
-                {% endif %}
+          <div class="pf-l-grid">
+            <div class="pf-l-grid__item pf-m-12-col pf-m-10-col-on-md">
+              <div class="pf-l-grid">
+                {{ content }}
               </div>
-            {% endif %}
+            </div>
+            <div class="pf-l-grid__item pf-u-display-none pf-u-display-block-on-md pf-m-2-col-on-md">
+              <div style="border: 1px solid #ddd; padding: 24px;">
+                <h3><i class="fal fa-link"></i> Quick Links</h3>
+                <ul>
+                  <li>
+                    <a class="pf-c-button pf-m-link pf-u-pl-0 rhddx-m-link-header" href="https://developer.redhat.com/login" target="top">
+                      Drupal login
+                      <span class="pf-c-button__icon"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                      <span class="rhddx-m-link-header__arrow-right"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="pf-c-button pf-m-link pf-u-pl-0 rhddx-m-link-header" href="https://www.github.com/redhat-developer/design-manual" target="top">
+                      GitHub repository
+                      <span class="pf-c-button__icon"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                      <span class="rhddx-m-link-header__arrow-right"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          {% if page.editable %}
+            <div class="rhddx-m-float">
+              {% if page.title == 'Getting Started Overview' %}
+              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://github.com/redhat-developer/design-manual/tree/master/pages/{{ page.path | split: '/' | last }}" title="Edit this page on GitHub">
+                <span class="rhddx-c-button--edit_text">Edit this page</span>
+                <span class="fad fa-user-edit rhddx-c-button--edit_icon"></span>
+              </a>
+              {% else %}
+              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://github.com/redhat-developer/design-manual/tree/master/pages/getting-started/{{ page.path | split: '/' | last }}" title="Edit this page on GitHub">
+                <span class="rhddx-c-button--edit_text">Edit this page</span>
+                <span class="fad fa-user-edit rhddx-c-button--edit_icon"></span>
+              </a>
+              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-new" href="https://github.com/redhat-developer/design-manual/new/master/pages/getting-started" title="Add a new page on GitHub">
+                <span class="rhddx-c-button--new_text">Add a new page</span>
+                <span class="fad fa-plus rhddx-c-button--new_icon"></span>
+              </a>
+              {% endif %}
+            </div>
+          {% endif %}
           </div>
         </section>
         {% include footer.html %}

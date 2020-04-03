@@ -1,5 +1,5 @@
 {% assign navurl = page.url | remove: 'index.html' %}
-<nav class="pf-c-nav" aria-label="Global">
+<nav class="pf-c-nav rhddx-c-nav--vertical" aria-label="Global">
 <!-- Show Component navigation -->
   <ul class="pf-c-nav__list">
     <li class="pf-c-nav__item">
@@ -13,12 +13,12 @@
     <li class="pf-c-nav__item pf-m-expandable">
       <a href="#" {% if page.title == item.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %} id="expandedNav">{{ item.title }}
         <span class="pf-c-nav__toggle">
-          <i class="fas fa-angle-right" aria-hidden="true"></i>
+          <i class="fal fa-plus" aria-hidden="true"></i>
         </span>
       </a>
-      {% for entry in item.subfolderitems %}
       <section class="pf-c-nav__subnav" aria-labelledby="expandedNav">
         <ul class="pf-c-nav__simple-list">
+          {% for entry in item.subfolderitems %}
           <li class="pf-c-nav__item">
             {% if jekyll.environment == 'development' %}
             <a href="{{ entry.url }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
@@ -26,9 +26,9 @@
             <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
             {% endif %}
           </li>
+          {% endfor %}
         </ul>
       </section>
-      {% endfor %}
     </li>
   </ul>
   {% endfor %}
@@ -39,7 +39,7 @@
     <li class="pf-c-nav__item pf-m-expandable">
       <a href="#" {% if page.title == item.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %} id="expandedNav">{{ item.title }}
         <span class="pf-c-nav__toggle">
-          <i class="fas fa-angle-right" aria-hidden="true"></i>
+          <i class="fal fa-plus" aria-hidden="true"></i>
         </span>
       </a>
       {% for entry in item.subfolderitems %}
@@ -65,7 +65,7 @@
     <li class="pf-c-nav__item pf-m-expandable">
       <a href="#" {% if page.title == item.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %} id="expandedNav">{{ item.title }}
         <span class="pf-c-nav__toggle">
-          <i class="fas fa-angle-right" aria-hidden="true"></i>
+          <i class="fal fa-plus" aria-hidden="true"></i>
         </span>
       </a>
       {% for entry in item.subfolderitems %}
