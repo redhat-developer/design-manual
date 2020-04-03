@@ -5,5 +5,10 @@ $(document).ready(function(){
     $(this).attr('aria-expanded', 'true');
     $(this).toggleClass("rhddx-m-expanded");
   });
+
+  // $(".rhddx-c-nav ul li").on("click", function() {
+  //   $(this).find("ul").toggle();
+  //   $(this).find(".pf-c-nav__toggle .fal").toggleClass(".fa-minus");
+  // });
 });
 
