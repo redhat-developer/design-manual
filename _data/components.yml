@@ -85,8 +85,10 @@ toc:
         url: /components/search-old
       - page: Stack Overflow
         url: /components/stack-overflow
-      - page: Template Component
-        url: /components/template
+      - page: Tables
+        url: /components/tables
+      - page: Toolbar
+        url: /components/toolbar
       - page: Two Column Layout Hero
         url: /components/two-col-hero-layout
       - page: Video Hero
