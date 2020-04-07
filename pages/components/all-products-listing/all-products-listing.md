@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: All Products Listing
 permalink: /components/all-products-listing
 section: components
-category: components
 status: released
 intro_paragraph: >
 

@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Button CTAs
 permalink: /components/btn-cta
 section: components
-category: components
 status: released
 custom_js: code-snippets
 intro_paragraph: >

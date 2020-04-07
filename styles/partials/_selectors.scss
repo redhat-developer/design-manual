@@ -53,37 +53,37 @@
   ** Customize text selection/highlight colors
   */
   ::-moz-selection { /* Code for Firefox */
-    color: #fff;
+    color: var(--rhddx-global--Color--white);
     background-color: rgba(0, 116, 232, 1);
   }
 
   ::selection {
-    color: #fff;
+    color: var(--rhddx-global--Color--white);
     background-color: rgba(0, 116, 232, 1);
   }
 
   .highlighter-rouge {
     font-family: Fira Coda, 'Andale Mono', 'Ubuntu Mono', monospace;
     padding: 4px 8px;
-    background-color: #fff;
-    border: 2px solid #f0f0f0;
-    color: #2a3035;
+    background-color: var(--rhddx-global--Color--white);
+    border: var(--rhddx-global--Border-width) solid var(--rhddx-global--Border--grey-light);
+    color: var(--rhddx-global--Color--200);
     border-radius: 3px;
     line-height: 1.5;
     &::-moz-selection { /* Code for Firefox */
-      color: #2a3035;
+      color: var(--rhddx-global--Color--200);
       background-color: #cfe0f3;
     }
 
     &::selection {
-      color: #2a3035;
+      color: var(--rhddx-global--Color--200);
       background-color: #cfe0f3;
     }
   }
   [class*="language-"].highlighter-rouge {
-    background-color: #fff;
-    border: 2px solid #f0f0f0;
-    color: #2a3035;
+    background-color: var(--rhddx-global--Color--white);
+    border: var(--rhddx-global--Border-width) solid var(--rhddx-global--Border--grey-light);
+    color: var(--rhddx-global--Color--200);
   }
 
   /*
@@ -93,15 +93,15 @@
     position: relative;
     top: -1px;
     right: 0;
-    border: 1px solid;
-    border-color: #f0f0f0;
+    border: var(--rhddx-global--Border-width-small) solid;
+    border-color: var(--rhddx-global--Border--grey-light);
     text-align: right;
     opacity: 1;
   }
   pre {
-    background-color: #fff;
-    border: 1px solid;
-    border-color: #f0f0f0;
+    background-color: var(--rhddx-global--Color--white);
+    border: var(--rhddx-global--Border-width-small) solid;
+    border-color: var(--rhddx-global--Border--grey-light);
   }
   pre[class*="language-"] {
     margin-bottom: 0;
@@ -109,15 +109,15 @@
   div.code-toolbar > .toolbar .toolbar-item {
     button.pf-c-button.pf-m-control {
       padding: 8px 20px;
-      background-color: #fff;
-      border: 1px solid;
-      border-color: #f0f0f0;
+      background-color: var(--rhddx-global--Color--white);
+      border: var(--rhddx-global--Border-width-small) solid;
+      border-color: var(--rhddx-global--Border--grey-light);
       border-top: 0;
-      border-bottom: 2px solid;
+      border-bottom: var(--rhddx-global--Border-width) solid;
       border-bottom-color: #8a8d90;
-      box-shadow: inset -1px 0 0 0 #f0f0f0,
-        inset 0 1px 0 0 #f0f0f0,
-        inset 1px 0 0 0 #f0f0f0,
+      box-shadow: inset -1px 0 0 0 var(--rhddx-global--Border--grey-light),
+        inset 0 1px 0 0 var(--rhddx-global--Border--grey-light),
+        inset 1px 0 0 0 var(--rhddx-global--Border--grey-light),
         inset 0 -1px 0 0 #8a8d90;
       margin-top: -1px;
       margin-bottom: 0;
@@ -125,7 +125,7 @@
         content: "\f0c5";
         font-family: "Font Awesome 5 Free";
         font-weight: 700;
-        color: #151515;
+        color: var(--rhddx-global--Color--100);
       }
       &:hover,
       &:active,
@@ -133,7 +133,7 @@
         border-bottom-color: #06c;
       }
       &::after {
-        border-color: #f0f0f0;
+        border-color: var(--rhddx-global--Border--grey-light);
       }
       &:hover::after,
       &:active::after,
@@ -148,7 +148,7 @@
     padding: 0;
     font-size: 16px;
     color: #72767b;
-    background: #fff;
+    background: var(--rhddx-global--Color--white);
     box-shadow: none;
     border-radius: 0;
   }
@@ -158,11 +158,11 @@
     margin: 36px 0;
     padding-top: 32px;
     &::-moz-selection { /* Code for Firefox */
-      color: #2a3035;
+      color: var(--rhddx-global--Color--200);
       background-color: #cfe0f3;
     }
     &::selection {
-      color: #2a3035;
+      color: var(--rhddx-global--Color--200);
       background-color: #cfe0f3;
     }
     pre {
@@ -176,19 +176,19 @@
           top: -40px;
           right: 0;
           padding: 8px 20px;
-          border: 2px solid;
-          border-color: #f0f0f0;
+          border: var(--rhddx-global--Border-width) solid;
+          border-color: var(--rhddx-global--Border--grey-light);
           border-bottom: 0;
           color: #72767b;
-          background-color: #fff;
+          background-color: var(--rhddx-global--Color--white);
         }
         &[data-lang] {
           &::-moz-selection { /* Code for Firefox */
-            color: #2a3035;
+            color: var(--rhddx-global--Color--200);
             background-color: #cfe0f3;
           }
           &::selection {
-            color: #2a3035;
+            color: var(--rhddx-global--Color--200);
             background-color: #cfe0f3;
           }
         }

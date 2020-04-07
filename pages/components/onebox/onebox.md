@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Onebox
 permalink: /components/onebox
 section: components
-category: components
 status: unreleased
 intro_paragraph: >
 

@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Search (unreleased)
 permalink: /components/search-old
 section: components
-category: components
 status: unreleased
 intro_paragraph: >
 

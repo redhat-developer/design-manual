@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Collection
 permalink: /components/collection
 section: components
-category: components
 status: released
 intro_paragraph: >
 

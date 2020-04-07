@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Video Hero
 permalink: /components/video-hero
 section: components
-category: components
 status: released
 intro_paragraph: >
 

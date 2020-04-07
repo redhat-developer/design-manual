@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Featured Resources
 permalink: /components/featured-resources
 section: components
-category: components
 status: released
 intro_paragraph: >
 

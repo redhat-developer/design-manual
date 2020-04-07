@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Dynamic Content List (Compact)
 permalink: /components/dynamic-content-list-compact
 section: components
-category: components
 status: released
 intro_paragraph: >
 
