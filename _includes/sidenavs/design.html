@@ -1,68 +1,54 @@
 {% assign navurl = page.url | remove: 'index.html' %}
-<nav class="pf-c-nav rhddx-c-nav--vertical" aria-label="Global">
-  <ul class="pf-c-nav__list">
-    <li class="pf-c-nav__item">
-      <a href="#" {% if page.title == 'Overview' %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %} id="expandedNav">
-        Overview
-      </a>
-    </li>
-  </ul>
+<nav class="rhddx-c-nav--vertical" aria-label="Global">
   {% for item in site.data.design.toc %}
-  <!-- <h2 class="pf-c-nav__section-title" id="grouped-title1">{{ item .title }}</h2> -->
-  <ul class="pf-c-nav__list">
-    <li class="pf-c-nav__item pf-m-expandable">
-      <a href="#" {% if page.title == item.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %} id="expandedNav">{{ item.title }}
-        <span class="pf-c-nav__toggle">
-          <i class="fal fa-plus" aria-hidden="true"></i>
-        </span>
+  <ul>
+    <li class="rhddx-c-sub-menu">
+      <a href="#" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %} id="expandedNav">
+        {{ item.title }}
       </a>
+      <ul>
       {% for entry in item.subfolderitems %}
-      <section class="pf-c-nav__subnav" aria-labelledby="expandedNav">
-        <ul class="pf-c-nav__simple-list">
-          <li class="pf-c-nav__item">
-            {% if jekyll.environment == 'development' %}
-            <a href="{{ entry.url }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
-            {% elsif jekyll.environment == 'production' %}
-            <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
-            {% endif %}
-          </li>
-        </ul>
-      </section>
-      {% endfor %}
+        <li>
+          {% if jekyll.environment == 'development' %}
+          <a href="{{ entry.url }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ entry.page }}</a>
+          {% elsif jekyll.environment == 'production' %}
+          <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>
+            {{ entry.page }}
+          </a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
     </li>
   </ul>
   {% endfor %}
   {% for item in site.data.components.toc %}
-  <ul class="pf-c-nav__list">
-    <li class="pf-c-nav__item pf-m-expandable">
-      <a href="#" {% if page.title == item.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %} id="expandedNav">{{ item.title }}
-        <span class="pf-c-nav__toggle">
-          <i class="fal fa-plus" aria-hidden="true"></i>
-        </span>
+  <ul>
+    <li class="rhddx-c-sub-menu">
+      <a href="#" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %} id="expandedNav">
+        {{ item.title }}
       </a>
       {% for entry in item.subfolderitems %}
-      <section class="pf-c-nav__subnav" aria-labelledby="expandedNav">
-        <ul class="pf-c-nav__simple-list">
-          <li class="pf-c-nav__item">
-            {% if jekyll.environment == 'development' %}
-            <a href="{{ entry.url }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
-            {% elsif jekyll.environment == 'production' %}
-            <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
-            {% endif %}
-          </li>
-        </ul>
-      </section>
+      <ul>
+        <li>
+          {% if jekyll.environment == 'development' %}
+          <a href="{{ entry.url }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ entry.page }}</a>
+          {% elsif jekyll.environment == 'production' %}
+          <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ entry.page }}</a>
+          {% endif %}
+        </li>
+      </ul>
       {% endfor %}
     </li>
   </ul>
   {% endfor %}
   <!-- Link off to Develop section -->
-  <ul class="pf-c-nav__list">
-    <li class="pf-c-nav__item">
+  <ul>
+    <li class="rhddx-c-sub-menu rhddx-m-develop">
       {% if jekyll.environment == 'development' %}
-      <a href="/develop" class="pf-c-nav__link">Develop</a>
+      <a href="/develop">Develop</a>
       {% elsif jekyll.environment == 'production' %}
-      <a href="{{ site.baseurl }}/develop" class="pf-c-nav__link">Develop</a>
+      <a href="{{ site.baseurl }}/develop">Develop</a>
       {% endif %}
     </li>
   </ul>

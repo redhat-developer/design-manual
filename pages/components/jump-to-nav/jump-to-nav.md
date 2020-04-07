@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Jump-to Navigation
 permalink: /components/jump-to-nav
 section: components
-category: components
 status: released
 intro_paragraph: >
 

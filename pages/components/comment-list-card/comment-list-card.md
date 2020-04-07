@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Comment List Card
 permalink: /components/comment-list-card
 section: components
-category: components
 status: released
 intro_paragraph: >
 

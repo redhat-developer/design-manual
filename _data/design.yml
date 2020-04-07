@@ -12,39 +12,30 @@ toc:
   - title: Extended Brand Elements
     subfolderitems:
       - page: Visual System
+        url: /design/visual-system
       - page: Challenges
+        url: /design/challenges
       - page: Solutions
+        url: /design/solutions
       - page: Photography
+        url: /design/photography
       - page: Video
+        url: /design/video
       - page: Ads/social
+        url: /design/ads-social
       - page: Various use cases
+        url: /design/various-use-cases
   - title: Campaigns / Sub Brands
     subfolderitems:
       - page: Coderland
-        url: /campaigns/coderland
+        url: /design/campaigns/coderland
       - page: CodeReady
-        url: /campaigns/codeready
+        url: /design/campaigns/codeready
       - page: DevNation
-        url: /campaigns/devnation
+        url: /design/campaigns/devnation
   - title: Events
     subfolderitems:
       - page: Guidelines
-        url: /events/guidelines
+        url: /design/events/guidelines
       - page: Past events
-        url: /events/past-events
-  # - title: where do these go?
-  #   subfolderitems:
-  #     - page: Mark
-  #       url: /brand-assets/RHD_Mark/mark
-  #     - page: Story Messaging
-  #       url: /brand-assets/RHD_Story_Messaging/story-messaging
-  #     - page: Typography
-  #       url: /brand-assets/RHD_Typography/typography
-  #     - page: Visual Guidelines
-  #       url: /brand-assets/RHD_Visual_Guidelines/visual-guidelines
-  #     - page: Visual Elements - Merging Branches
-  #       url: /brand-assets/RHD_Visual_Elements/RHD_Merging_Branches/merging-branches
-  #     - page: Visual Elements - Morse Code
-  #       url: /brand-assets/RHD_Visual_Elements/RHD_Morse_Code/morse-code
-  #     - page: Visual Elements - Universal Code Block
-  #       url: /brand-assets/RHD_Visual_Elements/RHD_Universal_Code_Block/universal-code-block
+        url: /design/events/past-events

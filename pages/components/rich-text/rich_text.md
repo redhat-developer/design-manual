@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Rich Text
 permalink: /components/rich-text
 section: components
-category: components
 status: released
 intro_paragraph: >
 

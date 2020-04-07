@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: CTA
 permalink: /components/cta
 section: components
-category: components
 status: released
 intro_paragraph: >
 

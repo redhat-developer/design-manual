@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Expandable Groups
 permalink: /components/expandable-groups
 section: components
-category: components
 status: released
 intro_paragraph: >
 

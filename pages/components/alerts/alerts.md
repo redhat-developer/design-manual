@@ -1,8 +1,9 @@
 ---
-layout: components
-title: Alerts
-permalink: /components/alerts
+layout: develop
+category: develop
 section: components
+permalink: /components/alerts
+title: Alerts
 status: unreleased
 intro_paragraph: >
 

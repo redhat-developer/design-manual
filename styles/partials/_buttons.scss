@@ -25,7 +25,7 @@
     bottom: 7rem;
     min-width: 48px;
     min-height: 40px;
-    color: #fff !important;
+    color: var(--rhddx-global--Color--white) !important;
     &:hover {
       .rhddx-c-button--edit_text {
         display: inline;
@@ -36,7 +36,7 @@
     }
     &:hover .rhddx-c-button--edit_icon {
       padding-left: .5em;
-      border-left: 1px solid #80b9e7;
+      border-left: var(--rhddx-global--Border-width-small) solid #80b9e7;
       margin-left: .5em;
     }
   }
@@ -46,7 +46,7 @@
     bottom: 4rem;
     min-width: 48px;
     min-height: 40px;
-    color: #fff !important;
+    color: var(--rhddx-global--Color--white) !important;
     &:hover {
       .rhddx-c-button--new_text {
         display: inline;
@@ -58,7 +58,7 @@
     &:hover .rhddx-c-button--new_icon {
       padding-right: .2em; // keep new icon inline with larger edit icon
       padding-left: .7em;
-      border-left: 1px solid rgba(126, 184, 231, 1);
+      border-left: var(--rhddx-global--Border-width-small) solid rgba(126, 184, 231, 1);
       margin-left: .5em;
     }
   }
@@ -113,9 +113,9 @@
   .rhddx-c-button--3d__text {
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color: #333;
+    color: var(--rhddx-global--Color--100);
     padding: 1em 1.5em;
-    background-color: #fbfbfb;
+    background-color: var(--rhddx-global--Border--grey-light);
     display: block;
     width: 100%;
     height: 100%;
@@ -132,7 +132,7 @@
   }
   &:hover, &:focus {
     .rhddx-c-button--3d__text {
-      background-color: #fff;
+      background-color: var(--rhddx-global--Color--white);
     }
   }
 }

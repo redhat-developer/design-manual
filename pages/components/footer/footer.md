@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Footer Resources
 permalink: /components/footer
 section: components
-category: components
 status:
 intro_paragraph: >
 
