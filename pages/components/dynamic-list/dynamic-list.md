@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Dynamic List
 permalink: /components/dynamic-list
 section: components
-category: components
 status: unreleased
 intro_paragraph: >
 

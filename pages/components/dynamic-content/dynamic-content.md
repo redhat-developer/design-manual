@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Dynamic Content
 permalink: /components/dynamic-content
 section: components
-category: components
 status: released
 intro_paragraph: >
 

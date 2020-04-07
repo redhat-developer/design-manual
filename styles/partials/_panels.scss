@@ -1,15 +1,19 @@
+:root {
+  --rhddx-c-creation-tips--BackgroundColor: var(--rhddx-global--Border--grey-light);
+}
+
 .rhddx-c-overview-example-panel {
-  border: 1px solid #ddd;
+  border: var(--rhddx-global--Border-width-small) solid var(--rhddx-global--Border--grey);
 }
 .rhddx-c-creation-tips {
   transition: .5s;
   opacity: 0;
   &__box {
     display: block;
-    border: 1px solid #ddd;
-    background-color: #eceff1;
+    border: var(--rhddx-global--Border-width-small) solid var(--rhddx-global--Border--grey);
+    background-color: var(--rhddx-c-creation-tips--BackgroundColor);
     h4 {
-      background-color: #fff;
+      background-color: var(--rhddx-global--Color--white);
       margin-bottom: 0;
       padding-bottom: 16px;
     }
@@ -19,5 +23,5 @@
   opacity: 1;
 }
 .rhdxx-m-box-shadow {
-  box-shadow: 0 0 10px 2px #ddd
+  box-shadow: var(--rhddx-global--box-shadow);
 }

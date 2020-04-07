@@ -179,7 +179,7 @@ const
     gulp.src('./assets/img/favicon.{png,ico}')
       .pipe(gulp.dest('./docs/assets/img/'));
     gulp.src('./assets/themes/custom/rhdp2/fonts/patternfly/**/*.*')
-      .pipe(gulp.dest('./docs/assets/themes/custom/rhdp2/fonts/patternfly/'));
+      .pipe(gulp.dest('./docs/themes/custom/rhdp2/fonts/patternfly/'));
     cb();
   }
 

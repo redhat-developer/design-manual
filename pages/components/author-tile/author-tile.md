@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Author Tile
 permalink: /components/author-tile
 section: components
-category: components
 status: released
 intro_paragraph: >
 ---

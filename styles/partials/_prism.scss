@@ -8,7 +8,7 @@ https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clik
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #2a3035;
+  color: var(--rhddx-global--Color--200);
   background: none;
   font-family: Fira Coda, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1em;
@@ -39,7 +39,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #fff;
+  background: var(--rhddx-global--Color--white);
  }
 
 /* Inline code */
@@ -163,11 +163,11 @@ color: #06586D;
 .token.italic,
 .token.entity {
   &::-moz-selection { /* Code for Firefox */
-    color: #2a3035;
+    color: var(--rhddx-global--Color--200);
     background-color: #cfe0f3;
   }
   &::selection {
-    color: #2a3035;
+    color: var(--rhddx-global--Color--200);
     background-color: #cfe0f3;
   }
 }
@@ -189,9 +189,9 @@ pre[class*="language-"].line-numbers > code {
   font-size: 100%;
   width: 50px; /* works for line-numbers below 1000 lines */
   letter-spacing: -1px;
-  background-color: #fff;
-  border-right: 1px solid #f0f0f0;
-  border-left: 2px solid #f0f0f0;
+  background-color: var(--rhddx-global--Color--white);
+  border-right: var(--rhddx-global--Border-width-small) solid var(--rhddx-global--Border--grey-light);
+  border-left: var(--rhddx-global--Border-width) solid var(--rhddx-global--Border--grey-light);
 
   -webkit-user-select: none;
   -moz-user-select: none;

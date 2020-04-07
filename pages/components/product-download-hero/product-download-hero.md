@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Product Download Hero
 permalink: /components/product-download-hero
 section: components
-category: components
 status: released
 intro_paragraph: >
 

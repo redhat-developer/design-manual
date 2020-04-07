@@ -1,12 +1,16 @@
+:root {
+  --rhddx-c-label--BackgroundColor-released: #0040d5;
+  --rhddx-c-label--BackgroundColor-unreleased: #ffbf00;
+}
 .rhddx {
   .pf-c-label {
     &.label-released {
       --pf-c-label--Color: #f8fcff;
-      --pf-c-label--BackgroundColor: #0040d5;
+      --pf-c-label--BackgroundColor: var(--rhddx-c-label--BackgroundColor-released);
     }
     &.label-unreleased {
-      --pf-c-label--Color: #000;
-      --pf-c-label--BackgroundColor: #ffbf00;
+      --pf-c-label--Color: var(--rhddx-global--Color--100);
+      --pf-c-label--BackgroundColor: var(--rhddx-c-label--BackgroundColor-unreleased);
     }
   }
 }

@@ -8,10 +8,10 @@ toc:
       - page: Topics
         url: /create/topics
       - page: Name
-        url:
+        url: /create/name
       - page: Example
-        url:
+        url: /create/example
       - page: Description
-        url:
+        url: /create/description
       - page: Create steps
-        url:
+        url: /create/create-steps

@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Stack Overflow
 permalink: /components/stack-overflow
 section: components
-category: components
 status: released
 intro_paragraph: >
 

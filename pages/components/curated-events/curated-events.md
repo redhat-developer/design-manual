@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Curated Events
 permalink: /components/curated-events
 section: components
-category: components
 status: released
 intro_paragraph: >
 

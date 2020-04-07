@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Card in a Gallery Layout
 permalink: /components/card-gallery
 section: components
-category: components
 status: released
 intro_paragraph: >
 

@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Rich Text Columns
 permalink: /components/rich-text-columns
 section: components
-category: components
 status: released
 intro_paragraph: >
 

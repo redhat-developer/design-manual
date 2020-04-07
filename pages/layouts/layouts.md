@@ -1,8 +1,9 @@
 ---
 layout: develop
+category: develop
+section: Develop
 title: Layouts
-permalink: /pages/layouts
-section: develop
+permalink: /layouts/layouts
 intro_paragraph: >
   Examples of various layouts available on CodePen.io
 ---

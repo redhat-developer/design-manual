@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Community
 permalink: /components/community
 section: components
-category: components
 status: released
 intro_paragraph: >
 

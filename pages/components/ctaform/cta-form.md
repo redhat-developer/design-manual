@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: CTA Form
 permalink: /components/cta-form
 section: components
-category: components
 status: released
 intro_paragraph: >
 

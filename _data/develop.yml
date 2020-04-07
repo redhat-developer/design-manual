@@ -2,4 +2,6 @@ toc:
   - title: Layouts
     subfolderitems:
       - page: Responsive Grid
-        url: /pages/docs/content/patterns/layout/grid
+        url: /layouts/grid
+      - page: Homepage
+        url: /layouts/home

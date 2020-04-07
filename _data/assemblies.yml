@@ -2,8 +2,8 @@ toc:
   - title: Assemblies
     subfolderitems:
     - page: All Products Listing
-      url: /docs/content/patterns/assemblies/all-product-listing
+      url: /assemblies/all-product-listing
     - page: All Assemblies
-      url: /docs/content/patterns/assemblies/all-assemblies
+      url: /assemblies/all-assemblies
     - page: Featured Products
-      url: /docs/content/patterns/assemblies/featured_products
+      url: /assemblies/featured_products
