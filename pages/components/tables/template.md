@@ -10,11 +10,14 @@ intro_paragraph:
 ---
 <!-- remove this style block once code is merged to developers.redhat.com -->
 <style>
-  .pf-c-table .pf-c-button {
-    padding-left: 0;
-  }
   .rhd-c-table {
     --pf-c-table__expandable-row--before--BackgroundColor: #ee0000;
+  }
+  .rhd-c-table .pf-c-button:hover:after {
+    border-color: transparent;
+  }
+  .rhd-c-table .rhd-m-register {
+    padding-left: 0;
   }
   .rhd-m-nested-table thead tr {
     border-bottom: 0 !important;
@@ -45,16 +48,21 @@ intro_paragraph:
 {% include code-snippets.html %}
 
 ## Default table
-_expandable and selectable rows_
+_expandable rows_
 
 > Add `pf-m-expandable` to `pf-c-table` for any tables that have expandable rows.
 {% include_relative default.md %}
 
 ## Compact table
-_compact table with expandable and selectable rows_
+_compact table with expandable rows_
 
 > Add `pf-m-compact` to `pf-c-table` for any tables that you wish to use the compact modifier. The `pf-m-compact` modifier can be used with the `pf-m-expandable` modifier.
 {% include_relative compact-table.md %}
+
+## Advanced table
+_default table with expandable rows and a toolbar_
+
+{% include_relative advanced-table.md %}
 
 ## Table enhancements
 For additional capabilities, tables can also use the Toolbar component.
@@ -72,4 +80,9 @@ For additional capabilities, tables can also use the Toolbar component.
 ### Compact Table Example
 {% highlight html %}
 {% include_relative compact-table.html %}
+{% endhighlight %}
+
+### Advanced Table Example
+{% highlight html %}
+{% include_relative advanced-table.html %}
 {% endhighlight %}
