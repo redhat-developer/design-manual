@@ -32,12 +32,12 @@
           <i class="fas fa-angle-right pf-c-table__toggle-icon" aria-hidden="true"></i>
         </button>
       </td>
-      <th role="columnheader" data-label="Repository name">
+      <th role="columnheader" data-label="Event title">
         <p id="table-expandable-node1">Quarked testing</p>
       </th>
-      <td role="cell" data-label="Branches">April 2</td>
-      <td role="cell" data-label="Pull requests">
-        <button class="pf-c-button pf-m-link">
+      <td role="cell" data-label="Start date">April 2</td>
+      <td role="cell" data-label="Sign up">
+        <button class="pf-c-button pf-m-link rhd-m-register">
           Register
           <span class="pf-c-button__icon"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
         </button>
@@ -51,12 +51,12 @@
           <i class="fas fa-angle-down pf-c-table__toggle-icon" aria-hidden="true"></i>
         </button>
       </td>
-      <th role="columnheader" data-label="Repository name">
+      <th role="columnheader" data-label="Event title">
         <p id="table-expandable-node1">Kubernetes Master course</p>
       </th>
-      <td role="cell" data-label="Branches">April 6</td>
-      <td role="cell" data-label="Pull requests">
-        <button class="pf-c-button pf-m-link">
+      <td role="cell" data-label="Start date">April 6</td>
+      <td role="cell" data-label="Sign up">
+        <button class="pf-c-button pf-m-link rhd-m-register">
           Register
           <span class="pf-c-button__icon"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
         </button>
@@ -105,12 +105,12 @@
           <i class="fas fa-angle-right pf-c-table__toggle-icon" aria-hidden="true"></i>
         </button>
       </td>
-      <th role="columnheader" data-label="Repository name">
+      <th role="columnheader" data-label="Event title">
         <p id="table-expandable-node1">Kubernetes Master course</p>
       </th>
-      <td role="cell" data-label="Branches">April 9</td>
-      <td role="cell" data-label="Pull requests">
-        <button class="pf-c-button pf-m-link">
+      <td role="cell" data-label="Start date">April 9</td>
+      <td role="cell" data-label="Sign up">
+        <button class="pf-c-button pf-m-link rhd-m-register">
           Register
           <span class="pf-c-button__icon"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
         </button>
@@ -124,12 +124,12 @@
           <i class="fas fa-angle-down pf-c-table__toggle-icon" aria-hidden="true"></i>
         </button>
       </td>
-      <th role="columnheader" data-label="Repository name">
+      <th role="columnheader" data-label="Event title">
         <p id="table-expandable-node1">Commit to excellence - Java in Containers</p>
       </th>
-      <td role="cell" data-label="Branches">April 13</td>
-      <td role="cell" data-label="Pull requests">
-        <button class="pf-c-button pf-m-link">
+      <td role="cell" data-label="Start date">April 13</td>
+      <td role="cell" data-label="Sign up">
+        <button class="pf-c-button pf-m-link rhd-m-register">
           Register
           <span class="pf-c-button__icon"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
         </button>
@@ -174,12 +174,12 @@
           <i class="fas fa-angle-right pf-c-table__toggle-icon" aria-hidden="true"></i>
         </button>
       </td>
-      <th role="columnheader" data-label="Repository name">
+      <th role="columnheader" data-label="Event title">
         <p id="table-expandable-node1">Going deep (learning) with TensorFlow and Quarkus</p>
       </th>
-      <td role="cell" data-label="Branches">April 15</td>
-      <td role="cell" data-label="Pull requests">
-        <button class="pf-c-button pf-m-link">
+      <td role="cell" data-label="Start date">April 15</td>
+      <td role="cell" data-label="Sign up">
+        <button class="pf-c-button pf-m-link rhd-m-register">
           Register
           <span class="pf-c-button__icon"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
         </button>
@@ -193,12 +193,12 @@
           <i class="fas fa-angle-right pf-c-table__toggle-icon" aria-hidden="true"></i>
         </button>
       </td>
-      <th role="columnheader" data-label="Repository name">
+      <th role="columnheader" data-label="Event title">
         <p id="table-expandable-node1">Istio Service Mesh Master Course</p>
       </th>
-      <td role="cell" data-label="Branches">April 20</td>
-      <td role="cell" data-label="Pull requests">
-        <button class="pf-c-button pf-m-link pf-m-disabled">
+      <td role="cell" data-label="Start date">April 20</td>
+      <td role="cell" data-label="Sign up">
+        <button class="pf-c-button pf-m-link rhd-m-register pf-m-disabled">
           Register
           <span class="pf-c-button__icon"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
         </button>
