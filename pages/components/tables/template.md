@@ -10,6 +10,16 @@ intro_paragraph:
 ---
 <!-- remove this style block once code is merged to developers.redhat.com -->
 <style>
+  @media screen and (max-width: 768px) {
+    .pf-c-table__toggle .pf-c-button.pf-m-expanded>* {
+      transform: rotate(0) !important;
+    }
+  }
+  @media screen and (max-width: 768px) and (min-width: 320px) {
+    .rhd-c-table .rhd-m-register {
+      justify-self: baseline;
+    }
+  }
   .rhd-c-table {
     --pf-c-table__expandable-row--before--BackgroundColor: #ee0000;
   }
