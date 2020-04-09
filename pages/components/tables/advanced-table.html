@@ -2,11 +2,6 @@
   <div class="pf-c-data-toolbar__content">
     <div class="pf-c-data-toolbar__content-section">
       <div class="pf-c-data-toolbar__group pf-m-toggle-group pf-m-show-on-2xl">
-        <div class="pf-c-data-toolbar__toggle">
-          <button class="pf-c-button pf-m-plain" type="button" aria-label="Show filters" aria-expanded="false" aria-controls="data-toolbar-stacked-example-expandable-content">
-            <i class="fas fa-filter" aria-hidden="true"></i>
-          </button>
-        </div>
         <div class="pf-c-data-toolbar__group">
           <div class="pf-c-data-toolbar__item pf-m-label" id="filter-by-label" aria-hidden="true">Filter by</div>
           <div class="pf-c-data-toolbar__item">
