@@ -1,7 +1,7 @@
 ---
 layout: develop
 category: develop
-section: Develop
+section: layouts
 title: Homepage
 permalink: /layouts/home
 intro_paragraph: >
@@ -119,6 +119,7 @@ intro_paragraph: >
     </div>
   </div>
 </div>
+
 {% highlight html %}
-  {% include_relative grid-example.html %}
+{% include_relative grid-example.html %}
 {% endhighlight %}

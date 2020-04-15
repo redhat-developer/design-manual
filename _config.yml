@@ -68,6 +68,9 @@ collection:
   logo:
     output: true
     permalink: /brand-assets/RHD_Full_Logo/:name
+  components:
+    output: true
+    permalink: /components
 
 # Kramdown options
 kramdown:

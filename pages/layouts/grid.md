@@ -1,7 +1,7 @@
 ---
 layout: develop
 category: develop
-section: Develop
+section: layouts
 title: Responsive Grid
 permalink: /layouts/grid
 intro_paragraph: >

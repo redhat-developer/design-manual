@@ -16,7 +16,7 @@ custom_css: [cards, home]
     <div class="pf-l-flex pf-u-mb-lg pf-u-text-align-center" style="margin: 0 auto;">
       <div class="pf-l-flex__item">
         <h1 class="pf-c-title pf-m-4xl">{{ page.heading }}</h1>
-        <a href="{{ page.subheader_url }}" target="top" class="pf-c-title pf-m-3xl rhddx-m-link-header">{{ page.subheader }}<span class="rhddx-m-link-header__arrow-right pf-u-ml-sm"><i class="fas fa-arrow-right" aria-hidden="true"></i></span></a>
+        <a href="{{ page.subheader_url }}" target="top" class="pf-c-title pf-m-3xl rhddx-m-link-header rhddx-m-dark">{{ page.subheader }}<span class="rhddx-m-link-header__arrow-right pf-u-ml-sm"><i class="fas fa-arrow-right" aria-hidden="true"></i></span></a>
         <p class="pf-u-my-xl pf-m-lg">{{ page.intro }}</p>
       </div>
     </div>

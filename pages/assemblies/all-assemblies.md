@@ -1,7 +1,7 @@
 ---
 layout: develop
 category: develop
-section: Develop
+section: assemblies
 title: All Assemblies
 permalink: /assemblies/all-assemblies
 intro_paragraph: >

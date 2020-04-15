@@ -67,13 +67,27 @@
     border: 1px solid;
     border-color: #06c;
     border-radius: 3px;
-    color: white;
+    color: var(--rhddx-global--Color--white);
     &:hover,
     &:active,
     &:focus {
-      background-color: #fff;
-      border-color: #fff;
+      background-color: var(--rhddx-global--Color--white);
+      border-color: var(--rhddx-global--Color--white);
       color: #06c;
+    }
+  }
+  &.rhddx-m-code-toggler {
+    background-color: var(--rhddx-global--Color--white);
+    border: 1px solid;
+    border-color: var(--rhddx-global--Color--100);
+    color: var(--rhddx-global--Color--100);
+    border-radius: 3px;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--rhddx-global--Color--100);
+      border-color: var(--rhddx-global--Color--white);
+      color: var(--rhddx-global--Color--white);
     }
   }
 }

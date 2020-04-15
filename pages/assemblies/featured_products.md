@@ -1,7 +1,7 @@
 ---
 layout: develop
 category: develop
-section: Develop
+section: assemblies
 title: Featured Products
 permalink: /assemblies/featured_products
 intro_paragraph: >

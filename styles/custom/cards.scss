@@ -1,6 +1,6 @@
 .rhddx-c-card {
   & > * {
-    color: #fff;
+    color: var(--rhddx-global--Color--white);
     text-align: center;
     width: 350px;
   }
@@ -53,19 +53,38 @@
   }
   p {
     font-size: 20px;
-    color: #151515;
+    color: var(--rhddx-global--Color--100);
   }
   &.rhddx-m-active {
     opacity: 1;
   }
   &.rhddx-m-developer {
-    &.rhddx-m-active{
+    &.rhddx-m-active {
       border-top-color: rgba(236, 122, 8, 1);
+    }
+    &.rhddx-m-hover-highlight {
+      &:before {
+        content: "";
+        display: block;
+        border-top: 8px solid rgba(236, 122, 8, 1);
+        width: 30%;
+        margin-top: -8px;
+      }
     }
   }
   &.rhddx-m-designer {
     &.rhddx-m-active {
       border-top-color: rgba(0, 185, 228, 1);
+    }
+    &.rhddx-m-hover-highlight {
+      &:before {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        border-top: 8px solid rgba(0, 185, 228, 1);
+        width: 30%;
+        margin-top: -8px;
+      }
     }
   }
   &.rhddx-m-creator {

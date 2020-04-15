@@ -2,17 +2,46 @@
 <nav class="rhddx-c-nav--vertical" aria-label="Global">
   {% for item in site.data.create.toc %}
   <ul>
+    <li>
+      {% if page.title == 'Overview' %}
+        {% if jekyll.environment == 'development' %}
+        <a href="/create" {% if page.title == 'Overview' %} class="rhddx-m-active" aria-current="page" {% endif %}>
+          Overview
+        </a>
+        {% elsif jekyll.environment == 'production' %}
+        <a href="{{ site.baseurl }}/create" {% if page.title == 'Overview' %} class="rhddx-m-active" aria-current="page" {% endif %}>
+          Overview
+        </a>
+        {% endif %}
+      {% else %}
+      {% if jekyll.environment == 'development' %}
+        <a href="/create">
+          Overview
+        </a>
+        {% elsif jekyll.environment == 'production' %}
+        <a href="{{ site.baseurl }}/create">
+          Overview
+        </a>
+        {% endif %}
+      {% endif %}
+    </li>
     <li class="rhddx-c-sub-menu">
-      <a href="#" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %} id="expandedNav">
+      {% if page.section == 'Content Types' %}
+      <a href="#" class="rhddx-c-sub-menu--item rhddx-m-active" id="expandedNav">
         {{ item.title }}
       </a>
+      {% else %}
+      <a href="#" class="rhddx-c-sub-menu--item" id="expandedNav">
+        {{ item.title }}
+      </a>
+      {% endif %}
       <ul>
       {% for entry in item.subfolderitems %}
         <li>
           {% if jekyll.environment == 'development' %}
-          <a href="{{ entry.url }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ entry.page }}</a>
+          <a href="{{ entry.url }}" {% if page.title == entry.page %} class="rhddx-c-entry rhddx-m-active" aria-current="page" {% else %} class="rhddx-c-entry" {% endif %}>{{ entry.page }}</a>
           {% elsif jekyll.environment == 'production' %}
-          <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>
+          <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="rhddx-c-entry rhddx-m-active" aria-current="page" {% else %} class="rhddx-c-entry" {% endif %}>
             {{ entry.page }}
           </a>
           {% endif %}
@@ -25,20 +54,26 @@
   {% for item in site.data.assemblies.toc %}
   <ul>
     <li class="rhddx-c-sub-menu">
-      <a href="#" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %} id="expandedNav">
+      {% if page.section == 'assemblies' %}
+      <a href="#" class="rhddx-c-sub-menu--item rhddx-m-active" id="expandedNav">
         {{ item.title }}
       </a>
-      {% for entry in item.subfolderitems %}
+      {% else %}
+      <a href="#" class="rhddx-c-sub-menu--item" id="expandedNav">
+        {{ item.title }}
+      </a>
+      {% endif %}
       <ul>
+      {% for entry in item.subfolderitems %}
         <li>
           {% if jekyll.environment == 'development' %}
-          <a href="{{ entry.url }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ entry.page }}</a>
+          <a href="{{ entry.url }}" {% if page.title == entry.page %} class="rhddx-c-entry rhddx-m-active" aria-current="page" {% else %} class="rhddx-c-entry" {% endif %}>{{ entry.page }}</a>
           {% elsif jekyll.environment == 'production' %}
-          <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ entry.page }}</a>
+          <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="rhddx-c-entry rhddx-m-active" aria-current="page" {% else %} class="rhddx-c-entry" {% endif %}>{{ entry.page }}</a>
           {% endif %}
         </li>
+        {% endfor %}
       </ul>
-      {% endfor %}
     </li>
   </ul>
   {% endfor %}

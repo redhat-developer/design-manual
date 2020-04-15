@@ -8,6 +8,15 @@
   & > * {
     color: #fff;
   }
+  a:hover {
+    text-decoration: none;
+  }
+  .rhddx-m-link-header.rhddx-m-dark {
+    &:hover {
+      text-decoration: none;
+      color: #2b9af3;
+    }
+  }
   .rhddx-l-card__intro {
     .pf-l-flex__item {
       margin-right: 0;

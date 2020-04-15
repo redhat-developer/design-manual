@@ -160,7 +160,7 @@
         text-decoration: none;
         transition: 0.2s linear;
         border-left: var(--rhddx-global--Border-width) solid transparent;
-        &:after {
+        &.rhddx-c-sub-menu--item:after {
           font-family: "Font Awesome 5 Pro";
           font-weight: 400;
           content: "\f067";
@@ -170,8 +170,10 @@
           align-self: center;
           color: var(--rhddx-global--Color--100);
         }
-        &.rhddx-m-expanded {
+        &.rhddx-m-active {
           color: var(--rhddx-global--link--Color);
+        }
+        &.rhddx-m-expanded {
           border-left-color: transparent;
           &:hover {
             color: var(--rhddx-global--link--Color);

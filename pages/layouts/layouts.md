@@ -1,7 +1,7 @@
 ---
 layout: develop
 category: develop
-section: Develop
+section: layouts
 title: Layouts
 permalink: /layouts/layouts
 intro_paragraph: >

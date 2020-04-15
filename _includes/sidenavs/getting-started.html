@@ -1,22 +1,24 @@
 {% assign navurl = page.url | remove: 'index.html' %}
-{% for item in site.data.getting-started.toc %}
-<nav class="pf-c-nav" aria-label="Global">
-  <section class="pf-c-nav__section" aria-labelledby="grouped-title1">
-    <h2 class="pf-c-nav__section-title" id="grouped-title1">{{ item .title }}</h2>
-    <ul class="pf-c-nav__list">
+<nav class="rhddx-c-nav--vertical" aria-label="Global">
+  {% for item in site.data.getting-started.toc %}
+  <ul>
+    <li class="rhddx-c-sub-menu">
+      <a href="#" class="rhddx-c-sub-menu--item" id="expandedNav">
+        {{ item.title }}
+      </a>
+      <ul>
       {% for entry in item.subfolderitems %}
-      <li class="pf-c-nav__item">
-        {% if jekyll.environment == 'development' %}
-        <a href="{{ entry.url }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
-        {% elsif jekyll.environment == 'production' %}
-        <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
-        {% endif %}
-      </li>
-      {% endfor %}
-      <li class="pf-c-nav__item">
-        <a href="https://www.github.com/redhat-developer/design-manual" class="pf-c-nav__link" target="top">Design Manual Repo &nbsp;<i class="fab fa-github"></i></a>
-      </li>
-    </ul>
-  </section>
-</nav>
-{% endfor %}
+        <li>
+          {% if jekyll.environment == 'development' %}
+          <a href="{{ entry.url }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ entry.page }}</a>
+          {% elsif jekyll.environment == 'production' %}
+          <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>
+            {{ entry.page }}
+          </a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+  </ul>
+  {% endfor %}

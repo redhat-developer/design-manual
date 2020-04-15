@@ -20,6 +20,19 @@ layout: compress
       <main class="pf-c-page__main" role="main" tab-index="-1">
         <section class="pf-c-page__main-section pf-m-light pf-m-fill">
           <div class="pf-l-grid pf-c-content">
+            <div class="pf-l-grid__item pf-m-12-col" id="main">
+              {% if page.title == 'Overview' %}
+              <h3><i class="fal fa-swatchbook"></i> {{ page.title }}</h3>
+              {% elsif page.section == 'RHD Brand Elements' %}
+              <h3><i class="fal fa-palette"></i> {{ page.section | capitalize }}</h3>
+              {% elsif page.section == 'Extended Brand Elements'%}
+              <h3><i class="fal fa-palette"></i> {{ page.section | capitalize }}</h3>
+              {% elsif page.section == 'Campaigns'%}
+              <h3><i class="fal fa-palette"></i> {{ page.section | capitalize }}</h3>
+              {% elsif page.section == 'Events'%}
+              <h3><i class="fal fa-calendar"></i> {{ page.section | capitalize }}</h3>
+              {% endif %}
+            </div>
             <div class="pf-l-grid__item pf-m-11-col" id="main">
               <h1>{{ page.title }}</h1>
               {% include page-intro.html %}
