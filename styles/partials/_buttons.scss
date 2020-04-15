@@ -62,6 +62,20 @@
       margin-left: .5em;
     }
   }
+  &.rhddx-m-back-btn {
+    background-color: #06c;
+    border: 1px solid;
+    border-color: #06c;
+    border-radius: 3px;
+    color: white;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #fff;
+      border-color: #fff;
+      color: #06c;
+    }
+  }
 }
 .rhddx-c-button--3d {
   border: none;
