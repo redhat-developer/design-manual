@@ -1,18 +1,3 @@
-.rhddx-c-background__dynamic {
-  width: 100wh;
-  height: 90vh;
-  color: var(--rhddx-global--Color--white);
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 15s ease-in-out;
-  -moz-animation: Gradient 15s ease-in-out;
-  animation: Gradient 15s ease-in-out;
-  h1,
-  p {
-    text-align: center;
-  }
-}
-
 @keyframes Gradient {
   0% {
     background-position: 0% 50%
@@ -22,5 +7,25 @@
   }
   100% {
     background-position: 0% 50%
+  }
+}
+
+.page-content {
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease-in-out;
+  -moz-animation: Gradient 15s ease-in-out;
+  animation: Gradient 15s ease-in-out;
+  &--inner {
+    height: 100vh;
+  }
+  .content-text {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    height: 100vh;
+    opacity: 1;
   }
 }

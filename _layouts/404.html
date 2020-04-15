@@ -7,19 +7,8 @@ layout: compress
 
   {% include head.html %}
 
-  <body class="rhddx">
-    <div class="pf-c-page">
-      {% include header.html %}
-      <main class="pf-c-page__main" role="main" tab-index="-1">
-        <section class="pf-c-page__main-section rhddx-c-background__dynamic pf-m-fill">
-          <div class="pf-l-bullseye pf-c-content">
-            <div class="pf-l-bullseye__item" id="main">
-              {{ content }}
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
+  <body>
+    {{ content }}
   </body>
 
 </html>
