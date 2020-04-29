@@ -1,28 +1,25 @@
 {% assign navurl = page.url | remove: 'index.html' %}
-{% for item in site.data.components.toc %}
-<nav class="pf-c-nav" aria-label="Global">
-  <!-- <h2 class="pf-c-nav__section-title" id="grouped-title1">{{ item .title }}</h2> -->
-  <ul class="pf-c-nav__list">
-    <li class="pf-c-nav__item pf-m-expandable">
-      <a href="#" {% if page.title == item.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %} id="expandedNav">{{ item.title }}
-        <span class="pf-c-nav__toggle">
-          <i class="fas fa-angle-right" aria-hidden="true"></i>
-        </span>
+<nav class="rhddx-c-nav--vertical" aria-label="Global">
+  {% for item in site.data.components.toc %}
+  <ul>
+    <li class="rhddx-c-sub-menu">
+      <a href="#" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %} id="expandedNav">
+        {{ item.title }}
       </a>
+      <ul>
       {% for entry in item.subfolderitems %}
-      <section class="pf-c-nav__subnav">
-        <ul class="pf-c-nav__simple-list">
-          <li class="pf-c-nav__item">
-            {% if jekyll.environment == 'development' %}
-            <a href="{{ entry.url }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
-            {% elsif jekyll.environment == 'production' %}
-            <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
-            {% endif %}
-          </li>
-        </ul>
-      </section>
-      {% endfor %}
+        <li>
+          {% if jekyll.environment == 'development' %}
+          <a href="{{ entry.url }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ entry.page }}</a>
+          {% elsif jekyll.environment == 'production' %}
+          <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>
+            {{ entry.page }}
+          </a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
     </li>
   </ul>
+  {% endfor %}
 </nav>
-{% endfor %}

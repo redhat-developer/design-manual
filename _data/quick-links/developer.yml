@@ -6,4 +6,4 @@ item:
       - page: Assemblies
         url: /assemblies
       - page: Layouts
-        url: /layouts
+        url: /layouts/layouts

@@ -13,4 +13,10 @@
       margin-right: 0;
     }
   }
+  .rhddx-m-link-header.rhddx-m-dark {
+    &:hover {
+      color: lighten($color: #06c, $amount: 25%);
+      text-decoration: none;
+    }
+  }
 }
