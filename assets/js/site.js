@@ -1,8 +1,7 @@
 // Expand / Collapse Sidenav list items
 $(document).ready(function(){
-  $('.rhddx-c-sub-menu a').click(function(){
-    $(this).parent("li").children("ul").slideToggle();
-    $(this).attr('aria-expanded', 'true');
-    $(this).toggleClass("rhddx-m-expanded");
+  $(".pf-m-expandable").on("click", function() {
+    $(".pf-m-expandable").removeClass("pf-m-expanded");
+    $(this).addClass("pf-m-expanded");
   });
 });
