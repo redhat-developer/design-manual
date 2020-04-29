@@ -1,0 +1,15 @@
+.rhddx-c-site-search {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: var(--rhddx-global--Border-width-small) solid var(--rhddx-global--Color--white);
+  color: var(--rhddx-global--Color--white);
+  &:hover {
+    border-color: var(--rhddx-global--Color--white);
+  }
+  &:active,
+  &:focus,
+  &::selection {
+    border-color: var(--rhddx-global--Color--white);
+    border-bottom-color: var(--rhddx-global--link--Color);
+  }
+}
