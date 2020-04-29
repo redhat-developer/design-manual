@@ -1,19 +1,25 @@
 {% assign navurl = page.url | remove: 'index.html' %}
-{% for item in site.data.assemblies.toc %}
-<nav class="pf-c-nav" aria-label="Global">
-  <section class="pf-c-nav__section" aria-labelledby="grouped-title1">
-    <h2 class="pf-c-nav__section-title" id="grouped-title1">{{ item .title }}</h2>
-    <ul class="pf-c-nav__list">
+<nav class="rhddx-c-nav--vertical" aria-label="Global">
+  {% for item in site.data.assemblies.toc %}
+  <ul>
+    <li class="rhddx-c-sub-menu">
+      <a href="#" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %} id="expandedNav">
+        {{ item.title }}
+      </a>
+      <ul>
       {% for entry in item.subfolderitems %}
-      <li class="pf-c-nav__item">
-        {% if jekyll.environment == 'development' %}
-        <a href="{{ entry.url }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
-        {% elsif jekyll.environment == 'production' %}
-        <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="pf-c-nav__link pf-m-current" {% else %} class="pf-c-nav__link" {% endif %}>{{ entry.page }}</a>
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
+        <li>
+          {% if jekyll.environment == 'development' %}
+          <a href="{{ entry.url }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ entry.page }}</a>
+          {% elsif jekyll.environment == 'production' %}
+          <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>
+            {{ entry.page }}
+          </a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+  </ul>
+  {% endfor %}
 </nav>
-{% endfor %}

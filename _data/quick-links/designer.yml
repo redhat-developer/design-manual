@@ -2,8 +2,8 @@ item:
   - title: Quick links
     subfolderitems:
       - page: RHD Brand elements
-        url: /
+        url: /brand-assets/RHD_Story_Messaging/story-messaging
       - page: Extended brand elements
-        url: /
-      - page: Campaings / Sub-brands
-        url: /
+        url: /design/visual-system
+      - page: Campaigns / Sub-brands
+        url: /design/campaigns/coderland
