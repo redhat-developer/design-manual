@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Toolbar
 permalink: /components/toolbar
 section: components
-category: components
 status: unreleased
 custom_js: code-snippets
 intro_paragraph:
