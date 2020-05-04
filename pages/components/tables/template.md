@@ -1,9 +1,9 @@
 ---
-layout: components
+layout: develop
+category: develop
 title: Tables
 permalink: /components/tables
 section: components
-category: components
 status: unreleased
 custom_js: code-snippets
 intro_paragraph:
@@ -74,6 +74,11 @@ _default table with expandable rows and a toolbar_
 
 {% include_relative advanced-table.md %}
 
+## Basic table (no expansion)
+_default table with no expansion_
+
+{% include_relative basic-table.md %}
+
 ## Table enhancements
 For additional capabilities, tables can also use the Toolbar component.
 
@@ -81,18 +86,27 @@ For additional capabilities, tables can also use the Toolbar component.
 ---
 
 <h2 id="code">Code Snippets</h2>
+<a href="#table-example">Table Example</a> |
+<a href="#compact-table-example">Compact Table Example</a> |
+<a href="#advanced-table-example">Advanced Table Example</a> |
+<a href="#basic-table-example">Basic Table Example</a>
 
-### Table Example
+<h3 id="table-example">Table Example</h3>
 {% highlight html %}
 {% include_relative table.html %}
 {% endhighlight %}
 
-### Compact Table Example
+<h3 id="compact-table-example">Compact Table Example</h3>
 {% highlight html %}
 {% include_relative compact-table.html %}
 {% endhighlight %}
 
-### Advanced Table Example
+<h3 id="advanced-table-example">Advanced Table Example</h3>
 {% highlight html %}
 {% include_relative advanced-table.html %}
+{% endhighlight %}
+
+<h3 id="basic-table-example">Basic Table Example</h3>
+{% highlight html %}
+{% include_relative basic-table.html %}
 {% endhighlight %}

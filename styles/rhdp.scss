@@ -2,7 +2,6 @@
 
 // /* stylelint-ignore */
 
-:root {$pf-global--font-path: '/themes/custom/rhdp2/fonts/patternfly';}
-@import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/rhd.scss";
+:root {$pf-global--font-path: '/themes/custom/rhdp2/fonts/patternfly' !default;}
 
-// $pf-global--font-path: "../themes/custom/rhdp2/fonts/patternfly";
+@import "../developers.redhat.com/_docker/drupal/drupal-filesystem/web/themes/custom/rhdp2/rhd-frontend/src/styles/rhd.scss";
