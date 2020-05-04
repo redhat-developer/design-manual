@@ -29,6 +29,12 @@ intro_paragraph:
   .rhd-c-table .rhd-m-register {
     padding-left: 0;
   }
+  .rhd-c-table .pf-c-table__sort.pf-m-selected .pf-c-button:hover {
+    color: var(--pf-c-button--m-link--hover--Color);
+  }
+  .rhd-c-table .pf-c-table__sort.pf-m-selected .pf-c-table__sort-indicator:hover {
+    color: var(--pf-c-button--m-link--hover--Color);
+  }
   .rhd-m-nested-table thead tr {
     border-bottom: 0 !important;
   }
