@@ -3,7 +3,5 @@ toc:
     subfolderitems:
     - page: All Products Listing
       url: /assemblies/all-product-listing
-    - page: All Assemblies
-      url: /assemblies/all-assemblies
-    - page: Featured Products
-      url: /assemblies/featured_products
+    - page: Blog Posts
+      url: /assemblies/blog-posts
