@@ -15,7 +15,7 @@ backend:
 
 logo_url: https://redhat-developer.github.io/design-manual/assets/img/NewRHDFullLogo_black.png
 publish_mode: editorial_workflow # Enable drafts
-media_folder: "assets/uploads" # Folder where user uploaded files should go
+media_folder: "design-manual/assets/uploads" # Folder where user uploaded files should go
 pull_request_url: https://github.com/redhat-developer/design-manual/pulls
 
 collections: # A list of collections the CMS should be able to edit
@@ -154,7 +154,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "File Upload"
         name: "file-upload"
         widget: "file"
-        default: "/assets/uploads/"
+        default: "/design-manual/assets/uploads/"
         media_library:
           config:
             multiple: true
@@ -320,7 +320,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Featured Image"
         name: "featured_image"
         widget: "image"
-        default: "/assets/uploads/"
+        default: "/design-manual/assets/uploads/"
         hint: "Add <img src='{{page.featured_image}}'> to the body for the image to appear."
         media_library:
           config:

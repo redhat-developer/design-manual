@@ -18,4 +18,4 @@ featured_image: ""
 5. Getting started product page
 6. Topic page
 
-![Recent Blog Posts example image](/assets/uploads/blog_posts-example.png)
+![Recent Blog Posts example image](/design-manual/assets/uploads/blog_posts-example.png)
