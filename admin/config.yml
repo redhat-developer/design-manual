@@ -236,6 +236,61 @@ collections: # A list of collections the CMS should be able to edit
         name: "body"
         widget: "markdown"
         required: true
+  - name: "assemblies"
+    label: "Assemblies"
+    folder: "pages/assemblies"
+    sort: "title:asc"
+    create: true # Allow users to create new Design pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "develop"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "hidden"
+        default: "develop"
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "hidden"
+        default: "Develop"
+        required: false
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title of the page"
+        tagname: "h1"
+        required: true
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/{{subfolder}}/{{ page.title }}"
+        hint: "Replace {{subfolder}} with the type (such as assemblies) and {{ page.title }} with the title of the page."
+        required: true
+      - label: "Intro Paragraph"
+        name: "intro_paragraph"
+        widget: "markdown"
+        required: false
+      - label: "Custom JS File"
+        name: "custom_js"
+        widget: "string"
+        default: ""
+        hint: "Add a custom JS file to the page."
+        required: false
+      - label: "Custom CSS File"
+        name: "custom_css"
+        widget: "string"
+        default: ""
+        hint: "Add a custom CSS file to the page."
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: true
   - name: "create"
     label: "Create Pages"
     folder: "pages/create"
