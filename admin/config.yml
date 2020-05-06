@@ -15,7 +15,7 @@ backend:
 
 logo_url: https://redhat-developer.github.io/design-manual/assets/img/NewRHDFullLogo_black.png
 publish_mode: editorial_workflow # Enable drafts
-media_folder: "design-manual/assets/uploads" # Folder where user uploaded files should go
+media_folder: "assets/uploads" # Folder where user uploaded files should go
 pull_request_url: https://github.com/redhat-developer/design-manual/pulls
 
 collections: # A list of collections the CMS should be able to edit
