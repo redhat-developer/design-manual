@@ -15,3 +15,5 @@ featured_image: /assets/uploads/bonus_content_list-example.png
 
 1. Article
 2. Page
+
+<img src="{{page.featured_image}}">
