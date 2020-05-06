@@ -27,8 +27,8 @@ collections: # A list of collections the CMS should be able to edit
     editor:
       preview: false
     files:
-      - name: "assemblies"
-        label: "Assemblies Page Navigation"
+      - label: "Assemblies Page Navigation"
+        name: "assemblies"
         file: "_data/assemblies.yml"
         description: "Used for creating the Assembly category list in the vertival navigation."
         fields:
