@@ -19,12 +19,7 @@ media_folder: "assets/uploads" # Folder where user uploaded files should go
 pull_request_url: https://github.com/redhat-developer/design-manual/pulls
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "assemblies-navigation"
-    label: "Assemblies navigation"
-    folder: "_data"
-    sort: "title:asc"
-    create: "true"
-    delete: "false"
+
   # PAGES
   - name: "page"
     label: "Overview Pages"
