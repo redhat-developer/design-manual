@@ -15,3 +15,5 @@ featured_image: /design-manual/assets/uploads/bonus_content_list-example.png
 
 1. Article
 2. Page
+
+![Recent Bonus Content List example image](/design-manual/assets/uploads/bonus_content_list-example.png)

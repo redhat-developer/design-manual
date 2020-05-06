@@ -7,8 +7,9 @@ permalink: /assemblies/blog-posts
 intro_paragraph: >
   This assembly lists all blog posts in relation to one or many category filters
   and audiences.
-featured_image: ""
+featured_image: /design-manual/assets/uploads/blog_posts-example.png
 ---
+
 **Available in these types of content**
 
 1. Article

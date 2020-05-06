@@ -1,9 +1,7 @@
 toc:
-  - title: Assemblies
-    subfolderitems:
-    - page: All Products Listing
-      url: /assemblies/all-product-listing
-    - page: Blog Posts
-      url: /assemblies/blog-posts
-    - page: Bonus Content List
-      url: /assemblies/bonus-content-list
+  - page: All Products Listing
+    url: /assemblies/all-product-listing
+  - page: Blog Posts
+    url: /assemblies/blog-posts
+  - page: Bonus Content List
+    url: /assemblies/bonus-content-list
