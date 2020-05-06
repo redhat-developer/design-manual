@@ -153,7 +153,8 @@ collections: # A list of collections the CMS should be able to edit
       - label: "File Upload"
         name: "file-upload"
         widget: "file"
-        default: "/design-manual/assets/uploads/"
+        default: ""
+        hint: "Update URL to add /design-manual/to the beginning of the link."
         media_library:
           config:
             multiple: true
@@ -319,8 +320,8 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Featured Image"
         name: "featured_image"
         widget: "image"
-        default: "/design-manual/assets/uploads/"
-        hint: "Add <img src='{{page.featured_image}}'> to the body for the image to appear."
+        default: ""
+        hint: "Add <img src='/design-manual/{{page.featured_image}}'> to the body for the image to appear."
         media_library:
           config:
             multiple: true
