@@ -313,6 +313,10 @@ collections: # A list of collections the CMS should be able to edit
         name: "intro_paragraph"
         widget: "markdown"
         required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: true
       - label: "Featured Image"
         name: "featured_image"
         widget: "image"
@@ -321,10 +325,6 @@ collections: # A list of collections the CMS should be able to edit
           config:
             multiple: true
         required: false
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-        required: true
   - name: "create"
     label: "Create Pages"
     folder: "pages/create"
