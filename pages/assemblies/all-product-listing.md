@@ -20,3 +20,4 @@ featured_image: /assets/uploads/all_products_listing_example.png
 5. Getting started product page
 6. Topic page
 
+<img src="{{page.featured_image}}">

@@ -160,8 +160,12 @@ const
   // Minimize all of the images located under './assets/img/'
   // Only touches .jpg, .jpeg, .png, and .svg files
   function minimizeImages(cb) {
-    return gulp.src('./assets/img/**/*.{jpg,jpeg,png,svg}')
+    return gulp.src([
+        './assets/img/**/*.{jpg,jpeg,png,svg}',
+        './assets/uploads/*.{jpg,jpeg,png,svg}'
+      ])
       .pipe(newer('./docs/assets/img/'))
+      .pipe(newer('./docs/assets/uploads/'))
       .pipe(flatMap(retinaVersions))
       .pipe(scaleImages(imageFileName))
       .pipe(imagemin([mozjpeg(), pngquant()]))
@@ -178,6 +182,8 @@ const
   function copyStatic(cb) {
     gulp.src('./assets/img/favicon.{png,ico}')
       .pipe(gulp.dest('./docs/assets/img/'));
+      gulp.src('./assets/uploads/*.{jpg,jpeg,png,svg}')
+      .pipe(gulp.dest('./docs/assets/uploads/'));
     gulp.src('./assets/themes/custom/rhdp2/fonts/patternfly/**/*.*')
       .pipe(gulp.dest('./docs/themes/custom/rhdp2/fonts/patternfly/'));
     cb();
