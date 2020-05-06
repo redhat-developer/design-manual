@@ -9,13 +9,15 @@ intro_paragraph: >
   overview page. Ability to add a title and description to the assembly. All of
   the products should be automatically curated in this assembly as long as they
   exist as a product in drupal.
-featured_image: /design-manual/assets/uploads/all_products_listing_example.png
+featured_image: ""
 ---
-
 **Available in these types of content**
+
 1. Article
 2. Page
 3. Overview product page
 4. Downloads product page
 5. Getting started product page
 6. Topic page
+
+   ![All Products Listing example image](/design-manual/assets/uploads/all_products_listing_example.png)
