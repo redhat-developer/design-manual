@@ -20,6 +20,36 @@ pull_request_url: https://github.com/redhat-developer/design-manual/pulls
 
 collections: # A list of collections the CMS should be able to edit
 
+  # Navigation
+  - name: "options"
+    label: "Navigations"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "assemblies"
+        label: "Assemblies Page Navigation"
+        file: "_data/assemblies.yml"
+        description: "Used for creating the Assembly category list in the vertival navigation."
+        fields:
+          - name: "toc"
+            label: "Assemblies"
+            widget: "list"
+            fields:
+              subfolderitems:
+                - { label: "Page", name: page, widget: string }
+                - { label: "URL", name: url, widget: string }
+      - label: "Components Navigation"
+        name: "components-nav"
+        file: "_data/components.yml"
+        description: "Used for creating the Components category list in the vertival navigation."
+        fields:
+          - label: "Components Items"
+            name: "toc"
+            widget: "list"
+            fields:
+              - {label: "Page", name: page, widget: string}
+              - {label: "URL", name: url, widget: string}
   # PAGES
   - name: "page"
     label: "Overview Pages"
@@ -120,6 +150,14 @@ collections: # A list of collections the CMS should be able to edit
         widget: "string"
         default: ""
         hint: "Add a custom CSS file to the page."
+        required: false
+      - label: "File Upload"
+        name: "file-upload"
+        widget: "file"
+        default: "/assets/uploads/"
+        media_library:
+          config:
+            multiple: true
         required: false
       - label: "Body"
         name: "body"
@@ -268,24 +306,20 @@ collections: # A list of collections the CMS should be able to edit
       - label: "URL"
         name: "permalink"
         widget: "string"
-        default: "/{{subfolder}}/{{ page.title }}"
-        hint: "Replace {{subfolder}} with the type (such as assemblies) and {{ page.title }} with the title of the page."
+        default: "/assemblies/{{ page.title }}"
+        hint: "Replace {{ page.title }} with the title of the page."
         required: true
       - label: "Intro Paragraph"
         name: "intro_paragraph"
         widget: "markdown"
         required: false
-      - label: "Custom JS File"
-        name: "custom_js"
-        widget: "string"
-        default: ""
-        hint: "Add a custom JS file to the page."
-        required: false
-      - label: "Custom CSS File"
-        name: "custom_css"
-        widget: "string"
-        default: ""
-        hint: "Add a custom CSS file to the page."
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+        default: "/assets/uploads/"
+        media_library:
+          config:
+            multiple: true
         required: false
       - label: "Body"
         name: "body"
