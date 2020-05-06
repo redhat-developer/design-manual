@@ -12,7 +12,7 @@ backend:
     delete: Delete "{{slug}}" page
     uploadMedia: Upload "{{path}}"
     deleteMedia: Delete "{{path}}"
-
+subfolder: "/design-manual/"
 logo_url: https://redhat-developer.github.io/design-manual/assets/img/NewRHDFullLogo_black.png
 publish_mode: editorial_workflow # Enable drafts
 media_folder: "assets/uploads" # Folder where user uploaded files should go
@@ -32,13 +32,12 @@ collections: # A list of collections the CMS should be able to edit
         file: "_data/assemblies.yml"
         description: "Used for creating the Assembly category list in the vertival navigation."
         fields:
-          - name: "toc"
-            label: "Assemblies"
+          - label: "Components Items"
+            name: "toc"
             widget: "list"
             fields:
-              subfolderitems:
-                - { label: "Page", name: page, widget: string }
-                - { label: "URL", name: url, widget: string }
+              - {label: "Page", name: page, widget: string}
+              - {label: "URL", name: url, widget: string}
       - label: "Components Navigation"
         name: "components-nav"
         file: "_data/components.yml"
