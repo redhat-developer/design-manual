@@ -321,6 +321,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "featured_image"
         widget: "image"
         default: "/assets/uploads/"
+        hint: "Add <img src='{{page.featured_image}}'> to the body for the image to appear."
         media_library:
           config:
             multiple: true
