@@ -7,3 +7,35 @@ toc:
     url: /assemblies/bonus-content-list
   - page: Call to action
     url: /assemblies/call-to-action
+  - page: Code snippet
+    url: /assemblies/code-snippet
+  - page: collection
+    url: /assemblies/collection
+  - page: Combo
+    url: /assemblies/combo
+  - page: Content
+    url: /assemblies/content
+  - page: Content call to action
+    url: /assemblies/content-call-to-action
+  - page: Content image
+    url: /assemblies/content-image
+  - page: Content pull quote
+    url: /assemblies/content-pull-quote
+  - page: CTA form
+    url: /assemblies/cta-form
+  - page: Curated content
+    url: /assemblies/curated-content
+  - page: Curated links
+    url: /assemblies/curated-links
+  - page: Curated products
+    url: /assemblies/curated-products
+  - page: Dynamic content
+    url: /assemblies/dynamic-content
+  - page: Dynamic content list
+    url: /assemblies/dynamic-content-list
+  - page: Eloqua form embed
+    url: /assemblies/eloqua-form-embed
+  - page: Embedded content
+    url: /assemblies/embedded-content
+  - page: Events hero
+    url: /assemblies/events-hero
