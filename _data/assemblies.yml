@@ -75,3 +75,9 @@ toc:
     url: /assemblies/sign-up-hero
   - page: Static item
     url: /assemblies/static-item
+  - page: Video hero
+    url: /assemblies/video-hero
+  - page: Videos
+    url: /assemblies/videos
+  - page: Wordpress post reference
+    url: /assemblies/wordpress-post-reference
