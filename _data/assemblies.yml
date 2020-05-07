@@ -55,3 +55,23 @@ toc:
     url: /assemblies/katacodas
   - page: Learning guides
     url: /assemblies/learning-guides
+  - page: Node references
+    url: /assemblies/node-references
+  - page: On page navigation
+    url: /assemblies/on-page-navigation
+  - page: Product download hero
+    url: /assemblies/product-download-hero
+  - page: Product download list
+    url: /assemblies/product-download-list
+  - page: Product try-it hero
+    url: /assemblies/product-try-it-hero
+  - page: Rich text
+    url: /assemblies/rich-text
+  - page: Rich text columns
+    url: /assemblies/rich-text-columns
+  - page: Rich text with image
+    url: /assemblies/rich-text-with-image
+  - page: Sign-up hero
+    url: /assemblies/sign-up-hero
+  - page: Static item
+    url: /assemblies/static-item
