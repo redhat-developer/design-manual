@@ -39,3 +39,19 @@ toc:
     url: /assemblies/embedded-content
   - page: Events hero
     url: /assemblies/events-hero
+  - page: Events list
+    url: /assemblies/events-list
+  - page: Expandable product groups
+    url: /assemblies/expandable-product-groups
+  - page: Featured articles
+    url: /assemblies/featured-articles
+  - page: Featured evangelists
+    url: /assemblies/featured-evangelists
+  - page: Featured resources
+    url: /assemblies/featured-resources
+  - page: Image hero
+    url: /assemblies/image-hero
+  - page: Katacodas
+    url: /assemblies/katacodas
+  - page: Learning guides
+    url: /assemblies/learning-guides
