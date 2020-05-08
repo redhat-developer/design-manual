@@ -17,7 +17,7 @@ toc:
     url: /assemblies/content
   - page: Content call to action
     url: /assemblies/content-call-to-action
-  - page: Content image
+  - page: Content image <i class="far fa-ban"></i>
     url: /assemblies/content-image
   - page: Content pull quote
     url: /assemblies/content-pull-quote
