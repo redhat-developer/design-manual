@@ -2,12 +2,11 @@
 layout: develop
 category: develop
 section: Develop
-title: Content call to action
-permalink: /assemblies/content-call-to-action
-intro_paragraph: This assembly inserts an Eloqua form into the page that acts as
-  a newsletter signup. Users must enter their first and last names and their
-  email address. A WYSIWYG is available as well to add content above the Eloqua
-  form if necessary. This form acts as an inline signup.
+title: Content image
+permalink: /assemblies/content-image
+intro_paragraph: This assembly inserts an image into the page in the largest
+  format it can cover (depending on the type of content). A caption can be added
+  in addition.
 featured_image: ""
 ---
 **Available in these types of content**
