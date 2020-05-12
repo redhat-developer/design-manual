@@ -20,4 +20,4 @@ featured_image: /assets/uploads/all_products_listing_example.png
 5. Getting started product page
 6. Topic page
 
-   ![All Products Listing example image](/design-manual/assets/uploads/all_products_listing_example.png)
+![All Products Listing example image](/design-manual/assets/uploads/all_products_listing_example.png)
