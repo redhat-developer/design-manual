@@ -17,4 +17,4 @@ featured_image: ""
 5. Getting started product page
 6. Topic page
 
-   ![Collection example image](/design-manual/assets/uploads/collection-example.png)
+![Collection example image](/design-manual/assets/uploads/collection-example.png)

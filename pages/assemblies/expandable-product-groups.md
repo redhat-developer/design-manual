@@ -17,4 +17,4 @@ featured_image: ""
 5. Getting started product page
 6. Topic page
 
-   ![](/design-manual/assets/uploads/expandable-product-groups-example.png)
+![](/design-manual/assets/uploads/expandable-product-groups-example.png)
