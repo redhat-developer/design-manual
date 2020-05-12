@@ -2,6 +2,7 @@
 node_modules
 docs
 .npmrc
+launch.json
 
 # Local Netlify folder
 .netlify
