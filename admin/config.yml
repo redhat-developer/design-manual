@@ -49,58 +49,9 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "Page", name: page, widget: string}
               - {label: "URL", name: url, widget: string}
-  # PAGES
-  - name: "page"
-    label: "Overview Pages"
-    folder: "pages"
-    sort: "title:asc"
-    create: true # Allow users to create new Overview Pages in the admin UI
-    delete: true
-    slug: "{{slug}}"
-    fields:
-      - label: "Layout"
-        name: "layout"
-        widget: "select"
-        hint: "Select a layout to use."
-        options:
-          - { label: "Getting Started", value: "getting-started" }
-          - { label: "Designer pages", value: "design" }
-          - { label: "Developer pages", value: "develop" }
-          - { label: "Creator pages", value: "create" }
-          - { label: "About pages", value: "page" }
-        required: true
-      - label: "Category"
-        name: "category"
-        widget: "select"
-        hint: "Select a category to use - should match primary nav that this page will reside under."
-        options:
-          - { label: "Getting Started", value: "getting-started" }
-          - { label: "Designer pages", value: "design" }
-          - { label: "Developer pages", value: "develop" }
-          - { label: "Creator pages", value: "create" }
-          - { label: "About pages", value: "page" }
-        required: true
-      - label: "Section"
-        name: "section"
-        widget: "string"
-        hint: "This should match the sidenav parent item."
-        required: false
-      - label: "URL"
-        name: "permalink"
-        widget: "string"
-        default: "/{{category}}/page-title"
-        hint: "If applicable, replace page-title with the title of the page"
-        required: true
-      - label: "Title"
-        name: "title"
-        widget: "string"
-        hint: "The title of the page"
-        tagname: "h1"
-        required: true
-      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: true}
+  # Collections
   - name: "getting-started"
-    label: "Getting Started Pages"
+    label: "Get Started"
     folder: "pages/getting-started"
     sort: "title:asc"
     create: true # Allow users to create new Getting Started pages in the admin UI
@@ -164,7 +115,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: "markdown"
         required: true
   - name: "design"
-    label: "Design Pages"
+    label: "Design"
     folder: "pages/design"
     sort: "title:asc"
     create: true # Allow users to create new Design pages in the admin UI
@@ -220,7 +171,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: "markdown"
         required: true
   - name: "develop"
-    label: "Develop Pages"
+    label: "Develop"
     folder: "pages/develop"
     sort: "title:asc"
     create: true # Allow users to create new Design pages in the admin UI
@@ -274,60 +225,8 @@ collections: # A list of collections the CMS should be able to edit
         name: "body"
         widget: "markdown"
         required: true
-  - name: "assemblies"
-    label: "Assemblies"
-    folder: "pages/assemblies"
-    sort: "title:asc"
-    create: true # Allow users to create new Design pages in the admin UI
-    delete: true
-    slug: "{{slug}}"
-    fields:
-      - label: "Layout"
-        name: "layout"
-        widget: "hidden"
-        default: "develop"
-        required: true
-      - label: "Category"
-        name: "category"
-        widget: "hidden"
-        default: "develop"
-        required: true
-      - label: "Section"
-        name: "section"
-        widget: "hidden"
-        default: "Develop"
-        required: false
-      - label: "Title"
-        name: "title"
-        widget: "string"
-        hint: "The title of the page"
-        tagname: "h1"
-        required: true
-      - label: "URL"
-        name: "permalink"
-        widget: "string"
-        default: "/assemblies/page-title"
-        hint: "Replace page-title with the title of the page."
-        required: true
-      - label: "Intro Paragraph"
-        name: "intro_paragraph"
-        widget: "markdown"
-        required: false
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-        required: true
-      - label: "Featured Image"
-        name: "featured_image"
-        widget: "image"
-        default: ""
-        hint: "Add <img src='/design-manual/{{page.featured_image}}'> to the body for the image to appear."
-        media_library:
-          config:
-            multiple: true
-        required: false
   - name: "create"
-    label: "Create Pages"
+    label: "Create"
     folder: "pages/create"
     sort: "title:asc"
     create: true # Allow users to create new Design pages in the admin UI
@@ -382,8 +281,153 @@ collections: # A list of collections the CMS should be able to edit
         name: "body"
         widget: "markdown"
         required: true
+  - name: "page"
+    label: "Overviews"
+    folder: "pages"
+    sort: "title:asc"
+    create: true # Allow users to create new Overview Pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "select"
+        hint: "Select a layout to use."
+        options:
+          - { label: "Getting Started", value: "getting-started" }
+          - { label: "Designer pages", value: "design" }
+          - { label: "Developer pages", value: "develop" }
+          - { label: "Creator pages", value: "create" }
+          - { label: "About pages", value: "page" }
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        hint: "Select a category to use - should match primary nav that this page will reside under."
+        options:
+          - { label: "Getting Started", value: "getting-started" }
+          - { label: "Designer pages", value: "design" }
+          - { label: "Developer pages", value: "develop" }
+          - { label: "Creator pages", value: "create" }
+          - { label: "About pages", value: "page" }
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "string"
+        hint: "This should match the sidenav parent item."
+        required: false
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/{{category}}/page-title"
+        hint: "If applicable, replace page-title with the title of the page"
+        required: true
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title of the page"
+        tagname: "h1"
+        required: true
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
+  - name: "assemblies"
+    label: "Assemblies"
+    folder: "pages/assemblies"
+    sort: "title:asc"
+    create: true # Allow users to create new Design pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "develop"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "hidden"
+        default: "develop"
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "hidden"
+        default: "Develop"
+        required: false
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title of the page"
+        tagname: "h1"
+        required: true
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/assemblies/page-title"
+        hint: "Replace page-title with the title of the page."
+        required: true
+      - label: "Intro Paragraph"
+        name: "intro_paragraph"
+        widget: "markdown"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: true
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+        default: ""
+        hint: "Add <img src='/design-manual/{{page.featured_image}}'> to the body for the image to appear."
+        media_library:
+          config:
+            multiple: true
+        required: false
+  - name: "layouts"
+    label: "Layouts"
+    folder: "pages/layouts"
+    sort: "title:asc"
+    create: true # Allow users to create new Design pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "develop"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "hidden"
+        default: "develop"
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "hidden"
+        default: "Develop"
+        required: false
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title of the page"
+        tagname: "h1"
+        required: true
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/layouts/page-title"
+        hint: "Replace page-title with the title of the page."
+        required: true
+      - label: "Intro Paragraph"
+        name: "intro_paragraph"
+        widget: "markdown"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        hint: "Add custom CSS inside of <style> brackets as necessary."
+        required: true
   - name: "pages"
-    label: "Page Example Pages"
+    label: "Examples"
     folder: "pages/pages"
     sort: "title:asc"
     create: true # Allow users to create new Page example pages in the admin UI
