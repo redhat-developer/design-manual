@@ -19,3 +19,5 @@ featured_image: ""
 4. Downloads product page
 5. Getting Started product page
 6. Topics page
+
+   ![](/design-manual/assets/uploads/cta-form-example.png)
