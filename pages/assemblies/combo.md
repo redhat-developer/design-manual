@@ -15,4 +15,4 @@ featured_image: ""
 1. Page
 2. Topic page
 
-   ![Combo example image](/design-manual/assets/uploads/combo-example.png)
+![Combo example image](/design-manual/assets/uploads/combo-example.png)

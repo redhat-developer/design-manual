@@ -19,4 +19,4 @@ featured_image: ""
 5. Getting Started product page
 6. Topics page
 
-   ![](/design-manual/assets/uploads/dynamic-content-list-example.png)
+![](/design-manual/assets/uploads/dynamic-content-list-example.png)

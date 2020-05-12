@@ -16,4 +16,4 @@ featured_image: ""
 5. Getting started product page
 6. Topic page
 
-   ![Content pull quote example image](/design-manual/assets/uploads/content-pull-quote-example.png)
+![Content pull quote example image](/design-manual/assets/uploads/content-pull-quote-example.png)

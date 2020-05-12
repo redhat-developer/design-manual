@@ -18,4 +18,4 @@ featured_image: ""
 4. Getting started product page
 5. Topic page
 
-   ![Content call to action example image](/design-manual/assets/uploads/content_call_to_action-example.png)
+![Content call to action example image](/design-manual/assets/uploads/content_call_to_action-example.png)
