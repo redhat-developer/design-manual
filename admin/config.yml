@@ -7,9 +7,9 @@ backend:
   branch: master # Branch to update (master by default)
   squash_merges: true
   commit_messages:
-    create: Create "{{slug}}" {{type}}
-    update: Update "{{slug}}" {{type}}
-    delete: Delete "{{slug}}" {{type}}
+    create: Create "{{slug}}" "{{type}}"
+    update: Update "{{slug}}" "{{type}}"
+    delete: Delete "{{slug}}" "{{type}}"
     uploadMedia: Upload "{{path}}"
     deleteMedia: Delete "{{path}}"
 subfolder: "/design-manual/"
