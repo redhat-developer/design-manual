@@ -7,9 +7,9 @@ backend:
   branch: master # Branch to update (master by default)
   squash_merges: true
   commit_messages:
-    create: Create "{{slug}}" page
-    update: Update "{{slug}}" page
-    delete: Delete "{{slug}}" page
+    create: Create "{{slug}}" {{type}}
+    update: Update "{{slug}}" {{type}}
+    delete: Delete "{{slug}}" {{type}}
     uploadMedia: Upload "{{path}}"
     deleteMedia: Delete "{{path}}"
 subfolder: "/design-manual/"
@@ -26,6 +26,8 @@ collections: # A list of collections the CMS should be able to edit
     delete: false
     editor:
       preview: false
+    type: "navigation"
+    extension: "yml"
     files:
       - label: "Assemblies Page Navigation"
         name: "assemblies"
@@ -35,6 +37,8 @@ collections: # A list of collections the CMS should be able to edit
           - label: "Assembly Items"
             name: "toc"
             widget: "list"
+            type: "navigation"
+            extension: "yml"
             fields:
               - {label: "Page", name: page, widget: string}
               - {label: "URL", name: url, widget: string}
@@ -46,6 +50,8 @@ collections: # A list of collections the CMS should be able to edit
           - label: "Components Items"
             name: "toc"
             widget: "list"
+            type: "navigation"
+            extension: "yml"
             fields:
               - {label: "Page", name: page, widget: string}
               - {label: "URL", name: url, widget: string}
@@ -57,6 +63,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new Getting Started pages in the admin UI
     delete: true
     slug: "{{slug}}"
+    type: "page"
     fields:
       - label: "Layout"
         name: "layout"
@@ -121,6 +128,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new Design pages in the admin UI
     delete: true
     slug: "{{slug}}"
+    type: "page"
     fields:
       - label: "Layout"
         name: "layout"
@@ -177,6 +185,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new Design pages in the admin UI
     delete: true
     slug: "{{slug}}"
+    type: "page"
     fields:
       - label: "Layout"
         name: "layout"
@@ -232,6 +241,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new Design pages in the admin UI
     delete: true
     slug: "{{slug}}"
+    type: "page"
     fields:
       - label: "Layout"
         name: "layout"
@@ -288,6 +298,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new Overview Pages in the admin UI
     delete: true
     slug: "{{slug}}"
+    type: "page"
     fields:
       - label: "Layout"
         name: "layout"
@@ -337,6 +348,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new Design pages in the admin UI
     delete: true
     slug: "{{slug}}"
+    type: "page"
     fields:
       - label: "Layout"
         name: "layout"
@@ -389,6 +401,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new Design pages in the admin UI
     delete: true
     slug: "{{slug}}"
+    type: "page"
     fields:
       - label: "Layout"
         name: "layout"
@@ -433,6 +446,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new Page example pages in the admin UI
     delete: true
     slug: "{{slug}}"
+    type: "page"
     fields:
       - label: "Layout"
         name: "layout"
