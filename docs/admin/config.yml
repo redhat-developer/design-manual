@@ -7,9 +7,9 @@ backend:
   branch: master # Branch to update (master by default)
   squash_merges: true
   commit_messages:
-    create: Create "{{slug}}" {{type}}
-    update: Update "{{slug}}" {{type}}
-    delete: Delete "{{slug}}" {{type}}
+    create: Create "{{slug}}" "{{type}}"
+    update: Update "{{slug}}" "{{type}}"
+    delete: Delete "{{slug}}" "{{type}}"
     uploadMedia: Upload "{{path}}"
     deleteMedia: Delete "{{path}}"
 subfolder: "/design-manual/"
@@ -27,6 +27,7 @@ collections: # A list of collections the CMS should be able to edit
     editor:
       preview: false
     type: "navigation"
+    extension: "yml"
     files:
       - label: "Assemblies Page Navigation"
         name: "assemblies"
@@ -37,6 +38,7 @@ collections: # A list of collections the CMS should be able to edit
             name: "toc"
             widget: "list"
             type: "navigation"
+            extension: "yml"
             fields:
               - {label: "Page", name: page, widget: string}
               - {label: "URL", name: url, widget: string}
@@ -49,6 +51,7 @@ collections: # A list of collections the CMS should be able to edit
             name: "toc"
             widget: "list"
             type: "navigation"
+            extension: "yml"
             fields:
               - {label: "Page", name: page, widget: string}
               - {label: "URL", name: url, widget: string}
