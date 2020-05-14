@@ -166,8 +166,8 @@ const
       ])
       .pipe(newer('./docs/assets/img/'))
       .pipe(newer('./docs/assets/uploads/'))
-      .pipe(flatMap(retinaVersions))
-      .pipe(scaleImages(imageFileName))
+      // .pipe(flatMap(retinaVersions))
+      // .pipe(scaleImages(imageFileName))
       .pipe(imagemin([mozjpeg(), pngquant()]))
       .pipe(gulp.dest('./docs/assets/img/'));
   }

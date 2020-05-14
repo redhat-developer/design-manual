@@ -6,11 +6,13 @@
   }
 }
 .rhddx-background-image {
-  --rhddx-c-image--Background--xs: url("img/hero_background.png");
-  --rhddx-c-image--Background--sm: url("img/hero_background.png");
-  --rhddx-c-image--Background--md: url("img/hero_background.png");
-  --rhddx-c-image--Background--lg: url("img/hero_background.png");
-  --rhddx-c-image--Background--xl: url("img/hero_background.png");
+  --rhddx-c-image--BackgroundColor: var(--rhddx-global--Color--100);
+  --rhddx-c-image--BackgroundImage: url("img/rhddxbg_576.jpg");
+  --rhddx-c-image--Background-2x: url("img/rhddxbg_576@2x.jpg");
+  --rhddx-c-image--Background--sm: url("img/rhddxbg_768.jpg");
+  --rhddx-c-image--Background--sm-2x: url("img/rhddxbg_768@2x.jpg");
+  --rhddx-c-image--Background--lg: url("img/rhddxbg_1200.jpg");
+  --rhddx-c-image--Background--xl: url("img/rhddxbg_2000.jpg");
 
   &::before {
     position: fixed;
@@ -23,21 +25,22 @@
       height: 100%;
     }
     content: "";
-    background-color: var(--rhddx-global--Color--100);
-    background-image: var(--rhddx-c-image--Background--xs);
+    background-color: var(--rhddx-c-image--BackgroundColor);
+    // background-image: var(--rhddx-c-image--BackgroundImage);
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media (min-width: 575.98px) {
-      background-image: var(--rhddx-c-image--Background--xs);
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: var(--rhddx-c-image--Background-2x);
     }
 
     @media (min-width: 767.98px) {
       background-image: var(--rhddx-c-image--Background--sm);
     }
 
-    @media (min-width: 991.98px) {
-      background-image: var(--rhddx-c-image--Background--md);
+    @media (min-width: 991.98px) and (-webkit-min-device-pixel-ratio: 2),
+      (min-width: 991.98px) and (min-resolution: 192dpi) {
+      background-image: var(--rhddx-c-image--Background--sm-2x);
     }
 
     @media (min-width: 1199.98px) {
