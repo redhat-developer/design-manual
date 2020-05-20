@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Curated links
+active_nav: Assemblies
 permalink: /assemblies/curated-links
 intro_paragraph: This assembly allows for a list of links to be added by node
   reference, as a static item or as a WordPress post reference. An additional

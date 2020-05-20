@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Rich Text
+active_nav: Components
 permalink: /components/rich-text
 section: components
 status: released

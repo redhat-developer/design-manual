@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Dynamic List
+active_nav: Components
 permalink: /components/dynamic-list
 section: components
 status: unreleased

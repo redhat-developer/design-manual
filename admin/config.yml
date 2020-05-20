@@ -208,6 +208,12 @@ collections: # A list of collections the CMS should be able to edit
         hint: "The title of the page"
         tagname: "h1"
         required: true
+      - label: "Nav"
+        name: "active_nav"
+        widget: "string"
+        hint: "Available options: Assemblies, Components, Layouts"
+        default: ""
+        required: true
       - label: "URL"
         name: "permalink"
         widget: "string"
@@ -270,6 +276,12 @@ collections: # A list of collections the CMS should be able to edit
         widget: "string"
         hint: "The title of the page"
         tagname: "h4"
+        required: true
+      - label: "Nav"
+        name: "active_nav"
+        widget: "string"
+        hint: "Available options: Content_types"
+        default: ""
         required: true
       - label: "Intro Paragraph"
         name: "intro_paragraph"
@@ -371,6 +383,11 @@ collections: # A list of collections the CMS should be able to edit
         hint: "The title of the page"
         tagname: "h1"
         required: true
+      - label: "Nav"
+        name: "active_nav"
+        widget: "hidden"
+        default: "Assemblies"
+        required: true
       - label: "URL"
         name: "permalink"
         widget: "string"
@@ -423,6 +440,11 @@ collections: # A list of collections the CMS should be able to edit
         widget: "string"
         hint: "The title of the page"
         tagname: "h1"
+        required: true
+      - label: "Nav"
+        name: "active_nav"
+        widget: "hidden"
+        default: "Layouts"
         required: true
       - label: "URL"
         name: "permalink"

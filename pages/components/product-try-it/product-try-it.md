@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Product Try-it
+active_nav: Components
 permalink: /components/product-try-it
 section: components
 status: released

@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Rich Text Columns
+active_nav: Components
 permalink: /components/rich-text-columns
 section: components
 status: released

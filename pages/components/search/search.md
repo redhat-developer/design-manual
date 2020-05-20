@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Search
+active_nav: Components
 permalink: /components/search
 section: components
 status: released

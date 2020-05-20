@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Expandable Groups
+active_nav: Components
 permalink: /components/expandable-groups
 section: components
 status: released

@@ -27,20 +27,23 @@ layout: compress
             </div>
             <div class="rhddx-m-float">
               {% if page.title == 'Design Overview' %}
-              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://github.com/redhat-developer/design-manual/tree/master/pages/{{ page.path | split: '/' | last }}" title="Edit this page on GitHub">
+              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://redhat-developer-design-manual.netlify.app/admin/#/collections/page/entries/design" title="Edit this page">
                 <span class="rhddx-c-button--edit_text">Edit this page</span>
                 <span class="fad fa-user-edit rhddx-c-button--edit_icon"></span>
               </a>
-              {% else %}
-              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://github.com/redhat-developer/design-manual/tree/master/pages/design/{{ page.path | split: '/' | last }}" title="Edit this page on GitHub">
+              {% endif% }
+              <!-- {% else %}
+              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://redhat-developer-design-manual.netlify.app/admin/#/collections/page/entries/design" title="Edit this page">
                 <span class="rhddx-c-button--edit_text">Edit this page</span>
                 <span class="fad fa-user-edit rhddx-c-button--edit_icon"></span>
               </a>
-              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-new" href="https://github.com/redhat-developer/design-manual/new/master/pages/design" title="Add a new page on GitHub">
+              -->
+              <!--
+              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-new" href="https://redhat-developer-design-manual.netlify.app/admin/#/collections/page/new" title="Add a new page">
                 <span class="rhddx-c-button--new_text">Add a new page</span>
                 <span class="fad fa-plus rhddx-c-button--new_icon"></span>
               </a>
-              {% endif% }
+              -->
             </div>
           </div>
         </section>

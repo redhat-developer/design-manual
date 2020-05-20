@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Template Component
+active_nav: Components
 permalink: /components/template
 section: components
 status: released

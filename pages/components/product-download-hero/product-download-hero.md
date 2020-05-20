@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Product Download Hero
+active_nav: Components
 permalink: /components/product-download-hero
 section: components
 status: released

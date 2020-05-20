@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Search (unreleased)
+active_nav: Components
 permalink: /components/search-old
 section: components
 status: unreleased

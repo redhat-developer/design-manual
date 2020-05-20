@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Layouts
+active_nav: Layouts
 permalink: /layouts/layouts
 intro_paragraph: >
   Examples of various layouts available on CodePen.io

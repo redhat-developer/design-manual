@@ -1,0 +1,7 @@
+toc:
+  - title: Events
+    subfolderitems:
+      - page: Guidelines
+        url: /design/events/guidelines
+      - page: Past events
+        url: /design/events/past-events

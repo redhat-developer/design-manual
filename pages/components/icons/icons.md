@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Icons
+active_nav: Components
 permalink: /components/icons
 section: components
 status: released

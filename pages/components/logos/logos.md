@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Logos
+active_nav: Components
 permalink: /components/logos
 section: components
 status: released

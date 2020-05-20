@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Combo
+active_nav: Assemblies
 permalink: /assemblies/combo
 intro_paragraph: This assembly allows for up to three types of assemblies to be
   combined. A WYSIWYG is available for customized content and the additional

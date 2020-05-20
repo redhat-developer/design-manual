@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Bonus Content Item
+active_nav: Components
 permalink: /components/bonus-content-item
 section: components
 status: released

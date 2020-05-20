@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Toolbar
+active_nav: Components
 permalink: /components/toolbar
 section: components
 status: unreleased

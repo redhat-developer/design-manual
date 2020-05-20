@@ -1,6 +1,7 @@
 ---
 layout: design
 title: Red Hat Developer Program Social Images
+active_nav: RHD_Brand_Elements
 permalink: brand-assets/RHD_Visual_Elements/RHD_Merging_Branches/merging-branches
 section: design
 image1: RHDP_social_images-Email_600_150_actual-size.png

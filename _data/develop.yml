@@ -1,7 +1,5 @@
 toc:
-  - title: Layouts
-    subfolderitems:
-      - page: Responsive Grid
-        url: /layouts/grid
-      - page: Homepage
-        url: /layouts/home
+  - page: Responsive Grid
+    url: /layouts/grid
+  - page: Homepage
+    url: /layouts/home

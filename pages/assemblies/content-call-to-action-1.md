@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Content image
+active_nav: Assemblies
 permalink: /assemblies/content-image
 intro_paragraph: This assembly inserts an image into the page in the largest
   format it can cover (depending on the type of content). A caption can be added

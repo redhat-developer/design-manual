@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Featured Resources
+active_nav: Components
 permalink: /components/featured-resources
 section: components
 status: released

@@ -114,7 +114,14 @@
         a:after {
           font-family: "Font Awesome 5 Pro";
           font-weight: 400;
-          content: "\f121";
+          content: "\f121"; // code symbol
+        }
+      }
+      &.rhddx-c-sub-menu.rhddx-m-components {
+        a:after {
+          font-family: "Font Awesome 5 Pro";
+          font-weight: 400;
+          content: "\f12e"; // puzzle piece
         }
       }
       &.rhddx-m-active {

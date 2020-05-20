@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Eloqua form embed
+active_nav: Assemblies
 permalink: /assemblies/Eloqua-form-embed
 intro_paragraph: This assembly inserts an Eloqua form within the page. JSON can
   be customized as well as the CTA link. No other fields are available - this

@@ -2,18 +2,21 @@
 <nav class="rhddx-c-nav--vertical" aria-label="Global">
   <ul>
     <li class="rhddx-c-sub-menu">
-      <a href="#" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %} id="expandedNav">
+      <a href="#"
+        {% if page.active_nav == 'Components' %} class="rhddx-m-expanded rhddx-m-active" {% endif %}
+        id="expandedNav">
         Components Overview
       </a>
-      <ul>
+      <ul
+        {% if page.active_nav == 'Components' %}
+          style="display: block;"
+        {% endif %}>
         {% for item in site.data.components.toc %}
         <li>
           {% if jekyll.environment == 'development' %}
           <a href="{{ item.url }}" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ item.page }}</a>
           {% elsif jekyll.environment == 'production' %}
-          <a href="{{ item.url | prepend: site.baseurl }}" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %}>
-            {{ item.page }}
-          </a>
+          <a href="{{ item.url | prepend: site.baseurl }}" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ item.page }}</a>
           {% endif %}
         </li>
         {% endfor %}

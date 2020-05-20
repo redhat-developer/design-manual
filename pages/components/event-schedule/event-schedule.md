@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Event Schedule Table
+active_nav: Components
 permalink: /components/event-schedule
 section: components
 status: released

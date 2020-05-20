@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Collection
+active_nav: Components
 permalink: /components/collection
 section: components
 status: released

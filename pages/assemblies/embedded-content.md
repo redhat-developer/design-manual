@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Embedded content
+active_nav: Assemblies
 permalink: /assemblies/embedded-content
 intro_paragraph: This assembly inserts and I frame into the page based on an
   inputted external URL.

@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Content call to action
+active_nav: Assemblies
 permalink: /assemblies/content-call-to-action
 intro_paragraph: This assembly inserts an Eloqua form into the page that acts as
   a newsletter signup. Users must enter their first and last names and their

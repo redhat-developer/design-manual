@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Content
+active_nav: Assemblies
 permalink: /assemblies/content
 intro_paragraph: This assembly allows for customization of content with a WYSIWYG.
 featured_image: ""
