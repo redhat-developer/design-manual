@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Homepage
+active_nav: Layouts
 permalink: /layouts/home
 intro_paragraph: >
 

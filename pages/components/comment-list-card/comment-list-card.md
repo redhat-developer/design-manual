@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Comment List Card
+active_nav: Components
 permalink: /components/comment-list-card
 section: components
 status: released

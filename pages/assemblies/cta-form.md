@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: CTA form
+active_nav: Assemblies
 permalink: /assemblies/cta-form
 intro_paragraph: This assembly inserts an Eloqua form into the page that acts as
   a developers program signup. Users must enter their first and last names and

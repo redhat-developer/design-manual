@@ -4,6 +4,7 @@ category: develop
 section: components
 permalink: /components/alerts
 title: Alerts
+active_nav: Components
 status: unreleased
 intro_paragraph: >
 

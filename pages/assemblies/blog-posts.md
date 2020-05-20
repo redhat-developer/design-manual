@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Blog Posts
+active_nav: Assemblies
 permalink: /assemblies/blog-posts
 intro_paragraph: >
   This assembly lists all blog posts in relation to one or many category filters

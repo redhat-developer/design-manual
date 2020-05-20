@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Learning guides
+active_nav: Assemblies
 permalink: /assemblies/learning-guides
 intro_paragraph: This assembly features learning guides as cards that link to the full learning guide connection. A title and description can be added above the cards and a CTA may be added below.
 featured_image: ""

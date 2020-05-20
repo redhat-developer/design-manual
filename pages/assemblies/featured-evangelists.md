@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Featured evangelists
+active_nav: Assemblies
 permalink: /assemblies/featured-evangelists
 intro_paragraph: This assembly features authors, pulling from author nodes. The
   information displayed by each author includes their photo, name, short bio,

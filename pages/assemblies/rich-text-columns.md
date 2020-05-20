@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Rich text columns
+active_nav: Assemblies
 permalink: /assemblies/rich-text-columns
 intro_paragraph: This assembly inserts columns of content onto the page. Each column includes a WYSIWYG to customize the content and another column can be added by selecting “add another item.” A title and content (with a WYSIWYG) can be added above the columns as well.
 featured_image: ""

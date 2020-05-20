@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Jump-to Navigation
+active_nav: Components
 permalink: /components/jump-to-nav
 section: components
 status: released

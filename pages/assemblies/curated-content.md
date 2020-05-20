@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Curated content
+active_nav: Assemblies
 permalink: /assemblies/curated-content
 intro_paragraph: This assembly allows for pieces of content to be added by node
   reference, as a static item or as a WordPress post reference. A CTA may be

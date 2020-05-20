@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Curated Events
+active_nav: Components
 permalink: /components/curated-events
 section: components
 status: released

@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Static item
+active_nav: Assemblies
 permalink: /assemblies/static-item
 intro_paragraph: This assembly inserts a static item through an uploaded image, external URL or node reference.
 featured_image: ""

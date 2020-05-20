@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Featured Evangelists
+active_nav: Components
 permalink: /components/featured-evangelists
 section: components
 status: released

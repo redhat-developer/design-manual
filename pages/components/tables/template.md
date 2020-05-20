@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Tables
+active_nav: Components
 permalink: /components/tables
 section: components
 status: unreleased

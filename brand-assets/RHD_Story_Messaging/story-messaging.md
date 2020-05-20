@@ -4,6 +4,7 @@ category: design
 section: RHD Brand Elements
 permalink: brand-assets/RHD_Story_Messaging/story-messaging
 title: Story / Messaging
+active_nav: RHD_Brand_Elements
 intro_paragraph: >
 
 image1: 01_RHD_Brand_Layers.jpg

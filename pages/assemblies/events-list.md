@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Events list
+active_nav: Assemblies
 permalink: /assemblies/events-list
 intro_paragraph: This assembly allows for events to be listed on a page. Each
   event is inputted using a node reference. A CTA link can be inserted below the

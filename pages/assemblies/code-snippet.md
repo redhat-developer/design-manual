@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Code snippet
+active_nav: Assemblies
 permalink: /assemblies/code-snippet
 intro_paragraph: This assembly allows for code to be added and styled on the
   page. A programming language can be selected that will properly highlight the

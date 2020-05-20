@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: CTA Form
+active_nav: Components
 permalink: /components/cta-form
 section: components
 status: released

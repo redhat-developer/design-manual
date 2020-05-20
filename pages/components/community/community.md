@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Community
+active_nav: Components
 permalink: /components/community
 section: components
 status: released

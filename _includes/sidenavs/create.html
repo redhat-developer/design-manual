@@ -3,11 +3,18 @@
   {% for item in site.data.create.toc %}
   <ul>
     <li class="rhddx-c-sub-menu">
-      <a href="#" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %} id="expandedNav">
+      <a href="#"
+        {% if page.active_nav == 'Content_types' %}
+          class="rhddx-m-expanded rhddx-m-active"
+        {% endif %}
+        id="expandedNav">
         {{ item.title }}
       </a>
-      <ul>
-      {% for entry in item.subfolderitems %}
+      <ul
+        {% if page.active_nav == 'Content_types' %}
+          style="display: block;"
+        {% endif %}>
+        {% for entry in item.subfolderitems %}
         <li>
           {% if jekyll.environment == 'development' %}
           <a href="{{ entry.url }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ entry.page }}</a>

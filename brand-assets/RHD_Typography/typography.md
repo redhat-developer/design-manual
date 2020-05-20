@@ -1,6 +1,7 @@
 ---
 layout: design
 title: Red Hat Developer Typography
+active_nav: RHD_Brand_Elements
 permalink: brand-assets/RHD_Typography/typography
 section: design
 image1: RHD_Type_Overview.png

@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Author Tile
+active_nav: Components
 permalink: /components/author-tile
 section: components
 status: released

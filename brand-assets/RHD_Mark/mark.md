@@ -1,6 +1,7 @@
 ---
 layout: design
 title: Red Hat Developer Mark
+active_nav: RHD_Brand_Elements
 permalink: brand-assets/RHD_Mark/mark
 section: design
 image1: RHD_mark_4-color_black_bg_RGB.png

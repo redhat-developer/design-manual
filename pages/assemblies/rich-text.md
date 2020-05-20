@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Rich text
+active_nav: Assemblies
 permalink: /assemblies/rich-text
 intro_paragraph: This assembly allows for full customization with a WYSIWYG.
 featured_image: ""

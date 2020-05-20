@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Featured Articles
+active_nav: Components
 permalink: /components/featured-articles
 section: components
 status: released

@@ -4,6 +4,7 @@ category: design
 section: RHD Brand Elements
 permalink: brand-assets/RHD_Full_Logo/full-logo
 title: Full Logos
+active_nav: RHD_Brand_Elements
 intro_paragraph: >
 
 active_header: Full Logos

@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Code Snippet
+active_nav: Components
 permalink: /components/code-snippet
 section: components
 editable: false

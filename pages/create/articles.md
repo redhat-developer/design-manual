@@ -4,6 +4,7 @@ category: create
 section: Content Types
 permalink: /create/articles
 title: Articles
+active_nav: Content_types
 intro_paragraph: >
 
 custom_js: panel

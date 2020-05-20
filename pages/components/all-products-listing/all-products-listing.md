@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: All Products Listing
+active_nav: Components
 permalink: /components/all-products-listing
 section: components
 status: released

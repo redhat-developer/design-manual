@@ -2,18 +2,21 @@
 <nav class="rhddx-c-nav--vertical" aria-label="Global">
   <ul>
     <li class="rhddx-c-sub-menu">
-      <a href="#" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %} id="expandedNav">
+      <a href="#"
+        {% if page.active_nav == 'Components' %} class="rhddx-m-expanded rhddx-m-active" {% endif %}
+        id="expandedNav">
         Components Overview
       </a>
-      <ul>
+      <ul
+        {% if page.active_nav == 'Components' %}
+          style="display: block;"
+        {% endif %}>
         {% for item in site.data.components.toc %}
         <li>
           {% if jekyll.environment == 'development' %}
           <a href="{{ item.url }}" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ item.page }}</a>
           {% elsif jekyll.environment == 'production' %}
-          <a href="{{ item.url | prepend: site.baseurl }}" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %}>
-            {{ item.page }}
-          </a>
+          <a href="{{ item.url | prepend: site.baseurl }}" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ item.page }}</a>
           {% endif %}
         </li>
         {% endfor %}
@@ -22,10 +25,15 @@
   </ul>
   <ul>
     <li class="rhddx-c-sub-menu">
-      <a href="#" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %} id="expandedNav">
+      <a href="#"
+        {% if page.active_nav == 'Assemblies' %} class="rhddx-m-expanded rhddx-m-active" {% endif %}
+        id="expandedNav">
         Assemblies
       </a>
-      <ul>
+      <ul
+        {% if page.active_nav == 'Assemblies' %}
+          style="display: block;"
+        {% endif %}>
         {% for item in site.data.assemblies.toc %}
         <li>
           {% if jekyll.environment == 'development' %}
@@ -38,24 +46,27 @@
       </ul>
     </li>
   </ul>
-  {% for item in site.data.develop.toc %}
   <ul>
     <li class="rhddx-c-sub-menu">
-      <a href="#" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %} id="expandedNav">
-        {{ item.title }}
+      <a href="#"
+        {% if page.active_nav == 'Layouts' %} class="rhddx-m-expanded rhddx-m-active" {% endif %}
+        id="expandedNav">
+        Layouts
       </a>
-      {% for entry in item.subfolderitems %}
-      <ul>
+      <ul
+        {% if page.active_nav == 'Layouts' %}
+          style="display: block;"
+        {% endif %}>
+        {% for item in site.data.develop.toc %}
         <li>
           {% if jekyll.environment == 'development' %}
-          <a href="{{ entry.url }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ entry.page }}</a>
+          <a href="{{ item.url }}" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ item.page }}</a>
           {% elsif jekyll.environment == 'production' %}
-          <a href="{{ entry.url | prepend: site.baseurl }}" {% if page.title == entry.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ entry.page }}</a>
+          <a href="{{ item.url | prepend: site.baseurl }}" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ item.page }}</a>
           {% endif %}
         </li>
+        {% endfor %}
       </ul>
-      {% endfor %}
     </li>
   </ul>
-  {% endfor %}
 </nav>

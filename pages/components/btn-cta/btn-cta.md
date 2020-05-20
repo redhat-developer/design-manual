@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Button CTAs
+active_nav: Components
 permalink: /components/btn-cta
 section: components
 status: released

@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Dynamic Content List (Compact)
+active_nav: Components
 permalink: /components/dynamic-content-list-compact
 section: components
 status: released

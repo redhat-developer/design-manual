@@ -4,6 +4,7 @@ category: design
 section: RHD Brand Elements
 permalink: /design/brand/typography
 title: Typography
+active_nav: RHD_Brand_Elements
 intro_paragraph: >
   Fonts used by the Red Hat Developer Design Team.
 custom_js:

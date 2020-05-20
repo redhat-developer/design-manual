@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Events hero
+active_nav: Assemblies
 permalink: /assemblies/events-hero
 intro_paragraph: This assembly allows for events to be showcased within a
   full-width banner. A primary event will appear on the left with a primary CTA

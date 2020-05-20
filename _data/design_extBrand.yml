@@ -1,0 +1,17 @@
+toc:
+  - title: Extended Brand Elements
+    subfolderitems:
+      - page: Visual System
+        url: /design/visual-system
+      - page: Challenges
+        url: /design/challenges
+      - page: Solutions
+        url: /design/solutions
+      - page: Photography
+        url: /design/photography
+      - page: Video
+        url: /design/video
+      - page: Ads/social
+        url: /design/ads-social
+      - page: Various use cases
+        url: /design/various-use-cases

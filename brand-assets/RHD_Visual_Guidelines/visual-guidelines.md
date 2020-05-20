@@ -1,6 +1,7 @@
 ---
 layout: design
 title: Red Hat Full Visual Guidelines
+active_nav: RHD_Brand_Elements
 permalink: brand-assets/RHD_Visual_Guidelines/visual-guidelines
 section: design
 image1: RHD_logo-clear-space.png

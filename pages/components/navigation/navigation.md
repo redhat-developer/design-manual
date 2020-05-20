@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Navigation References
+active_nav: Components
 permalink: /components/navigation
 section: components
 status: released

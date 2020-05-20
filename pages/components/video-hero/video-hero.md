@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Video Hero
+active_nav: Components
 permalink: /components/video-hero
 section: components
 status: released

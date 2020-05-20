@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Footer Resources
+active_nav: Components
 permalink: /components/footer
 section: components
 status:

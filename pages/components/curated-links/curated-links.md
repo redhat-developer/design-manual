@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Curated Links
+active_nav: Components
 permalink: /components/curated-links
 section: components
 status: released

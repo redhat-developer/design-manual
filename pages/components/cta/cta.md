@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: CTA
+active_nav: Components
 permalink: /components/cta
 section: components
 status: released

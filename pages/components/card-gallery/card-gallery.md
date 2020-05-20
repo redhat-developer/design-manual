@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Card in a Gallery Layout
+active_nav: Components
 permalink: /components/card-gallery
 section: components
 status: released

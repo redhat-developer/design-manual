@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Bonus Content List
+active_nav: Assemblies
 permalink: /assemblies/bonus-content-list
 intro_paragraph: This assembly allows for one or many pieces of bonus content to
   be added. Types include docker image, GitHub code, GitLab katacoda, podcast,

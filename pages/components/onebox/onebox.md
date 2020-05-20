@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Onebox
+active_nav: Components
 permalink: /components/onebox
 section: components
 status: unreleased

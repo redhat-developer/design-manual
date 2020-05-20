@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Stack Overflow
+active_nav: Components
 permalink: /components/stack-overflow
 section: components
 status: released

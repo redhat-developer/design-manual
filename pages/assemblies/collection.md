@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Collection
+active_nav: Assemblies
 permalink: /assemblies/collection
 intro_paragraph: This assembly displays either 4, 8, 12 or 16 items based on one
   or more chosen purpose attributes. A pager can be displayed as well.

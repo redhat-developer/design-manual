@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Dynamic content
+active_nav: Assemblies
 permalink: /assemblies/dynamic-content
 intro_paragraph: This assembly lists a desired number of pieces of content in
   one grouping based on inputted WordPress categories, filters, and Drupal term

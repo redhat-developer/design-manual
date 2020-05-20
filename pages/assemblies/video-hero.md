@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Video hero
+active_nav: Assemblies
 permalink: /assemblies/video-hero
 intro_paragraph: This assembly displays one or two featured videos. A title and description (WYSIWYG) can be added to each video. A video is referenced through a video node. The background image can be overridden if necessary.
 featured_image: ""

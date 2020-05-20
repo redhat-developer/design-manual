@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Responsive Grid
+active_nav: Layouts
 permalink: /layouts/grid
 intro_paragraph: >
 

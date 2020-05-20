@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Featured resources
+active_nav: Assemblies
 permalink: /assemblies/featured-resources
 intro_paragraph: This assembly features eBooks, cheat sheets, coding resources
   and learning guides. Each will contain information from their node reference

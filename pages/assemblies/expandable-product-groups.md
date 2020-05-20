@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Expandable product groups
+active_nav: Assemblies
 permalink: /assemblies/expandable-product-groups
 intro_paragraph: This assembly includes all products listed in expandable
   groups. The only customizable fields include the title and CTA.

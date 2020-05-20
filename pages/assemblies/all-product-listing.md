@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: All Products Listing
+active_nav: Assemblies
 permalink: /assemblies/all-product-listing
 intro_paragraph: >
   This assembly contains all products in a list format that are linked to their

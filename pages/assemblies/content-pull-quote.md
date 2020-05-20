@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Content pull quote
+active_nav: Assemblies
 permalink: /assemblies/content-pull-quote
 intro_paragraph: This assembly allows for a quote to be entered and highlighted on a page.
 featured_image: ""

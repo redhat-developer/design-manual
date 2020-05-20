@@ -2,6 +2,7 @@
 layout: develop
 category: develop
 title: Events Hero
+active_nav: Components
 permalink: /components/events-hero
 section: components
 status: released

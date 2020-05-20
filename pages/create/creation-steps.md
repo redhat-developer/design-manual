@@ -4,6 +4,7 @@ category: create
 section: Content Types
 permalink: /create/create-steps
 title: Create steps
+active_nav: Content_types
 custom_js: panel
 custom_css: tabs
 compose_image: wordpress-articles.png

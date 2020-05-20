@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Curated products
+active_nav: Assemblies
 permalink: /assemblies/curated-products
 intro_paragraph: This assembly inserts a group of curated product cards on the
   page. Products are inputted through node references. A CTA can be added below

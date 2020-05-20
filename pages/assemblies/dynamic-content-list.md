@@ -3,6 +3,7 @@ layout: develop
 category: develop
 section: Develop
 title: Dynamic content list
+active_nav: Assemblies
 permalink: /assemblies/dynamic-content-list
 intro_paragraph: This assembly lists all content based on inputted WordPress
   categories, filters, and Drupal term filters. Related topics can also be added
