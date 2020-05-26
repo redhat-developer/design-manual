@@ -1,6 +1,25 @@
 {% assign navurl = page.url | remove: 'index.html' %}
 <nav class="rhddx-c-nav--vertical" aria-label="Global">
   <ul>
+    <li class="rhddx-c-sub-menu rhddx-m-overview">
+      {% if jekyll.environment == 'development' %}
+      <a href="/design"
+        {% if page.active_nav == 'Overview' %}
+          class="rhddx-m-active" aria-current="page"
+        {% endif %}>
+        Develop Overview
+      </a>
+      {% elsif jekyll.environment == 'production' %}
+      <a href="{{ site.baseurl }}/design"
+        {% if page.active_nav == 'Overview' %}
+          class="rhddx-m-active" aria-current="page"
+        {% endif %}>
+        Develop Overview
+      </a>
+      {% endif %}
+    </li>
+  </ul>
+  <ul>
     <li class="rhddx-c-sub-menu">
       <a href="#"
         {% if page.active_nav == 'Components' %} class="rhddx-m-expanded rhddx-m-active" {% endif %}
@@ -23,7 +42,7 @@
       </ul>
     </li>
   </ul>
-  <ul>
+  <!-- <ul>
     <li class="rhddx-c-sub-menu">
       <a href="#"
         {% if page.active_nav == 'Assemblies' %} class="rhddx-m-expanded rhddx-m-active" {% endif %}
@@ -45,7 +64,7 @@
         {% endfor %}
       </ul>
     </li>
-  </ul>
+  </ul> -->
   <ul>
     <li class="rhddx-c-sub-menu">
       <a href="#"

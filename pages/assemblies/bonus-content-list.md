@@ -1,7 +1,7 @@
 ---
-layout: develop
-category: develop
-section: Develop
+layout: create
+category: create
+section: Create
 title: Bonus Content List
 active_nav: Assemblies
 permalink: /assemblies/bonus-content-list

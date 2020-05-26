@@ -1,7 +1,7 @@
 ---
-layout: develop
-category: develop
-section: Develop
+layout: create
+category: create
+section: Create
 title: Curated products
 active_nav: Assemblies
 permalink: /assemblies/curated-products

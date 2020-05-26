@@ -1,7 +1,7 @@
 ---
-layout: develop
-category: develop
-section: Develop
+layout: create
+category: create
+section: Create
 title: Content pull quote
 active_nav: Assemblies
 permalink: /assemblies/content-pull-quote
