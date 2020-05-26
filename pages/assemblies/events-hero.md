@@ -1,7 +1,7 @@
 ---
-layout: develop
-category: develop
-section: Develop
+layout: create
+category: create
+section: Create
 title: Events hero
 active_nav: Assemblies
 permalink: /assemblies/events-hero

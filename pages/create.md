@@ -3,7 +3,8 @@ layout: create
 category: create
 section: Create
 permalink: /create
-title: Create Overview / Getting Started
+title: Create Overview
+active_nav: Overview
 intro_paragraph: >
 
 ---

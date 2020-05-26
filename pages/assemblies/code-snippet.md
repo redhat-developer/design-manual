@@ -1,7 +1,7 @@
 ---
-layout: develop
-category: develop
-section: Develop
+layout: create
+category: create
+section: Create
 title: Code snippet
 active_nav: Assemblies
 permalink: /assemblies/code-snippet

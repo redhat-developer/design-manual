@@ -124,6 +124,16 @@
           content: "\f12e"; // puzzle piece
         }
       }
+      &.rhddx-c-sub-menu.rhddx-m-overview {
+        a:after {
+          content: ""; // blank
+        }
+        a.rhddx-m-active {
+          background: var(--rhddx-global--Color--white);
+          color: var(--rhddx-global--link--Color);
+          border-left: var(--rhddx-global--Border-width) solid var(--rhddx-global--link--Color);
+        }
+      }
       &.rhddx-m-active {
         background: var(--rhddx-global--Color--white);
         & a {

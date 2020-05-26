@@ -1,7 +1,7 @@
 ---
-layout: develop
-category: develop
-section: Develop
+layout: create
+category: create
+section: Create
 title: Content call to action
 active_nav: Assemblies
 permalink: /assemblies/content-call-to-action

@@ -1,5 +1,24 @@
 {% assign navurl = page.url | remove: 'index.html' %}
 <nav class="rhddx-c-nav--vertical" aria-label="Global">
+  <ul>
+    <li class="rhddx-c-sub-menu rhddx-m-overview">
+      {% if jekyll.environment == 'development' %}
+      <a href="/create"
+        {% if page.active_nav == 'Overview' %}
+          class="rhddx-m-active" aria-current="page"
+        {% endif %}>
+        Create Overview
+      </a>
+      {% elsif jekyll.environment == 'production' %}
+      <a href="{{ site.baseurl }}/create"
+        {% if page.active_nav == 'Overview' %}
+          class="rhddx-m-active" aria-current="page"
+        {% endif %}>
+        Create Overview
+      </a>
+      {% endif %}
+    </li>
+  </ul>
   {% for item in site.data.create.toc %}
   <ul>
     <li class="rhddx-c-sub-menu">
@@ -31,10 +50,18 @@
   {% endfor %}
   <ul>
     <li class="rhddx-c-sub-menu">
-      <a href="#" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %} id="expandedNav">
+      <a href="#"
+        {% if page.active_nav == 'Assemblies' %}
+          class="rhddx-m-expanded rhddx-m-active"
+        {% endif %}
+        id="expandedNav">
+        {{ item.title }}
         Assemblies
       </a>
-      <ul>
+      <ul
+        {% if page.active_nav == 'Assemblies' %}
+          style="display: block;"
+        {% endif %}>
         {% for item in site.data.assemblies.toc %}
         <li>
           {% if jekyll.environment == 'development' %}
