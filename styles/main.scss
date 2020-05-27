@@ -6,20 +6,13 @@
  * Licensed under MIT
 */
 
-:root {
-  --rhddx-global--link--Color: #ee0000;
-  --rhddx-global--Color--100: #151515;
-  --rhddx-global--Color--200: #2a3035;
-  --rhddx-global--Color--white: #fff;
-  --rhddx-global--Border--grey: #ddd;
-  --rhddx-global--Border--grey-light: #f0f0f0;
+@import "utilities/colors";
+@import "utilities/sass-variables";
+@import "utilities/variables";
 
-  --rhddx-global--Border-width: 2px;
-  --rhddx-global--Border-width-small: 1px;
+$pf-global--font-path: 'themes/custom/rhdp2/fonts/patternfly' !default;
 
-  --rhddx-global--box-shadow: 0 0 10px 2px var(--rhddx-global--Border--grey);
-}
-
+@import "partials/fonts";
 @import "partials/loading";
 @import "partials/background";
 @import "partials/buttons";

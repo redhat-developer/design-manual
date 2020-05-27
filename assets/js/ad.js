@@ -1,3 +1,3 @@
-var canRunAds = true;
+// var canRunAds = true;
 
-var isBlocked = false;
+// var isBlocked = false;

@@ -1,6 +1,6 @@
 .rhddx-c-site-search {
   background-color: transparent;
-  border: 1px solid transparent;
+  border: var(rhddx-global--Border-width-small) solid transparent;
   border-bottom: var(--rhddx-global--Border-width-small) solid var(--rhddx-global--Color--white);
   color: var(--rhddx-global--Color--white);
   &:hover {

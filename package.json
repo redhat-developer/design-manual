@@ -31,7 +31,7 @@
   "dependencies": {
     "@patternfly/patternfly": "2.65.2",
     "@skpm/child_process": "0.4.1",
-    "@types/jquery": "^3.3.33",
+    "@types/jquery": "3.3.33",
     "autoprefixer": "9.7.3",
     "browser-sync": "2.26.7",
     "cssnano": "4.1.10",
@@ -43,6 +43,7 @@
     "gulp-exec": "4.0.0",
     "gulp-header": "2.0.9",
     "gulp-imagemin": "6.2.0",
+    "gulp-uglify": "3.0.2",
     "gulp-newer": "1.4.0",
     "gulp-noop": "1.0.0",
     "gulp-postcss": "8.0.0",
