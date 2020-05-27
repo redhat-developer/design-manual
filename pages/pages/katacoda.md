@@ -13,7 +13,7 @@ intro_paragraph: >
     <div class="pf-l-grid pf-m-gutter">
       <div class="rhd-c-video--wrapper">
         <div class="rhd-c-video--video-embed">
-          <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/YQLOcjvbo9s?autoplay=0&amp;start=0&amp;rel=0&amp;enablejsapi=1" id="YQLOcjvbo9s0" data-sdiyt="true" width="854" height="480" frameborder="0"></iframe>
+          <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/YQLOcjvbo9s?autoplay=0&amp;start=0&amp;rel=0&amp;enablejsapi=1" id="YQLOcjvbo9s0" data-sdiyt="true" width="854" height="480" frameborder="0" title="Youtube Video"></iframe>
         </div>
       </div>
       <div class="rhd-c-video--content">
@@ -56,7 +56,7 @@ intro_paragraph: >
             <source media="(min-width: 576px)" srcset="/assets/img/istio-book-221x300.png">
             <source media="(min-width: 768px)" srcset="/assets/img/istio-book-221x300.png">
             <source media="(min-width: 992px)" srcset="/assets/img/istio-book-221x300.png">
-            <img src="/assets/img/istio-book-221x300.png" alt="" class=""/>
+            <img src="/assets/img/istio-book-221x300.png" alt="istio book" class=""/>
           </picture>
         </div>
         <div class="pf-l-grid__item pf-m-7-col-on-lg pf-m-12-col-on-sm">
@@ -205,7 +205,7 @@ intro_paragraph: >
       <div class="pf-l-gallery__item">
         <div class="pf-c-card rhd-c-card">
           <div class="rhd-c-card__dynamic-content--image">
-            <img src="/assets/img/96d2c9705c691867a96c50f9674bf6d4.png">
+            <img src="/assets/img/96d2c9705c691867a96c50f9674bf6d4.png" alt="image">
           </div>
           <div class="rhd-c-card-content">
             <h3 class="rhd-c-card__title">
@@ -217,7 +217,7 @@ intro_paragraph: >
       <div class="pf-l-gallery__item">
         <div class="pf-c-card rhd-c-card">
           <div class="rhd-c-card__dynamic-content--image">
-            <img src="/assets/img/3d5bbd0521d712aa8014cdbe9f43c67e.jpg">
+            <img src="/assets/img/3d5bbd0521d712aa8014cdbe9f43c67e.jpg" alt="image">
           </div>
           <div class="rhd-c-card-content">
             <h3 class="rhd-c-card__title">
@@ -229,7 +229,7 @@ intro_paragraph: >
       <div class="pf-l-gallery__item">
         <div class="pf-c-card rhd-c-card">
           <div class="rhd-c-card__dynamic-content--image">
-            <img src="/assets/img/295fe5f282ee65dfc45acdc21472d1d4.png">
+            <img src="/assets/img/295fe5f282ee65dfc45acdc21472d1d4.png" alt="image">
           </div>
           <div class="rhd-c-card-content">
             <h3 class="rhd-c-card__title">
