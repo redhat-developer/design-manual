@@ -24,6 +24,7 @@ const
   sass              =  require('gulp-sass'),
   postcss           =  require('gulp-postcss'),
   cssnano           =  require('cssnano'),
+  uglify            =  require('gulp-uglify'),
   header            =  require('gulp-header'),
   pkg               =  require('./package.json'),
   clean             =  require('gulp-clean'),
@@ -185,12 +186,13 @@ const
       gulp.src('./assets/uploads/*.{jpg,jpeg,png,svg}')
       .pipe(gulp.dest('./docs/assets/uploads/'));
     gulp.src('./assets/themes/custom/rhdp2/fonts/patternfly/**/*.*')
-      .pipe(gulp.dest('./docs/themes/custom/rhdp2/fonts/patternfly/'));
+      .pipe(gulp.dest('./docs/assets/themes/custom/rhdp2/fonts/patternfly/'));
     cb();
   }
 
   function jsDev(cb) {
     gulp.src('./assets/js/*.*')
+      .pipe(uglify())
       .pipe(gulp.dest('./docs/assets/js/'));
     cb();
   }
