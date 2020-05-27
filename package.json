@@ -16,7 +16,8 @@
     "release": "scripts/./release.sh prerelease",
     "prodDeploy": "npm run deployment && npm run release",
     "netlify": "netlify dev",
-    "build-netlify": "gulp netlify"
+    "build-netlify": "gulp netlify",
+    "test": "gulp netlify && netlify-build"
   },
   "sass": {
     "includePaths": [
@@ -50,6 +51,7 @@
     "gulp-size": "3.0.0",
     "gulp-sourcemaps": "2.6.5",
     "imagemin-mozjpeg": "8.0.0",
-    "imagemin-pngquant": "8.0.0"
+    "imagemin-pngquant": "8.0.0",
+    "netlify-plugin-a11y": "0.0.12"
   }
 }

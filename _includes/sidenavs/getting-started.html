@@ -1,8 +1,8 @@
 {% assign navurl = page.url | remove: 'index.html' %}
 {% for item in site.data.getting-started.toc %}
 <nav class="pf-c-nav" aria-label="Global">
-  <section class="pf-c-nav__section" aria-labelledby="grouped-title1">
-    <h2 class="pf-c-nav__section-title" id="grouped-title1">{{ item .title }}</h2>
+  <section class="pf-c-nav__section" aria-labelledby="section-title">
+    <h2 class="pf-c-nav__section-title" id="section-title">{{ item .title }}</h2>
     <ul class="pf-c-nav__list">
       {% for entry in item.subfolderitems %}
       <li class="pf-c-nav__item">

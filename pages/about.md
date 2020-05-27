@@ -11,7 +11,7 @@ intro_paragraph: >
 ---
 
 <div class="pf-l-grid pf-m-12-col pf-u-p-md">
-  <div class="pf-l-grid__item" id="main">
+  <div class="pf-l-grid__item">
     <h3><i class="fal fa-info-circle"></i> {{ page.long_title }}</h3>
   </div>
 </div>

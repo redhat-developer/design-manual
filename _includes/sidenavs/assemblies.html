@@ -4,7 +4,7 @@
     <li class="rhddx-c-sub-menu">
       <a href="#"
         {% if page.active_nav == 'Assemblies' %} class="rhddx-m-expanded rhddx-m-active" {% endif %}
-        id="expandedNav">
+        id="expandedNavAssemblies">
         Assemblies
       </a>
       <ul
@@ -14,7 +14,7 @@
         {% for item in site.data.assemblies.toc %}
         <li>
           {% if jekyll.environment == 'development' %}
-          <a href="{{ item.url }}" 
+          <a href="{{ item.url }}"
             {% if page.title == item.page %} class="rhddx-m-active" aria-current="page"{% endif %}>{{ item.page }}</a>
           {% elsif jekyll.environment == 'production' %}
           <a href="{{ item.url | prepend: site.baseurl }}" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %}>{{ item.page }}</a>
