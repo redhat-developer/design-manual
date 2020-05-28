@@ -14,8 +14,9 @@
     }
   }
   .rhddx-m-link-header.rhddx-m-dark {
+    color: var(--rhddx-global--Link-color--blue-light);
     &:hover {
-      color: lighten($color: #06c, $amount: 25%);
+      color: darken($color: #73bcf7, $amount: 25%);
       text-decoration: none;
     }
   }

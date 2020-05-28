@@ -2,9 +2,9 @@
   <div class="pf-c-page__header-brand">
     <a class="pf-c-page__header-brand-link" href="{{ '/' | relative_url }}">
       {% if jekyll.environment == 'development' %}
-      <img class="pf-c-brand" src="/assets/img/NewRHDFullLogo_4-color_white-wordmark.png" alt="Red Hat Developers logo" />
+      <img class="pf-c-brand" src="/assets/img/NewRHDFullLogo_4-color_white-wordmark.png" style="padding: 8px;" alt="Red Hat Developers logo" />
       {% elsif jekyll.environment == 'production' %}
-      <img class="pf-c-brand" src="{{ site.baseurl }}/assets/img/NewRHDFullLogo_4-color_white-wordmark.png" alt="Red Hat Developers logo" />
+      <img class="pf-c-brand" src="{{ site.baseurl }}/assets/img/NewRHDFullLogo_4-color_white-wordmark.png" style="padding: 8px;" alt="Red Hat Developers logo" />
       {% endif %}
     </a>
   </div>
@@ -30,18 +30,18 @@
         <i class="fas fa-info-circle" aria-hidden="true" alt="About"></i>
       </a>
       {% endif %}
-      <button class="pf-c-button pf-m-plain" type="button" aria-label="GitHub URL" onclick="window.location.href = 'https://github.com/redhat-developer/design-manual';">
+      <a href="https://github.com/redhat-developer/design-manual" class="pf-c-button pf-m-plain pf-m-link" target="top" aria-label="GitHub URL">
         <i class="fab fa-github" aria-hidden="true" alt="GitHub"></i>
-      </button>
+      </a>
     </div>
     <div class="pf-c-page__header-tools-group">
-      <form novalidate class="pf-c-form" action="https://google.com/search" target="_blank" type="GET">
+      <form class="pf-c-form" action="https://google.com/search" target="_blank" type="GET">
         <div class="pf-c-form__group" style="display: flex; align-items: baseline;">
-          <span id="site-search-form-name" style="display: flex; align-items: center;">
+          <span id="site-search-form-name" style="display: flex; align-items: center; margin-right: -20px;">
             <i class="fal fa-search" aria-hidden="true"></i>
           </span>
-          <input class="pf-c-form-control rhddx-c-site-search" type="search" id="site-search-form-name-input" name="q" placeholder="Search" aria-label="Search" />
-          <button type="submit" aria-hidden="true" class="pf-u-display-none"></button>
+          <input class="pf-c-form-control rhddx-c-site-search" style="padding-left: 24px;" type="search" id="site-search-form-name-input" name="q" placeholder="Search" aria-label="Search" />
+          <input type="submit" value="go" aria-hidden="true" class="pf-u-display-none"></input>
         </div>
       </form>
     </div>

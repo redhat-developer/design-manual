@@ -4,7 +4,7 @@ title: Design Manual
 heading: Build here. Go anywhere.
 subheader: developers.redhat.com
 subheader_url: https://developers.redhat.com
-intro: >
+intro_paragraph: >
   This guide will serve as a home base for the Red Hat Developer story, messaging, and visual brand language. It’s a place you can always return to when you have questions about how to best represent Red Hat Developer through messaging or visual elements.
 permalink: /
 section: home
@@ -17,7 +17,7 @@ custom_css: [cards, home]
       <div class="pf-l-flex__item">
         <h1 class="pf-c-title pf-m-4xl">{{ page.heading }}</h1>
         <a href="{{ page.subheader_url }}" target="top" class="pf-c-title pf-m-3xl rhddx-m-link-header rhddx-m-dark">{{ page.subheader }}<span class="rhddx-m-link-header__arrow-right pf-u-ml-sm"><i class="fas fa-arrow-right" aria-hidden="true"></i></span></a>
-        <p class="pf-u-my-xl pf-m-lg">{{ page.intro }}</p>
+        <p class="pf-u-my-xl pf-m-lg">{{ page.intro_paragraph }}</p>
       </div>
     </div>
     <div class="pf-l-flex pf-m-justify-content-space-evenly rhddx-l-card__intro">
