@@ -52,7 +52,6 @@
     "gulp-size": "3.0.0",
     "gulp-sourcemaps": "2.6.5",
     "imagemin-mozjpeg": "8.0.0",
-    "imagemin-pngquant": "8.0.0",
-    "netlify-plugin-a11y": "0.0.12"
+    "imagemin-pngquant": "8.0.0"
   }
 }
