@@ -60,9 +60,9 @@ package = "netlify-plugin-a11y"
   ]
 
   # # optional config
-  # ignoreDirectories = ['/admin']  # explicitly ignore these directories
+  ignoreDirectories = ['/admin']  # explicitly ignore these directories
 
-  # resultMode = "warn" # is "error" by default
+  resultMode = "warn" # is "error" by default
 
   # # Developer only
   # debugMode = true # extra logging for plugin developers

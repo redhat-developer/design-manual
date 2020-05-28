@@ -1,6 +1,6 @@
 :root {
-  --rhddx-c-label--BackgroundColor-released: #0040d5;
-  --rhddx-c-label--BackgroundColor-unreleased: #ffbf00;
+  --rhddx-c-label--BackgroundColor-released: #{$rhddx-color-blue};
+  --rhddx-c-label--BackgroundColor-unreleased: #{$rhddx-color-gold};
 }
 .rhddx {
   .pf-c-label {
