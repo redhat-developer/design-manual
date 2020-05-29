@@ -19,6 +19,25 @@
       {% endif %}
     </li>
   </ul>
+  <ul>
+    <li class="rhddx-c-sub-menu rhddx-m-overview">
+      {% if jekyll.environment == 'development' %}
+      <a href="/design/resources"
+        {% if page.active_nav == 'Design Resources' %}
+          class="rhddx-m-active" aria-current="page"
+        {% endif %}>
+        Design Resources
+      </a>
+      {% elsif jekyll.environment == 'production' %}
+      <a href="{{ site.baseurl }}/design/resources"
+        {% if page.active_nav == 'Design Resources' %}
+          class="rhddx-m-active" aria-current="page"
+        {% endif %}>
+        Design Resources
+      </a>
+      {% endif %}
+    </li>
+  </ul>
   {% for item in site.data.design.toc %}
   <ul>
     <li class="rhddx-c-sub-menu">
