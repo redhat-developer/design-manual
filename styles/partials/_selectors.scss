@@ -24,20 +24,20 @@
   /*
   ** Add the CodePen icon to any URLs that contain 'codepen.io', signifying that the user is leaving the site and proceeding to CodePen.
   */
-  a[href*="codepen.io"]:after {
-    font-family: "Font Awesome 5 Brands";
-    font-weight: 400;
-    content: "\f1cb";
-    margin-left: 4px;
-    .pf-c-nav__list > .pf-c-nav__item & {
-      font-family: "Font Awesome 5 Brands";
-      font-weight: 400;
-      content: "\f1cb";
-      margin-left: 4px;
-      position: initial;
-      background-color: transparent;
-    }
-  }
+  // a[href*="codepen.io"]:after {
+  //   font-family: "Font Awesome 5 Brands";
+  //   font-weight: 400;
+  //   content: "\f1cb";
+  //   margin-left: 4px;
+  //   .pf-c-nav__list > .pf-c-nav__item & {
+  //     font-family: "Font Awesome 5 Brands";
+  //     font-weight: 400;
+  //     content: "\f1cb";
+  //     margin-left: 4px;
+  //     position: initial;
+  //     background-color: transparent;
+  //   }
+  // }
 
   /*
   ** Add the Marvel icon to any URLs that contain 'marvel.com'
