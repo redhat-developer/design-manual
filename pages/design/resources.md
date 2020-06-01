@@ -4,7 +4,7 @@ category: design
 section: Design
 permalink: /design/resources
 title: Design resources
-active_nav: Design resources
+active_nav: Design Resources
 intro_paragraph: >
   Design content for the Red Hat Developer site using Sketch templates and libraries.
 ---
