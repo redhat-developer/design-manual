@@ -1,0 +1,8 @@
+@import "../utilities/variables";
+
+@media (prefers-color-scheme: dark) {
+  .rhd-c-card {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-light);
+  }
+}

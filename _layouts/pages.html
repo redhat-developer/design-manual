@@ -23,13 +23,10 @@ layout: compress
             <div class="pf-l-grid__item pf-m-12-col" id="main">
               <h3><i class="fal fa-book"></i> {{ page.section }}</h3>
             </div>
-            <div class="pf-l-grid__item pf-m-12-col-on-md pf-u-p-lg rhddx-c-overview-example-panel">
+            <div class="pf-l-grid__item">
               <div class="pf-l-flex">
                 <div class="pf-l-flex__item">
                   <h4 class="pf-c-title">{{ page.title }}</h4>
-                </div>
-                <div class="pf-l-flex__item">
-                  <!-- <a href="#" class="pf-c-button pf-m-link">View full screen</a> -->
                 </div>
                 <div class="pf-l-flex__item pf-m-align-right">
                   <button class="pf-c-button pf-m-link" id="show-creation-tips-action">
@@ -38,6 +35,8 @@ layout: compress
                   </button>
                 </div>
               </div>
+            </div>
+            <div class="pf-l-grid__item pf-m-12-col-on-md pf-u-p-lg rhddx-c-overview-example-panel">
               <div class="rhdxx-m-box-shadow pf-u-p-md">
                 {{ content }}
               </div>

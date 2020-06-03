@@ -42,48 +42,51 @@
   /*
   ** Add the Marvel icon to any URLs that contain 'marvel.com'
   */
-  a[href*="marvelapp.com"]:after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 700;
-    content: "\f53f";
-    margin-left: 4px;
-  }
+  // a[href*="marvelapp.com"]:after {
+  //   font-family: "Font Awesome 5 Free";
+  //   font-weight: 700;
+  //   content: "\f53f";
+  //   margin-left: 4px;
+  // }
 
   /*
   ** Customize text selection/highlight colors
   */
   ::-moz-selection { /* Code for Firefox */
-    color: var(--rhddx-global--Color--white);
-    background-color: rgba(0, 116, 232, 1);
+    color: var(--text-color-white);
+    background-color: var(--site-color-blue-default);
   }
 
   ::selection {
-    color: var(--rhddx-global--Color--white);
-    background-color: rgba(0, 116, 232, 1);
+    color: var(--text-color-white);
+    background-color: var(--site-color-blue-default);
   }
 
   .highlighter-rouge {
-    font-family: Fira Coda, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-family: var(--font-family-code);
     padding: 4px 8px;
-    background-color: var(--rhddx-global--Color--white);
-    border: var(--rhddx-global--Border-width) solid var(--rhddx-global--Border--grey-light);
-    color: var(--rhddx-global--Color--200);
+    background-color: var(--background-color-white);
+    border: var(--border-width-small) solid var(--border-color-light);
+    color: var(--text-color-blue-grey);
+    @media (prefers-color-scheme: dark) {
+      color: var(--text-color-light);
+    }
     border-radius: 3px;
     line-height: 1.5;
     &::-moz-selection { /* Code for Firefox */
-      color: var(--rhddx-global--Color--200);
-      background-color: #cfe0f3;
+      color: var(--text-color-blue-grey);
+      background-color: var(--background-color-light--blue);
     }
 
     &::selection {
-      color: var(--rhddx-global--Color--200);
-      background-color: #cfe0f3;
+      color: var(--text-color-blue-grey);
+      background-color: var(--background-color-light--blue);
     }
   }
   [class*="language-"].highlighter-rouge {
-    background-color: var(--rhddx-global--Color--white);
-    border: var(--rhddx-global--Border-width) solid var(--rhddx-global--Border--grey-light);
-    color: var(--rhddx-global--Color--200);
+    background-color: var(--background-color-white);
+    border: var(--border-width-small) solid var(--border-color-light);
+    color: var(--text-color-blue-grey);
   }
 
   /*
@@ -93,15 +96,15 @@
     position: relative;
     top: -1px;
     right: 0;
-    border: var(--rhddx-global--Border-width-small) solid;
-    border-color: var(--rhddx-global--Border--grey-light);
+    border: var(--border-width-small) solid;
+    border-color: var(--border-color-light);
     text-align: right;
     opacity: 1;
   }
   pre {
-    background-color: var(--rhddx-global--Color--white);
-    border: var(--rhddx-global--Border-width-small) solid;
-    border-color: var(--rhddx-global--Border--grey-light);
+    background-color: var(--background-color-white);
+    border: var(--border-width-small) solid;
+    border-color: var(--border-color-light);
   }
   pre[class*="language-"] {
     margin-bottom: 0;
@@ -109,31 +112,37 @@
   div.code-toolbar > .toolbar .toolbar-item {
     button.pf-c-button.pf-m-control {
       padding: 8px 20px;
-      background-color: var(--rhddx-global--Color--white);
-      border: var(--rhddx-global--Border-width-small) solid;
-      border-color: var(--rhddx-global--Border--grey-light);
+      background-color: var(--background-color-white);
+      border: var(--border-width-small) solid;
+      border-color: var(--border-color-light);
       border-top: 0;
-      border-bottom: var(--rhddx-global--Border-width) solid;
+      border-bottom: var(--border-width-small) solid;
       border-bottom-color: #8a8d90;
-      box-shadow: inset -1px 0 0 0 var(--rhddx-global--Border--grey-light),
-        inset 0 1px 0 0 var(--rhddx-global--Border--grey-light),
-        inset 1px 0 0 0 var(--rhddx-global--Border--grey-light),
+      box-shadow: inset -1px 0 0 0 var(--border-color-light),
+        inset 0 1px 0 0 var(--border-color-light),
+        inset 1px 0 0 0 var(--border-color-light),
         inset 0 -1px 0 0 #8a8d90;
       margin-top: -1px;
       margin-bottom: 0;
       &::before {
         content: "\f0c5";
-        font-family: "Font Awesome 5 Free";
+        font-family: var(--font-family-icons);
         font-weight: 700;
-        color: var(--rhddx-global--Color--100);
+        color: var(--text-color-normal);
+        @media (prefers-color-scheme: dark) {
+          color: var(--text-color-light);
+        }
       }
       &:hover,
       &:active,
       &:focus {
-        border-bottom-color: #06c;
+        border-bottom-color: var(--site-color-blue-default);
+        @media (prefers-color-scheme: dark) {
+          border-bottom-color: var(--site-color-blue-light);
+        }
       }
       &::after {
-        border-color: var(--rhddx-global--Border--grey-light);
+        border-color: var(--border-color-light);
       }
       &:hover::after,
       &:active::after,
@@ -148,7 +157,7 @@
     padding: 0;
     font-size: 16px;
     color: #72767b;
-    background: var(--rhddx-global--Color--white);
+    background: var(--text-color-white);
     box-shadow: none;
     border-radius: 0;
   }
@@ -158,38 +167,43 @@
     margin: 36px 0;
     padding-top: 32px;
     &::-moz-selection { /* Code for Firefox */
-      color: var(--rhddx-global--Color--200);
-      background-color: #cfe0f3;
+      color: var(--text-color-blue-grey);
+      background-color: var(--background-color-light--blue);
     }
     &::selection {
-      color: var(--rhddx-global--Color--200);
-      background-color: #cfe0f3;
+      color: var(--text-color-blue-grey);
+      background-color: var(--background-color-light--blue);
     }
     pre {
       code {
         &[data-lang]::before {
           content: "\f121   "attr(data-lang)""; // extra spaces provide spacing between icon and text
-          font-family: "Font Awesome 5 Free";
+          font-family: var(--font-family-icons);
           font-weight: 700;
           text-transform: uppercase;
           position: absolute;
           top: -40px;
           right: 0;
           padding: 8px 20px;
-          border: var(--rhddx-global--Border-width) solid;
-          border-color: var(--rhddx-global--Border--grey-light);
+          border: var(--border-width-small) solid;
+          border-color: var(--border-color-light);
           border-bottom: 0;
           color: #72767b;
-          background-color: var(--rhddx-global--Color--white);
+          background-color: var(--background-color-white);
+          @media (prefers-color-scheme: dark) {
+            background-color: var(--background-color-dark);
+            border-color: var(--border-color-light);
+            color: var(--text-color-light);
+          }
         }
         &[data-lang] {
           &::-moz-selection { /* Code for Firefox */
-            color: var(--rhddx-global--Color--200);
-            background-color: #cfe0f3;
+            color: var(--text-color-blue-grey);
+            background-color: var(--background-color-light--blue);
           }
           &::selection {
-            color: var(--rhddx-global--Color--200);
-            background-color: #cfe0f3;
+            color: var(--text-color-blue-grey);
+            background-color: var(--background-color-light--blue);
           }
         }
       }
@@ -203,7 +217,7 @@
   &-c-tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted #151515; /* If you want dots under the hoverable text */
+    border-bottom: var(--border-width-small) dotted var(--border-color-dark); /* If you want dots under the hoverable text */
     &:hover .rhddx-c-tooltip-text {
       visibility: visible;
       opacity: 1;
@@ -212,7 +226,7 @@
       visibility: hidden;
       width: 120px;
       background-color: #555;
-      color: #fff;
+      color: var(--text-color-white);
       text-align: center;
       padding: 5px 0;
       border-radius: 6px;
@@ -233,7 +247,7 @@
         top: 100%;
         left: 50%;
         margin-left: -5px;
-        border-width: 5px;
+        border-width: var(--border-width-xlarge);
         border-style: solid;
         border-color: #555 transparent transparent transparent;
       }

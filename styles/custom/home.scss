@@ -1,3 +1,5 @@
+@import "../utilities/variables";
+
 .rhddx-c-page__home {
   background-color: transparent;
 }
@@ -6,7 +8,7 @@
   margin: 0 auto;
   background-color: transparent;
   & > * {
-    color: #fff;
+    color: var(--text-color-white);
   }
   .rhddx-l-card__intro {
     .pf-l-flex__item {
@@ -14,7 +16,7 @@
     }
   }
   .rhddx-m-link-header.rhddx-m-dark {
-    color: var(--rhddx-global--Link-color--blue-light);
+    color: var(--background-color-light--blue);
     &:hover {
       color: darken($color: #73bcf7, $amount: 25%);
       text-decoration: none;

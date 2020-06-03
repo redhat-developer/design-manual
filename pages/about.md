@@ -7,7 +7,8 @@ section: overview
 category: about
 editable: true
 intro_paragraph: >
-
+custom_js: 
+custom_css: [about]
 ---
 
 <div class="pf-l-grid pf-m-12-col pf-u-p-md">

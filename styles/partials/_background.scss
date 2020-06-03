@@ -1,12 +1,12 @@
 .pf-c-page__main-section.rhddx-background-image {
   background-color: transparent;
   .pf-c-content {
-    color: var(--rhddx-global--Color--white);
+    color: var(--text-color-white);
     text-align: center;
   }
 }
 .rhddx-background-image {
-  --rhddx-c-image--BackgroundColor: var(--rhddx-global--Color--100);
+  --rhddx-c-image--BackgroundColor: var(--text-color-normal);
   --rhddx-c-image--BackgroundImage: url("img/rhddxbg_576.jpg");
   --rhddx-c-image--Background-2x: url("img/rhddxbg_576@2x.jpg");
   --rhddx-c-image--Background--sm: url("img/rhddxbg_768.jpg");
