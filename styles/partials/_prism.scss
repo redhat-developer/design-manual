@@ -6,11 +6,25 @@ https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clik
  * @author ocodia
  */
 
+@media (prefers-color-scheme: dark) {
+  .rhddx figure.highlight,
+  div.code-toolbar,
+  .rhddx pre[class*="language-"] {
+  //  filter: invert(100%);
+   background: var(--background-color-dark);
+   color: var(--text-color-light);
+  }
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: var(--text-color-light) !important;
+  }
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
-  color: var(--rhddx-global--Color--200);
+  color: var(--text-color-blue-grey);
   background: none;
-  font-family: Fira Coda, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: var(--font-family-code);
   font-size: 1em;
   text-align: left;
   white-space: pre;
@@ -39,7 +53,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: var(--rhddx-global--Color--white);
+  background: var(--background-color-normal);
  }
 
 /* Inline code */
@@ -57,7 +71,7 @@ pre[class*="language-"] {
 }
 
 .token.punctuation {
-  color: #6d6d6c;
+  color: rgb(109, 109, 108);
 }
 
 .token.namespace {
@@ -69,12 +83,18 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-color: #A1050A;
+  color: rgb(161, 5, 10);
+  @media (prefers-color-scheme: dark) {
+    color: rgb(255, 4, 192);
+  }
 }
 
 .token.boolean,
 .token.number {
-  color: #3b1e72;
+  color: rgb(59, 30, 114);
+  @media (prefers-color-scheme: dark) {
+    color: rgb(168, 121, 255);
+  }
 }
 
 .token.selector,
@@ -83,7 +103,10 @@ color: #A1050A;
 .token.char,
 .token.builtin,
 .token.inserted {
-color: #06586D;
+  color: rgb(6, 88, 109);
+  @media (prefers-color-scheme: dark) {
+    color: rgb(16, 207, 255);
+  }
 }
 
 .token.operator,
@@ -92,23 +115,35 @@ color: #06586D;
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-  color: #3b3b3b;
+  color: rgb(59, 59, 59);
+  @media (prefers-color-scheme: dark) {
+    color: rgb(226, 226, 226);
+  }
 }
 
 .token.atrule,
 .token.attr-value,
 .token.function,
 .token.class-name {
-  color: #39803d;
+  color: rgb(57, 128, 61);
+  @media (prefers-color-scheme: dark) {
+    color: rgb(115, 255, 122);
+  }
 }
 
 .token.keyword {
-  color: #0d7d94;
+  color: rgb(13, 125, 148);
+  @media (prefers-color-scheme: dark) {
+    color: rgb(19, 213, 252);
+  }
 }
 
 .token.regex,
 .token.important {
-  color: #aa6516;
+  color: rgb(170, 101, 22);
+  @media (prefers-color-scheme: dark) {
+    color: rgb(255, 152, 34);
+  }
 }
 
 .token.important,
@@ -163,12 +198,12 @@ color: #06586D;
 .token.italic,
 .token.entity {
   &::-moz-selection { /* Code for Firefox */
-    color: var(--rhddx-global--Color--200);
-    background-color: #cfe0f3;
+    color: var(--text-color-blue-grey);
+    background-color: rgb(207, 224, 243);
   }
   &::selection {
-    color: var(--rhddx-global--Color--200);
-    background-color: #cfe0f3;
+    color: var(--text-color-blue-grey);
+    background-color: rgb(207, 224, 243);
   }
 }
 
@@ -189,9 +224,13 @@ pre[class*="language-"].line-numbers > code {
   font-size: 100%;
   width: 50px; /* works for line-numbers below 1000 lines */
   letter-spacing: -1px;
-  background-color: var(--rhddx-global--Color--white);
-  border-right: var(--rhddx-global--Border-width-small) solid var(--rhddx-global--Border--grey-light);
-  border-left: var(--rhddx-global--Border-width) solid var(--rhddx-global--Border--grey-light);
+  background-color: var(--background-color-normal);
+  border-right: var(--border-width-small) solid var(--border-color-light);
+  border-left: var(--border-width-small) solid var(--border-color-light);
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-light);
+  }
 
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -208,7 +247,7 @@ pre[class*="language-"].line-numbers > code {
 
 .line-numbers-rows > span:before {
   content: counter(linenumber);
-  color: #5e6368;
+  color: rgb(94, 99, 104);
   display: block;
   padding-right: 0.8em;
   text-align: right;
@@ -260,10 +299,10 @@ div.code-toolbar > .toolbar button {
 div.code-toolbar > .toolbar a,
 div.code-toolbar > .toolbar button,
 div.code-toolbar > .toolbar span {
-  color: #bbb;
+  color: rgb(187, 187, 187);
   font-size: .8em;
   padding: 0 .5em;
-  background: #f5f2f0;
+  background: rgb(245, 242, 240);
   background: rgba(224, 224, 224, 0.2);
   box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
   border-radius: .5em;

@@ -1,6 +1,8 @@
+@import "../utilities/variables";
+
 .rhddx-c-card {
   & > * {
-    color: #fff;
+    color: var(--text-color-white);
     text-align: center;
     width: 350px;
   }
@@ -8,7 +10,7 @@
     cursor: pointer;
   }
   .pf-c-card__body {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: var(--font-family-headings);
     font-size: 28px;
     font-weight: 400;
     line-height: 34px;
@@ -53,7 +55,15 @@
   }
   p {
     font-size: 20px;
-    color: #151515;
+    color: var(--text-color-normal);
+  }
+  @media (prefers-color-scheme: dark) {
+    a,
+    button,
+    .pf-m-link,
+    .pf-c-button.pf-m-link {
+      color: var(--site-color-blue-default);
+    }
   }
   &.rhddx-m-active {
     opacity: 1;

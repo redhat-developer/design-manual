@@ -9,7 +9,7 @@
       --pf-c-label--BackgroundColor: var(--rhddx-c-label--BackgroundColor-released);
     }
     &.label-unreleased {
-      --pf-c-label--Color: var(--rhddx-global--Color--100);
+      --pf-c-label--Color: var(--text-color-normal);
       --pf-c-label--BackgroundColor: var(--rhddx-c-label--BackgroundColor-unreleased);
     }
   }
