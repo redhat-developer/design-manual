@@ -1,6 +1,6 @@
 {
   "name": "design-manual",
-  "version": "2.0.0",
+  "version": "0.0.0",
   "description": "Documentation and source files for RHD brand standards & design systems.",
   "main": "index.js",
   "engines": {
@@ -17,7 +17,8 @@
     "prodDeploy": "npm run deployment && npm run release",
     "netlify": "netlify dev",
     "build-netlify": "gulp netlify",
-    "test": "gulp netlify && netlify-build"
+    "test": "gulp netlify && netlify-build",
+    "version": "github_changelog_generator -u mindreeper2420 -p design-manual"
   },
   "sass": {
     "includePaths": [
