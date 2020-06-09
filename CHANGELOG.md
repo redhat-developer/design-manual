@@ -1,20 +1,20 @@
 # Changelog
 
-## [v2.20.0](https://github.com/mindreeper2420/design-manual/tree/v2.20.0) (2020-06-01)
-
-[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.19.0...v2.20.0)
-
 ## [v2.19.0](https://github.com/mindreeper2420/design-manual/tree/v2.19.0) (2020-06-01)
 
-[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.18.0...v2.19.0)
+[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.20.0...v2.19.0)
 
-## [v2.18.0](https://github.com/mindreeper2420/design-manual/tree/v2.18.0) (2020-05-28)
+## [v2.20.0](https://github.com/mindreeper2420/design-manual/tree/v2.20.0) (2020-06-01)
 
-[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.17.0...v2.18.0)
+[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.17.0...v2.20.0)
 
 ## [v2.17.0](https://github.com/mindreeper2420/design-manual/tree/v2.17.0) (2020-05-28)
 
-[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.16.0...v2.17.0)
+[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.18.0...v2.17.0)
+
+## [v2.18.0](https://github.com/mindreeper2420/design-manual/tree/v2.18.0) (2020-05-28)
+
+[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.16.0...v2.18.0)
 
 ## [v2.16.0](https://github.com/mindreeper2420/design-manual/tree/v2.16.0) (2020-05-27)
 
@@ -26,15 +26,15 @@
 
 ## [v2.14.0](https://github.com/mindreeper2420/design-manual/tree/v2.14.0) (2020-05-12)
 
-[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.13.1...v2.14.0)
-
-## [v2.13.1](https://github.com/mindreeper2420/design-manual/tree/v2.13.1) (2020-05-12)
-
-[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.13.0...v2.13.1)
+[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.13.0...v2.14.0)
 
 ## [v2.13.0](https://github.com/mindreeper2420/design-manual/tree/v2.13.0) (2020-05-12)
 
-[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.12.0...v2.13.0)
+[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.13.1...v2.13.0)
+
+## [v2.13.1](https://github.com/mindreeper2420/design-manual/tree/v2.13.1) (2020-05-12)
+
+[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.12.0...v2.13.1)
 
 ## [v2.12.0](https://github.com/mindreeper2420/design-manual/tree/v2.12.0) (2020-05-12)
 
@@ -62,15 +62,15 @@
 
 ## [v2.8.0](https://github.com/mindreeper2420/design-manual/tree/v2.8.0) (2020-04-01)
 
-[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.7.0...v2.8.0)
-
-## [v2.7.0](https://github.com/mindreeper2420/design-manual/tree/v2.7.0) (2020-03-31)
-
-[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.6.0...v2.7.0)
+[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.6.0...v2.8.0)
 
 ## [v2.6.0](https://github.com/mindreeper2420/design-manual/tree/v2.6.0) (2020-03-31)
 
-[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.5.0...v2.6.0)
+[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.7.0...v2.6.0)
+
+## [v2.7.0](https://github.com/mindreeper2420/design-manual/tree/v2.7.0) (2020-03-31)
+
+[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.5.0...v2.7.0)
 
 ## [v2.5.0](https://github.com/mindreeper2420/design-manual/tree/v2.5.0) (2020-03-24)
 
@@ -86,19 +86,19 @@
 
 ## [v2.0.0](https://github.com/mindreeper2420/design-manual/tree/v2.0.0) (2020-03-13)
 
-[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.3.0...v2.0.0)
-
-## [v2.3.0](https://github.com/mindreeper2420/design-manual/tree/v2.3.0) (2020-03-13)
-
-[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.2.0...v2.3.0)
-
-## [v2.2.0](https://github.com/mindreeper2420/design-manual/tree/v2.2.0) (2020-03-13)
-
-[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.1.0...v2.2.0)
+[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.1.0...v2.0.0)
 
 ## [v2.1.0](https://github.com/mindreeper2420/design-manual/tree/v2.1.0) (2020-03-13)
 
-[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v1.0.0...v2.1.0)
+[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.2.0...v2.1.0)
+
+## [v2.2.0](https://github.com/mindreeper2420/design-manual/tree/v2.2.0) (2020-03-13)
+
+[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v2.3.0...v2.2.0)
+
+## [v2.3.0](https://github.com/mindreeper2420/design-manual/tree/v2.3.0) (2020-03-13)
+
+[Full Changelog](https://github.com/mindreeper2420/design-manual/compare/v1.0.0...v2.3.0)
 
 ## [v1.0.0](https://github.com/mindreeper2420/design-manual/tree/v1.0.0) (2019-05-24)
 
