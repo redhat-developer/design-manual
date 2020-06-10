@@ -11,14 +11,27 @@ script:
 - scripts/./submodule.sh
 - gulp deploy
 install: true
+before_deploy:
+  # Set up git user name and tag this commit
+  - git config --local user.name "GIT_USERNAME"
+  - git config --local user.email "GIT_EMAIL"
+  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+  - git tag $TRAVIS_TAG
 deploy:
   provider: pages
   skip_cleanup: true
   local_dir: docs
   github_token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
-  api_key: $GREN_GITHUB_TOKEN
   keep_history: true
   target_branch: gh-pages
   on:
     branch: master
+after_deploy:
+  provider: releases
+  api_key:
+    secure: $GREN_GITHUB_TOKEN
+  file: "CHANGELOG.md"
+  skip_cleanup: true
+  on:
+    tags: true
   script: scripts/./release.sh minor  
