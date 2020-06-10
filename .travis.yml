@@ -19,3 +19,5 @@ deploy:
   target_branch: gh-pages
   on:
     branch: master
+after_deploy:
+  - scripts/./release.sh prerelease  
