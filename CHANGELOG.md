@@ -4,16 +4,16 @@
 - Original
 ---
 
-## v2.18.0 (09/06/2020)
-- [Remove Netlify a11y plugin](https://github.com/redhat-developer/design-manual/commit/ec19cebedab5aa63d2d0416ad808dac3ba0c2476)
----
-
 ## v2.0.0 (09/06/2020)
 - [Add new Design Manual site UI](https://github.com/redhat-developer/design-manual/commit/5aed705f70a710d5dc96b44afcbb729b9b1eb845)
 ---
 
 ## v2.1.0 (09/06/2020)
 - [Add basic print page support](https://github.com/redhat-developer/design-manual/commit/d6bd381e9958c426dddbaa58f9c4a31804cfead1)
+---
+
+## v2.18.0 (09/06/2020)
+- [Remove Netlify a11y plugin](https://github.com/redhat-developer/design-manual/commit/ec19cebedab5aa63d2d0416ad808dac3ba0c2476)
 ---
 
 ## v2.2.0 (09/06/2020)
@@ -101,9 +101,9 @@
 - [Add Design Resources page with downloads](https://github.com/redhat-developer/design-manual/commit/9cb17d822ca643b0c25176ec108e1fe4e10754b1)
 ---
 
-## v2.21.0 (09/06/2020)
-Version bump
----
-
 ## v2.20.0 (08/06/2020)
 - [Fix active title text case](https://github.com/redhat-developer/design-manual/commit/6cb43241dd2fcd9de632add92b0a958e2d89adef) - @mindreeper2420
+---
+
+## v2.21.0 (09/06/2020)
+Version bump
