@@ -6,6 +6,7 @@ before_install:
 - bundle install
 - npm install
 - npm install gulp-cli -g
+- npm install github-release-notes -g
 script:
 - scripts/./submodule.sh
 - gulp deploy
@@ -20,4 +21,5 @@ deploy:
   on:
     branch: master
 after_deploy:
+  github_token: $GREN_GITHUB_TOKEN
   - scripts/./release.sh minor  
