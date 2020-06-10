@@ -15,7 +15,7 @@ VERSION=${1?Error: delineate major, minor, patch or prerelease}
 npm version "$VERSION"
 
 echo "Update Changelog"
-gren release -G --override && gren changelog --override
+gren release --data-source=commits && gren changelog --override
 
 echo "Commit Changelog and push to master"
 git add --all && git commit -m "Update Changelog"
