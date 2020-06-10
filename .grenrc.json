@@ -1,0 +1,8 @@
+{
+    "dataSource": "commits",
+    "prefix": "",
+    "includeMessages": "all",
+    "ignoreCommitsWith": ["changelog", "undefinedduplicate", "undefinedwontfix"],
+    "ignoreIssuesWith": ["wontfix", "duplicate"],
+    "changelogFilename": "CHANGELOG.md"
+}
