@@ -27,11 +27,4 @@ deploy:
   on:
     branch: master
 after_deploy:
-  provider: releases
-  api_key:
-    secure: $GREN_GITHUB_TOKEN
-  file: "CHANGELOG.md"
-  skip_cleanup: true
-  on:
-    tags: true
-  script: scripts/./release.sh minor  
+  - scripts/./release.sh minor  
