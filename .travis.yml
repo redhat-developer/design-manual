@@ -21,5 +21,4 @@ deploy:
   on:
     branch: master
 after_deploy:
-  github_token: $GREN_GITHUB_TOKEN
   - scripts/./release.sh minor  
