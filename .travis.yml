@@ -21,4 +21,8 @@ deploy:
   on:
     branch: master
 after_deploy:
-  - scripts/./release.sh minor  
+  provider: releases
+  github_token: $GREN_GITHUB_TOKEN
+  skip_cleanup: true
+  target_branch: master
+  script: scripts/./release.sh minor  
