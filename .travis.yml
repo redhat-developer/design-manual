@@ -20,4 +20,4 @@ deploy:
   on:
     branch: master
 after_deploy:
-  - scripts/./release.sh prerelease  
+  - scripts/./release.sh minor  
