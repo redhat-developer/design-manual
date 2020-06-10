@@ -1,7 +1,23 @@
 # Changelog
 
-## v1.0.0 (09/06/2020)
-- Original
+## v2.22.1 (10/06/2020)
+- [Update CHANGELOG.md](https://github.com/redhat-developer/design-manual/commit/a61696bf8729e93a79991233c302058772de1c75) - @mindreeper2420
+
+---
+
+## v2.22.0 (10/06/2020)
+- [Fix travis build](https://github.com/redhat-developer/design-manual/commit/25d916f35c398be2af3feeb1643e968182bbdf1d) - @mindreeper2420
+- [Add github release notes install to travis script](https://github.com/redhat-developer/design-manual/commit/454053f6d2ecf1bf92ba56c1850240cf51a4d85d) - @mindreeper2420
+
+---
+
+## vv1.0.0 (09/06/2020)
+
+
+---
+
+## v2.18.0 (09/06/2020)
+- [Remove Netlify a11y plugin](https://github.com/redhat-developer/design-manual/commit/ec19cebedab5aa63d2d0416ad808dac3ba0c2476)
 ---
 
 ## v2.0.0 (09/06/2020)
@@ -10,10 +26,6 @@
 
 ## v2.1.0 (09/06/2020)
 - [Add basic print page support](https://github.com/redhat-developer/design-manual/commit/d6bd381e9958c426dddbaa58f9c4a31804cfead1)
----
-
-## v2.18.0 (09/06/2020)
-- [Remove Netlify a11y plugin](https://github.com/redhat-developer/design-manual/commit/ec19cebedab5aa63d2d0416ad808dac3ba0c2476)
 ---
 
 ## v2.2.0 (09/06/2020)
@@ -101,9 +113,9 @@
 - [Add Design Resources page with downloads](https://github.com/redhat-developer/design-manual/commit/9cb17d822ca643b0c25176ec108e1fe4e10754b1)
 ---
 
-## v2.20.0 (08/06/2020)
-- [Fix active title text case](https://github.com/redhat-developer/design-manual/commit/6cb43241dd2fcd9de632add92b0a958e2d89adef) - @mindreeper2420
----
-
 ## v2.21.0 (09/06/2020)
 Version bump
+---
+
+## v2.20.0 (08/06/2020)
+- [Fix active title text case](https://github.com/redhat-developer/design-manual/commit/6cb43241dd2fcd9de632add92b0a958e2d89adef) - @mindreeper2420
