@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.25.0 (11/06/2020)
+
+---
+
 ## 2.24.0 (11/06/2020)
 
 ---
@@ -119,7 +123,3 @@ Update changelog
 
 ## v2.19.0 (09/06/2020)
 - [Add Design Resources page with downloads](https://github.com/redhat-developer/design-manual/commit/9cb17d822ca643b0c25176ec108e1fe4e10754b1)
----
-
-## v2.21.0 (09/06/2020)
-Version bump
