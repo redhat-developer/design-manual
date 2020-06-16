@@ -4,11 +4,11 @@ then
   exit 1;
 fi
 
-echo "Checkout Master branch"
-git checkout master
+echo "Checkout Main branch"
+git checkout main
 
-echo "Pull latest from master"
-git pull --rebase origin master
+echo "Pull latest from main"
+git pull --rebase origin main
 
 echo "Update NPM Version"
 VERSION=${1?Error: delineate major, minor, patch or prerelease}
@@ -17,8 +17,8 @@ npm version "$VERSION"
 echo "Update Changelog"
 gren release --data-source=commits && gren changelog --override
 
-echo "Commit Changelog and push to master"
+echo "Commit Changelog and push to main"
 git add --all && git commit -m "Update Changelog"
 
-echo "Push to Master"
-git push origin master
+echo "Push to Main"
+git push origin main
