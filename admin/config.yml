@@ -4,7 +4,7 @@
 backend:
   name: git-gateway # Netlify’s Git Gateway connects to Git provider’s API
   repo: redhat-developer/design-manual
-  branch: master # Branch to update (master by default)
+  branch: main # Branch to update (main by default)
   squash_merges: true
   commit_messages:
     create: Create "{{slug}}" "{{type}}"
