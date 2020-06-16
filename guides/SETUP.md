@@ -21,17 +21,17 @@ Table of Contens:
 
 ----
 ## Technology stack:
-  - [Ruby](https://www.ruby-lang.org/en/) (2.6+ - for Jekyll) - For installing Jekyll
-  - [Jekyll](https://jekyllrb.com/) - static site server
-  - [Node (10+)](https://nodejs.org/en/) - managing front-end dependencies
+  - [Ruby (2.6.3)](https://www.ruby-lang.org/en/) - For installing Jekyll
+  - [Jekyll (3.8)](https://jekyllrb.com/) - static site server
+  - [Node (10.16.0)](https://nodejs.org/en/) - managing front-end dependencies
     - _[NVM](https://nodejs.org/en/download/package-manager/#nvm) is recommended_
-    - NPM (6+)
+    - NPM (6.13.2)
   - [Gulp](https://gulpjs.com/) - automation and streaming build workflow
     - CLI: 2.2.0
     - Local: 4.0.2
   - [SCSS](https://sass-lang.com/) - CSS extension language
-  - PatternFly - front-end framework
-    - __Note:__ If new to PatternFly, check out their site: [www.patternfly.org](https://www.patternfly.org)
+  - [PatternFly](https://www.patternfly.org) - front-end framework
+    - __Note:__ If new to PatternFly, check out their site: [www.patternfly.org](https://www.patternfly.org/v4/get-started/about)
 
 ----
 ## Installation
