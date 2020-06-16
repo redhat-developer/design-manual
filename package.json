@@ -1,6 +1,6 @@
 {
   "name": "design-manual",
-  "version": "2.26.0",
+  "version": "2.26.1",
   "description": "Documentation and source files for RHD brand standards & design systems.",
   "main": "index.js",
   "engines": {
