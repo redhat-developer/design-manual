@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.26.0 (16/06/2020)
+
+---
+
 ## 2.25.0 (11/06/2020)
 
 ---
@@ -119,7 +123,3 @@ Update changelog
 
 ## v2.17.0 (09/06/2020)
 - [Asset reorganization](https://github.com/redhat-developer/design-manual/commit/23db0818801818a8d11aae66e71b283d04f204e3)
----
-
-## v2.19.0 (09/06/2020)
-- [Add Design Resources page with downloads](https://github.com/redhat-developer/design-manual/commit/9cb17d822ca643b0c25176ec108e1fe4e10754b1)
