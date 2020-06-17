@@ -11,8 +11,8 @@ jobs:
   automerge:
     runs-on: ubuntu-latest
     steps:
-      - name: automerge
-        uses: "pascalgn/automerge-action@4536e8847eb62fe2f0ee52c8fa92d17aa97f932f"
+      - name: Merge pull requests
+        uses: "pascalgn/automerge-action@v0.8.4"
         env:
           GITHUB_TOKEN: "${{ secrets.ACTIONS }}"
           MERGE_LABELS: "Ready to merge,!in progress!,!blocked, !netlify-cms/draft, !netlify-cms/pending_review, !question, !duplicate, !DO NOT MERGE, !invalid"
