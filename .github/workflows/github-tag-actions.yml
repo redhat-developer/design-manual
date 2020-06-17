@@ -18,4 +18,4 @@ jobs:
         WITH_V: false
         DEFAULT_BUMP: minor
         RELEASE_BRANCHES: main
-        INITIAL_VERSION: 2.26.1 
+        INITIAL_VERSION: 2.27.0
