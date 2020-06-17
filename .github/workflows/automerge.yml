@@ -14,7 +14,7 @@ jobs:
       - name: Merge pull requests
         uses: "pascalgn/automerge-action@v0.8.4"
         env:
-          GITHUB_TOKEN: "${{ secrets.ACTIONS }}"
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_LABELS: "Ready to merge,!in progress!,!blocked, !netlify-cms/draft, !netlify-cms/pending_review, !question, !duplicate, !DO NOT MERGE, !invalid"
           MERGE_REMOVE_LABELS: Ready to merge
           MERGE_METHOD: squash
