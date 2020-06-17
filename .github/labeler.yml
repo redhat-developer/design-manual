@@ -1,10 +1,10 @@
-# Add Brand-Asset to anything under the /brand-asset folder
+# Add Brand-Assets to anything under the /brand-asset folder
 brand-assets:
-  - brand-assets/**
+  - brand-assets/*
 
 # Add submodule-update to anything related to the developers.redhat.com submodule
 submodule-update:
-  - developers.redhat.com/**
+  - developers.redhat.com/*
   - assets/rhdp.scss
   - styles/rhdp.scss
   - docs/assets/rhdp.css
@@ -27,8 +27,12 @@ build-improvements:
   - netlify.toml
   - gulpfile.js
   - _config.yml
-  - scripts/release.sh
+  - scripts/*
+
+tools:
+  - .github/*
 
 # Add "documentation" to any files under /guides or /help
-  - guides/**
-  - help/**
+documentation:
+  - guides/*
+  - help/*
