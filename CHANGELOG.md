@@ -1,5 +1,26 @@
 # Changelog
 
+## 2.27.3 (18/06/2020)
+
+---
+
+## 2.27.2 (18/06/2020)
+
+---
+
+## 2.27.1 (17/06/2020)
+
+---
+
+## 2.27.0 (17/06/2020)
+
+---
+
+## 2.26.1 (16/06/2020)
+- [2.26.1](https://github.com/redhat-developer/design-manual/commit/caadb5ad922d52a54a27438d62e8fb2303c2f520) - @mindreeper2420
+
+---
+
 ## 2.26.0 (16/06/2020)
 
 ---
@@ -102,24 +123,3 @@ Update changelog
 
 ## v2.13.0 (09/06/2020)
 - [Update Admin UI config](https://github.com/redhat-developer/design-manual/commit/7ad7ae9d6d7f7341b40bfcc99fd4f75e7efb2489)
----
-
-## v2.13.1 (09/06/2020)
-- [Update git submodule](https://github.com/redhat-developer/design-manual/commit/9f0474cac4de3286a8522d759065df9d3e90dcb1)
----
-
-## v2.14.0 (09/06/2020)
-- [Update admin ui config](https://github.com/redhat-developer/design-manual/commit/be272aa83be9c81dbcec01b89b4940cb5f6c676c)
----
-
-## v2.15.0 (09/06/2020)
-- [Remove docs directory](https://github.com/redhat-developer/design-manual/commit/0b5432dd2169888c7ce140de702d3f7201297355)
----
-
-## v2.16.0 (09/06/2020)
-- [Add a11y plugin to build and fix issues](https://github.com/redhat-developer/design-manual/commit/f69b779ebbba52cdc9dfe8f601e88373b965e6be)
-- Update submodule
----
-
-## v2.17.0 (09/06/2020)
-- [Asset reorganization](https://github.com/redhat-developer/design-manual/commit/23db0818801818a8d11aae66e71b283d04f204e3)
