@@ -19,7 +19,7 @@ dependencies:
 
 # Add "CMS" to any updates under the /admin directory
 CMS:
-  - admin/**
+  - admin/*
 
 # Add "build-improvements" to any updates related to the .travis.yml/netlify.toml/gulpfile.js/_config.yml files
 build-improvements:
@@ -29,6 +29,7 @@ build-improvements:
   - _config.yml
   - scripts/*
 
+# Add "tools" to any changes to workflow configuration files
 tools:
   - .github/*
 
