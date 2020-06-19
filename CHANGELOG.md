@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2.27.3 (18/06/2020)
+- [2.27.3](https://github.com/redhat-developer/design-manual/commit/165ae4b45d02970911509f2021da65fed3d411c7) - @mindreeper2420
 
 ---
 

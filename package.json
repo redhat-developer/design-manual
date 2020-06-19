@@ -1,10 +1,6 @@
 {
   "name": "design-manual",
-<<<<<<< HEAD
   "version": "2.27.3",
-=======
-  "version": "2.27.0",
->>>>>>> 2.27.0
   "description": "Documentation and source files for RHD brand standards & design systems.",
   "main": "index.js",
   "engines": {
@@ -35,28 +31,28 @@
   "license": "MIT",
   "dependencies": {
     "@patternfly/patternfly": "2.65.2",
-    "@skpm/child_process": "0.4.2",
-    "@types/jquery": "3.3.38",
-    "autoprefixer": "9.8.0",
+    "@skpm/child_process": "0.4.1",
+    "@types/jquery": "3.3.33",
+    "autoprefixer": "9.7.3",
     "browser-sync": "2.26.7",
     "cssnano": "4.1.10",
     "del": "5.1.0",
     "flat-map": "1.0.0",
-    "github-release-notes": "0.17.3",
+    "github-release-notes": "0.17.1",
     "gulp": "4.0.2",
     "gulp-clean": "0.4.0",
-    "gulp-exec": "5.0.0",
+    "gulp-exec": "4.0.0",
     "gulp-header": "2.0.9",
-    "gulp-imagemin": "7.1.0",
+    "gulp-imagemin": "6.2.0",
     "gulp-uglify": "3.0.2",
     "gulp-newer": "1.4.0",
     "gulp-noop": "1.0.0",
     "gulp-postcss": "8.0.0",
     "gulp-sass": "4.1.0",
-    "gulp-scale-images": "2.1.0",
+    "gulp-scale-images": "2.0.1",
     "gulp-size": "3.0.0",
     "gulp-sourcemaps": "2.6.5",
-    "imagemin-mozjpeg": "9.0.0",
-    "imagemin-pngquant": "9.0.0"
+    "imagemin-mozjpeg": "8.0.0",
+    "imagemin-pngquant": "8.0.0"
   }
 }
