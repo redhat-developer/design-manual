@@ -81,7 +81,7 @@ compose_image: wordpress-articles.png
                     class="image-style-article-floated" />
             </div>
             <div class="pf-l-grid__item">
-                <div class="pf-l-flex">
+                <div class="pf-l-flex pf-m-align-items-flex-start">
                     <div class="article-toc pf-l-flex__item">
                         <ul class="toc gsi-nav">
                             <li><a href="#the_compile_driver">The Compile Driver</a></li>
