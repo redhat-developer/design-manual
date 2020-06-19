@@ -1,0 +1,38 @@
+# Add Brand-Assets to anything under the /brand-asset folder
+brand-assets:
+  - brand-assets/*
+
+# Add submodule-update to anything related to the developers.redhat.com submodule
+submodule-update:
+  - developers.redhat.com/*
+  - assets/rhdp.scss
+  - styles/rhdp.scss
+  - docs/assets/rhdp.css
+  - docs/assets/rhdp.css.map
+  - scripts/submodule.sh
+
+# Add "dependencies" to any updates to package-lock.json
+dependencies:
+  - package-lock.json
+  - Gemfile.lock
+  - Gemfile
+
+# Add "CMS" to any updates under the /admin directory
+CMS:
+  - admin/**
+
+# Add "build-improvements" to any updates related to the .travis.yml/netlify.toml/gulpfile.js/_config.yml files
+build-improvements:
+  - .travis.yml
+  - netlify.toml
+  - gulpfile.js
+  - _config.yml
+  - scripts/*
+
+tools:
+  - .github/*
+
+# Add "documentation" to any files under /guides or /help
+documentation:
+  - guides/*
+  - help/*
