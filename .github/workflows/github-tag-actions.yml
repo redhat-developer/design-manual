@@ -1,20 +1,28 @@
-name: Bump version
-
 on:
   push:
-    branches: [main]
+    tags:
+      - 'v*'
+
+name: Bump version
 
 jobs:
   build:
+    name: Create Release
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-      with:
-        fetch-depth: '0'
-    - name: Github Tag Bump
-      uses: anothrNick/github-tag-action@1.22.0
-      env:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1.1.1
+      env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        WITH_V: false
-        DEFAULT_BUMP: minor
-        RELEASE_BRANCHES: main
+      with:
+        tag_name: $({ github.ref })
+        release_name: Release $({ github.ref })
+        body: |
+          Changes in this Release
+          - First Change
+          - Second Change
+        draft: false
+        prerelease: false
