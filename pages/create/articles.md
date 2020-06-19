@@ -117,8 +117,7 @@ compose_image: wordpress-articles.png
                                             metus. Nullam lobortis sed ex nec vulputate. Aliquam erat volutpat. Sed
                                             congue viverra egestas.</p>
                                         <blockquote>
-                                            <p>This is a featured quote. It can be as many lines as it needs to be to
-                                                show the whole quote that was inputed.</p>
+                                            This is a featured quote. It can be as many lines as it needs to be to show the whole quote that was inputed.
                                         </blockquote>
                                         <p>Quisque leo odio, pulvinar vel nibh ut, fringilla dictum diam. Proin a diam
                                             iaculis, facilisis orci vel, posuere dolor. Praesent porta placerat ligula,
