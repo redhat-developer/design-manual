@@ -1,8 +1,8 @@
-echo "Checkout Master branch"
-git checkout master
+echo "Checkout Main branch"
+git checkout main
 
-echo "Pull latest from master"
-git pull --rebase origin master
+echo "Pull latest from main"
+git pull --rebase origin main
 
 echo "Build site"
 gulp build
