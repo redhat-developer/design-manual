@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.28.0 (19/06/2020)
+- [2.28.0](https://github.com/redhat-developer/design-manual/commit/586197647775fc20fd0be36e85df0723567ba3fa) - @mindreeper2420
+
+---
+
 ## 2.27.3 (18/06/2020)
 - [2.27.3](https://github.com/redhat-developer/design-manual/commit/165ae4b45d02970911509f2021da65fed3d411c7) - @mindreeper2420
 
@@ -120,7 +125,3 @@ Update changelog
 
 ## v2.12.0 (09/06/2020)
 - Automatically generated. Merged on Netlify CMS
----
-
-## v2.13.0 (09/06/2020)
-- [Update Admin UI config](https://github.com/redhat-developer/design-manual/commit/7ad7ae9d6d7f7341b40bfcc99fd4f75e7efb2489)
