@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.28.5 (20/06/2020)
+
+---
+
 ## 2.28.1 (20/06/2020)
 
 ---
@@ -121,7 +125,3 @@ Update changelog
 
 ## v2.10.0 (09/06/2020)
 - [Update style imports to account for submodule issue](https://github.com/redhat-developer/design-manual/commit/e2a5fbed0c4d44e5e7e6f291316807ed6d564dd0)
----
-
-## v2.11.0 (09/06/2020)
-- [Create "code-snippet" page](https://github.com/redhat-developer/design-manual/commit/233c9c402bba701824b24eb84e136aa800247756)
