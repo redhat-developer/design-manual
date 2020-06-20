@@ -15,3 +15,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         REPO_OWNER: redhat-developer
+        RELEASE_BRANCHES: main
