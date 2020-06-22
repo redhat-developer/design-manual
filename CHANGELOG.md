@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.28.7 (20/06/2020)
+- [Update github-tab-action](https://github.com/redhat-developer/design-manual/commit/db910f049b3929b920a99cb058aeb0d01b247481) - @mindreeper2420
+
+---
+
+## 2.28.6 (20/06/2020)
+
+---
+
 ## 2.28.5 (20/06/2020)
 
 ---
@@ -117,11 +126,3 @@ Update changelog
 
 ## v2.8.2 (09/06/2020)
 - Update submodule
----
-
-## v2.9.0 (09/06/2020)
-- [Add search to site](https://github.com/redhat-developer/design-manual/commit/5714c3bcd95dfd11a353d5f220c07158cbd6c83e)
----
-
-## v2.10.0 (09/06/2020)
-- [Update style imports to account for submodule issue](https://github.com/redhat-developer/design-manual/commit/e2a5fbed0c4d44e5e7e6f291316807ed6d564dd0)
