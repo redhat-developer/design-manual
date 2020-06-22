@@ -5,14 +5,13 @@
  * Copyright 2008-2020
  * Licensed under MIT
 */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 @import "utilities/colors";
 @import "utilities/sass-variables";
 @import "utilities/variables";
 @import "utilities/color-scheme";
 
-$pf-global--font-path: 'themes/custom/rhdp2/fonts/patternfly' !default;
+$pf-global--font-path: "themes/custom/rhdp2/fonts/patternfly" !default;
 
 @import "partials/fonts";
 @import "partials/loading";
@@ -26,7 +25,6 @@ $pf-global--font-path: 'themes/custom/rhdp2/fonts/patternfly' !default;
 @import "partials/selectors";
 @import "partials/lists";
 @import "partials/panels";
-
 @import "partials/print";
 @import "partials/404";
 @import "partials/scrollbar";

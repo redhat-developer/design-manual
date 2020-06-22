@@ -6,6 +6,7 @@ https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clik
  * @author ocodia
  */
 
+ /* stylelint-disable */
 @media (prefers-color-scheme: dark) {
   .rhddx figure.highlight,
   div.code-toolbar,
@@ -270,7 +271,7 @@ div.code-toolbar:hover > .toolbar {
 }
 
 /* Separate line b/c rules are thrown out if selector is invalid.
-  IE11 and old Edge versions don't support :focus-within. */
+  IE11 and old Edge versions don"t support :focus-within. */
 div.code-toolbar:focus-within > .toolbar {
   opacity: 1;
 }
@@ -318,3 +319,4 @@ div.code-toolbar > .toolbar span:focus {
   text-decoration: none;
 }
 
+/* stylelint-enable */

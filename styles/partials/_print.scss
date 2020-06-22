@@ -1,6 +1,7 @@
 /*
 ** Add the link URL after the link when the page is printed
 */
+/* stylelint-disable */
 @media print {
   a[href]:after {
     content: " (" attr(href) ") ";
@@ -22,3 +23,4 @@
     width: 30%;
   }
 }
+/* stylelint-enable */

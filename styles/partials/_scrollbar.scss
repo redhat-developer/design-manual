@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 ::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
 }
@@ -6,9 +8,10 @@
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--background-color-dark);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
   border: var(--border-width-small) solid var(--border-color-normal);  /* creates padding around scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
 }
+
 @media (prefers-color-scheme: dark) {
   ::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
@@ -19,7 +22,9 @@
   ::-webkit-scrollbar-thumb {
     background: rgb(204,0,0);
     background: linear-gradient(180deg, rgba(204,0,0,1) 0%, rgba(240,171,0,1) 35%, rgba(146,212,0,1) 65%, rgba(0,185,228,1) 100%);
-    border-radius: 20px;       /* roundness of the scroll thumb */
     border: var(--border-width-small) solid var(--border-color-dark);  /* creates padding around scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
   }
 }
+
+/* stylelint-enable */

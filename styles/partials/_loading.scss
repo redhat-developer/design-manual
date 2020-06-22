@@ -1,31 +1,39 @@
+/* stylelint-disable */
 .rhddx-c-missing-code {
   .hero__text {
     max-width: 600px;
   }
+
   .text-reveal {
     span {
       position: relative;
-      &:before {
-        content: "";
+
+      &::before {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+        content: "";
         background: var(--text-color-white);
-        transform-origin: left;
         transform: scale(1, 1);
+        transform-origin: left;
       }
-      &:after {
-      content: "\A";
-      white-space: pre;
+
+      &::after {
+        white-space: pre;
+        content: "\A";
       }
-      @for $i from 1 through 5 {
-        &:nth-of-type(#{$i}) {
-          &:before {
-            $delay: $i * 2;
-            animation: reveal-text 600ms cubic-bezier(0.645, 0.045, 0.355, 1) unquote("0.#{$delay}s") forwards;
-          }
+    }
+  }
+
+  .text-reveal span {
+    @for $i from 1 through 5 {
+      &:nth-of-type(#{$i}) {
+        &::before {
+          $delay: $i * 2;
+
+          animation: reveal-text 600ms cubic-bezier(.645, .045, .355, 1) unquote("0.#{$delay}s") forwards;
         }
       }
     }
@@ -33,7 +41,8 @@
 
   @keyframes reveal-text {
     100% {
-      transform: scale(0, 1)
+      transform: scale(0, 1);
     }
   }
 }
+/* stylelint-enable */
