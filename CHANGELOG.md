@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2.30.0 (23/06/2020)
+- [Update GitHub Actions](https://github.com/redhat-developer/design-manual/commit/0d3b0cc3d68faddcc37b04970bb85937da97010a) - @mindreeper2420
 
 ---
 
