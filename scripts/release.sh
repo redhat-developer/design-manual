@@ -14,11 +14,11 @@ echo "Update NPM Version"
 VERSION=${1?Error: delineate major, minor, patch or prerelease}
 npm version "$VERSION"
 
-echo "Update Changelog"
-gren release --data-source=commits --override && gren changelog --override
+# echo "Update Changelog"
+# gren release --data-source=commits --override && gren changelog --override
 
-echo "Commit Changelog and push to main"
-git add --all && git commit -m "Update Changelog"
+# echo "Commit Changelog and push to main"
+# git add --all && git commit -m "Update Changelog"
 
 echo "Push to Main"
 git push origin main
