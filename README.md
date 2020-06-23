@@ -1,5 +1,11 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e32bb287-6336-4657-b3d1-c9fc70a63264/deploy-status)](https://app.netlify.com/sites/redhat-developer-design-manual/deploys)
 
+**GitHub Actions:**
+
+![Automatically merge PRs](https://github.com/redhat-developer/design-manual/workflows/Automatically%20merge%20PRs/badge.svg?branch=main)
+![Bump version](https://github.com/redhat-developer/design-manual/workflows/Bump%20version/badge.svg?branch=main)
+![Jekyll site CI](https://github.com/redhat-developer/design-manual/workflows/Jekyll%20site%20CI/badge.svg?branch=main)
+
 # __Red Hat Developer Brand Manual__
 
 This guide will serve as a home base for the Red Hat Developer story, messaging, and visual brand language. It's a place you can always return to when you have questions about how to best represent Red Hat Developer through messaging or visual elements.
