@@ -2,82 +2,100 @@
 
 .rhddx-c-card {
   & > * {
+    width: 350px;
     color: var(--text-color-white);
     text-align: center;
-    width: 350px;
   }
+
   &:hover {
     cursor: pointer;
   }
+  /* stylelint-disable selector-class-pattern */
   .pf-c-card__body {
     font-family: var(--font-family-headings);
     font-size: 28px;
     font-weight: 400;
     line-height: 34px;
   }
+
   &.rhddx-m-developer {
     background-color: rgba(236, 122, 8, 1);
     box-shadow: 0 0 0 10px rgba(236, 122, 8, .4);
     transition-duration: .3s;
+
     &:hover,
     &.rhddx-m-active {
       box-shadow: 0 0 0 10px rgba(236, 122, 8, 1);
     }
   }
+
   &.rhddx-m-designer {
     background-color: rgba(0, 185, 228, 1);
     box-shadow: 0 0 0 10px rgba(0, 185, 228, .4);
     transition-duration: .3s;
+
     &:hover,
     &.rhddx-m-active {
       box-shadow: 0 0 0 10px rgba(0, 185, 228, 1);
     }
   }
+
   &.rhddx-m-creator {
     background-color: rgba(146, 212, 0, 1);
     box-shadow: 0 0 0 10px rgba(146, 212, 0, .4);
     transition-duration: .3s;
+
     &:hover,
     &.rhddx-m-active {
       box-shadow: 0 0 0 10px rgba(146, 212, 0, 1);
     }
   }
 }
+
 .rhddx-c-card-content {
-  opacity: .5;
   border-top: 8px solid rgba(211, 211, 211, 1);
+  opacity: .5;
   transition-duration: .3s;
+
   &:hover {
     opacity: 1;
   }
+
   button {
     font-size: 28px;
   }
+
   p {
     font-size: 20px;
     color: var(--text-color-normal);
   }
+
   @media (prefers-color-scheme: dark) {
     a,
     button,
+    /* stylelint-disable selector-class-pattern */
     .pf-m-link,
     .pf-c-button.pf-m-link {
       color: var(--site-color-blue-default);
     }
   }
+
   &.rhddx-m-active {
     opacity: 1;
   }
+
   &.rhddx-m-developer {
-    &.rhddx-m-active{
+    &.rhddx-m-active {
       border-top-color: rgba(236, 122, 8, 1);
     }
   }
+
   &.rhddx-m-designer {
     &.rhddx-m-active {
       border-top-color: rgba(0, 185, 228, 1);
     }
   }
+
   &.rhddx-m-creator {
     &.rhddx-m-active {
       border-top-color: rgba(146, 212, 0, 1);

@@ -29,7 +29,7 @@ const
   pkg               =  require('./package.json'),
   clean             =  require('gulp-clean'),
   pngquant          =  require('imagemin-pngquant'),
-  mozjpeg           =  require ('imagemin-mozjpeg'),
+  mozjpeg           =  require('imagemin-mozjpeg'),
   scaleImages       =  require('gulp-scale-images'),
   flatMap           =  require('flat-map').default,
   path              =  require('path'),
@@ -85,19 +85,19 @@ const
   // used by the automated build processes
   //
   function buildSass(cb) {
-    return gulp.src([
-      '!./styles/rhdp.scss', // ignore the rhdp.scss file due to filepath errors in automated builds
-      './styles/custom/*.scss', // include custom component styles
-      './styles/partials/*.scss', // include the partial files for main.scss
-      './styles/main.scss' // include the customized site file
-    ])
-    .pipe(sass(cssConfig.sassOpts).on('error', sass.logError)) // sets the configuration options for building SCSS files
-    .pipe(sourcemaps.init())
-    .pipe(postcss([ autoprefixer(), cssnano() ]))
-    .pipe(sourcemaps.write('.'))
-    .pipe(size({ showFiles:true }))
-    .pipe(gulp.dest(cssConfig.build));
-  }
+      return gulp.src([
+        '!./styles/rhdp.scss', // ignore the rhdp.scss file due to filepath errors in automated builds
+        './styles/custom/*.scss', // include custom component styles
+        './styles/partials/*.scss', // include the partial files for main.scss
+        './styles/main.scss' // include the customized site file
+      ])
+      .pipe(sourcemaps.init())
+      .pipe(sass(cssConfig.sassOpts).on('error', sass.logError)) // sets the configuration options for building SCSS files
+      .pipe(postcss([ autoprefixer() ]))
+      .pipe(sourcemaps.write('.'))
+      .pipe(size({ showFiles:true }))
+      .pipe(gulp.dest(cssConfig.build)); // dump compiled SCSS files to './_site/assets/'
+    }
 
   // convert custom scss files to css using PostCSS
   // @ts-ignore
@@ -113,13 +113,20 @@ const
   // convert custom scss files to css using PostCSS
   // @ts-ignore
   function cssDev(cb){
-    // return gulp.src(cssConfig.dev) // sets director to return as './styles/**/*.scss'
+    const gulpStylelint = require('gulp-stylelint');
+
     return gulp.src([
       '!./styles/rhdp.scss', // ignore the rhdp.scss file due to filepath errors in automated builds
       './styles/custom/*.scss', // include custom component styles
       './styles/partials/*.scss', // include the partial files for main.scss
       './styles/main.scss' // include the customized site file
     ])
+    .pipe(gulpStylelint({
+      failAfterError: false,
+      reporters: [
+        {formatter: 'string', console: true}
+      ]
+    }))
     .pipe(sourcemaps.init())
     .pipe(sass(cssConfig.sassOpts).on('error', sass.logError)) // sets the configuration options for building SCSS files
     .pipe(postcss([ autoprefixer() ]))
@@ -287,7 +294,7 @@ const
     minimizeImages,
     jsDev,
     rhdpCSS,
-    cssDev,
+    buildSass,
     buildJekyllProd
   );
 

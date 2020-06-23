@@ -1,21 +1,4 @@
 :root {
-  --site-color-red: #ee0000;
-  // --text-color-normal: #{$rhddx-global--Color--100};
-  // --text-color-blue-grey: #{$rhddx-global--Color--200};
-  // --text-color-white: #{$rhddx-global--Color--white};
-  // --rhddx-global--Border--grey: #{$rhddx-global--Border--grey};
-  // --border-color-light: #{$rhddx-global--Border--grey-light};
-  // --rhddx-global--Link-color--blue: #{$rhddx-color-blue};
-  // --rhddx-global--Link-color--blue-light: #{$rhddx-color-blue-light};
-
-  // --rhddx-global-text-color: $rhddx-color-black-900;
-  // --rhddx-global-text-color--light: $rhddx-color-grey-light;
-
-  // --border-width-small: #{$rhddx-global--Border-width};
-  // --border-width-small: #{$rhddx-global--Border-width-small};
-
-  // --rhddx-global--box-shadow: #{$rhddx-global--box-shadow};
-
   --text-color-normal: #151515;
   --text-color-light: #d0d0d0;
   --text-color-dark: #2c2c2c;
@@ -44,9 +27,9 @@
 
   --box-shadow-large: 0 0 10px 2px var(--border-color-normal);
 
-  --font-family-code: 'Fira Code', monospace;
+  --font-family-code: "Fira Code", monospace;
   --font-family-icons: "Font Awesome 5 Pro";
-  --font-family-text: 'Red Hat Text', sans-serif;
-  --font-family-headings: 'Red Hat Display', sans-serif;
+  --font-family-text: "Red Hat Text", sans-serif;
+  --font-family-headings: "Red Hat Display", sans-serif;
 
 }

@@ -3,20 +3,26 @@
 .rhddx-c-page__home {
   background-color: transparent;
 }
+
 .rhddx-m-homepage {
   max-width: 1200px;
   margin: 0 auto;
   background-color: transparent;
+
   & > * {
     color: var(--text-color-white);
   }
+
   .rhddx-l-card__intro {
+    /* stylelint-disable selector-class-pattern */
     .pf-l-flex__item {
       margin-right: 0;
     }
   }
+
   .rhddx-m-link-header.rhddx-m-dark {
     color: var(--background-color-light--blue);
+
     &:hover {
       color: darken($color: #73bcf7, $amount: 25%);
       text-decoration: none;

@@ -1,44 +1,55 @@
 .rhddx-c-overview-example-panel {
   border: var(--border-width-small) solid var(--border-color-normal);
+
   @media (prefers-color-scheme: dark) {
     border-color: var(--border-color-dark);
   }
 }
+
 .rhddx-c-creation-tips {
-  transition: .5s;
   opacity: 0;
-  &__box {
-    display: block;
-    border: var(--border-width-small) solid var(--border-color-normal);
-    background-color: var(--background-color-light);
+  transition: .5s;
+}
+
+.rhddx-c-creation-tips__box {
+  display: block;
+  background-color: var(--background-color-light);
+  border: var(--border-width-small) solid var(--border-color-normal);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--background-color-dark);
+    border-color: var(--border-color-dark);
+  }
+
+  h4 {
+    padding-bottom: 16px;
+    margin-bottom: 0;
+    background-color: var(--background-color-normal);
+
     @media (prefers-color-scheme: dark) {
+      color: var(--text-color-light);
       background-color: var(--background-color-dark);
-      border-color: var(--border-color-dark);
-    }
-    h4 {
-      background-color: var(--background-color-normal);
-      @media (prefers-color-scheme: dark) {
-        background-color: var(--background-color-dark);
-        color: var(--text-color-light);
-      }
-      margin-bottom: 0;
-      padding-bottom: 16px;
-    }
-    .tabs {
-      @media (prefers-color-scheme: dark) {
-        background-color: var(--background-color-dark);
-        & > li {
-          color: var(--text-color-light);
-        }
-      }
     }
   }
 }
+
+.rhddx-c-creation-tips .tabs { /* stylelint-disable selector-class-pattern */
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--background-color-dark);
+
+    & > li {
+      color: var(--text-color-light);
+    }
+  }
+}
+
 .rhddx-m-show {
   opacity: 1;
 }
-.rhdxx-m-box-shadow {
+
+.rhddx-m-box-shadow {
   box-shadow: var(--box-shadow-large);
+
   @media (prefers-color-scheme: dark) {
     box-shadow: 0 0 10px 2px var(--border-color-dark);
   }

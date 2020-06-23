@@ -1,10 +1,13 @@
 .rhddx {
+  /* stylelint-disable */
   a.pf-c-button.pf-m-primary.rhddx-c-button.rhddx-m-edit[href*="github.com"]:after,
   a.pf-c-button.pf-m-primary.rhddx-c-button.rhddx-m-new[href*="github.com"]:after {
     content: "";
   }
+  /* stylelint-enable */
+
   /*
-  ** Add the GitHub icon to any URLs that contain 'github.com', signifying that the user is leaving the site and proceeding to GitHub.
+  ** Add the GitHub icon to any URLs that contain "github.com", signifying that the user is leaving the site and proceeding to GitHub.
   */
   // a[href*="github.com"]:after {
   //   font-family: "Font Awesome 5 Brands";
@@ -22,7 +25,7 @@
   // }
 
   /*
-  ** Add the CodePen icon to any URLs that contain 'codepen.io', signifying that the user is leaving the site and proceeding to CodePen.
+  ** Add the CodePen icon to any URLs that contain "codepen.io", signifying that the user is leaving the site and proceeding to CodePen.
   */
   // a[href*="codepen.io"]:after {
   //   font-family: "Font Awesome 5 Brands";
@@ -40,7 +43,7 @@
   // }
 
   /*
-  ** Add the Marvel icon to any URLs that contain 'marvel.com'
+  ** Add the Marvel icon to any URLs that contain "marvel.com"
   */
   // a[href*="marvelapp.com"]:after {
   //   font-family: "Font Awesome 5 Free";
@@ -52,7 +55,7 @@
   /*
   ** Customize text selection/highlight colors
   */
-  ::-moz-selection { /* Code for Firefox */
+  ::-moz-selection { /* Code for Firefox */ /* stylelint-disable-line */
     color: var(--text-color-white);
     background-color: var(--site-color-blue-default);
   }
@@ -62,18 +65,20 @@
     background-color: var(--site-color-blue-default);
   }
 
-  .highlighter-rouge {
-    font-family: var(--font-family-code);
+  .highlighter-rouge { /* stylelint-disable-line */
     padding: 4px 8px;
+    font-family: var(--font-family-code);
+    line-height: 1.5;
+    color: var(--text-color-blue-grey);
     background-color: var(--background-color-white);
     border: var(--border-width-small) solid var(--border-color-light);
-    color: var(--text-color-blue-grey);
+    border-radius: 3px;
+
     @media (prefers-color-scheme: dark) {
       color: var(--text-color-light);
     }
-    border-radius: 3px;
-    line-height: 1.5;
-    &::-moz-selection { /* Code for Firefox */
+
+    &::-moz-selection { /* Code for Firefox */ /* stylelint-disable-line */
       color: var(--text-color-blue-grey);
       background-color: var(--background-color-light--blue);
     }
@@ -83,125 +88,150 @@
       background-color: var(--background-color-light--blue);
     }
   }
-  [class*="language-"].highlighter-rouge {
+
+  [class*="language-"].highlighter-rouge { /* stylelint-disable-line */
+    color: var(--text-color-blue-grey);
     background-color: var(--background-color-white);
     border: var(--border-width-small) solid var(--border-color-light);
-    color: var(--text-color-blue-grey);
   }
 
   /*
-  ** Position 'Copy' toolbar button
+  ** Position "Copy" toolbar button
   */
-  div.code-toolbar > .toolbar {
+
+  div.code-toolbar > .toolbar { /* stylelint-disable-line */
     position: relative;
     top: -1px;
     right: 0;
+    text-align: right;
     border: var(--border-width-small) solid;
     border-color: var(--border-color-light);
-    text-align: right;
     opacity: 1;
   }
+
   pre {
     background-color: var(--background-color-white);
     border: var(--border-width-small) solid;
     border-color: var(--border-color-light);
   }
-  pre[class*="language-"] {
+
+  pre[class*="language-"] { /* stylelint-disable-line */
     margin-bottom: 0;
   }
-  div.code-toolbar > .toolbar .toolbar-item {
-    button.pf-c-button.pf-m-control {
+
+  div.code-toolbar > .toolbar .toolbar-item { /* stylelint-disable-line */
+    button.pf-c-button.pf-m-control { /* stylelint-disable-line */
       padding: 8px 20px;
+      margin-top: -1px;
+      margin-bottom: 0;
       background-color: var(--background-color-white);
       border: var(--border-width-small) solid;
       border-color: var(--border-color-light);
       border-top: 0;
       border-bottom: var(--border-width-small) solid;
       border-bottom-color: #8a8d90;
-      box-shadow: inset -1px 0 0 0 var(--border-color-light),
+      box-shadow:
+        inset -1px 0 0 0 var(--border-color-light),
         inset 0 1px 0 0 var(--border-color-light),
         inset 1px 0 0 0 var(--border-color-light),
         inset 0 -1px 0 0 #8a8d90;
-      margin-top: -1px;
-      margin-bottom: 0;
-      &::before {
-        content: "\f0c5";
+
+        &::before { /* stylelint-disable-line */
         font-family: var(--font-family-icons);
         font-weight: 700;
         color: var(--text-color-normal);
-        @media (prefers-color-scheme: dark) {
+        content: "\f0c5";
+
+        @media (prefers-color-scheme: dark) { /* stylelint-disable-line */
           color: var(--text-color-light);
         }
       }
+
+      /* stylelint-disable */
       &:hover,
       &:active,
       &:focus {
+      /* stylelint-enable */
         border-bottom-color: var(--site-color-blue-default);
-        @media (prefers-color-scheme: dark) {
+
+        @media (prefers-color-scheme: dark) { /* stylelint-disable-line */
           border-bottom-color: var(--site-color-blue-light);
         }
       }
-      &::after {
+
+      &::after { /* stylelint-disable-line */
         border-color: var(--border-color-light);
       }
+      /* stylelint-disable */
       &:hover::after,
       &:active::after,
       &:focus::after {
+      /* stylelint-enable */
         border-bottom: 0;
       }
     }
   }
-  div.code-toolbar>.toolbar a,
-  div.code-toolbar>.toolbar button,
-  div.code-toolbar>.toolbar span {
+
+  /* stylelint-disable */
+  div.code-toolbar > .toolbar a,  
+  div.code-toolbar > .toolbar button,
+  div.code-toolbar > .toolbar span {
+  /* stylelint-enable */
     padding: 0;
     font-size: 16px;
     color: #72767b;
     background: var(--text-color-white);
-    box-shadow: none;
     border-radius: 0;
+    box-shadow: none;
   }
 
-  figure.highlight {
+  figure.highlight { /* stylelint-disable-line */
     position: relative;
-    margin: 36px 0;
     padding-top: 32px;
-    &::-moz-selection { /* Code for Firefox */
+    margin: 36px 0;
+
+    &::-moz-selection { /* Code for Firefox */ /* stylelint-disable-line */
       color: var(--text-color-blue-grey);
       background-color: var(--background-color-light--blue);
     }
+
     &::selection {
       color: var(--text-color-blue-grey);
       background-color: var(--background-color-light--blue);
     }
+
     pre {
-      code {
-        &[data-lang]::before {
-          content: "\f121   "attr(data-lang)""; // extra spaces provide spacing between icon and text
-          font-family: var(--font-family-icons);
-          font-weight: 700;
-          text-transform: uppercase;
+      code { /* stylelint-disable-line */
+        &[data-lang]::before { /* stylelint-disable-line */
           position: absolute;
           top: -40px;
           right: 0;
           padding: 8px 20px;
+          font-family: var(--font-family-icons);
+          font-weight: 700;
+          color: #72767b;
+          text-transform: uppercase;
+          content: "\f121   "attr(data-lang) ""; // extra spaces provide spacing between icon and text
+          background-color: var(--background-color-white);
           border: var(--border-width-small) solid;
           border-color: var(--border-color-light);
           border-bottom: 0;
-          color: #72767b;
-          background-color: var(--background-color-white);
-          @media (prefers-color-scheme: dark) {
+
+          @media (prefers-color-scheme: dark) { /* stylelint-disable-line */
+            color: var(--text-color-light);
             background-color: var(--background-color-dark);
             border-color: var(--border-color-light);
-            color: var(--text-color-light);
           }
         }
-        &[data-lang] {
-          &::-moz-selection { /* Code for Firefox */
+
+        &[data-lang] { /* stylelint-disable-line */
+
+          &::-moz-selection { /* Code for Firefox */ /* stylelint-disable-line */
             color: var(--text-color-blue-grey);
             background-color: var(--background-color-light--blue);
           }
-          &::selection {
+
+          &::selection { /* stylelint-disable-line */
             color: var(--text-color-blue-grey);
             background-color: var(--background-color-light--blue);
           }
@@ -209,12 +239,14 @@
       }
     }
   }
-  table.highlight {
+
+  table.highlight { /* stylelint-disable-line */
     tr {
-      border-bottom: 0 !important;
+      border-bottom: 0 !important; /* stylelint-disable declaration-no-important */
     }
   }
-  &-c-tooltip {
+
+  &-c-tooltip { /* stylelint-disable-line */
     position: relative;
     display: inline-block;
     border-bottom: var(--border-width-small) dotted var(--border-color-dark); /* If you want dots under the hoverable text */
@@ -222,34 +254,34 @@
       visibility: visible;
       opacity: 1;
     }
-    .rhddx-c-tooltip-text {
-      visibility: hidden;
-      width: 120px;
-      background-color: #555;
-      color: var(--text-color-white);
-      text-align: center;
-      padding: 5px 0;
-      border-radius: 6px;
 
-      /* Position the tooltip text */
+    .rhddx-c-tooltip-text {
       position: absolute;
-      z-index: 1;
       bottom: 125%;
       left: 50%;
+      z-index: 1;
+      width: 120px;
+      padding: 5px 0;
       margin-left: -60px;
+      color: var(--text-color-white);
+      text-align: center;
+      visibility: hidden;
+      background-color: #555;
+      border-radius: 6px;
 
       /* Fade in tooltip */
       opacity: 0;
-      transition: opacity 0.3s;
+      transition: opacity .3s;
+
       &::after {
-        content: "";
         position: absolute;
         top: 100%;
         left: 50%;
         margin-left: -5px;
-        border-width: var(--border-width-xlarge);
+        content: "";
+        border-color: #555 transparent transparent;
         border-style: solid;
-        border-color: #555 transparent transparent transparent;
+        border-width: var(--border-width-xlarge);
       }
     }
   }

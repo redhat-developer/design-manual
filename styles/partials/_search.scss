@@ -1,11 +1,13 @@
 .rhddx-c-site-search {
+  color: var(--text-color-white);
   background-color: transparent;
   border: var(rhddx-global--Border-width-small) solid transparent;
   border-bottom: var(--border-width-small) solid var(--text-color-white);
-  color: var(--text-color-white);
+
   &:hover {
     border-color: var(--text-color-white);
   }
+
   &:active,
   &:focus,
   &::selection {

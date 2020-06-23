@@ -1,13 +1,18 @@
+/* stylelint-disable */
 :root {
   --rhddx-c-label--BackgroundColor-released: #{$rhddx-color-blue};
   --rhddx-c-label--BackgroundColor-unreleased: #{$rhddx-color-gold};
 }
+/* stylelint-enable */
+
 .rhddx {
+  /* stylelint-disable selector-class-pattern */
   .pf-c-label {
     &.label-released {
       --pf-c-label--Color: #f8fcff;
       --pf-c-label--BackgroundColor: var(--rhddx-c-label--BackgroundColor-released);
     }
+
     &.label-unreleased {
       --pf-c-label--Color: var(--text-color-normal);
       --pf-c-label--BackgroundColor: var(--rhddx-c-label--BackgroundColor-unreleased);
