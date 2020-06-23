@@ -1,38 +1,64 @@
 # Changelog
 
-## 2.28.7 (20/06/2020)
-- [Update github-tab-action](https://github.com/redhat-developer/design-manual/commit/db910f049b3929b920a99cb058aeb0d01b247481) - @mindreeper2420
+## 2.30.0 (23/06/2020)
 
+---
+
+## 2.29.0 (23/06/2020)
+* dfb05f4 (tag: 2.29.0) Add Stylelint
+---
+
+## 2.28.8 (22/06/2020)
+* d6b3f78 2.28.8
+* 3c944ef Update github-tab-action
+* b81df56 Update Changelog.md
+---
+
+## 2.28.7 (20/06/2020)
+* db910f0 (tag: 2.28.7) Update github-tab-action
+* 0fa6a72 2.28.7
 ---
 
 ## 2.28.6 (20/06/2020)
-
+* f4636cf (tag: 2.28.6) Update Changelog.md
+* 9a7facb 2.28.6
 ---
 
 ## 2.28.5 (20/06/2020)
-
+* 8cdbc4a (tag: 2.28.5) Update github-tab-action
+* 91a0ea4 2.28.5
+* 1e7e974 Update github-tab-action
+* 2564a12 2.28.4
+* 8bd8dc4 Update github-tab-action
+* cc69697 2.28.3
+* f26b94e Update github-tab-action
+* 23fc30e Update Changelog.md
+* 15edcd1 2.28.2
 ---
 
 ## 2.28.1 (20/06/2020)
-
+* b3c9e2c (tag: 2.28.1) 2.28.1
+* 9b2bbd1 Update release action
 ---
 
 ## 2.28.0 (19/06/2020)
-- [2.28.0](https://github.com/redhat-developer/design-manual/commit/586197647775fc20fd0be36e85df0723567ba3fa) - @mindreeper2420
-
+* 5861976 (tag: 2.28.0) 2.28.0
+* 0d38bf5 Update Article page markup (#98)
 ---
 
 ## 2.27.3 (18/06/2020)
-- [2.27.3](https://github.com/redhat-developer/design-manual/commit/165ae4b45d02970911509f2021da65fed3d411c7) - @mindreeper2420
-
+* 165ae4b (tag: 2.27.3) 2.27.3
+* fcf8f97 Update Changelog
+* 0235e47 2.27.3
 ---
 
 ## 2.27.2 (18/06/2020)
-
+* 4e1d799 Revert: Remove labeler action (#97)
+* 63622df (tag: 2.27.2) Create jekyll.yml (#95)
 ---
 
 ## 2.27.1 (17/06/2020)
-
+* 6c4d541 (tag: 2.27.1) Update github-tag-actions config
 ---
 
 ## 2.27.0 (17/06/2020)
@@ -114,15 +140,3 @@ Update changelog
 
 ## v2.7.0 (09/06/2020)
 - [Update UI to match UXD redesign](https://github.com/redhat-developer/design-manual/commit/92c74ac2db8d18dd03f91eba2c62553c6d0ba2ac)
----
-
-## v2.8.0 (09/06/2020)
-- [Fix section highlighting and edit status](https://github.com/redhat-developer/design-manual/commit/f8e39f42ed70b01141f3a753debed4973086dc4b)
----
-
-## v2.8.1 (09/06/2020)
-- Update submodule 04/06/2020
----
-
-## v2.8.2 (09/06/2020)
-- Update submodule

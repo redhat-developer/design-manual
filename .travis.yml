@@ -11,12 +11,13 @@ script:
 - scripts/./submodule.sh
 - gulp deploy
 install: true
-before_deploy:
+# before_deploy:
   # Set up git user name and tag this commit
-  - git config --local user.name "GIT_USERNAME"
-  - git config --local user.email "GIT_EMAIL"
-  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
-  - git tag $TRAVIS_TAG
+  # - git config --local user.name "GIT_USERNAME"
+  # - git config --local user.email "GIT_EMAIL"
+  # - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+  # - git tag $TRAVIS_TAG
+  # - git push origin $TRAVIS_TAG
 deploy:
   provider: pages
   skip_cleanup: true
@@ -27,4 +28,9 @@ deploy:
   on:
     branch: main
 after_deploy:
-  - scripts/./release.sh minor  
+  - git config --local user.name "GIT_USERNAME"
+  - git config --local user.email "GIT_EMAIL"
+  - gem install github_changelog_generator
+  - scripts/.release.sh
+  - git tag $VERSION
+  - git push origin $VERSION
