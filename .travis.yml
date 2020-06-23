@@ -30,7 +30,6 @@ deploy:
 after_deploy:
   - git config --local user.name "GIT_USERNAME"
   - git config --local user.email "GIT_EMAIL"
-  - gem install github_changelog_generator
-  - scripts/.release.sh
-  - git tag $VERSION
-  - git push origin $VERSION
+  - scripts/./release.sh minor
+  - git tag $GIT_TAG
+  - git push origin $GIT_TAG
