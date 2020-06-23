@@ -13,6 +13,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Update changelog
+        uses: ScottBrenner/generate-changelog-action@1.0.0
+        id: Changelog
+        env:
+          REPO: ${{ github.repository }}
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -21,6 +26,6 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: ${{ github.ref }}
-          body:
+          body: ${{ steps.Changelog.outputs.changelog }}
           draft: false
           prerelease: false
