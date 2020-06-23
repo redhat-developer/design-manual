@@ -10,7 +10,7 @@
 
 This guide will serve as a home base for the Red Hat Developer story, messaging, and visual brand language. It's a place you can always return to when you have questions about how to best represent Red Hat Developer through messaging or visual elements.
 
-[Local Setup and Development](guides/SETUP.md) | [Contributing](CONTRIBUTING.md)
+[Local Setup and Development](guides/SETUP.md) | [Contributing](CONTRIBUTING.md) | [Build Config](guides/BUILD_CONFIG.md)
 
 ---
 ## Story & Messaging Guidelines
