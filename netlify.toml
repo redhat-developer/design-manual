@@ -2,7 +2,7 @@
   base = "/"
   publish = "docs/"
   # command = "scripts/./submodule.sh && npm run build && rm -rf docs && mkdir docs && rm -rf _site/docs && cp -r _site/** docs"
-  command = "scripts/./submodule.sh && npm run build-netlify"
+  command = "npm run build-netlify"
 
 [build.environment]
   JEKYLL_ENV = "production"
@@ -14,7 +14,7 @@
   base = "/"
   publish = "docs/"
   # command = "scripts/./submodule.sh && npm run build && rm -rf docs && mkdir docs && rm -rf _site/docs && cp -r _site/** docs"
-  command = "scripts/./submodule.sh && npm run build-netlify"
+  command = "npm run build-netlify"
 
 # Deploy Preview context: all deploys generated from a pull/merge request will
 # inherit these settings.
@@ -23,7 +23,7 @@
   base = "/"
   publish = "docs/"
   # command = "scripts/./submodule.sh && npm run build && rm -rf docs && mkdir docs && rm -rf _site/docs && cp -r _site/** docs"
-  command = "scripts/./submodule.sh && npm run build"
+  command = "npm run build"
 
 # If skip_processing = true, all other settings are ignored
 [build.processing]

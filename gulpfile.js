@@ -86,7 +86,6 @@ const
   //
   function buildSass(cb) {
       return gulp.src([
-        '!./styles/rhdp.scss', // ignore the rhdp.scss file due to filepath errors in automated builds
         './styles/custom/*.scss', // include custom component styles
         './styles/partials/*.scss', // include the partial files for main.scss
         './styles/main.scss' // include the customized site file
@@ -101,22 +100,10 @@ const
 
   // convert custom scss files to css using PostCSS
   // @ts-ignore
-  function rhdpCSS(cb){
-    return gulp.src('./styles/rhdp.scss') // sets director to return as './styles/**/*.scss'
-    .pipe(sourcemaps.init())
-    .pipe(sass(cssConfig.sassOpts).on('error', sass.logError)) // sets the configuration options for building SCSS files
-    .pipe(sourcemaps.write('.'))
-    .pipe(size({ showFiles:true }))
-    .pipe(gulp.dest(cssConfig.build)); // dump compiled SCSS files to './_site/assets/'
-  }
-
-  // convert custom scss files to css using PostCSS
-  // @ts-ignore
   function cssDev(cb){
     const gulpStylelint = require('gulp-stylelint');
 
     return gulp.src([
-      '!./styles/rhdp.scss', // ignore the rhdp.scss file due to filepath errors in automated builds
       './styles/custom/*.scss', // include custom component styles
       './styles/partials/*.scss', // include the partial files for main.scss
       './styles/main.scss' // include the customized site file
@@ -256,7 +243,6 @@ const
 
   exports.cssDev           =  cssDev;
   exports.jsDev            =  jsDev;
-  exports.rhdpCSS          =  rhdpCSS;
   exports.sass             =  buildSass;
   exports.watch            =  watchSass;
   exports.watchJS          =  watchJS;
@@ -270,20 +256,20 @@ const
 
   exports.build = gulp.series(
     cleanJekyll,
-    gulp.parallel(copyStatic, minimizeImages, jsDev, rhdpCSS),
+    gulp.parallel(copyStatic, minimizeImages, jsDev),
     cssDev,
     buildJekyll
   );
 
   exports.buildLocal = gulp.series(
     cleanJekyll,
-    gulp.parallel(copyStatic, minimizeImages, jsDev, rhdpCSS),
+    gulp.parallel(copyStatic, minimizeImages, jsDev),
     cssDev,
     buildJekyllProd
   );
 
   exports.development = gulp.series(
-    gulp.parallel(copyStatic, minimizeImages, rhdpCSS),
+    gulp.parallel(copyStatic, minimizeImages),
     jsDev,
     cssDev,
     gulp.parallel(watchSass, watchJS, serveJekyll)
@@ -293,7 +279,6 @@ const
     copyStatic,
     minimizeImages,
     jsDev,
-    rhdpCSS,
     buildSass,
     buildJekyllProd
   );
@@ -302,7 +287,6 @@ const
     copyStatic,
     minimizeImages,
     jsDev,
-    rhdpCSS,
     cssDev,
     buildJekyll
   );

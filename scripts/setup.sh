@@ -36,13 +36,6 @@ install(){
   sleep 2
 }
 
-# Initialize the developer.redhat.com submodule.
-submodule(){
-  echo 'Configuring the submodule requirements...'
-  scripts/./submodule.sh
-  sleep 2
-}
-
 # Build the project
 build() {
   echo 'Running the build scripts now...'
@@ -54,5 +47,4 @@ build() {
 init
 clean
 install
-submodule
 build

@@ -4,6 +4,7 @@
   <meta name="description" content="{{ site.description }} | {{ page.intro_paragraph }}">
   <meta name="theme-color" content="#ffffff">
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link async rel="stylesheet" href="https://developers.redhat.com/themes/custom/rhdp2/rhd-frontend/dist/css/rhd.css">
   {% if jekyll.environment == 'development' %}
     <title>{% if page.section == "home" %}Dev Environment: {{ site.title }}{% else %} Dev Environment: {{ page.title | default: site.title }}{% endif %}</title>
     <link rel="shortcut icon" href="/assets/img/favicon.ico">
@@ -12,7 +13,6 @@
     <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
     <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.json">
-    <link async rel="stylesheet" href="/assets/rhdp.css">
     <link rel="stylesheet" href="/assets/main.css">
     <script defer src="/assets/js/site.js"></script>
     <script defer src="/assets/js/code-snippets.js"></script>
@@ -24,7 +24,6 @@
     <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicon.png">
     <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/apple-touch-icon.png">
     <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
-    <link async rel="stylesheet" href="{{ site.baseurl }}/assets/rhdp.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
     <script defer src="{{ site.baseurl }}/assets/js/site.js"></script>
     <script defer src="{{ site.baseurl }}/assets/js/code-snippets.js"></script>
