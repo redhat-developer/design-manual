@@ -7,13 +7,10 @@ Table of Contens:
 1. [Helpful Links](#helpful-links)
 2. [Technology Stack](#technology-stack)
 3. [Installation](#installation)
-4. [Initialize the Git Submodule](#initialize-the-git-submodule)
-5. [Development](#development)
+4. [Development](#development)
 
 ----
 ## Helpful Links
-  - [GitHub Repo for developers.redhat.com](https://github.com/redhat-developer/developers.redhat.com)
-    - submodule included in this project - styles for examples components/pages are located here
   - [CodePen Templates](https://codepen.io/collection/AEwLNY)
     - live starter templates for a select number of components and pages
   - [CodePen Examples](help/codepen-examples)
@@ -55,28 +52,9 @@ $ gem install jekyll
 $ npm install gulp-cli -g
 ```
 
-To install the site's dependencies and configure the required [submodule](#initialize-the-git-submodule), run out setup script.
-
 ```bash
 $ scripts/./setup.sh
 ```
-
-## Initialize the Git Submodule
-
-The Red Hat Developer Design Manual is built using the Red Hat Developer site's styles. These are referenced through a Git Submodule (developers.redhat.com). In order to build the project with the Red Hat Developer styles, you will need to initialize the developers.redhat.com submodule. __IF YOU RAN THE `SETUP.SH` SCRIPT, YOU CAN STOP HERE.__
-
-You do so by running the `submodule.sh` file in the `scripts/` folder:
-
-```bash
-$ scripts/./submodule.sh
-```
-
-  _This will connect the submodule to the repo using the `.gitsubmodules` file, update the submodule, and install any necessary dependencies. It will then return you to the project root._
-
-#### NOTE
-If you will be working on the Design Manual site for a long period of time, you will want to periodically pull in updates for the submodule in order to keep everything in sync. You can easily check and apply updates using the same `submodule.sh` script.
-
-After updating, you should see `modified:   developers.redhat.com (new commits)` when you check the `git status`. You can then add the updated submodule to your fork but running `git add .` and `git commit -m "Update submodule MM/DD/YYYY"`.
 
 ----
 ## Development

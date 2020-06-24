@@ -19,8 +19,6 @@ For example, you might use a utility class to add additional spacing between ele
 ## Helpful Links and Information
 
   **Links**
-  - [GitHub Repo for developers.redhat.com](https://github.com/redhat-developer/developers.redhat.com)
-    - submodule included in this project - styles for examples components/pages are located here
   - [CodePen Templates](https://codepen.io/collection/AEwLNY)
     - live starter templates for a select number of components and pages
 

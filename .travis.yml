@@ -8,7 +8,6 @@ before_install:
 - npm install gulp-cli -g
 - npm install github-release-notes -g
 script:
-- scripts/./submodule.sh
 - gulp deploy
 install: true
 # before_deploy:
