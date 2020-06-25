@@ -13,7 +13,7 @@
     "install": "bundle install",
     "deployment": "gulp deploy",
     "development": "gulp development",
-    "changelog": "gren release -P --override && gren changelog --override",
+    "changelog": "gren release --data-source=commits --override && gren changelog --override",
     "release": "scripts/./release.sh prerelease",
     "prodDeploy": "npm run deployment && npm run release",
     "netlify": "netlify dev",
@@ -29,7 +29,7 @@
   "repository": "https://github.com/redhat-developer/design-manual.git",
   "url": "https://redhat-developer.github.io/design-manual/",
   "author": "Adam J. Jolicoeur",
-  "license": "MIT",
+  "license": "GNU General Public License v3.0",
   "dependencies": {
     "@patternfly/patternfly": "2.65.2",
     "@skpm/child_process": "0.4.1",
