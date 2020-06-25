@@ -16,11 +16,11 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_LABELS: "Ready to merge,!in progress!,!blocked, !netlify-cms/draft, !netlify-cms/pending_review, !question, !duplicate, !DO NOT MERGE, !invalid"
-          MERGE_REMOVE_LABELS: Ready to merge
+          MERGE_REMOVE_LABELS: "Ready to merge, in progress"
           MERGE_METHOD: squash
-          MERGE_COMMIT_MESSAGE: "pull-request-description"
+          MERGE_COMMIT_MESSAGE: automatic
           MERGE_DELETE_BRANCH: true
-          MERGE_RETRIES: 3
+          MERGE_RETRIES: 0
           MERGE_RETRY_SLEEP: 10000
-          UPDATE_LABELS: "Ready to merge,!in progress!,!blocked,!invalid,!wontfix"
+          UPDATE_LABELS: "Ready to merge"
           UPDATE_METHOD: merge

@@ -27,8 +27,10 @@ deploy:
   on:
     branch: main
 after_deploy:
+  github_token: $GH_TOKEN
+  run:
   - git config --local user.name "GIT_USERNAME"
   - git config --local user.email "GIT_EMAIL"
   - scripts/./release.sh minor
-  - git tag $GIT_TAG
-  - git push origin $GIT_TAG
+  - git tag ${{ github.ref }}
+  - git push origin ${{ github.ref }}
