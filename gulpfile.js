@@ -47,9 +47,7 @@ const
 
   console.log('Gulp', devBuild ? 'development' : 'production', 'build');
 
-  /*
-  ** clean task
-  */
+  // clean task
   gulp.task('clean', (done) => {
     del.sync([ dir.build ]);
 
@@ -80,10 +78,8 @@ const
 
   sass.compiler = require('node-sass');
 
-  //
   // This function is only to be used by the deployment script,
   // used by the automated build processes
-  //
   function buildSass(cb) {
       return gulp.src([
         './styles/custom/*.scss', // include custom component styles
@@ -161,8 +157,6 @@ const
       ])
       .pipe(newer('./docs/assets/img/'))
       .pipe(newer('./docs/assets/uploads/'))
-      // .pipe(flatMap(retinaVersions))
-      // .pipe(scaleImages(imageFileName))
       .pipe(imagemin([mozjpeg(), pngquant()]))
       .pipe(gulp.dest('./docs/assets/img/'));
   }
@@ -222,15 +216,6 @@ const
       cb(err);
     });
   }
-
-  // Task to serve the website locally in development mode
-  // function serveJekyll(cb) {
-  //   cp.exec('bundle exec jekyll serve --livereload', function(err, stdout, stderr) {
-  //     console.log(stdout);
-  //     console.log(stderr);
-  //     cb(err);
-  //   });
-  // }
 
   // Task to serve the website locally
   function serveJekyll(cb) {
