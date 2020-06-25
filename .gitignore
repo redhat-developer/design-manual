@@ -1,10 +1,7 @@
 .DS_Store
-node_modules
-docs
-.npmrc
-launch.json
-
-# Local Netlify folder
 .netlify
-
+.npmrc
 .vscode
+docs
+launch.json
+node_modules

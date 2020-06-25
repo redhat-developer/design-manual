@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.31.0 (24/06/2020)
+- [Remove submodule](https://github.com/redhat-developer/design-manual/commit/4ebf56884b1841cbdd805d082167fbe2aee29ca9) - @mindreeper2420
+- [Update build and release scripts](https://github.com/redhat-developer/design-manual/commit/9b6d96dad77d889a4132e5f38cb60c61a1e75020) - @mindreeper2420
+
+---
+
 ## 2.30.0 (23/06/2020)
 - [Update GitHub Actions](https://github.com/redhat-developer/design-manual/commit/0d3b0cc3d68faddcc37b04970bb85937da97010a) - @mindreeper2420
 
@@ -137,7 +143,3 @@ Update changelog
 
 ## v2.6.0 (09/06/2020)
 - [Update IA to match UXD specs](https://github.com/redhat-developer/design-manual/commit/87614f74265e313b6c13e2826cc3e8e9c46457e4)
----
-
-## v2.7.0 (09/06/2020)
-- [Update UI to match UXD redesign](https://github.com/redhat-developer/design-manual/commit/92c74ac2db8d18dd03f91eba2c62553c6d0ba2ac)

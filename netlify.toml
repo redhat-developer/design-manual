@@ -1,7 +1,6 @@
 [build]
   base = "/"
   publish = "docs/"
-  # command = "scripts/./submodule.sh && npm run build && rm -rf docs && mkdir docs && rm -rf _site/docs && cp -r _site/** docs"
   command = "npm run build-netlify"
 
 [build.environment]
@@ -13,7 +12,6 @@
   environment = { JEKYLL_ENV = "development" }
   base = "/"
   publish = "docs/"
-  # command = "scripts/./submodule.sh && npm run build && rm -rf docs && mkdir docs && rm -rf _site/docs && cp -r _site/** docs"
   command = "npm run build-netlify"
 
 # Deploy Preview context: all deploys generated from a pull/merge request will
@@ -22,7 +20,6 @@
   environment = { JEKYLL_ENV = "development" }
   base = "/"
   publish = "docs/"
-  # command = "scripts/./submodule.sh && npm run build && rm -rf docs && mkdir docs && rm -rf _site/docs && cp -r _site/** docs"
   command = "npm run build"
 
 # If skip_processing = true, all other settings are ignored
@@ -43,9 +40,3 @@
 # ignoring any other settings
 [context.deploy-preview.processing]
   skip_processing = true
-
-# [[redirects]]
-#   from = "/"
-#   to = "/design-manual/"
-#   status = 302
-#   force = true
