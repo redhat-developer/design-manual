@@ -130,5 +130,31 @@
   img:hover {
     opacity: 1;
   }
+
+  .rhddx-c-site-search {
+    color: var(--text-color-white);
+    background-color: transparent;
+    border: var(rhddx-global--Border-width-small) solid var(--border-color-light);
+    border-bottom: var(--border-width-small) solid var(--border-color-light);
+  
+    &:hover {
+      border-color: var(--text-color-white);
+    }
+  
+    &:active,
+    &:focus,
+    &::selection {
+      border-color: var(--border-color-light);
+      border-bottom-color: var(--site-color-red);
+    }
+  }
+
+  .rhddx-c-site-search__results {
+    color: var(--text-color-white);
+    li {
+      color: var(--text-color-white);
+      background-color: transparent;
+    }
+  }
 }
 /* stylelint-enable */

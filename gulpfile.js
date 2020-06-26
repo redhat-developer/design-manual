@@ -120,7 +120,6 @@ const
 
   function watchSass(cb) {
     gulp.watch(cssConfig.dev, cssDev);
-    gulp.watch(cssConfig.dev, rhdpCSS);
   }
 
   // Image resizing using gulp-scale-images and
