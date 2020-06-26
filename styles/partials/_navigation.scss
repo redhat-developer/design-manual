@@ -1,4 +1,8 @@
 /* stylelint-disable selector-class-pattern */
+.show-content {
+  display: contents !important; /* stylelint-disable-line declaration-no-important */
+}
+
 .pf-c-page__header {
   .rhddx & {
     background-color: var(--text-color-normal);
