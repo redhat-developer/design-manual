@@ -7,7 +7,7 @@ permalink: /components/card-grid
 section: components
 status: released
 intro_paragraph: >
-  Sample variations of the Button CTAs.
+  Card in a Grid layout
 ---
 
 __CARD GRID COMPONENT__

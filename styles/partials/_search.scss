@@ -1,17 +1,17 @@
 .rhddx-c-site-search {
-  color: var(--text-color-white);
+  color: var(--text-color-normal);
   background-color: transparent;
-  border: var(rhddx-global--Border-width-small) solid transparent;
-  border-bottom: var(--border-width-small) solid var(--text-color-white);
+  border: var(rhddx-global--Border-width-small) solid var(--border-color-dark);
+  border-bottom: var(--border-width-small) solid var(--text-color-normal);
 
   &:hover {
-    border-color: var(--text-color-white);
+    border-color: var(--text-color-normal);
   }
 
   &:active,
   &:focus,
   &::selection {
-    border-color: var(--text-color-white);
+    border-color: var(--border-color-dark);
     border-bottom-color: var(--site-color-red);
   }
 }
