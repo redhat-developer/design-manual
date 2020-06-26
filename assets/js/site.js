@@ -6,6 +6,10 @@ $(document).ready(function(){
     $(this).toggleClass("rhddx-m-expanded");
   });
 
+  $('#nav-toggle').on("click", function() {
+    $('.pf-c-page__sidebar').toggleClass('show-content');
+  });
+
   var form = document.querySelector("form");
   
   form.addEventListener("submit", function (e) {

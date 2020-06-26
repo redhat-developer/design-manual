@@ -1,5 +1,10 @@
 <header role="banner" class="pf-c-page__header rhddx-c-navigation--horizontal">
   <div class="pf-c-page__header-brand">
+    <div class="pf-c-page__header-brand-toggle">
+      <button id="nav-toggle" aria-controls="page-sidebar" aria-expanded="false" aria-disabled="false" aria-label="Global navigation" class="pf-c-button pf-m-plain" type="button" data-component-type="PF4/Button" data-safe="true" data-component-id="262">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
     <a class="pf-c-page__header-brand-link" href="{{ '/' | relative_url }}">
       {% if jekyll.environment == 'development' %}
       <img class="pf-c-brand" src="/assets/img/NewRHDFullLogo_4-color_white-wordmark.png" style="padding: 8px;" alt="Red Hat Developers logo" />
