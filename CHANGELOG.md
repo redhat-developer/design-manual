@@ -1,7 +1,13 @@
 # Changelog
 
+## 2.32.0 (25/06/2020)
+- [Code Cleanup and updates (#106)](https://github.com/redhat-developer/design-manual/commit/16d507fe6f07f651f0f75654435f93dd8d67618d) - @mindreeper2420
+- [Update package.json (#105)](https://github.com/redhat-developer/design-manual/commit/9643d2190130fa6ffef25bb487945b887a77b94f) - @mindreeper2420
+
+---
+
 ## 2.31.0 (24/06/2020)
-- [Remove submodule](https://github.com/redhat-developer/design-manual/commit/4ebf56884b1841cbdd805d082167fbe2aee29ca9) - @mindreeper2420
+- [## Description of changes](https://github.com/redhat-developer/design-manual/commit/4ebf56884b1841cbdd805d082167fbe2aee29ca9) - @mindreeper2420
 - [Update build and release scripts](https://github.com/redhat-developer/design-manual/commit/9b6d96dad77d889a4132e5f38cb60c61a1e75020) - @mindreeper2420
 
 ---
@@ -139,7 +145,3 @@ Update changelog
 
 ## v2.5.0 (09/06/2020)
 - [Add an Admin Portal page](https://github.com/redhat-developer/design-manual/commit/7707e9166bd3594a187021a40682f23f44b5007d)
----
-
-## v2.6.0 (09/06/2020)
-- [Update IA to match UXD specs](https://github.com/redhat-developer/design-manual/commit/87614f74265e313b6c13e2826cc3e8e9c46457e4)
