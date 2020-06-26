@@ -27,6 +27,8 @@ Table of Contens:
     - CLI: 2.2.0
     - Local: 4.0.2
   - [SCSS](https://sass-lang.com/) - CSS extension language
+  - Lunr - site search
+    - __Note:__ We use a customized version of Lunr: [jquery.CamelHunter](https://github.com/DataMcFly/jquery.camelhunter)
   - PatternFly - front-end framework
     - __Note:__ If new to PatternFly, check out their site: [www.patternfly.org](https://www.patternfly.org)
 
