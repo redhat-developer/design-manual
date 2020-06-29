@@ -24,12 +24,3 @@ jobs:
           MERGE_RETRY_SLEEP: 10000
           UPDATE_LABELS: "Ready to merge"
           UPDATE_METHOD: merge
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: '0'
-      - name: Bump tag version
-        uses: anothrNick/github-tag-action@1.22.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WITH_V: false
