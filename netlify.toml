@@ -12,7 +12,7 @@
   environment = { JEKYLL_ENV = "development" }
   base = "/"
   publish = "docs/"
-  command = "npm run build-netlify"
+  command = "npm run build"
 
 # Deploy Preview context: all deploys generated from a pull/merge request will
 # inherit these settings.
