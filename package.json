@@ -1,10 +1,6 @@
 {
   "name": "design-manual",
-<<<<<<< HEAD
-  "version": "2.33.0",
-=======
   "version": "2.36.2",
->>>>>>> 150bd7e... Version bump
   "description": "Documentation and source files for RHD brand standards & design systems.",
   "main": "index.js",
   "engines": {
