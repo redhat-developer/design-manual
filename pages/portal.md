@@ -12,4 +12,4 @@ custom_css:
     overflow-x: hidden;
   }
 </style>
-<iframe src="https://redhat-developer-design-manual.netlify.com/admin" title="Netlify Admin Portal" width="100%" height="100%"></iframe>
+<iframe src="https://redhat-developer-design-manual.netlify.com/admin" title="Netlify Admin Portal" width="100%" height="100%" referrerpolicy="origin"></iframe>
