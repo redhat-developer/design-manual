@@ -11,10 +11,10 @@ intro_paragraph: This assembly allows for one or many pieces of bonus content to
   text.
 featured_image: ""
 ---
-
 **Available in these types of content**
 
 1. Article
 2. Page
+3. Event
 
 ![Recent Bonus Content List example image](/design-manual/assets/uploads/bonus_content_list-example.png)
