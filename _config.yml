@@ -91,6 +91,7 @@ exclude:
   - LICENSE.txt
   - CONTRIBUTING.md
   - CHANGELOG.md
+  - CODE_OF_CONDUCT.md
   - netlify.toml
   - feed.xml
   - Gemfile

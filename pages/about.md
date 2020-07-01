@@ -5,7 +5,6 @@ long_title: About this site
 permalink: /about
 section: overview
 category: about
-editable: true
 intro_paragraph: >
 custom_js: 
 custom_css: [about]
@@ -17,7 +16,7 @@ custom_css: [about]
   </div>
 </div>
 <div class="pf-l-grid pf-m-gutter pf-m-12-col pf-u-p-md">
-  <div class="pf-l-grid__item pf-m-3-col-on-md">
+  <div class="pf-l-grid__item pf-m-4-col-on-md pf-m-3-col-on-lg">
     <div class="pf-c-card rhd-c-card">
       <div class="rhd-c-card-content">
         <h3 class="rhd-c-card__title">
@@ -29,7 +28,7 @@ custom_css: [about]
       </div>
     </div>
   </div>
-  <div class="pf-l-grid__item pf-m-3-col-on-md">
+  <div class="pf-l-grid__item pf-m-4-col-on-md pf-m-3-col-on-lg">
     <div class="pf-c-card rhd-c-card">
       <div class="rhd-c-card-content">
         <h3 class="rhd-c-card__title">
@@ -45,6 +44,29 @@ custom_css: [about]
             To contribute to this documentation site, see <a href="{{ site.baseurl }}/getting-started/update-this-documentation">Updating this documentation</a>.
           {% endif %}
         </p>
+      </div>
+    </div>
+  </div>
+  <div class="pf-l-grid__item pf-m-4-col-on-md pf-m-3-col-on-lg">
+    <div class="pf-c-card rhd-c-card">
+      <div class="rhd-c-card-content">
+        <h3 class="rhd-c-card__title">
+          Important info
+        </h3>
+        <ul class="fa-ul">
+          <li>
+            <span class="fa-li"><i class="far fa-file-alt"></i></span>
+            <a href="https://github.com/redhat-developer/design-manual/blob/main/CODE_OF_CONDUCT.md" target="top">Code of Conduct</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="far fa-file-alt"></i></span>
+            <a href="https://github.com/redhat-developer/design-manual/blob/main/LICENSE" target="top">License</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="far fa-file-alt"></i></span>
+            <a href="https://github.com/redhat-developer/design-manual/blob/main/CONTRIBUTING.md" target="top">Contributing</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
