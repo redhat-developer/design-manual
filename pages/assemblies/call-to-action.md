@@ -12,11 +12,18 @@ featured_image: ""
 ---
 **Available in these types of content**
 
-1. Article
-2. Page
-3. Overview product page
-4. Downloads product page
-5. Getting started product page
-6. Topic page
+1.) Article
 
-![Call to action example image](/design-manual/assets/uploads/call-to-action-example.png)
+2.) Page
+
+3.) Event
+
+4.) Katacoda individual lesson
+
+5.) Landing page single offer
+
+6.) Product
+
+7.) Topic
+
+![Call to action example image](/assets/uploads/screen-shot-2020-07-01-at-11.29.28-am.png)
