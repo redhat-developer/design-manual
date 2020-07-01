@@ -15,15 +15,10 @@ featured_image: ""
 **Available in these types of content**
 
 1. Article
-
 2. Page
-
 3. Event
-
 4. Landing page single offer
-
 5. Product
-
 6. Topic
 
 ![All Products Listing example image](/assets/uploads/screen-shot-2020-07-01-at-11.29.09-am.png)
