@@ -16,16 +16,25 @@ layout: compress
             <div class="pf-l-grid__item pf-u-py-md pf-u-pl-md" id="main">
               {{ content }}
             </div>
-            {% if page.editable %}
-            <div class="rhddx-m-float">
-              <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://github.com/redhat-developer/design-manual/tree/master/pages/{{ page.path | split: '/' | last }}" title="Edit this page on GitHub">
-                <span class="rhddx-c-button--edit_text">Edit this page</span>
-                <span class="fad fa-user-edit rhddx-c-button--edit_icon"></span>
-              </a>
-            </div>
-            {% endif %}
           </div>
         </section>
+        <div class="pf-l-grid pf-m-gutter pf-m-12-col pf-u-p-md">
+          <div class="pf-l-grid__item">
+            <a href="https://pages.github.com/" target="top" style="display: flex; justify-content: center; color: #fff;">
+              Hosted on <img src="{{ site.baseurl }}/assets/img/github_pages_logo.svg" alt="GitHub Pages logo" style="width: 170px; margin-left: 8px;">
+            </a>
+          </div>
+          <div class="pf-l-grid__item">
+            <a href="https://www.netlify.com/" target="top" style="display: flex; justify-content: center; align-items: center; color: #fff;">
+              Tested with <img src="{{ site.baseurl }}/assets/img/netlify-full-logo-dark.png" alt="Netlify logo" style="width: 170px; margin-left: 8px;">
+            </a>
+          </div>
+          <div class="pf-l-grid__item">
+            <a href="https://www.netlifycms.org/" target="top" style="display: flex; justify-content: center; align-items: center; color: #fff;">
+              Managed by <img src="{{ site.baseurl }}/assets/img/netlify-cms-logo.svg" alt="Netlify CMS logo" style="width: 170px; margin-left: 8px;">
+            </a>
+          </div>
+        </div>
         {% include footer.html %}
       </main>
     </div>
