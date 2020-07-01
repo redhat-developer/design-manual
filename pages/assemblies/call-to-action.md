@@ -26,4 +26,4 @@ featured_image: ""
 
 7.) Topic
 
-![Call to action example image](/assets/uploads/screen-shot-2020-07-01-at-11.29.28-am.png)
+![Call to action example image](/design-manual/assets/uploads/screen-shot-2020-07-01-at-11.29.28-am.png)

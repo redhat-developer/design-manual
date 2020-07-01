@@ -7,9 +7,9 @@ backend:
   branch: main # Branch to update (main by default)
   squash_merges: true
   commit_messages:
-    create: Create "{{slug}}" "{{type}}"
-    update: Update "{{slug}}" "{{type}}"
-    delete: Delete "{{slug}}" "{{type}}"
+    create: Create "{{slug}}"
+    update: Update "{{slug}}"
+    delete: Delete "{{slug}}"
     uploadMedia: Upload "{{path}}"
     deleteMedia: Delete "{{path}}"
 subfolder: "/design-manual/"
@@ -32,7 +32,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Assemblies Page Navigation"
         name: "assemblies"
         file: "_data/assemblies.yml"
-        description: "Used for creating the Assembly category list in the vertival navigation."
+        description: "Used for creating the Assembly category list in the vertical navigation."
         fields:
           - label: "Assembly Items"
             name: "toc"
@@ -45,7 +45,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Components Navigation"
         name: "components-nav"
         file: "_data/components.yml"
-        description: "Used for creating the Components category list in the vertival navigation."
+        description: "Used for creating the Components category list in the vertical navigation."
         fields:
           - label: "Components Items"
             name: "toc"

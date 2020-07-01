@@ -21,4 +21,4 @@ featured_image: ""
 5. Product
 6. Topic
 
-![All Products Listing example image](/assets/uploads/screen-shot-2020-07-01-at-11.29.09-am.png)
+![All Products Listing example image](/design-manual/assets/uploads/screen-shot-2020-07-01-at-11.29.09-am.png)

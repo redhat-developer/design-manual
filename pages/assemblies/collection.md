@@ -27,4 +27,4 @@ featured_image: ""
 
 5.) Topic
 
-![Collection example image](/assets/uploads/screen-shot-2020-07-01-at-11.49.00-am.png)
+![Collection example image](/design-manual/assets/uploads/screen-shot-2020-07-01-at-11.49.00-am.png)
