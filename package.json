@@ -1,10 +1,10 @@
 {
   "name": "design-manual",
-  "version": "2.36.2",
+  "version": "2.37.0",
   "description": "Documentation and source files for RHD brand standards & design systems.",
   "main": "index.js",
   "engines": {
-    "node": ">=10.10.0"
+    "node": "12.18.1"
   },
   "scripts": {
     "build": "gulp build",
