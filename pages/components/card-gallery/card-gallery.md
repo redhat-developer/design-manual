@@ -1005,11 +1005,50 @@ intro_paragraph: >
 <h2 id="code">Code Snippets</h2>
 
 ### Basic Card Example
-{% highlight html %}
-  {% include_relative card-basic.html %}
-{% endhighlight %}
+### Button Examples
+<div
+  class="codepen"
+  data-prefill='{
+    "tags": ["html", "css", "Red Hat Developer Program", "Red Hat Developer Design Manual"],
+    "stylesheets": "https://developers.redhat.com/themes/custom/rhdp2/rhd-frontend/dist/css/rhd.css",
+    "scripts": "https://kit.fontawesome.com/79419145d2.js"
+  }'
+  data-height="400"
+  data-theme-id="1"
+  data-default-tab="html,result"
+  data-editable="true"
+>
+  <pre data-lang="html">
+    {% include_relative card-basic.html %}
+  </pre>
+  <pre data-lang="css" data-options="scss">
+    body {
+      padding: 25px;
+    }
+  </pre>
+</div>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ### Cheat Sheet Card Example
-{% highlight html %}
-  {% include_relative card-cheat-sheet.html %}
-{% endhighlight %}
+<div
+  class="codepen"
+  data-prefill='{
+    "tags": ["html", "css", "Red Hat Developer Program", "Red Hat Developer Design Manual"],
+    "stylesheets": "https://developers.redhat.com/themes/custom/rhdp2/rhd-frontend/dist/css/rhd.css",
+    "scripts": "https://kit.fontawesome.com/79419145d2.js"
+  }'
+  data-height="400"
+  data-theme-id="1"
+  data-default-tab="html,result"
+  data-editable="true"
+>
+  <pre data-lang="html">
+    {% include_relative card-cheat-sheet.html %}
+  </pre>
+  <pre data-lang="css" data-options="scss">
+    body {
+      padding: 25px;
+    }
+  </pre>
+</div>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>

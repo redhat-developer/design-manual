@@ -25,8 +25,7 @@
             <div
                 class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-name form-item-name">
                 <label for="edit-name" class="js-form-required form-required">Username</label>
-                <input autocorrect="none" autocapitalize="none" spellcheck="false" autofocus="autofocus"
-                    data-drupal-selector="edit-name" aria-describedby="edit-name--description" type="text"
+                <input autocorrect="none" autocapitalize="none" spellcheck="false" data-drupal-selector="edit-name" aria-describedby="edit-name--description" type="text"
                     id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required"
                     required="required" aria-required="true">
                 <div id="edit-name--description" class="description">

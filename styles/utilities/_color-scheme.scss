@@ -2,77 +2,77 @@
 @media (prefers-color-scheme: dark) {
   $rhddx-color-red: lighten($color: #ee0000, $amount: 25%);
   $rhddx-color-red-dark: lighten($color: #c00, $amount: 25%);
-  
+
   body {
-  
+
     .pf-c-page__main-section {
       color: var(--text-color-light);
       background-color: var(--background-color-dark);
-  
+
       .assembly &,
       .assembly.assembly-type-rich_text_columns & {
         background-color: var(--background-color-normal);
       }
-  
+
       &.rhddx-m-homepage {
         background-color: transparent;
       }
     }
-  
+
     .pf-c-page__sidebar {
       color: var(--text-color-light) !important;
       background-color: var(--background-color-dark);
-  
+
       .rhddx-c-sub-menu {
         background-color: var(--background-color-dark);
       }
     }
-  
+
     .pf-c-content {
       color: var(--text-color-light);
-  
+
       a {
         color: $rhddx-color-blue-light;
-  
+
         &:hover,
         &:active {
           color: darken($color: #73bcf7, $amount: 25%);
         }
-  
+
         &.pf-c-button.pf-m-primary,
         &.pf-c-button.pf-m-heavy {
           color: var(--text-color-white);
         }
       }
     }
-  
+
     a,
     .pf-m-link,
     .pf-c-button.pf-m-link {
       color: $rhddx-color-blue-light;
-  
+
       &:hover,
       &:active {
         color: darken($color: #73bcf7, $amount: 25%);
       }
     }
-  
+
     .pf-c-button {
       &:hover,
       &:active {
         color: var(--text-color-white);
       }
     }
-  
+
     code {
       color: var(--text-color-dark);
       background-color: var(--text-color-light);
     }
-  
+
     .rhddx-l-component-previews {
       padding: 0 8px;
     }
-  
+
     .rhddx-c-overview-example-panel,
     .rhddx-l-component-previews {
       .pf-c-content,
@@ -136,11 +136,11 @@
     background-color: transparent;
     border: var(rhddx-global--Border-width-small) solid var(--border-color-light);
     border-bottom: var(--border-width-small) solid var(--border-color-light);
-  
+
     &:hover {
       border-color: var(--text-color-white);
     }
-  
+
     &:active,
     &:focus,
     &::selection {
