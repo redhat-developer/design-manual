@@ -1,4 +1,10 @@
+**Netlify Deploy:**
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e32bb287-6336-4657-b3d1-c9fc70a63264/deploy-status)](https://app.netlify.com/sites/redhat-developer-design-manual/deploys)
+
+**Travis-CI:**
+
+[![Travis Build Status](https://travis-ci.com/redhat-developer/design-manual.svg?branch=main)](https://travis-ci.com/redhat-developer/design-manual)
 
 **GitHub Actions:**
 
