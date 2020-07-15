@@ -6,6 +6,6 @@ contact_links:
   - name: Design Manual Bug Reports
     url: https://github.com/redhat-developer/design-manual/blob/main/.github/ISSUE_TEMPLATE/bug_report.md
     about: Please report any bugs or issues here.
-  - name: Design Manual Security Vulnerbality Reports
+  - name: Design Manual Security Vulnerabality Reports
     url: https://github.com/redhat-developer/design-manual/issues/new?assignees=mindreeper2420&labels=security&template=security-report.md&title=%5BSECURITY%5D
     about: Please report security vulnerabilities here.
