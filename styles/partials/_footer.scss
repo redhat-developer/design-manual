@@ -1,4 +1,14 @@
 .rhddx-c-footer {
+  align-items: auto !important; /* stylelint-disable-line */
   color: #9bafbc;
   background-color: var(--text-color-normal);
+}
+
+.rhddx-c-footer__hosting {
+  display: flex;
+  justify-content: center;
+}
+
+.rh-c-universal-footer-legal > li a { /* stylelint-disable-line */
+  font-size: 16px !important; /* stylelint-disable-line */
 }
