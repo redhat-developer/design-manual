@@ -1,7 +1,7 @@
 # dependabot.yml file with
 # customized npm configuration
 
-version: 1
+version: 2
 updates:
   # Keep npm dependencies up to date
   - package-ecosystem: "npm"
