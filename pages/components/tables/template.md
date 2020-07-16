@@ -99,9 +99,23 @@ For additional capabilities, tables can also use the Toolbar component.
 <a href="#basic-table-example">Basic Table Example</a>
 
 <h3 id="table-example">Table Example</h3>
-{% highlight html %}
-{% include_relative table.html %}
-{% endhighlight %}
+<div
+  class="codepen"
+  data-prefill='{
+    "tags": ["html", "css", "Red Hat Developer Program", "Red Hat Developer Design Manual"],
+    "stylesheets": "https://developers.redhat.com/themes/custom/rhdp2/rhd-frontend/dist/css/rhd.css",
+    "scripts": "https://kit.fontawesome.com/79419145d2.js"
+  }'
+  data-height="400"
+  data-theme-id="1"
+  data-default-tab="html"
+  data-editable="true"
+>
+  <pre data-lang="html">
+    {% include_relative table.html %}
+  </pre>
+</div>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 <h3 id="compact-table-example">Compact Table Example</h3>
 {% highlight html %}
