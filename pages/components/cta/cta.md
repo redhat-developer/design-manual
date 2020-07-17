@@ -20,13 +20,14 @@ intro_paragraph: >
 
 <h2 id="code">Code Snippets</h2>
 
-### Basic CTA Example
+<h3>Basic CTA Example</h3>
 <div
   class="codepen"
   data-prefill='{
     "tags": ["html", "css", "Red Hat Developer Program", "Red Hat Developer Design Manual"],
     "stylesheets": "https://developers.redhat.com/themes/custom/rhdp2/rhd-frontend/dist/css/rhd.css",
-    "scripts": "https://kit.fontawesome.com/79419145d2.js"
+    "scripts": "https://kit.fontawesome.com/79419145d2.js",
+    "title": "Basic CTA example"
   }'
   data-height="400"
   data-theme-id="1"

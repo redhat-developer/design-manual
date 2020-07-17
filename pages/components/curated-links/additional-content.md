@@ -1,4 +1,4 @@
-## With Additional Content
+<h2 class="rhddx-m-dark">With Additional Content</h2>
 <div class="component assembly assembly-type-curated_links_rhdp2 rhd-c-curated-links pf-c-content">
   <div class="pf-l-grid pf-m-gutter">
     <div class="pf-l-grid__item pf-m-8-col-on-lg pf-m-12-col-on-md">

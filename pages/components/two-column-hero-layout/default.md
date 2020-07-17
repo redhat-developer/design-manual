@@ -1,18 +1,4 @@
-```html
-  <div class="component rhd-c-two-col-hero-layout">
-    <div class="pf-l-grid pf-m-gutter">
-      <div class="pf-l-grid__item pf-m-12-col pf-m-4-col-on-lg pf-m-3-col-on-xl">
-        4 col
-      </div>
-      <div class="pf-l-grid__item pf-m-12-col pf-m-8-col-on-lg pf-m-9-col-on-xl">
-        8 col
-      </div>
-    </div>
-  </div>
-```
-
-<h2>Example below with content</h2>
-<div class="component rhd-c-two-col-hero-layout">
+<div class="component rhd-c-two-col-hero-layout" style="background-color: #fff;">
   <div class="pf-l-grid pf-m-gutter">
     <div class="pf-l-grid__item pf-m-12-col pf-m-4-col-on-lg pf-m-3-col-on-xl">
       <div class="component rhd-c-dynamic-content-list-compact">
@@ -76,8 +62,6 @@
     </div>
     </div>
     <div class="pf-l-grid__item pf-m-12-col pf-m-8-col-on-lg pf-m-9-col-on-xl">
-
-
       <div class="component pf-l-grid pf-c-content rhd-c-product-download-hero assembly-slim">
           <div class="pf-l-grid__item rhd-c-product-download-hero-aside">
               <picture>
@@ -108,7 +92,6 @@
               </div>
           </div>
       </div>
-
       <div class="component rich-text" style="">
           <div class="pf-l-grid pf-m-gutter">
               <div class="pf-l-grid__item">
@@ -118,7 +101,6 @@
               </div>
           </div>
       </div>
-
       <div class="component rhd-c-card-grid pf-c-content">
         <div class="pf-l-flex rhd-c-card-grid__wrapper">
           <!-- ======== CARD COMPONENTS START HERE ========= -->

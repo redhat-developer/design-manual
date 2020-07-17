@@ -10,7 +10,7 @@ intro_paragraph: >
 
 ---
 
-<div class="pf-c-card rhd-c-card comment-list">
+<div class="pf-c-card rhd-c-card comment-list component">
   <div class="rhd-c-card-content">
     <h3 class="rhd-c-card__title">Latest Comments</h3>
     <div class="rhd-c-card__body">

@@ -13,31 +13,32 @@ intro_paragraph: >
 
 {% include code-snippets.html %}
 
-## Default Buttons
+<h2 class="rhddx-m-dark">Default Buttons</h2>
 {% include_relative default.md %}
 
-## Buttons on a dark background
+<h2 class="rhddx-m-dark">Buttons on a dark background</h2>
 {% include_relative dark-background.md %}
 
-## Legacy button styles
+<h2 class="rhddx-m-dark">Legacy button styles</h2>
 {% include_relative legacy.md %}
 
-## Button states
+<h2 class="rhddx-m-dark">Button states</h2>
 {% include_relative states.md %}
 
-<h2 id="code">Code Snippets</h2>
+<h2 id="code rhddx-m-dark">Code Snippets</h2>
 
-### Button Examples
+<h3 class="rhddx-m-dark">Button Examples</h3>
 <div
   class="codepen"
   data-prefill='{
     "tags": ["html", "css", "Red Hat Developer Program", "Red Hat Developer Design Manual"],
     "stylesheets": "https://developers.redhat.com/themes/custom/rhdp2/rhd-frontend/dist/css/rhd.css",
-    "scripts": "https://kit.fontawesome.com/79419145d2.js"
+    "scripts": "https://kit.fontawesome.com/79419145d2.js",
+    "title": "Button examples"
   }'
   data-height="400"
   data-theme-id="1"
-  data-default-tab="html,result"
+  data-default-tab="html"
   data-editable="true"
 >
   <pre data-lang="html">

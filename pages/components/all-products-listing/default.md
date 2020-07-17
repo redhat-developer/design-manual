@@ -1,4 +1,5 @@
-## Default
+<h2 class="rhddx-m-dark">Default</h2>
+
   <div class="component pf-c-content rhd-c-all-products-list">
     <div class="pf-l-grid pf-m-gutter">
       <div class="pf-l-grid__item">

@@ -1,4 +1,4 @@
-## Background (Gray)
+<h2 class="rhddx-m-dark">Background (Gray)</h2>
 <div class="component assembly assembly-type-curated_links_rhdp2 rhd-c-curated-links pf-c-content background-gray">
   <div class="pf-l-grid pf-m-gutter">
     <div class="pf-l-grid__item">

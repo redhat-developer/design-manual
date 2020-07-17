@@ -10,7 +10,7 @@
             </picture>
         </div>
         <div class="pf-l-grid__item pf-m-7-col-on-lg pf-m-12-col-on-sm">
-            <div class="rich-text-content pf-c-content">
+            <div class="rich-text-content">
                 <h2>Velit exercitation anim fugiat consectetur magna Lorem consequat amet velit occaecat aliqua magna</h2>
                 <p>Ex id voluptate incididunt mollit fugiat nulla labore enim irure aliquip esse voluptate laboris. Laborum eiusmod in consequat exercitation nisi ipsum adipisicing. Cillum laborum non quis et pariatur. In sit duis dolore ullamco adipisicing culpa adipisicing excepteur veniam exercitation velit aute. Pariatur duis adipisicing nulla ullamco consequat qui ullamco proident laboris non est laboris tempor. Ipsum laboris consequat commodo ut nulla enim occaecat ad. Nisi ullamco anim consequat deserunt quis ea.</p>
                 <p>Exercitation reprehenderit consequat ipsum irure cillum minim. Ut reprehenderit nisi dolor magna et qui magna sit non. Ipsum est adipisicing esse ullamco occaecat fugiat do ipsum deserunt.</p>
