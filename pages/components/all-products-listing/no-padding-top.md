@@ -1,4 +1,5 @@
-## No Padding on the Top
+<h2 class="rhddx-m-dark">No Padding on the Top</h2>
+
   <div class="component pf-c-content rhd-c-all-products-list no-padding-top">
     <div class="pf-l-grid pf-m-gutter">
       <div class="pf-l-grid__item">

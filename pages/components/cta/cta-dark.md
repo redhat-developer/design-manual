@@ -1,5 +1,5 @@
-## Dark
-  <div class="cta assembly assembly-type-call_to_action dark component" style="background-image: url();">
+<h2>Dark</h2>
+  <div class="cta assembly assembly-type-call_to_action dark component">
     <div class="cta__container pf-l-grid">
       <h2 class="cta__title pf-c-title">Join us for our next live developer tech talk.</h2>
       <div class="cta__content">

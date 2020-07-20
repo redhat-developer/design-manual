@@ -1,4 +1,4 @@
-## Navigation Menu
+<h2 class="rhddx-m-dark">Navigation Menu</h2>
 <div class="component assembly assembly-type-curated_links_rhdp2 rhd-c-curated-links pf-c-content nav-menu">
   <div class="pf-l-grid pf-m-gutter">
     <div class="pf-l-grid__item">

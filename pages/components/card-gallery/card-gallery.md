@@ -12,8 +12,8 @@ intro_paragraph: >
 
 {% include code-snippets.html %}
 
-<h2 style="font-size: 1.75rem; margin: 1rem 0;">Articles and Blogs</h2>
-<div class="pf-l-gallery pf-m-gutter">
+<h2>Articles and Blogs
+<div class="pf-l-gallery pf-m-gutter component">
   <div class="pf-l-gallery__item">
     <div class="rhd-l-grid__list">
       <div class="pf-c-card rhd-c-card__list">
@@ -113,8 +113,8 @@ intro_paragraph: >
   </div>
 </div>
 
-<h2 style="font-size: 1.75rem; margin: 1rem 0;">Series</h2>
-<div class="pf-l-gallery pf-m-gutter">
+<h2>Series</h2>
+<div class="pf-l-gallery pf-m-gutter component">
   <div class="pf-l-gallery__item">
     <div class="rhd-l-grid__list">
       <div class="pf-c-card rhd-c-card__list">
@@ -276,8 +276,8 @@ intro_paragraph: >
   </div>
 </div>
 
-<h2 style="font-size: 1.75rem; margin: 1rem 0;">Products</h2>
-<div class="pf-l-gallery pf-m-gutter">
+<h2>Products</h2>
+<div class="pf-l-gallery pf-m-gutter component">
   <div class="pf-l-gallery__item">
     <div class="rhd-l-grid__list">
       <div class="pf-c-card rhd-c-card__list">
@@ -373,7 +373,7 @@ intro_paragraph: >
   </div>
 </div>
 
-<h2 style="font-size: 1.75rem; margin: 1rem 0;">Katacoda Courses</h2>
+<h2 class="rhddx-m-dark">Katacoda Courses</h2>
 <div class="pf-l-gallery pf-m-gutter">
   <div class="pf-l-gallery__item">
     <div class="rhd-l-grid__list">
@@ -480,8 +480,8 @@ intro_paragraph: >
   </div>
 </div>
 
-<h2 style="font-size: 1.75rem; margin: 1rem 0;">Katacoda Lessons</h2>
-<div class="pf-l-gallery pf-m-gutter">
+<h2>Katacoda Lessons</h2>
+<div class="pf-l-gallery pf-m-gutter component">
   <div class="pf-l-gallery__item">
     <div class="rhd-l-grid__list">
       <div class="pf-c-card rhd-c-card__list rhd-m-card__courses">
@@ -587,8 +587,8 @@ intro_paragraph: >
   </div>
 </div>
 
-<h2 style="font-size: 1.75rem; margin: 1rem 0;">eBooks</h2>
-<div class="pf-l-gallery pf-m-gutter">
+<h2>eBooks</h2>
+<div class="pf-l-gallery pf-m-gutter component">
   <div class="pf-l-gallery__item">
     <div class="rhd-l-grid__list">
       <div class="pf-c-card rhd-c-card__list rhd-m-card__courses">
@@ -731,8 +731,8 @@ intro_paragraph: >
   </div>
 </div>
 
-<h2 style="font-size: 1.75rem; margin: 1rem 0;">Videos</h2>
-<div class="pf-l-gallery pf-m-gutter">
+<h2>Videos</h2>
+<div class="pf-l-gallery pf-m-gutter component">
   <div class="pf-l-gallery__item">
     <div class="rhd-l-grid__list">
       <div class="pf-c-card rhd-c-card__list rhd-m-card__courses">
@@ -856,8 +856,8 @@ intro_paragraph: >
   </div>
 </div>
 
-<h2 style="font-size: 1.75rem; margin: 1rem 0;">Cheat sheet</h2>
-<div class="pf-l-gallery pf-m-gutter">
+<h2>Cheat sheet</h2>
+<div class="pf-l-gallery pf-m-gutter component">
   <div class="pf-l-gallery__item">
     <div class="rhd-l-grid__list">
         <div class="pf-c-card rhd-c-card__list rhd-m-card__courses">
@@ -1002,10 +1002,10 @@ intro_paragraph: >
   </div>
 </div>
 
-<h2 id="code">Code Snippets</h2>
+<h2id="code">Code Snippets</h2>
 
-### Basic Card Example
-### Button Examples
+<h3>Basic Card Example</h3>
+<h3>Button Examples</h3>
 <div
   class="codepen"
   data-prefill='{
@@ -1029,13 +1029,14 @@ intro_paragraph: >
 </div>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-### Cheat Sheet Card Example
+<h3>Cheat Sheet Card Example</h3>
 <div
   class="codepen"
   data-prefill='{
     "tags": ["html", "css", "Red Hat Developer Program", "Red Hat Developer Design Manual"],
     "stylesheets": "https://developers.redhat.com/themes/custom/rhdp2/rhd-frontend/dist/css/rhd.css",
-    "scripts": "https://kit.fontawesome.com/79419145d2.js"
+    "scripts": "https://kit.fontawesome.com/79419145d2.js",
+    "title": "Card Gallery examples"
   }'
   data-height="400"
   data-theme-id="1"

@@ -1,7 +1,7 @@
-## No Padding (Bottom)
+<h2>No Padding (Bottom)</h2>
+
 <div class="component pf-c-content rhd-c-curated-events no-padding-bottom">
     <div class="pf-l-grid pf-m-gutter">
-      <h2 class="pf-c-title">Assembly Title</h2>
       <!-- Start of Curated Events List content container -->
       <div class="pf-l-grid__item pf-m-12-col">
         <!-- Start of Curated Events List item -->

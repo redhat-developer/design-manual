@@ -1,6 +1,4 @@
 toc:
-  - page: Alerts
-    url: /components/alerts
   - page: All Products Listing
     url: /components/all-products-listing
   - page: Author Tile
@@ -11,16 +9,12 @@ toc:
     url: /components/btn-cta
   - page: Card in a Gallery Layout
     url: /components/card-gallery
-  - page: Card in a Grid Layout
-    url: /components/card-grid
   - page: Code Snippet
     url: /components/code-snippet
   - page: Collection
     url: /components/collection
   - page: Comment List Card
     url: /components/comment-list-card
-  - page: Community
-    url: /components/community
   - page: CTA
     url: /components/cta
   - page: CTA Form
@@ -39,14 +33,10 @@ toc:
     url: /components/dynamic-content-list
   - page: Dynamic Content List (Compact)
     url: /components/dynamic-content-list-compact
-  - page: Dynamic List
-    url: /components/dynamic-list
   - page: Event Schedule Table
     url: /components/event-schedule
   - page: Events Hero
     url: /components/events-hero
-  - page: Expandable Groups
-    url: /components/expandable-groups
   - page: Featured Articles
     url: /components/featured-articles
   - page: Featured Evangelists
@@ -59,12 +49,6 @@ toc:
     url: /components/icons
   - page: Jump-to Navigation
     url: /components/jump-to-nav
-  - page: Logos
-    url: /components/logos
-  - page: Navigation Search
-    url: /components/nav-search
-  - page: Navigation References
-    url: /components/navigation
   - page: Product Download Hero
     url: /components/product-download-hero
   - page: Product Download List
@@ -75,12 +59,6 @@ toc:
     url: /components/rich-text
   - page: Rich Text Columns
     url: /components/rich-text-columns
-  - page: Search
-    url: /components/search
-  - page: Search (unreleased)
-    url: /components/search-old
-  - page: Stack Overflow
-    url: /components/stack-overflow
   - page: Tables
     url: /components/tables
   - page: Toolbar

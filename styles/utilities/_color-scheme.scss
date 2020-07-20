@@ -3,6 +3,49 @@
   $rhddx-color-red: lighten($color: #ee0000, $amount: 25%);
   $rhddx-color-red-dark: lighten($color: #c00, $amount: 25%);
 
+  .pf-c-button.pf-m-tertiary.rhddx-m-darkbutton {
+    --pf-c-button--color: #ffffff;
+    --pf-c-button--m-tertiary--color: #ffffff;
+    --pf-c-button--hover--color: #151515;
+    --pf-c-button--m-tertiary--hover--color: #151515;
+    --pf-c-button--active--color: #151515;
+    --pf-c-button--m-tertiary--active--color: #151515;
+    --pf-c-button--focus--color: #151515;
+    --pf-c-button--m-tertiary--focus--color: #151515;
+    --pf-c-button--bordercolor: #ffffff;
+    --pf-c-button--m-tertiary--bordercolor: #ffffff;
+    --pf-c-button--hover--bordercolor: #ffffff;
+    --pf-c-button--m-tertiary--hover--bordercolor: #ffffff;
+    --pf-c-button--active--bordercolor: #ffffff;
+    --pf-c-button--m-tertiary--active--bordercolor: #ffffff;
+    --pf-c-button--backgroundcolor: transparent;
+    --pf-c-button--m-tertiary--backgroundcolor: transparent;
+    --pf-c-button--hover--backgroundcolor: #ffffff;
+    --pf-c-button--m-tertiary--hover--backgroundcolor: #ffffff;
+    --pf-c-button--active--backgroundcolor: #ffffff;
+    --pf-c-button--m-tertiary--active--backgroundcolor: #ffffff;
+
+    color: var(--pf-c-button--m-tertiary--color);
+    border: 1px solid var(--pf-c-button--m-tertiary--bordercolor);
+    background-color: var(--pf-c-button--m-tertiary--backgroundcolor);
+
+    &:hover {
+      color: var(--pf-c-button--m-tertiary--hover--color);
+      border: 1px solid var(--pf-c-button--m-tertiary--hover--bordercolor);
+      background-color: var(--pf-c-button--hover--backgroundcolor);
+    }
+    &:active {
+      color:var(--pf-c-button--m-tertiary--active--color);
+      border: 1px solid var(--pf-c-button--m-tertiary--active--bordercolor);
+      background-color: var(--pf-c-button--m-tertiary--active--backgroundcolor);
+    }
+    &:focus {
+      color: var(--pf-c-button--m-tertiary--focus--color);
+      border: 1px solid var(--pf-c-button--m-tertiary--focus--bordercolor);
+      background-color: var(--pf-c-button--m-tertiary--focus--backgroundcolor);
+    }
+  }
+
   body {
 
     .pf-c-page__main-section {
@@ -154,6 +197,41 @@
     li {
       color: var(--text-color-white);
       background-color: transparent;
+    }
+  }
+
+  .rhddx-l-component-previews {
+    color: var(--text-color-light);
+    .assembly,
+    .component,
+    .content {
+      color: var(--text-color-normal);
+    }
+    .assembly.dark h1,
+    .component.dark h1,
+    .content.dark h1,
+    .assembly.dark h2,
+    .component.dark h2,
+    .content.dark h2,
+    .assembly.dark h3,
+    .component.dark h3,
+    .content.dark h3 {
+      .rhd-c-card, {
+        color: var(--text-color-normal);
+      }
+    }
+    .assembly.dark,
+    .component.dark,
+    .content.dark {
+      .rhd-c-card__title {
+        color: var(--text-color-normal);
+      }
+    }
+    .dark {
+      background-color: var(--rhd-theme--component-background--color-dark) !important;
+    }
+    .rhddx-m-dark {
+      color: var(--text-color-light) !important;
     }
   }
 }

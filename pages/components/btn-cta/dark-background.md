@@ -14,7 +14,7 @@
   </div>
 </div>
 
-<h2 class="pf-c-title">Button variations - dark background - dark class on container</h2>
+<h2 class="pf-c-title rhddx-m-dark">Button variations - dark background - dark class on container</h2>
 
 <div class="pf-l-grid pf-m-gutter">
   <div class="pf-l-grid__item pf-m-10-col pf-m-offset-1-col-on-md pf-u-p-md dark" style="background-color: #000;">

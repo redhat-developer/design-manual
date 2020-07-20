@@ -1,4 +1,4 @@
-## Dark
+<h2 class="rhddx-m-dark">Dark</h2>
 
 <div class="component pf-c-content rhd-c-all-products-list dark">
   <div class="pf-l-grid pf-m-gutter">

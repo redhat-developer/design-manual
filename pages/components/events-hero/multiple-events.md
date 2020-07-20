@@ -1,5 +1,5 @@
 ## 2 Events
-  <section class="component pf-c-content rhd-c-events-hero two-events dark has-background">
+  <section class="component pf-c-content rhd-c-events-hero two-events has-background">
     <div class="pf-l-grid pf-m-gutter">
       <div class="pf-l-grid__item pf-m-12-col">
         <h2>Title of the event</h2>
@@ -134,7 +134,7 @@
 
 
 ## 3 Events
-  <section class="component pf-c-content rhd-c-events-hero three-events dark has-background">
+  <section class="component pf-c-content rhd-c-events-hero three-events has-background">
     <div class="pf-l-grid pf-m-gutter">
       <div class="pf-l-grid__item pf-m-12-col">
         <h2>Title of the event</h2>

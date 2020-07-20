@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This guide will serve as a home base for the Red Hat Developer story, messaging, and visual brand language. It’s a place you can always return to when you have questions about how to best represent Red Hat Developer through messaging or visual elements.
 baseurl: "/design-manual" # change to GitHub project repo name i.e. redhat-developer/rhddx for GitHub pages w/no custom domain
 url: "https://redhat-developer.github.io/design-manual/"
-version: 2.40.0
+version: 2.42.0
 NODE_VERSION: 12.18.1
 NPM_VERSION: 6.14.15
 RUBY_VERSION: 2.6.3

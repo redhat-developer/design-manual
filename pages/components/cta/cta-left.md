@@ -1,4 +1,4 @@
-## Left Aligned
+<h2 class="rhddx-m-dark">Left Aligned</h2>
   <div class="cta assembly assembly-type-call_to_action left component" style="background-image: url();">
     <div class="cta__container pf-l-grid">
       <h2 class="cta__title pf-c-title">Join us for our next live developer tech talk.</h2>
