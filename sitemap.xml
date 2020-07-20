@@ -48,18 +48,6 @@
 				<title>Alerts</title>
 				<description></description>
 				<pubDate></pubDate>
-				<link>/design-manual/components/alerts</link>
-				<guid isPermaLink="true">/design-manual</guid>
-			</item>
-			
-		
-	
-		
-			
-			<item>
-				<title>Alerts</title>
-				<description></description>
-				<pubDate></pubDate>
 				<link>/design-manual/design/components/alerts</link>
 				<guid isPermaLink="true">/design-manual</guid>
 			</item>
@@ -229,19 +217,6 @@
 		
 			
 			<item>
-				<title>Card in a Grid Layout</title>
-				<description>Card in a Grid layout
-</description>
-				<pubDate></pubDate>
-				<link>/design-manual/components/card-grid</link>
-				<guid isPermaLink="true">/design-manual</guid>
-			</item>
-			
-		
-	
-		
-			
-			<item>
 				<title>Challenges</title>
 				<description></description>
 				<pubDate></pubDate>
@@ -393,18 +368,6 @@ Drupal will find content (articles, blogs, videos, etc.) tagged with those selec
 				<description></description>
 				<pubDate></pubDate>
 				<link>/design-manual/components/comment-list-card</link>
-				<guid isPermaLink="true">/design-manual</guid>
-			</item>
-			
-		
-	
-		
-			
-			<item>
-				<title>Community</title>
-				<description></description>
-				<pubDate></pubDate>
-				<link>/design-manual/components/community</link>
 				<guid isPermaLink="true">/design-manual</guid>
 			</item>
 			
@@ -768,18 +731,6 @@ flagged, will display a CAPTCHA challenge to the user.</description>
 		
 			
 			<item>
-				<title>Dynamic List</title>
-				<description></description>
-				<pubDate></pubDate>
-				<link>/design-manual/components/dynamic-list</link>
-				<guid isPermaLink="true">/design-manual</guid>
-			</item>
-			
-		
-	
-		
-			
-			<item>
 				<title>Ebooks</title>
 				<description></description>
 				<pubDate></pubDate>
@@ -880,18 +831,6 @@ flagged, will display a CAPTCHA challenge to the user.</description>
 				<description></description>
 				<pubDate></pubDate>
 				<link>/design-manual/create/example</link>
-				<guid isPermaLink="true">/design-manual</guid>
-			</item>
-			
-		
-	
-		
-			
-			<item>
-				<title>Expandable Groups</title>
-				<description></description>
-				<pubDate></pubDate>
-				<link>/design-manual/components/expandable-groups</link>
 				<guid isPermaLink="true">/design-manual</guid>
 			</item>
 			
@@ -1170,18 +1109,6 @@ flagged, will display a CAPTCHA challenge to the user.</description>
 		
 			
 			<item>
-				<title>Logos</title>
-				<description></description>
-				<pubDate></pubDate>
-				<link>/design-manual/components/logos</link>
-				<guid isPermaLink="true">/design-manual</guid>
-			</item>
-			
-		
-	
-		
-			
-			<item>
 				<title>Red Hat Developer Mark</title>
 				<description></description>
 				<pubDate></pubDate>
@@ -1222,30 +1149,6 @@ flagged, will display a CAPTCHA challenge to the user.</description>
 				<description></description>
 				<pubDate></pubDate>
 				<link>/design-manual/create/name</link>
-				<guid isPermaLink="true">/design-manual</guid>
-			</item>
-			
-		
-	
-		
-			
-			<item>
-				<title>Navigation Search</title>
-				<description></description>
-				<pubDate></pubDate>
-				<link>/design-manual/components/nav-search</link>
-				<guid isPermaLink="true">/design-manual</guid>
-			</item>
-			
-		
-	
-		
-			
-			<item>
-				<title>Navigation References</title>
-				<description></description>
-				<pubDate></pubDate>
-				<link>/design-manual/components/navigation</link>
 				<guid isPermaLink="true">/design-manual</guid>
 			</item>
 			
@@ -1546,30 +1449,6 @@ flagged, will display a CAPTCHA challenge to the user.</description>
 		
 			
 			<item>
-				<title>Search (unreleased)</title>
-				<description></description>
-				<pubDate></pubDate>
-				<link>/design-manual/components/search-old</link>
-				<guid isPermaLink="true">/design-manual</guid>
-			</item>
-			
-		
-	
-		
-			
-			<item>
-				<title>Search</title>
-				<description></description>
-				<pubDate></pubDate>
-				<link>/design-manual/components/search</link>
-				<guid isPermaLink="true">/design-manual</guid>
-			</item>
-			
-		
-	
-		
-			
-			<item>
 				<title>Site search</title>
 				<description></description>
 				<pubDate></pubDate>
@@ -1602,18 +1481,6 @@ flagged, will display a CAPTCHA challenge to the user.</description>
 				<description></description>
 				<pubDate></pubDate>
 				<link>/design-manual/design/solutions</link>
-				<guid isPermaLink="true">/design-manual</guid>
-			</item>
-			
-		
-	
-		
-			
-			<item>
-				<title>Stack Overflow</title>
-				<description></description>
-				<pubDate></pubDate>
-				<link>/design-manual/components/stack-overflow</link>
 				<guid isPermaLink="true">/design-manual</guid>
 			</item>
 			

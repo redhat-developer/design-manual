@@ -1,4 +1,4 @@
-## Dark
+<h2 class="rhddx-m-dark">Dark</h2>
 <div class="component assembly assembly-type-curated_links_rhdp2 rhd-c-curated-links pf-c-content dark">
   <div class="pf-l-grid pf-m-gutter">
     <div class="pf-l-grid__item">

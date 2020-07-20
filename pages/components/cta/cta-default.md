@@ -1,4 +1,4 @@
-## Default
+<h2 class="rhddx-m-dark">Default</h2>
 <div class="cta assembly assembly-type-call_to_action component" style="background-image: url();">
   <div class="cta__container pf-l-grid">
     <h2 class="cta__title pf-c-title">Join us for our next live developer tech talk.</h2>

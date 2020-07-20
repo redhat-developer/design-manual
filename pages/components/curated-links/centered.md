@@ -1,4 +1,4 @@
-## Center Aligned
+<h2 class="rhddx-m-dark">Center Aligned</h2>
 <div class="component assembly assembly-type-curated_links_rhdp2 rhd-c-curated-links pf-c-content centered">
   <div class="pf-l-grid pf-m-gutter">
     <div class="pf-l-grid__item">

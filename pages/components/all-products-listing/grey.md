@@ -1,4 +1,4 @@
-## Grey
+<h2 class="rhddx-m-dark">Grey</h2>
 
   <div class="component pf-c-content rhd-c-all-products-list gray">
     <div class="pf-l-grid pf-m-gutter">
