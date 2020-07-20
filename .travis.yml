@@ -2,6 +2,11 @@ language: ruby
 cache: bundler
 rvm:
   - 2.6.3
+# Only build the following branches
+branches:
+  only:
+  - main
+  - gh-pages
 before_install:
 - bundle install
 - npm install
@@ -10,13 +15,6 @@ before_install:
 script:
 - gulp deploy
 install: true
-# before_deploy:
-  # Set up git user name and tag this commit
-  # - git config --local user.name "GIT_USERNAME"
-  # - git config --local user.email "GIT_EMAIL"
-  # - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
-  # - git tag $TRAVIS_TAG
-  # - git push origin $TRAVIS_TAG
 deploy:
   provider: pages
   skip_cleanup: true
