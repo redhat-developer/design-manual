@@ -1,6 +1,6 @@
 {
   "name": "design-manual",
-  "version": "2.42.1",
+  "version": "2.43.2",
   "description": "Documentation and source files for RHD brand standards & design systems.",
   "main": "index.js",
   "engines": {
@@ -14,12 +14,14 @@
     "deployment": "gulp deploy",
     "development": "gulp development",
     "changelog": "gren release --data-source=commits --override && gren changelog --override",
-    "release": "scripts/./release.sh prerelease",
+    "version": "github_changelog_generator -u mindreeper2420 -p design-manual",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags",
     "prodDeploy": "npm run deployment && npm run release",
     "netlify": "netlify dev",
     "build-netlify": "gulp netlify",
-    "test": "gulp netlify && netlify-build",
-    "version": "github_changelog_generator -u mindreeper2420 -p design-manual"
+    "test": "gulp netlify && netlify-build"
   },
   "sass": {
     "includePaths": [
@@ -63,5 +65,8 @@
     "stylelint-value-no-unknown-custom-properties": "3.0.0",
     "imagemin-mozjpeg": "8.0.0",
     "imagemin-pngquant": "8.0.0"
+  },
+  "devDependencies": {
+    "generate-changelog": "1.8.0"
   }
 }
