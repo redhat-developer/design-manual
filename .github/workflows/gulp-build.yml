@@ -1,0 +1,35 @@
+name: Gulp
+on: [pull-request]
+env:
+  CI: true
+  NODE: 12.18.x
+
+jobs:
+  gulp:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v2
+
+      - name: Set Node version
+        uses: actions/setup-node@v1
+        with:
+          node-version: "${{ env.NODE }}"
+
+      - name: Set up npm cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-v${{ env.NODE }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-v${{ env.NODE }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Gulp CLI
+        run: npm install gulp-cli -g
+
+      - name: Run Deployment
+        run: npm run deployment
