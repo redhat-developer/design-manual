@@ -31,7 +31,7 @@
       </a>
       <ul
         {% if page.active_nav == 'Content_types' %}
-          style="display: block;"
+          class="active-nav"
         {% endif %}>
         {% for entry in item.subfolderitems %}
         <li>
@@ -60,7 +60,7 @@
       </a>
       <ul
         {% if page.active_nav == 'Assemblies' %}
-          style="display: block;"
+          class="active-nav"
         {% endif %}>
         {% for item in site.data.assemblies.toc %}
         <li>

@@ -21,7 +21,14 @@ layout: compress
         <section class="pf-c-page__main-section pf-m-light pf-m-fill">
           <div class="pf-l-grid pf-c-content">
             <div class="pf-l-grid__item pf-m-11-col" id="main">
-              <h1>{{ page.title }}</h1>
+              <div class="pf-u-display-flex">
+                <h1>{{ page.title }}</h1>
+                {% if page.status == 'unreleased' %}
+                  <div class="pf-c-label label-unreleased pf-u-align-self-baseline pf-u-ml-md pf-u-mt-sm">
+                    {{ page.status | markdownify | remove: '<p>' | remove: '</p>' }}
+                  </div>
+                {% endif %}
+              </div>
               <div class="rhddx-l-component-previews">
                 {{ content }}
               </div>

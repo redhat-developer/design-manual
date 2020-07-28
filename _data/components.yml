@@ -11,6 +11,7 @@ toc:
     url: /components/card-gallery
   - page: Code Snippet
     url: /components/code-snippet
+    status: unreleased
   - page: Collection
     url: /components/collection
   - page: Comment List Card
@@ -61,8 +62,10 @@ toc:
     url: /components/rich-text-columns
   - page: Tables
     url: /components/tables
+    status: unreleased
   - page: Toolbar
     url: /components/toolbar
+    status: unreleased
   - page: Two Column Layout Hero
     url: /components/two-col-hero-layout
   - page: Video Hero
