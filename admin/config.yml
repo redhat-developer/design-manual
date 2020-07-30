@@ -53,8 +53,23 @@ collections: # A list of collections the CMS should be able to edit
             type: "navigation"
             extension: "yml"
             fields:
-              - {label: "Page", name: page, widget: string}
-              - {label: "URL", name: url, widget: string}
+              - label: "Page"
+                name: page
+                widget: string
+                required: true
+              - label: "URL",
+                name: url,
+                widget: string
+                required: true
+              - label: "Release Status"
+                name: "status"
+                widget: "select"
+                hint: "Select a release status."
+                options:
+                  - { label: "Released", value: "released" }
+                  - { label: "Unreleased", value: "unreleased" }
+                  - { label: "Development", value: "development" }
+                required: true
   # Collections
   - name: "getting-started"
     label: "Get Started"
@@ -219,6 +234,15 @@ collections: # A list of collections the CMS should be able to edit
         widget: "string"
         default: "/develop/page-title"
         hint: "Replace page-title with the title of the page."
+        required: true
+      - label: "Release Status"
+        name: "status"
+        widget: "select"
+        hint: "Select a release status."
+        options:
+          - { label: "Released", value: "released" }
+          - { label: "Unreleased", value: "unreleased" }
+          - { label: "Development", value: "development" }
         required: true
       - label: "Intro Paragraph"
         name: "intro_paragraph"
@@ -393,6 +417,15 @@ collections: # A list of collections the CMS should be able to edit
         widget: "string"
         default: "/assemblies/page-title"
         hint: "Replace page-title with the title of the page."
+        required: true
+      - label: "Release Status"
+        name: "status"
+        widget: "select"
+        hint: "Select a release status."
+        options:
+          - { label: "Released", value: "released" }
+          - { label: "Unreleased", value: "unreleased" }
+          - { label: "Development", value: "development" }
         required: true
       - label: "Intro Paragraph"
         name: "intro_paragraph"
