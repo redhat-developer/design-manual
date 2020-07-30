@@ -5,6 +5,7 @@ section: Create
 title: Bonus Content List
 active_nav: Assemblies
 permalink: /assemblies/bonus-content-list
+status: released
 intro_paragraph: This assembly allows for one or many pieces of bonus content to
   be added. Types include docker image, GitHub code, GitLab katacoda, podcast,
   quay image, and SAAS demo. Links are added to each with the full URL and link

@@ -2,6 +2,8 @@
 layout: home
 title: Katacoda
 permalink: /pages/examples/katacoda
+active_nav: Examples
+status: example
 section: page
 intro_paragraph: >
   This is an example of the Katacoda page.

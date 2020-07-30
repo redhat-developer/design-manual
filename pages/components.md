@@ -3,7 +3,9 @@ layout: components
 title: Components Overview
 permalink: /components
 section: develop
-intro_paragraph: >-
+active_nav: Develop
+status: released
+intro_paragraph: >
   This is the Components page. It contains examples for all of the components
   that are used on developers.redhat.com.
 ---

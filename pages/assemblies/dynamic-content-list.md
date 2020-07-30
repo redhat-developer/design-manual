@@ -5,6 +5,7 @@ section: Create
 title: Dynamic content list
 active_nav: Assemblies
 permalink: /assemblies/dynamic-content-list
+status: released
 intro_paragraph: This assembly lists all content based on inputted WordPress
   categories, filters, and Drupal term filters. Related topics can also be added
   here as links below a sidebar of latest comments that appeared on the pieces

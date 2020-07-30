@@ -5,6 +5,7 @@ section: Create
 title: Curated links
 active_nav: Assemblies
 permalink: /assemblies/curated-links
+status: released
 intro_paragraph: This assembly allows for a list of links to be added by node
   reference, as a static item or as a WordPress post reference. An additional
   assembly can be added as well, forcing the link list to take a sidebar format

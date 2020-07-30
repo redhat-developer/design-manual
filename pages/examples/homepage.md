@@ -2,6 +2,8 @@
 layout: home
 title: Home
 permalink: /pages/examples/home
+active_nav: Examples
+status: example
 section: pages
 intro_paragraph: >
   This is an example Home page.

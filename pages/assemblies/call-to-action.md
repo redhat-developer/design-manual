@@ -5,6 +5,7 @@ section: Create
 title: Call to action
 active_nav: Assemblies
 permalink: /assemblies/call-to-action
+status: released
 intro_paragraph: This assembly allows for a title, content and CTA to be added
   to a full-page banner. A background image can be added. The title is only
   styled if it is inserted in the “title” field.

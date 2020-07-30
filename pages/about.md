@@ -3,10 +3,13 @@ layout: about
 title: About
 long_title: About this site
 permalink: /about
+active_nav: About
+status: released
 section: overview
 category: about
 intro_paragraph: >
-custom_js: 
+  About the Red Hat Developer Design Manual
+custom_js:
 custom_css: [about]
 ---
 

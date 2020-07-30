@@ -27,7 +27,8 @@ title: Alerts
 permalink: /components/alerts
 section: components
 category: components
-status: released
+active_nav: Develop
+status: released / unreleased
 intro_paragraph: >
 
 ---
@@ -43,8 +44,11 @@ intro_paragraph: >
   - **category**
     - similar to **section**, category is used for filtering content, as well as automatically adding pages to navigations. If labelled incorrectly, your page may not appear where you expect it to.
     - to find a list of available categories, click [here](help/available-categories.md).
+  - **active_nav**
+    - the
   - **status**
-    - this will add a label to the top of the page, under the page title and introduction paragraph (if provided). If set as `status: released`, it will add a **Released** label signifying that it is available on developers.redhat.com. If set as `status: unreleased`, an **unreleased** label will appear, signifying that it is not yet available for use on developers.redat.com.
+    - this will add a label to the top of the page, under the page title and introduction paragraph (if provided). If set as `status: unreleased`, an **unreleased** label will appear, signifying that it is not yet available for use on developers.redat.com. If set as `status: released`, it will not show any label. Components without a status label are considered to be released and available for use on the developer site.
+    - all `status` identifiers will be displayed when using the Search, so that a user can search by **released** or **unreleased** items.
   - **intro_paragraph**
     - add an introduction to the component at the top of the page, underneath the Title.
 

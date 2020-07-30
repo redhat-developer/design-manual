@@ -5,6 +5,7 @@ section: Create
 title: Dynamic content
 active_nav: Assemblies
 permalink: /assemblies/dynamic-content
+status: released
 intro_paragraph: This assembly lists a desired number of pieces of content in
   one grouping based on inputted WordPress categories, filters, and Drupal term
   filters. A title can be added above the grouping.

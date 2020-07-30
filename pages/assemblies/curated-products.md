@@ -5,6 +5,7 @@ section: Create
 title: Curated products
 active_nav: Assemblies
 permalink: /assemblies/curated-products
+status: released
 intro_paragraph: This assembly inserts a group of curated product cards on the
   page. Products are inputted through node references. A CTA can be added below
   the grouping. A title can be added above the grouping.

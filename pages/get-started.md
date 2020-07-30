@@ -4,6 +4,8 @@ title: Overview of RHD Program goals
 permalink: /get-started
 section: getting-started
 category: get-started
+active_nav: Getting Started
+status: released
 editable: true
 intro_paragraph: >
   The Red Hat Developer Desing Manual getting started guide is based off of the PatternFly Getting Started guide.

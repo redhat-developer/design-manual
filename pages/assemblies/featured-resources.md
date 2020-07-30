@@ -5,6 +5,7 @@ section: Develop
 title: Featured resources
 active_nav: Assemblies
 permalink: /assemblies/featured-resources
+status: released
 intro_paragraph: This assembly features eBooks, cheat sheets, coding resources
   and learning guides. Each will contain information from their node reference
   that will auto-populate the card. A title can be added above the content. CTAs

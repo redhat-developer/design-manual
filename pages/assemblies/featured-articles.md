@@ -5,6 +5,7 @@ section: Develop
 title: Featured articles
 active_nav: Assemblies
 permalink: /assemblies/featured-articles
+status: released
 intro_paragraph: This assembly inserts cards in a grid to feature articles. It
   will pull information from the article node references.
 featured_image: ""

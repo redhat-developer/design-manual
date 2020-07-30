@@ -5,6 +5,7 @@ section: Develop
 title: Rich text with image
 active_nav: Assemblies
 permalink: /assemblies/rich-text-with-image
+status: released
 intro_paragraph: This assembly inserts a hero of content (customized using a WYSIWYG) and an image that can be linked to an external URL. A background image or svg can be added. A title can also be added outside the WYSIWYG.
 featured_image: ""
 ---

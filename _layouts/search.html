@@ -22,12 +22,26 @@ layout: compress
       </main>
     </div>
   </body>
-  <script src="{{site.baseurl}}/assets/js/search.js"></script>
-  <script type="text/javascript">
-    $("#search-field").camelHunter({
-      onKeyUp 	: true,
-      rss       : "{{ site.baseurl }}/sitemap.xml",
-      results   : "#results"
-    });
-  </script>
+  {% if jekyll.environment == 'development' %}
+    <script src="/assets/js/search.js"></script>
+  {% elsif jekyll.environment == 'production' %}
+    <script src="{{site.baseurl}}/assets/js/search.js"></script>
+  {% endif %}
+  {% if jekyll.environment == 'development' %}
+    <script type="text/javascript">
+      $("#search-field").camelHunter({
+        onKeyUp 	: true,
+        rss       : "/sitemap.xml",
+        results   : "#results"
+      });
+    </script>
+  {% elsif jekyll.environment == 'production' %}
+    <script type="text/javascript">
+      $("#search-field").camelHunter({
+        onKeyUp 	: true,
+        rss       : "{{ site.baseurl }}/sitemap.xml",
+        results   : "#results"
+      });
+    </script>
+  {% endif %}
 </html>

@@ -5,6 +5,7 @@ section: Create
 title: Events list
 active_nav: Assemblies
 permalink: /assemblies/events-list
+status: released
 intro_paragraph: This assembly allows for events to be listed on a page. Each
   event is inputted using a node reference. A CTA link can be inserted below the
   events list.

@@ -5,7 +5,7 @@ title: Icons
 active_nav: Components
 permalink: /components/icons
 section: components
-status: released
+status: development
 intro_paragraph: >
 
 ---

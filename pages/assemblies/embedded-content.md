@@ -5,6 +5,7 @@ section: Create
 title: Embedded content
 active_nav: Assemblies
 permalink: /assemblies/embedded-content
+status: released
 intro_paragraph: This assembly inserts and I frame into the page based on an
   inputted external URL.
 featured_image: ""

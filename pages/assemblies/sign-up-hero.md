@@ -5,6 +5,7 @@ section: Develop
 title: Sign-up hero
 active_nav: Assemblies
 permalink: /assemblies/sign-up-hero
+status: released
 intro_paragraph: This assembly inserts a sign up form that contains a title (recommended title automatically fills this field) and content (can be customized with WYSIWYG) next to content and a title (customized with WYSIWYG). Profile level can be customized out of the following options - (1) basic user (2) full user (3) supportable user (4) bulk invite user (5) SOLP user.
 featured_image: ""
 ---

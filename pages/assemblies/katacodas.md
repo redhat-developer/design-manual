@@ -5,7 +5,8 @@ section: Develop
 title: Katacodas
 active_nav: Assemblies
 permalink: /assemblies/katacodas
-intro_paragraph: This assembly features both katacoda courses and lessons in a card format. Each is referenced through the katacoda node. A title can be added above the collection. 
+status: released
+intro_paragraph: This assembly features both katacoda courses and lessons in a card format. Each is referenced through the katacoda node. A title can be added above the collection.
 featured_image: ""
 ---
 **Available in these types of content**

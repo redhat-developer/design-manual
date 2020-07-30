@@ -5,6 +5,7 @@ section: Develop
 title: Videos
 active_nav: Assemblies
 permalink: /assemblies/videos
+status: released
 intro_paragraph: This assembly displays videos based on inputted tags. A title can be added above the listed videos.
 featured_image: ""
 ---
