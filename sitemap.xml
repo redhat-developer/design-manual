@@ -10,7 +10,24 @@ sitemap: false
   <status>{{ post.status | xml_escape }}</status>
   <active_nav>{{ post.active_nav | xml_escape }}</active_nav>
   <link>{{ site.baseurl }}</link>
-  <atom:link href="{{ site.baseurl }}/sitemap.xml" rel="self" type="application/rss+xml" />
+  {% if jekyll.environment == 'development' %}
+    <atom:link href="/sitemap.xml" rel="self" type="application/rss+xml" />
+    {% for post in site.pages %}
+      {% if post.layout != "null" %}
+        {% if post.sitemap != false %}
+        <item>
+          <title>{{ post.title | xml_escape }}</title>
+          <description>{{ post.intro_paragraph | xml_escape }}</description>
+          <status>{{ post.status | xml_escape }}</status>
+          <active_nav>{{ post.active_nav | xml_escape }}</active_nav>
+          <link>{{ site.baseurl }}{{ post.url }}</link>
+          <guid isPermaLink="true">{{ site.baseurl }}{{ post.baseurl }}</guid>
+        </item>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% elsif jekyll.environment == 'production' %}
+    <atom:link href="{{ site.baseurl }}/sitemap.xml" rel="self" type="application/rss+xml" />
   {% for post in site.pages %}
     {% if post.layout != "null" %}
       {% if post.sitemap != false %}
@@ -25,5 +42,6 @@ sitemap: false
       {% endif %}
     {% endif %}
   {% endfor %}
+  {% endif %}
 </channel>
 </rss>
