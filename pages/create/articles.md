@@ -14,7 +14,7 @@ compose_image: wordpress-articles.png
 ---
 
 <section class="pf-c-content">
-    <div role="article" about="http://developers.redhat.com/coderland/serverless/serverless-knative-intro/"
+    <div role="article" about="httpss://developers.redhat.com/coderland/serverless/serverless-knative-intro/"
         class="component rhd-c-article author-left" level="Beginner" id="rhd-article">
         <div class="pf-l-grid pf-m-gutter">
             <div class="article-info-wrapper pf-l-grid__item pf-lg-7-col pf-m-12-col-on-sm pf-m-7-col-on-lg">
@@ -49,22 +49,22 @@ compose_image: wordpress-articles.png
                             <span class="tag-label">
                                 <i class="fas fa-tag fa-sm" title="Tags:"></i>
                             </span>
-                            <a href="http://developers.redhat.com/topics/containers/">Containers</a>
-                            <a href="http://developers.redhat.com/topics/kubernetes/">Kubernetes</a>
-                            <a href="http://developers.redhat.com/topics/serverless-architecture/">Serverless</a>
+                            <a href="https://developers.redhat.com/topics/containers/">Containers</a>
+                            <a href="https://developers.redhat.com/topics/kubernetes/">Kubernetes</a>
+                            <a href="https://developers.redhat.com/topics/serverless-architecture/">Serverless</a>
                         </div>
                     </div>
                 </div>
                 <div class="authors">
                     <div role="article" about="/authors/doug-tidwell/" class="rhd-c-author--tile">
                         <span class="rhd-c-author--tile-hero">
-                            <img src="http://developers.redhat.com/sites/default/files/styles/square_small/public/Doug%20-%20London%20Eye.jpg?itok=__iYGeP-"
+                            <img src="https://developers.redhat.com/sites/default/files/styles/square_small/public/Doug%20-%20London%20Eye.jpg?itok=__iYGeP-"
                                 width="200" height="200" alt="Doug Tidwell" typeof="foaf:Image"
                                 class="image-style-square-small" />
                         </span>
                         <div class="rhd-c-author--tile-info">
                             <div class="rhd-c-author--tile-name">
-                                <a href="http://developers.redhat.com/authors/doug-tidwell/">
+                                <a href="https://developers.redhat.com/authors/doug-tidwell/">
                                     <span class="field field--name-title field--type-string field--label-hidden">Doug
                                         Tidwell</span>
                                 </a>
@@ -77,7 +77,7 @@ compose_image: wordpress-articles.png
                 </div>
             </div>
             <div class="floated-image pf-l-grid__item pf-lg-5-col pf-m-12-col-on-sm pf-m-5-col-on-lg">
-                <img src="https://images.pexels.com/photos/544067/pexels-photo-544067.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=600"
+                <img src="httpss://images.pexels.com/photos/544067/pexels-photo-544067.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=600"
                     width="600" height="315" alt="Serverless computing in action" typeof="foaf:Image"
                     class="image-style-article-floated" />
             </div>
@@ -160,7 +160,7 @@ compose_image: wordpress-articles.png
                                         <div
                                             class="pf-l-grid__item pf-m-1-col pf-u-display-flex pf-u-align-items-center rhd-c-avatar--container">
                                             <img class="pf-c-avatar rhd-c-avatar"
-                                                src="https://github.githubassets.com/images/modules/logos_page/Octocat.png"
+                                                src="httpss://github.githubassets.com/images/modules/logos_page/Octocat.png"
                                                 alt="Content image">
                                         </div>
                                         <div class="pf-l-grid__item pf-m-11-col">
@@ -188,7 +188,7 @@ compose_image: wordpress-articles.png
                     </div>
                     <aside class="article-aside pf-l-flex__item">
                         <div class="pf-c-card rhd-c-card"> <img
-                                src="https://images.pexels.com/photos/544067/pexels-photo-544067.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                                src="httpss://images.pexels.com/photos/544067/pexels-photo-544067.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
                                 class="rhd-c-card__image">
                             <div class="rhd-c-card__tag"> <i class="far fa-clone" aria-hidden="true"></i> More in this
                                 series</div>
@@ -261,7 +261,7 @@ compose_image: wordpress-articles.png
                         <div
                             class="pf-l-flex rhd-c-card-grid__wrapper field field--name-field-related-articles field--type-entity-reference field--label-hidden field__items">
                             <div role="article"
-                                about="http://developers.redhat.com/coderland/serverless/building-a-serverless-service/"
+                                about="https://developers.redhat.com/coderland/serverless/building-a-serverless-service/"
                                 level="Unclassified" class="pf-c-card rhd-c-card">
                                 <div class="rhd-c-card__tag">
                                     <i class="fas fa-newspaper"></i>
@@ -269,7 +269,7 @@ compose_image: wordpress-articles.png
                                 </div>
                                 <div class="rhd-c-card-content">
                                     <h3 class="rhd-c-card__title rhd-m-card-title__no-image">
-                                        <a href="http://developers.redhat.com/coderland/serverless/building-a-serverless-service/"
+                                        <a href="https://developers.redhat.com/coderland/serverless/building-a-serverless-service/"
                                             class="rhd-m-link">Part
                                             2: Building a Serverless Service</a>
                                     </h3>
@@ -280,7 +280,7 @@ compose_image: wordpress-articles.png
                                     </p>
                                     <div class="rhd-c-card__footer">
                                         <div class="rhd-c-card__footer--author">
-                                            <a href="http://developers.redhat.com/authors/doug-tidwell/"
+                                            <a href="https://developers.redhat.com/authors/doug-tidwell/"
                                                 class="rhd-m-link">Doug Tidwell</a>
                                         </div>
                                     </div>
@@ -294,7 +294,7 @@ compose_image: wordpress-articles.png
                                 </div>
                                 <div class="rhd-c-card-content">
                                     <h3 class="rhd-c-card__title rhd-m-card-title__no-image">
-                                        <a href="http://developers.redhat.com/coderland/serverless/deploying-serverless-knative/"
+                                        <a href="https://developers.redhat.com/coderland/serverless/deploying-serverless-knative/"
                                             class="rhd-m-link">Part
                                             3: Deploying a Serverless Service to Knative</a>
                                     </h3>
@@ -304,7 +304,7 @@ compose_image: wordpress-articles.png
                                     </p>
                                     <div class="rhd-c-card__footer">
                                         <div class="rhd-c-card__footer--author">
-                                            <a href="http://developers.redhat.com/authors/doug-tidwell/"
+                                            <a href="https://developers.redhat.com/authors/doug-tidwell/"
                                                 class="rhd-m-link">Doug Tidwell</a>
                                         </div>
                                     </div>
