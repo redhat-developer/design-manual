@@ -68,6 +68,7 @@ collections: # A list of collections the CMS should be able to edit
                 options:
                   - { label: "Released", value: "released" }
                   - { label: "Unreleased", value: "unreleased" }
+                  - { label: "Development", value: "development" }
                 required: true
   # Collections
   - name: "getting-started"
@@ -241,6 +242,7 @@ collections: # A list of collections the CMS should be able to edit
         options:
           - { label: "Released", value: "released" }
           - { label: "Unreleased", value: "unreleased" }
+          - { label: "Development", value: "development" }
         required: true
       - label: "Intro Paragraph"
         name: "intro_paragraph"
@@ -423,6 +425,7 @@ collections: # A list of collections the CMS should be able to edit
         options:
           - { label: "Released", value: "released" }
           - { label: "Unreleased", value: "unreleased" }
+          - { label: "Development", value: "development" }
         required: true
       - label: "Intro Paragraph"
         name: "intro_paragraph"
