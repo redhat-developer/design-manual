@@ -3,15 +3,22 @@ toc:
     subfolderitems:
       - page: Articles
         url: /create/articles
-      - page: Products
-        url: /create/products
-      - page: Topics
-        url: /create/topics
-      - page: Name
-        url: /create/name
-      - page: Example
-        url: /create/example
-      - page: Description
-        url: /create/description
-      - page: Create steps
-        url: /create/create-steps
+        status: development
+      # - page: Products
+      #   url: /create/products
+      #   status: development
+      # - page: Topics
+      #   url: /create/topics
+      #   status: development
+      # - page: Name
+      #   url: /create/name
+      #   status: development
+      # - page: Example
+      #   url: /create/example
+      #   status: development
+      # - page: Description
+      #   url: /create/description
+      #   status: development
+      # - page: Create steps
+      #   url: /create/create-steps
+      #   status: development

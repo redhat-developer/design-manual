@@ -194,7 +194,12 @@
             }
             i {
               padding-left: 16px;
+            }
+            .fa-exclamation-triangle {
               color: var(--rhddx-c-label--BackgroundColor-unreleased);
+            }
+            .fa-info-circle {
+              color: var(--rhddx-c-label--BackgroundColor-development);
             }
             /* stylelint-enable */
           }

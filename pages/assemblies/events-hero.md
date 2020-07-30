@@ -5,6 +5,7 @@ section: Create
 title: Events hero
 active_nav: Assemblies
 permalink: /assemblies/events-hero
+status: released
 intro_paragraph: This assembly allows for events to be showcased within a
   full-width banner. A primary event will appear on the left with a primary CTA
   and secondary events will appear to the right of that. Each secondary event

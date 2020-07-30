@@ -5,6 +5,7 @@ section: Develop
 title: Node reference
 active_nav: Assemblies
 permalink: /assemblies/node-reference
+status: released
 intro_paragraph: This assembly features a specific node reference and places it on the page.
 featured_image: ""
 ---

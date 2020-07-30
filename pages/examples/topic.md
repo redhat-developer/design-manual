@@ -2,6 +2,8 @@
 layout: home
 title: Topic
 permalink: /pages/examples/topic
+active_nav: Examples
+status: example
 section: page
 intro_paragraph: >
   This is an example of the Topic page.

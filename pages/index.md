@@ -4,6 +4,8 @@ title: Design Manual
 heading: Build here. Go anywhere.
 subheader: developers.redhat.com
 subheader_url: https://developers.redhat.com
+active_nav: Home
+status: released
 intro_paragraph: >
   This guide will serve as a home base for the Red Hat Developer story, messaging, and visual brand language. It’s a place you can always return to when you have questions about how to best represent Red Hat Developer through messaging or visual elements.
 permalink: /

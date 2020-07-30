@@ -2,6 +2,7 @@
 :root {
   --rhddx-c-label--BackgroundColor-released: #{$rhddx-color-blue};
   --rhddx-c-label--BackgroundColor-unreleased: #{$rhddx-color-gold};
+  --rhddx-c-label--BackgroundColor-development: #{$rhddx-color-blue-light};
 }
 /* stylelint-enable */
 
@@ -16,6 +17,11 @@
     &.label-unreleased {
       --pf-c-label--Color: var(--text-color-normal);
       --pf-c-label--BackgroundColor: var(--rhddx-c-label--BackgroundColor-unreleased);
+    }
+
+    &.label-development {
+      --pf-c-label--Color: var(--text-color-normal);
+      --pf-c-label--BackgroundColor: var(--rhddx-c-label--BackgroundColor-development);
     }
   }
 }

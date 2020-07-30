@@ -5,6 +5,7 @@ section: Create
 title: All Products Listing
 active_nav: Assemblies
 permalink: /assemblies/all-product-listing
+status: released
 intro_paragraph: >
   This assembly contains all products in a list format that are linked to their
   overview page. Ability to add a title and description to the assembly. All of

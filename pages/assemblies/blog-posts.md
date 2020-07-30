@@ -5,6 +5,7 @@ section: Create
 title: Blog Posts
 active_nav: Assemblies
 permalink: /assemblies/blog-posts
+status: released
 intro_paragraph: >
   This assembly lists all blog posts in relation to one or many category filters
   and audiences.

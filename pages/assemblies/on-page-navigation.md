@@ -5,6 +5,7 @@ section: Develop
 title: On page navigation
 active_nav: Assemblies
 permalink: /assemblies/on-page-navigation
+status: released
 intro_paragraph: This assembly references all navigation titles from other assemblies on the page and lists them out as jump-to links.
 featured_image: ""
 ---

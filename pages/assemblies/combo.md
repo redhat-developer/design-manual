@@ -5,6 +5,7 @@ section: Create
 title: Combo
 active_nav: Assemblies
 permalink: /assemblies/combo
+status: released
 intro_paragraph: This assembly allows for up to three types of assemblies to be
   combined. A WYSIWYG is available for customized content and the additional
   assemblies can be added as manual items or assembly items. There is a lot of

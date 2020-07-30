@@ -1,0 +1,42 @@
+{% if page.status == 'unreleased' %}
+<div class="pf-u-display-flex pf-u-mb-md">
+  <!-- <div class="pf-c-label label-unreleased">
+    {{ page.status | markdownify | remove: '<p>' | remove: '</p>' }}
+  </div> -->
+  <div class="pf-c-alert pf-m-warning pf-m-inline" aria-label="Success alert">
+    <div class="pf-c-alert__icon">
+      <i class="fas fa-fw fa fa-exclamation-triangle" aria-hidden="true"></i>
+    </div>
+    <p class="pf-c-alert__title">
+      <strong>
+        <span class="pf-screen-reader">Unreleased</span>
+        Unreleased
+      </strong>
+    </p>
+    <div class="pf-c-alert__description">
+      <p>This is an unreleased item and not available on <a href="https://developers.redhat.com" target="top">developers.redhat.com</a>.
+      </p>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if page.status == 'development' %}
+<div class="pf-u-display-flex pf-u-mb-md">
+  <div class="pf-c-alert pf-m-info pf-m-inline" aria-label="Success alert">
+    <div class="pf-c-alert__icon">
+      <i class="fas fa-fw fa fa-info-circle" aria-hidden="true"></i>
+    </div>
+    <p class="pf-c-alert__title">
+      <strong>
+        <span class="pf-screen-reader">In Development</span>
+        In Development
+      </strong>
+    </p>
+    <div class="pf-c-alert__description">
+      <p>This item is currently in development and is not available on <a href="https://developers.redhat.com" target="top">developers.redhat.com</a>.
+      </p>
+    </div>
+  </div>
+</div>
+{% endif %}

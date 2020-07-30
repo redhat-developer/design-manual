@@ -1,10 +1,12 @@
 ---
 layout: default
 title: Code Snippets
-section:
+section: examples
+active_nav: Examples
+status: example
+permalink: /examples/code-snippets
 intro_paragraph: >
   Various code snippet examples for the Design Manual site.
-permalink: /examples/code-snippets
 ---
 
 Supported languages:

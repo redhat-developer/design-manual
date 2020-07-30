@@ -5,6 +5,7 @@ section: Develop
 title: Product download list
 active_nav: Assemblies
 permalink: /assemblies/product-download-list
+status: released
 intro_paragraph: This assembly lists all downloads that come from the download manager for a specific product. It will reference the product node to show downloads.
 featured_image: ""
 ---

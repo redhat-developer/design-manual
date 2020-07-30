@@ -5,6 +5,7 @@ section: Create
 title: Content call to action
 active_nav: Assemblies
 permalink: /assemblies/content-call-to-action
+status: released
 intro_paragraph: This assembly inserts an Eloqua form into the page that acts as
   a newsletter signup. Users must enter their first and last names and their
   email address. A WYSIWYG is available as well to add content above the Eloqua

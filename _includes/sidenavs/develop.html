@@ -38,12 +38,18 @@
             {% if item.status == 'unreleased' %}
               <i class="fa fa-exclamation-triangle"></i>
             {% endif %}
+            {% if item.status == 'development' %}
+              <i class="fa fa-info-circle"></i>
+            {% endif %}
           </a>
           {% elsif jekyll.environment == 'production' %}
           <a href="{{ item.url | prepend: site.baseurl }}" {% if page.title == item.page %} class="rhddx-m-active" aria-current="page" {% endif %}>
             {{ item.page }}
             {% if item.status == 'unreleased' %}
               <i class="fa fa-exclamation-triangle"></i>
+            {% endif %}
+            {% if item.status == 'development' %}
+              <i class="fa fa-info-circle"></i>
             {% endif %}
           </a>
           {% endif %}

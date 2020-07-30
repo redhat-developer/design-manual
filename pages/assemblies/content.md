@@ -5,6 +5,7 @@ section: Create
 title: Content
 active_nav: Assemblies
 permalink: /assemblies/content
+status: released
 intro_paragraph: This assembly allows for customization of content with a WYSIWYG.
 featured_image: ""
 ---

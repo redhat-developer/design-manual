@@ -5,7 +5,7 @@ title: Footer Resources
 active_nav: Components
 permalink: /components/footer
 section: components
-status:
+status: released
 intro_paragraph: >
 
 ---

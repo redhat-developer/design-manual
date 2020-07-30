@@ -5,6 +5,7 @@ section: Develop
 title: Image hero
 active_nav: Assemblies
 permalink: /assemblies/image-hero
+status: released
 intro_paragraph: This assembly allows for a background image to be inserted as a hero and content to be customized in a WYSIWYG to be placed over the image.
 featured_image: ""
 ---

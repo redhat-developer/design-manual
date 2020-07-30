@@ -5,6 +5,7 @@ section: Develop
 title: Product hero download
 active_nav: Assemblies
 permalink: /assemblies/product-hero-download
+status: released
 intro_paragraph: This assembly allows for a title and content to be customized using a WYSIWYG. A learn more link can be added if needed. An image can be added to the hero. A background image can be added to the hero as well if overriding is necessary. The most recent version will appear under the download CTA by referencing download manager.
 featured_image: ""
 ---

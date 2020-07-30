@@ -15,6 +15,7 @@ intro_paragraph:
     <input class="pf-c-form-control rhddx-c-site-search" type="search" id="search-field" name="query" placeholder="Search" aria-label="Search" autofocus="true" />
   </div>
 </div>
-
 <div class="well" id="searchbox">
-  <ul class="pf-c-data-list rhddx-c-site-search__results" role="list" aria-label="Width modifier data list example 1" id="results" style="border-top: 0;"></ul>
+  <ul class="pf-c-data-list rhddx-c-site-search__results" role="list" aria-label="Search results" id="results" style="border-top: 0;">
+  </ul>
+</div>

@@ -5,6 +5,7 @@ section: Create
 title: CTA form
 active_nav: Assemblies
 permalink: /assemblies/cta-form
+status: released
 intro_paragraph: This assembly inserts an Eloqua form into the page that acts as
   a developers program signup. Users must enter their first and last names and
   their work email address. A title field and a WYSIWYG is available as well to

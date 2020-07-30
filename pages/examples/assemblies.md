@@ -2,6 +2,8 @@
 layout: home
 title: Assemblies
 permalink: /pages/examples/assemblies
+active_nav: Examples
+status: example
 section: pages
 intro_paragraph: >
   This is an example page of the available Assemblies.

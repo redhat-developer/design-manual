@@ -5,6 +5,7 @@ section: Create
 title: Code snippet
 active_nav: Assemblies
 permalink: /assemblies/code-snippet
+status: released
 intro_paragraph: This assembly allows for code to be added and styled on the
   page. A programming language can be selected that will properly highlight the
   syntax (if the plugin doesn’t appear to be working without the language
