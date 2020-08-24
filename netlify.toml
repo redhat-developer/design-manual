@@ -17,10 +17,10 @@
 # Deploy Preview context: all deploys generated from a pull/merge request will
 # inherit these settings.
 [context.deploy-preview]
-  environment = { JEKYLL_ENV = "production" }
+  environment = { JEKYLL_ENV = "development" }
   base = "/"
   publish = "docs/"
-  command = "npm run build-netlify"
+  command = "npm run build"
 
 # If skip_processing = true, all other settings are ignored
 [build.processing]
