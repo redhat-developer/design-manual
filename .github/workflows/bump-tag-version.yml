@@ -1,14 +1,19 @@
 name: Bump tag version
+
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.2
         with:
           fetch-depth: '0'
       - name: Bump tag version and push
@@ -18,7 +23,7 @@ jobs:
           RELEASE_BRANCHES: main
           WITH_V: false
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.2
       - name: Update changelog
         uses: ScottBrenner/generate-changelog-action@1.0.0
         id: Changelog
@@ -30,10 +35,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag_name: ${{ github.ref }}
           release_name: ${{ github.ref }}
           body: |
             Changes in this release:
             ${{ steps.Changelog.outputs.changelog }}
-          draft: false
+          draft: true
           prerelease: false
