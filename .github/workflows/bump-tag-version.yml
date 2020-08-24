@@ -30,11 +30,11 @@ jobs:
         id: Changelog
         env:
           REPO: ${{ github.repository }}
+      - run: |
+          git fetch --prune --unshallow --tags
       - name: Create Release
         id: create_release
         uses: actions/create-release@latest
-        run: |
-          git fetch --prune --unshallow --tags
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
