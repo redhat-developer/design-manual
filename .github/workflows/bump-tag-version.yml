@@ -40,10 +40,6 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: ${{ github.ref }}
-          body: |
-            Changes in this release:
-            ${{ steps.tag_and_prepare_release.outputs.tag }}
-            Changes were made by:
-            ${{ github.actor }}
+          body:
           draft: true
           prerelease: false
