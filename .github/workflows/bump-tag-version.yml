@@ -6,6 +6,7 @@ on:
       - main
   pull_request:
     branches: [main]
+    types: [opened, closed]
 
 jobs:
   build:
@@ -39,8 +40,8 @@ jobs:
           release_name: ${{ github.ref }}
           body: |
             Changes in this release:
-            ${{ steps.Changelog.outputs.changelog }}
+            ${{ steps.tag_and_prepare_release.outputs.tag }}
             Changes were made by:
-            ${{ github.actor }}
+            @${{ github.actor }}
           draft: true
           prerelease: false
