@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-          check-latest: true
+          check-latest: version
 
       - name: Install dependencies
         run: npm install
