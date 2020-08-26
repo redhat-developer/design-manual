@@ -27,7 +27,6 @@ categories:
 exclude-labels:
   - 'duplicate'
   - 'help wanted'
-  - 'in progress'
   - 'invalid'
   - 'netlify-cms/draft'
   - 'netlify-cms/pending_publish'
