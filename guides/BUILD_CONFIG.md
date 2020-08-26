@@ -1,6 +1,13 @@
 # Build Configuration
 
-## GitHub Actions
+### GitHub Actions
+
+The following are the GitHub Actions that are used in this project
+
+- Jekyll CI Build
+- [Labeler](https://github.com/marketplace/actions/labeler)
+- [Release Drafter](https://github.com/marketplace/actions/release-drafter)
+- Site Builder
 
 ### Publish a Release
 This step is made up of two actions: Updating the Changelog and Creating a release based off of an existing tag.

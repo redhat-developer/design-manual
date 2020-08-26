@@ -1,0 +1,70 @@
+# Add the 'minor' label to any HTML file changes
+enhancement:
+  - ./_data/**
+  - ./_includes/**
+  - ./_layouts/**
+  - ./_posts/**
+  - ./_sass/**
+  - ./assets/**
+  - ./pages/**/*.md
+brand-assets:
+  - ./brand-assets/**
+minor:
+  - ./_data/**
+  - ./_includes/**
+  - ./_layouts/**
+  - ./_posts/**
+  - ./_sass/**
+  - ./assets/**
+  - ./brand-assets/**
+  - ./guides/**
+  - ./help/**
+  - ./pages/**/*.md
+documentation:
+  - ./guides/**
+  - ./help/**
+# Add 'frontend` label to any change to *.js files as long as the `main.js` hasn't changed
+# frontend:
+# - any: ['src/**/*.js']
+#   all: ['!src/main.js']
+
+# Add the `patch` label to any of the following
+dependencies:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+github-actions:
+  - .github/**
+CMS:
+  - ./admin/**
+tools:
+  - _config.yml
+  - .grenrc.json
+  - .stylelintrc.json
+bundler:
+  - Gemfile
+  - Gemfile.lock
+build-improvements:
+  - .travis.yml
+  - gulpfile.js
+  - netlify.toml
+patch:
+  - .github/**
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - _config.yml
+  - .gitignore
+  - .gitmodules
+  - .grenrc.json
+  - .stylelintrc.json
+  - .travis.yml
+  - gulpfile.js
+  - netlify.toml
+  - manifest.json
+  - CHANGELOG.md
+  - CODE_OF_CONDUCT.md
+  - SECURITY.md
+  - sitemap.xml
