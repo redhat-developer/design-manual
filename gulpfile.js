@@ -263,8 +263,7 @@ const
     copyStatic,
     minimizeImages,
     jsDev,
-    buildSass,
-    buildJekyllProd
+    buildSass
   );
 
   exports.netlify = gulp.series(
