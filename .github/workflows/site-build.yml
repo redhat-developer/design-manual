@@ -19,25 +19,21 @@ jobs:
           ruby-version: 2.6.3
           bundler-cache: true
       - name: Setup Node.js environment
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v1.4.3
         with:
-          node-version: '12.x'
-          check-latest: version
+          node-version: '12'
 
-      - name: Install dependencies
+      - name: Install Gem Dependencies
+        run: bundle install
+
+      - name: Install Dependencies
         run: npm install
 
       - name: Install Gulp CLI
         run: npm install gulp-cli -g
 
-      - name: Copy Files
-        run: gulp copyStatic
-      - name: Minimize Images
-        run: gulp minimizeImages
-      - name: Build JavaScript
-        run: gulp jsDev
-      - name: Build CSS
-        run: gulp cssDev
+      - name: Run Deploy Script
+        run: gulp deploy
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.5.7
