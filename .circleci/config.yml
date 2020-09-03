@@ -1,7 +1,36 @@
 version: 2.1
 orbs:
-  node: circleci/node@3.0.0
-workflows:
-  node-tests:
-    jobs:
-      - node/test
+  ruby: circleci/ruby@0.1.2 
+
+jobs:
+  build:
+    working_directory: ~/design-manual
+    docker:
+      - image: circleci/ruby:2.6.3-stretch-node
+      - image: circleci/node:12.0
+    executor: ruby/default
+    steps:
+      - checkout
+      - run:
+          name: Install Bundler
+          command: 'bundle install'
+          name: Update NPM
+          command: 'sudo npm install'
+          name: Install Gulp
+          command: 'sudo npm install gulp-cli -g'
+          name: Install GitHub Release Notes
+          command: 'sudo npm install github-release-notes -g'
+          name: Gulp deploy
+          command: 'gulp deploy'
+  deploy:
+    provider: pages
+    skip_cleanup: true
+    local_dir: docs
+    github_token: $GH_TOKEN
+    keep_history: true
+    taget_branch: gh-pages
+    on:
+      branch: main
+      
+    
+      
