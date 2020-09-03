@@ -357,10 +357,12 @@
       
       <item>
         <title>Collection</title>
-        <description></description>
-        <status></status>
-        <active_nav></active_nav>
-        <link>/design-manual/pages/collection</link>
+        <description>With this assembly, the content creator can provide an assembly title, then selects purpose attributes of their choice from a defined list of terms, and lastly must select how many items should display (pagination is also available as an opt-in feature).
+
+Drupal will find content (articles, blogs, videos, etc.) tagged with those selected purpose attributes and display those items as cards in a grid layout.</description>
+        <status>released</status>
+        <active_nav>Assemblies</active_nav>
+        <link>/design-manual/assemblies/collection</link>
         <guid isPermaLink="true">/design-manual</guid>
       </item>
       
@@ -370,12 +372,10 @@
       
       <item>
         <title>Collection</title>
-        <description>With this assembly, the content creator can provide an assembly title, then selects purpose attributes of their choice from a defined list of terms, and lastly must select how many items should display (pagination is also available as an opt-in feature).
-
-Drupal will find content (articles, blogs, videos, etc.) tagged with those selected purpose attributes and display those items as cards in a grid layout.</description>
-        <status>released</status>
-        <active_nav>Assemblies</active_nav>
-        <link>/design-manual/assemblies/collection</link>
+        <description></description>
+        <status></status>
+        <active_nav></active_nav>
+        <link>/design-manual/pages/collection</link>
         <guid isPermaLink="true">/design-manual</guid>
       </item>
       
@@ -1152,9 +1152,9 @@ flagged, will display a CAPTCHA challenge to the user.</description>
         <title>Katacoda</title>
         <description>This is an example of the Katacoda page.
 </description>
-        <status>example</status>
-        <active_nav>Examples</active_nav>
-        <link>/design-manual/pages/examples/katacoda</link>
+        <status></status>
+        <active_nav></active_nav>
+        <link>/design-manual/pages/katacoda</link>
         <guid isPermaLink="true">/design-manual</guid>
       </item>
       
@@ -1166,9 +1166,9 @@ flagged, will display a CAPTCHA challenge to the user.</description>
         <title>Katacoda</title>
         <description>This is an example of the Katacoda page.
 </description>
-        <status></status>
-        <active_nav></active_nav>
-        <link>/design-manual/pages/katacoda</link>
+        <status>example</status>
+        <active_nav>Examples</active_nav>
+        <link>/design-manual/pages/examples/katacoda</link>
         <guid isPermaLink="true">/design-manual</guid>
       </item>
       
@@ -1641,19 +1641,6 @@ flagged, will display a CAPTCHA challenge to the user.</description>
     
       
       <item>
-        <title>Template Component</title>
-        <description></description>
-        <status>released</status>
-        <active_nav>Components</active_nav>
-        <link>/design-manual/components/template</link>
-        <guid isPermaLink="true">/design-manual</guid>
-      </item>
-      
-    
-  
-    
-      
-      <item>
         <title>Tables</title>
         <description></description>
         <status>unreleased</status>
@@ -1672,6 +1659,19 @@ flagged, will display a CAPTCHA challenge to the user.</description>
         <status>unreleased</status>
         <active_nav>Components</active_nav>
         <link>/design-manual/components/toolbar</link>
+        <guid isPermaLink="true">/design-manual</guid>
+      </item>
+      
+    
+  
+    
+      
+      <item>
+        <title>Template Component</title>
+        <description></description>
+        <status>released</status>
+        <active_nav>Components</active_nav>
+        <link>/design-manual/components/template</link>
         <guid isPermaLink="true">/design-manual</guid>
       </item>
       
@@ -1720,12 +1720,11 @@ flagged, will display a CAPTCHA challenge to the user.</description>
     
       
       <item>
-        <title>Typography</title>
-        <description>Fonts used by the Red Hat Developer Design Team.
-</description>
+        <title>Red Hat Developer Typography</title>
+        <description></description>
         <status></status>
         <active_nav>RHD_Brand_Elements</active_nav>
-        <link>/design-manual/design/brand/typography</link>
+        <link>/design-manual/brand-assets/RHD_Typography/typography</link>
         <guid isPermaLink="true">/design-manual</guid>
       </item>
       
@@ -1734,11 +1733,12 @@ flagged, will display a CAPTCHA challenge to the user.</description>
     
       
       <item>
-        <title>Red Hat Developer Typography</title>
-        <description></description>
+        <title>Typography</title>
+        <description>Fonts used by the Red Hat Developer Design Team.
+</description>
         <status></status>
         <active_nav>RHD_Brand_Elements</active_nav>
-        <link>/design-manual/brand-assets/RHD_Typography/typography</link>
+        <link>/design-manual/design/brand/typography</link>
         <guid isPermaLink="true">/design-manual</guid>
       </item>
       
@@ -1826,10 +1826,10 @@ flagged, will display a CAPTCHA challenge to the user.</description>
       
       <item>
         <title>Videos</title>
-        <description></description>
-        <status></status>
-        <active_nav></active_nav>
-        <link>/design-manual/pages/videos</link>
+        <description>This assembly displays videos based on inputted tags. A title can be added above the listed videos.</description>
+        <status>released</status>
+        <active_nav>Assemblies</active_nav>
+        <link>/design-manual/assemblies/videos</link>
         <guid isPermaLink="true">/design-manual</guid>
       </item>
       
@@ -1839,10 +1839,10 @@ flagged, will display a CAPTCHA challenge to the user.</description>
       
       <item>
         <title>Videos</title>
-        <description>This assembly displays videos based on inputted tags. A title can be added above the listed videos.</description>
-        <status>released</status>
-        <active_nav>Assemblies</active_nav>
-        <link>/design-manual/assemblies/videos</link>
+        <description></description>
+        <status></status>
+        <active_nav></active_nav>
+        <link>/design-manual/pages/videos</link>
         <guid isPermaLink="true">/design-manual</guid>
       </item>
       
