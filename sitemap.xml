@@ -587,7 +587,15 @@ flagged, will display a CAPTCHA challenge to the user.</description>
       
       <item>
         <title>Curated content</title>
-        <description>This assembly allows for pieces of content to be added by node reference, as a static item or as a WordPress post reference. A CTA may be added at the bottom of the added content. A title may also be added on top of the content.</description>
+        <description>The 'Curated Content' assembly is a flexible and easy way to render links in a card format with an image and title (with option to make that title linkable). You can display the following with this assembly:
+
+**Title (optional)**
+
+**Cards (required)**\
+- Static item: add an image of your own choice, provide a title for the card, and make that title linkable if you'd like\
+- Node reference: type in the name of a piece of content that already exists, and Drupal will format the title, image, and link accordingly
+
+**Button linking out to whatever you'd like (optional)**</description>
         <status>released</status>
         <active_nav>Assemblies</active_nav>
         <link>/design-manual/assemblies/curated-content</link>
