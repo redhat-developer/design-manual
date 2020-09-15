@@ -494,11 +494,11 @@ flagged, will display a CAPTCHA challenge to the user.</description>
     
       
       <item>
-        <title>Content pull quote</title>
-        <description>This assembly allows for a quote to be entered and highlighted on a page.</description>
+        <title>Featured Quote</title>
+        <description>The 'Featured Quote' is one of the funky things that can be achieved in the WSISYG editor for an article **or** by using the 'Featured Quote' assembly itself.</description>
         <status>released</status>
         <active_nav>Assemblies</active_nav>
-        <link>/design-manual/assemblies/content-pull-quote</link>
+        <link>/design-manual/assemblies/featured-quote</link>
         <guid isPermaLink="true">/design-manual</guid>
       </item>
       
