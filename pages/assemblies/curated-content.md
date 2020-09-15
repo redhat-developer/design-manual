@@ -35,4 +35,4 @@ featured_image: ""
 6. Product
 7. Topic
 
-![Curated content screenshot](/assets/uploads/curated-content.png)
+![Curated content screenshot](/design-manual/assets/uploads/curated-content.png)
