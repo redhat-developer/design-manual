@@ -6,19 +6,33 @@ title: Curated content
 active_nav: Assemblies
 permalink: /assemblies/curated-content
 status: released
-intro_paragraph: This assembly allows for pieces of content to be added by node
-  reference, as a static item or as a WordPress post reference. A CTA may be
-  added at the bottom of the added content. A title may also be added on top of
-  the content.
+intro_paragraph: >-
+  The 'Curated Content' assembly is a flexible and easy way to render links in a
+  card format with an image and title (with option to make that title linkable).
+  You can display the following with this assembly:
+
+
+  **Title (optional)**
+
+
+  **Cards (required)**\
+
+  - Static item: add an image of your own choice, provide a title for the card, and make that title linkable if you'd like\
+
+  - Node reference: type in the name of a piece of content that already exists, and Drupal will format the title, image, and link accordingly
+
+
+  **Button linking out to whatever you'd like (optional)**
 featured_image: ""
 ---
 **Available in these types of content**
 
 1. Article
 2. Page
-3. Overview product page
-4. Downloads product page
-5. Getting Started product page
-6. Topics page
+3. Event
+4. Landing page
+5. Single Offer
+6. Product
+7. Topic
 
-![](/design-manual/assets/uploads/curated-content-example.png)
+![Curated content screenshot](/assets/uploads/curated-content.png)
