@@ -2,20 +2,21 @@
 layout: create
 category: create
 section: Create
-title: Content pull quote
+title: Featured Quote
 active_nav: Assemblies
-permalink: /assemblies/content-pull-quote
+permalink: /assemblies/featured-quote
 status: released
-intro_paragraph: This assembly allows for a quote to be entered and highlighted on a page.
+intro_paragraph: The 'Featured Quote' is one of the funky things that can be
+  achieved in the WSISYG editor for an article **or** by using the 'Featured
+  Quote' assembly itself.
 featured_image: ""
 ---
 **Available in these types of content**
 
 1. Article
 2. Page
-3. Overview product page
-4. Downloads product page
-5. Getting started product page
-6. Topic page
+3. Event
+4. Product
+5. Topic
 
-![Content pull quote example image](/design-manual/assets/uploads/content-pull-quote-example.png)
+![Content pull quote example image](/assets/uploads/pull-quote.png)
