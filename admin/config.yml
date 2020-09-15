@@ -57,8 +57,8 @@ collections: # A list of collections the CMS should be able to edit
                 name: page
                 widget: string
                 required: true
-              - label: "URL",
-                name: url,
+              - label: "URL"
+                name: url
                 widget: string
                 required: true
               - label: "Release Status"
