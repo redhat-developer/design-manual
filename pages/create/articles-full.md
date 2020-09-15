@@ -450,7 +450,7 @@ compose_image: wordpress-articles.png
                 <div class="authors">
                   <div role="article" about="/authors/author-name/" class="rhd-c-author--tile">
                     <span class="rhd-c-author--tile-hero">
-                      <i class="far fa-user-circle fa-3x"></i>
+                      <img src="{{site.baseurl}}/assets/uploads/rhd-default-user-visual.svg" />
                     </span>
                     <div class="rhd-c-author--tile-info">
                       <div class="rhd-c-author--tile-name">
