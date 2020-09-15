@@ -19,4 +19,4 @@ featured_image: ""
 4. Product
 5. Topic
 
-![Content pull quote example image](/assets/uploads/pull-quote.png)
+![Content pull quote example image](/design-manual/assets/uploads/pull-quote.png)
