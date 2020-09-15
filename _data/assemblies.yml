@@ -19,8 +19,6 @@ toc:
     url: /assemblies/content-call-to-action
   - page: Content image
     url: /assemblies/content-image
-  - page: Content pull quote
-    url: /assemblies/content-pull-quote
   - page: CTA form
     url: /assemblies/cta-form
   - page: Curated content
@@ -47,6 +45,8 @@ toc:
     url: /assemblies/featured-articles
   - page: Featured evangelists
     url: /assemblies/featured-evangelists
+  - page: Featured quote
+    url: /assemblies/featured-quote
   - page: Featured resources
     url: /assemblies/featured-resources
   - page: Image hero
