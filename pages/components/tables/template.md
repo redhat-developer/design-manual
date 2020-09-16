@@ -67,13 +67,13 @@ intro_paragraph:
 ## Default table
 _expandable rows_
 
-> Add `pf-m-expandable` to `pf-c-table` for any tables that have expandable rows.
+Add `pf-m-expandable` to `pf-c-table` for any tables that have expandable rows.
 {% include_relative default.md %}
 
 ## Compact table
 _compact table with expandable rows_
 
-> Add `pf-m-compact` to `pf-c-table` for any tables that you wish to use the compact modifier. The `pf-m-compact` modifier can be used with the `pf-m-expandable` modifier.
+Add `pf-m-compact` to `pf-c-table` for any tables that you wish to use the compact modifier. The `pf-m-compact` modifier can be used with the `pf-m-expandable` modifier.
 {% include_relative compact-table.md %}
 
 ## Advanced table
