@@ -11,12 +11,12 @@
 .rhddx-background-image {
   /* stylelint-disable */
   --rhddx-c-image--BackgroundColor: var(--text-color-normal);
-  --rhddx-c-image--BackgroundImage: url("img/rhddxbg_576.jpg");
-  --rhddx-c-image--Background-2x: url("img/rhddxbg_576@2x.jpg");
-  --rhddx-c-image--Background--sm: url("img/rhddxbg_768.jpg");
-  --rhddx-c-image--Background--sm-2x: url("img/rhddxbg_768@2x.jpg");
-  --rhddx-c-image--Background--lg: url("img/rhddxbg_1200.jpg");
-  --rhddx-c-image--Background--xl: url("img/rhddxbg_2000.jpg");
+  --rhddx-c-image--BackgroundImage: url("assets/img/rhddxbg_576.jpg");
+  --rhddx-c-image--Background-2x: url("assets/img/rhddxbg_576@2x.jpg");
+  --rhddx-c-image--Background--sm: url("assets/img/rhddxbg_768.jpg");
+  --rhddx-c-image--Background--sm-2x: url("assets/img/rhddxbg_768@2x.jpg");
+  --rhddx-c-image--Background--lg: url("assets/img/rhddxbg_1200.jpg");
+  --rhddx-c-image--Background--xl: url("assets/img/rhddxbg_2000.jpg");
   /* stylelint-enable */
 
   &::before {
