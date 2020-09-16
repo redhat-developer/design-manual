@@ -7,9 +7,9 @@ backend:
   branch: main # Branch to update (main by default)
   squash_merges: true
   commit_messages:
-    create: 'feat: Create {{collection}} {{slug}}'
-    update: 'fix: Update {{collection}} {{slug}}'
-    delete: 'fix: Delete {{collection}} {{slug}}'
+    create: 'feat: Add [{{collection}}] {{slug}}'
+    update: 'fix: Update [{{collection}}] {{slug}}'
+    delete: 'fix: Delete [{{collection}}] {{slug}}'
     uploadMedia: 'fix: Media uploaded - {{path}}'
     deleteMedia: 'fix: Media removed - {{path}}'
 subfolder: "/design-manual/"
