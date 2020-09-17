@@ -6,19 +6,45 @@ title: Curated links
 active_nav: Assemblies
 permalink: /assemblies/curated-links
 status: released
-intro_paragraph: This assembly allows for a list of links to be added by node
-  reference, as a static item or as a WordPress post reference. An additional
-  assembly can be added as well, forcing the link list to take a sidebar format
-  on the right side of the page.
+intro_paragraph: The curated links assembly can be used as a way to manually
+  select content to be linked off from on a page (as opposed to a collection
+  assembly automatically bringing links in based on a keyword).
 featured_image: ""
 ---
-**Available in these types of content**
+**What content types can I add this assembly to?**
 
-1. Article
-2. Page
-3. Overview product page
-4. Downloads product page
-5. Getting Started product page
-6. Topics page
+1. Articles
+2. Pages
+3. Events
+4. Products
+5. Topics
 
-![](/design-manual/assets/uploads/curated-links-example.png)
+**Do I have any choices for how this assembly displays on the page?**
+
+We can display curated links in three different formats using 'Display styles'.
+
+* Display styles: --none---
+
+  <div id="assembly-field-sections-53311" class="assembly contextual-region component pf-c-content rhd-c-curated-links assembly-type-curated_links_rhdp2 nav-menu">
+    <div class="pf-l-grid pf-m-gutter">
+              <div class="pf-l-grid__item">
+                    <h2 class="pf-c-title pf-u-pt-md">            Curated link with horizontal nav display style
+        </h2>
+                      <hr class="rhd-c-divider">
+          <div class="pf-l-flex pf-m-column">
+                        <div class="pf-l-flex__item">
+                              <a href="/videos/youtube/Bi2sAvhaGno" hreflang="en">DevNation 2015 Keynote - Matt Hicks - The future of development with Kubernetes and Docker</a>
+              </div>
+                        <div class="pf-l-flex__item">
+                              <a href="">That first link used a Node Reference and this uses a Static Item</a>
+              </div>
+                        <div class="pf-l-flex__item">
+                              <a href="">Another static item here</a>
+              </div>
+                    </div>
+          <hr class="rhd-c-divider">
+            </div>
+    </div>
+  </div>
+* Display styles: horizontal navigation
+* Display styles: two-column
