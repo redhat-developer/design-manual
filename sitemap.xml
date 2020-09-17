@@ -634,7 +634,7 @@ flagged, will display a CAPTCHA challenge to the user.</description>
       
       <item>
         <title>Curated links</title>
-        <description>This assembly allows for a list of links to be added by node reference, as a static item or as a WordPress post reference. An additional assembly can be added as well, forcing the link list to take a sidebar format on the right side of the page.</description>
+        <description>The curated links assembly can be used as a way to manually select content to be linked off from on a page (as opposed to a collection assembly automatically bringing links in based on a keyword).</description>
         <status>released</status>
         <active_nav>Assemblies</active_nav>
         <link>/design-manual/assemblies/curated-links</link>
