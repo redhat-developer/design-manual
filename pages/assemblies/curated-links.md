@@ -13,11 +13,11 @@ featured_image: ""
 ---
 ## What content types can I add this assembly to?
 
-1. Articles
-2. Pages
-3. Events
-4. Products
-5. Topics
+* Articles
+* Pages
+* Events
+* Products
+* Topics
 
 ## How do I get the content pulled in?
 
