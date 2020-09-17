@@ -1715,6 +1715,19 @@ flagged, will display a CAPTCHA challenge to the user.</description>
     
       
       <item>
+        <title>Trending Navigation</title>
+        <description></description>
+        <status>development</status>
+        <active_nav>Components</active_nav>
+        <link>/design-manual/develop/trending-navigation</link>
+        <guid isPermaLink="true">/design-manual</guid>
+      </item>
+      
+    
+  
+    
+      
+      <item>
         <title>Two Column Layout Hero</title>
         <description></description>
         <status>released</status>
