@@ -48,6 +48,26 @@ We can display curated links in three different formats using 'Display styles'.
             </div>
     </div>
 * Display styles: horizontal navigation
+
+  <div class="pf-l-grid pf-m-gutter">
+              <div class="pf-l-grid__item">
+                    <h2 class="pf-c-title pf-u-pt-md">            Curated link with horizontal nav display style
+        </h2>
+                      <hr class="rhd-c-divider">
+          <div class="pf-l-flex pf-m-column">
+                        <div class="pf-l-flex__item">
+                              <a href="/videos/youtube/Bi2sAvhaGno" hreflang="en">DevNation 2015 Keynote - Matt Hicks - The future of development with Kubernetes and Docker</a>
+              </div>
+                        <div class="pf-l-flex__item">
+                              <a href="">That first link used a Node Reference and this uses a Static Item</a>
+              </div>
+                        <div class="pf-l-flex__item">
+                              <a href="">Another static item here</a>
+              </div>
+                    </div>
+          <hr class="rhd-c-divider">
+            </div>
+    </div>
 * Display styles: two-column
 
   <div class="pf-l-grid pf-m-gutter">
