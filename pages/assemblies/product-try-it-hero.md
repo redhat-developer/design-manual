@@ -1,8 +1,8 @@
 ---
-layout: develop
-category: develop
-section: Develop
-title: Product Try-it hero
+layout: create
+category: create
+section: Create
+title: Product try-it hero
 active_nav: Assemblies
 permalink: /assemblies/product-try-it-hero
 status: released
