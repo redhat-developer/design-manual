@@ -12,9 +12,7 @@ intro_paragraph: >-
   automatically bringing links in based on a keyword).
 
 
-
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/dNeGJ4GV50I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div><iframe width="560" height="315" src="https://www.youtube.com/embed/dNeGJ4GV50I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 featured_image: ""
 ---
 ## What content types can I add this assembly to?
