@@ -1450,7 +1450,7 @@ View example usage of the curated links assembly in production on the [Quarkus p
     
       
       <item>
-        <title>Product Try-it hero</title>
+        <title>Product try-it hero</title>
         <description>This assembly allows for a title and content to be customized using a WYSIWYG. A learn more link can be added if needed. An image can be added to the hero. A background image can be added to the hero as well if overriding is necessary. The CTA for the try-it link can be customized with a URL and link text.</description>
         <status>released</status>
         <active_nav>Assemblies</active_nav>
