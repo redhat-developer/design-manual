@@ -1,7 +1,7 @@
 ---
-layout: develop
-category: develop
-section: Develop
+layout: create
+category: create
+section: Create
 title: Video hero
 active_nav: Assemblies
 permalink: /assemblies/video-hero
