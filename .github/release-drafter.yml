@@ -10,9 +10,12 @@ categories:
       - 'brand-assets'
       - 'bug'
       - 'CMS'
-      - 'documentation'
       - 'enhancement'
       - 'minor'
+  - title: Documentation
+    labels:
+      - 'netlify-cms/pending_publish'
+      - 'documentation'
   - title: 'Maintenance'
     labels: 
       - 'build-improvements'
@@ -29,7 +32,6 @@ exclude-labels:
   - 'help wanted'
   - 'invalid'
   - 'netlify-cms/draft'
-  - 'netlify-cms/pending_publish'
   - 'netlify-cms/pending_review'
   - 'Stale PR'
   - 'wontfix'
@@ -45,6 +47,7 @@ version-resolver:
       - 'bug'
       - 'CMS'
       - 'documentation'
+      - 'netlify-cms/pending_publish'
       - 'enhancement'
       - 'minor'
   patch:
