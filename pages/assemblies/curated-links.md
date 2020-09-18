@@ -12,10 +12,7 @@ intro_paragraph: >-
   automatically bringing links in based on a keyword).
 
 
-  View example usage of the curated links assembly in production on these pages:
-
-
-  [Quarkus product page](https://developers.redhat.com/products/quarkus/getting-started) | [Serverless topic page](https://developers.redhat.com/topics/serverless-architecture)
+  View example usage of the curated links assembly in production on the [Quarkus product page](https://developers.redhat.com/products/quarkus/getting-started) and the [Serverless topic page](https://developers.redhat.com/topics/serverless-architecture)
 featured_image: ""
 ---
 ## What content types can I add this assembly to?
