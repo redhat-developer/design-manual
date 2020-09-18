@@ -634,7 +634,9 @@ flagged, will display a CAPTCHA challenge to the user.</description>
       
       <item>
         <title>Curated links</title>
-        <description>The curated links assembly can be used as a way to manually select content to be linked off from on a page (as opposed to a collection assembly automatically bringing links in based on a keyword).</description>
+        <description>The curated links assembly can be used as a way to manually select content to be linked off from on a page (as opposed to a collection assembly automatically bringing links in based on a keyword).
+
+View example usage of the curated links assembly in production on the [Quarkus product page](https://developers.redhat.com/products/quarkus/getting-started) and the [Serverless topic page](https://developers.redhat.com/topics/serverless-architecture)</description>
         <status>released</status>
         <active_nav>Assemblies</active_nav>
         <link>/design-manual/assemblies/curated-links</link>
