@@ -11,6 +11,7 @@ intro_paragraph: >-
   be linked off from on a page (as opposed to a collection assembly
   automatically bringing links in based on a keyword).
 featured_image: ""
+custom_css: [assemblies]
 label:
 ---
 
