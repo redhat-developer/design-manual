@@ -385,7 +385,7 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{slug}}"
     type: "page"
     fields:
-      - label: "Custom CSS File"
+      - label: "Custom CSS for Assembly examples"
         name: "custom_css"
         widget: "string"
         default: "assemblies"
