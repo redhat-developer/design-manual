@@ -437,7 +437,11 @@ collections: # A list of collections the CMS should be able to edit
         widget: "select"
         multiple: true
         hint: "Let the user know where they can find this Assembly."
-        options: ["Articles", "Pages", "Events", "Products", "Topics"]
+        options:
+          - { label: "Articles", value: "articles" }
+          - { label: "Pages", value: "pages" }
+          - { label: "Events", value: "Products" }
+          - { label: "Topics", value: "topics" }
         min: 1
         required: false
       - label: "Intro Paragraph"
