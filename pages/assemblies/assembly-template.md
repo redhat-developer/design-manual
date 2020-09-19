@@ -8,8 +8,8 @@ active_nav: Assemblies
 permalink: /assemblies/page-title
 status: development
 label:
-  - Articles
   - Products
+  - articles
 intro_paragraph: This is a placeholder for working examples of the Assembly
   template. To hide it from users, do not include it in the navigation.
 featured_image: ""
