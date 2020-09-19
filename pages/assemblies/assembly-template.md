@@ -5,11 +5,13 @@ category: create
 section: Create
 title: Assembly Template
 active_nav: Assemblies
-permalink: /assemblies/page-title
+permalink: /assemblies/assembly-template
 status: development
 label:
   - Products
   - articles
+  - topics
+  - pages
 intro_paragraph: This is a placeholder for working examples of the Assembly
   template. To hide it from users, do not include it in the navigation.
 featured_image: ""
