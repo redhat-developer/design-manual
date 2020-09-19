@@ -305,12 +305,15 @@ collections: # A list of collections the CMS should be able to edit
         name: "active_nav"
         widget: "string"
         hint: "Available options: Content_types"
-        default: ""
         required: true
       - label: "Intro Paragraph"
         name: "intro_paragraph"
         widget: "markdown"
         required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: true
       - label: "Custom JS File"
         name: "custom_js"
         widget: "string"
@@ -323,10 +326,6 @@ collections: # A list of collections the CMS should be able to edit
         default: ""
         hint: "Add a custom CSS file to the page."
         required: false
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-        required: true
   - name: "page"
     label: "Overviews"
     folder: "pages"
@@ -427,14 +426,24 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Unreleased", value: "unreleased" }
           - { label: "Development", value: "development" }
         required: true
+      - label: "Available in the following content types: "
+        hidden: false
+        name: "label"
+        widget: "select"
+        hint: "Let the user know where they can find this Assembly."
+        options: ["Articles", "Pages", "Events", "Products", "Topics"]
+        min: 1
+        required: false
       - label: "Intro Paragraph"
         name: "intro_paragraph"
-        widget: "markdown"
+        widget: "text"
         required: false
+        hint: "Plain text, no markdown or code."
       - label: "Body"
         name: "body"
         widget: "markdown"
         required: true
+        hint: "Use the + button to add Images or YouTube videos to the page."
       - label: "Featured Image"
         name: "featured_image"
         widget: "image"
