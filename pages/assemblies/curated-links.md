@@ -1,20 +1,23 @@
 ---
-custom_css: [assemblies]
+section: Create
+video-title: RHD Curated Links Creation Demo
+custom_css:
+  - assemblies
 layout: create
 category: create
-section: Create
 title: Curated links
 active_nav: Assemblies
 permalink: /assemblies/curated-links
-status: released
-youtube_video: dNeGJ4GV50I
-video-title: RHD Curated Links Creation Demo
-intro_paragraph: >-
-  The curated links assembly can be used as a way to manually select content to
-  be linked off from on a page (as opposed to a collection assembly
-  automatically bringing links in based on a keyword).
-featured_image-file: /assets/uploads/rich-text-example.png
 featured_image-text: This is a rich text example image
+status: released
+video:
+  youtube_video: dNeGJ4GV50I
+  video-title: RHD Curated Links Creation Demo
+intro_paragraph: The curated links assembly can be used as a way to manually
+  select content to be linked off from on a page (as opposed to a collection
+  assembly automatically bringing links in based on a keyword).
+youtube_video: dNeGJ4GV50I
+featured_image-file: /assets/uploads/rich-text-example.png
 ---
 
 ## What content types can I add this assembly to?
