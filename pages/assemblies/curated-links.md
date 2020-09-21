@@ -10,11 +10,13 @@ intro_paragraph: >-
   The curated links assembly can be used as a way to manually select content to
   be linked off from on a page (as opposed to a collection assembly
   automatically bringing links in based on a keyword).
-
-
-  <div><iframe width="560" height="315" src="https://www.youtube.com/embed/dNeGJ4GV50I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 featured_image: ""
+custom_css: [assemblies]
+label:
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dNeGJ4GV50I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## What content types can I add this assembly to?
 
 View example usage of the curated links assembly in production on the [Quarkus product page](https://developers.redhat.com/products/quarkus/getting-started) and the [Serverless topic page](https://developers.redhat.com/topics/serverless-architecture)
