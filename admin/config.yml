@@ -440,7 +440,7 @@ collections: # A list of collections the CMS should be able to edit
         options:
           - { label: "Articles", value: "articles" }
           - { label: "Pages", value: "pages" }
-          - { label: "Events", value: "Products" }
+          - { label: "Events", value: "products" }
           - { label: "Topics", value: "topics" }
         min: 1
         required: false
