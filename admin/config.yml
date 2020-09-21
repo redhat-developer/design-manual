@@ -435,10 +435,10 @@ collections: # A list of collections the CMS should be able to edit
         name: "video"
         widget: "object"
         fields:
-          - { label: "YouTube video", name: "youtube_video", widget: string, hint: "Add shareable YouTube link here." }
-          - { label: "Video title", name: "video-title", widget: string }
+          - { label: "YouTube video", name: "youtube_video", widget: "string", hint: "Add the YouTube video ID here (do not include https://www.youtube.com/embed/)." }
+          - { label: "Video title", name: "video-title", widget: "string" }
       - label: "Featured Image"
-        name: "featured_image"
+        name: "image"
         widget: "object"
         fields:
           - { label: "Image", name: "featured_image-file", widget: "image" }

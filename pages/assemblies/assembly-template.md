@@ -7,7 +7,7 @@ title: Assembly Template
 active_nav: Assemblies
 permalink: /assemblies/assembly-template
 status: unreleased
-youtube_video: https://www.youtube.com/embed/dNeGJ4GV50I
+youtube_video: Za1ye5RWjzE
 video-title: Intro to PatternFly 4
 intro_paragraph: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 featured_image-file: /assets/uploads/rich-text-example.png
