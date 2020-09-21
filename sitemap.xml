@@ -634,9 +634,7 @@ flagged, will display a CAPTCHA challenge to the user.</description>
       
       <item>
         <title>Curated links</title>
-        <description>The curated links assembly can be used as a way to manually select content to be linked off from on a page (as opposed to a collection assembly automatically bringing links in based on a keyword).
-
-&lt;div&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/dNeGJ4GV50I&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;</description>
+        <description>The curated links assembly can be used as a way to manually select content to be linked off from on a page (as opposed to a collection assembly automatically bringing links in based on a keyword).</description>
         <status>released</status>
         <active_nav>Assemblies</active_nav>
         <link>/design-manual/assemblies/curated-links</link>
