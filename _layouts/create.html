@@ -31,10 +31,11 @@ layout: compress
                 src="https://www.youtube.com/embed/{{ page.youtube_video }}"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
+                allowfullscreen
+                title="{{ page.video-title }}">
               </iframe>  
               {% endif %}
-              {% if page.featured_image and page.featured_image != '' %}
+              {% if page.featured_image-file and page.featured_image-file != '' %}
                 {% if jekyll.environment == 'development' %}
                   <img src="{{ page.featured_image-file }}" alt="{{ page.featured_image-text }}"></img>
                 {% elsif jekyll.environment == 'production' %}  
