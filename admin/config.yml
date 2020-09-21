@@ -437,14 +437,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: "YouTube video", name: "youtube_video", widget: string, hint: "Add shareable YouTube link here." }
           - { label: "Video title", name: "video-title", widget: string }
-          - { label: "Video poster", name: "video-poster", widget: image }
       - label: "Featured Image"
         name: "featured_image"
         widget: "object"
         fields:
-          - { label: "Image", name: "featured_image-file", widget: "image", default: "", required: false }
-          - { label: "Alt text", name: "featured_image-text", widget: "string", hint: "Describe what this is an image of. This will appear if the image does not render.", required: false }
-          - { label: "Title", name: "featured_image-title", widget: "string", hint: "Add a Title to your image.", required: false }
+          - { label: "Image", name: "featured_image-file", widget: "image" }
+          - { label: "Alt text", name: "featured_image-text", widget: "string", hint: "Describe what this is an image of. This will appear if the image does not render." }
       - label: "Intro Paragraph"
         name: "intro_paragraph"
         widget: "text"

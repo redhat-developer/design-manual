@@ -36,15 +36,10 @@ layout: compress
               {% endif %}
               {% if page.featured_image and page.featured_image != '' %}
                 {% if jekyll.environment == 'development' %}
-                  <img src="{{ page.featured_image }}" title="featured_image-title"></img>
+                  <img src="{{ page.featured_image-file }}" alt="{{ page.featured_image-text }}"></img>
                 {% elsif jekyll.environment == 'production' %}  
-                  <img src="{{ site.baseurl }}{{ page.featured_image }}" title="featured_image-title"></img>
+                  <img src="{{ site.baseurl }}{{ page.featured_image-file }}" alt="{{ page.featured_image-text }}"></img>
                 {% endif %}
-              {% endif %}
-              {% if page.labels %}
-              <ul>
-                <li>{{ page.labels | markdownify }}</li>
-              </ul>
               {% endif %}
             {{ content }}
             <div class="rhddx-m-float">

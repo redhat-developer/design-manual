@@ -8,7 +8,6 @@ active_nav: Assemblies
 permalink: /assemblies/curated-links
 status: released
 youtube_video: https://www.youtube.com/embed/dNeGJ4GV50I
-video-poster:
 video-title: RHD Curated Links Creation Demo
 intro_paragraph: >-
   The curated links assembly can be used as a way to manually select content to
@@ -16,7 +15,6 @@ intro_paragraph: >-
   automatically bringing links in based on a keyword).
 featured_image-file: /assets/uploads/rich-text-example.png
 featured_image-text: This is a rich text example image
-featured_image-title: Rich Text Example
 ---
 
 ## What content types can I add this assembly to?
