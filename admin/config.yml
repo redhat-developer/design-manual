@@ -435,14 +435,14 @@ collections: # A list of collections the CMS should be able to edit
         name: "video"
         widget: "object"
         fields:
-          - { label: "YouTube video", name: "youtube_video", widget: "string", hint: "Add the YouTube video ID here (do not include https://www.youtube.com/embed/)." }
-          - { label: "Video title", name: "video-title", widget: "string" }
+          - { label: "YouTube video", name: "youtube_video", widget: "string", hint: "Add the YouTube video ID here (do not include https://www.youtube.com/embed/).", required: false }
+          - { label: "Video title", name: "video-title", widget: "string", required: false }
       - label: "Featured Image"
         name: "image"
         widget: "object"
         fields:
-          - { label: "Image", name: "featured_image-file", widget: "image" }
-          - { label: "Alt text", name: "featured_image-text", widget: "string", hint: "Describe what this is an image of. This will appear if the image does not render." }
+          - { label: "Image", name: "featured_image-file", widget: "image", required: false }
+          - { label: "Alt text", name: "featured_image-text", widget: "string", hint: "Describe what this is an image of. This will appear if the image does not render.", required: false }
       - label: "Intro Paragraph"
         name: "intro_paragraph"
         widget: "text"
