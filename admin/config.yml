@@ -442,7 +442,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "featured_image"
         widget: "object"
         fields:
-          - { label: "Image", name: "featured_image", widget: "image", default: "", required: false }
+          - { label: "Image", name: "featured_image-file", widget: "image", default: "", required: false }
           - { label: "Alt text", name: "featured_image-text", widget: "string", hint: "Describe what this is an image of. This will appear if the image does not render.", required: false }
           - { label: "Title", name: "featured_image-title", widget: "string", hint: "Add a Title to your image.", required: false }
       - label: "Intro Paragraph"

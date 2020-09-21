@@ -1,4 +1,5 @@
 ---
+custom_css: [assemblies]
 layout: create
 category: create
 section: Create
@@ -13,8 +14,9 @@ intro_paragraph: >-
   The curated links assembly can be used as a way to manually select content to
   be linked off from on a page (as opposed to a collection assembly
   automatically bringing links in based on a keyword).
-featured_image: "/assets/uploads/rich-text-example.png"
-custom_css: [assemblies]
+featured_image-file: /assets/uploads/rich-text-example.png
+featured_image-text: This is a rich text example image
+featured_image-title: Rich Text Example
 ---
 
 ## What content types can I add this assembly to?
