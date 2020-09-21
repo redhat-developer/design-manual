@@ -21,38 +21,25 @@ layout: compress
         <section class="pf-c-page__main-section pf-m-light pf-m-fill">
           <div class="pf-l-grid pf-c-content">
             <div class="pf-l-grid__item pf-m-12-col" id="main">
+              <h1>{{ page.title }}</h1>
+              {% include page-intro.html %}
               {% if page.youtube_video and page.youtube_video != '' %}
               <iframe
                 width="560"
                 height="315"
-                src="{{ page.youtube_video }}"
+                src="https://www.youtube.com/embed/{{ page.youtube_video }}"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
+                allowfullscreen
+                title="{{ page.video-title }}">
               </iframe>  
-              <video
-                  poster="{{ page.video-poster }}"
-                  title="{{ page.video-title }}"
-                  width="560"
-                  height="315"
-                >
-                  <source src="{{ page.youtube_video }}" type="video/mp4">
-                  Your browser does not support mp4 videos.
-                </video>
               {% endif %}
-              {% if page.featured_image and page.featured_image != '' %}
+              {% if page.featured_image-file and page.featured_image-file != '' %}
                 {% if jekyll.environment == 'development' %}
-                  <img src="{{ page.featured_image }}"></img>
+                  <img src="{{ page.featured_image-file }}" alt="{{ page.featured_image-text }}"></img>
                 {% elsif jekyll.environment == 'production' %}  
-                  <img src="{{ site.baseurl }}{{ page.featured_image }}"></img>
+                  <img src="{{ site.baseurl }}{{ page.featured_image-file }}" alt="{{ page.featured_image-text }}"></img>
                 {% endif %}
-              {% endif %}
-              <h1>{{ page.title }}</h1>
-              {% include page-intro.html %}
-              {% if page.labels %}
-              <ul>
-                <li>{{ page.labels | markdownify }}</li>
-              </ul>
               {% endif %}
               {{ content }}
             </div>
