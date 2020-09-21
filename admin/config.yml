@@ -431,19 +431,20 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Unreleased", value: "unreleased" }
           - { label: "Development", value: "development" }
         required: true
-      - label: "Available in the following content types: "
-        hidden: false
-        name: "label"
-        widget: "select"
-        multiple: true
-        hint: "Let the user know where they can find this Assembly."
-        options:
-          - { label: "Articles", value: "articles" }
-          - { label: "Pages", value: "pages" }
-          - { label: "Events", value: "products" }
-          - { label: "Topics", value: "topics" }
-        min: 1
-        required: false
+      - label: "Featured Video"
+        name: "video"
+        widget: "object"
+        fields:
+          - { label: "YouTube video", name: "youtube_video", widget: string, hint: "Add shareable YouTube link here." }
+          - { label: "Video title", name: "video-title", widget: string }
+          - { label: "Video poster", name: "video-poster", widget: image }
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "object"
+        fields:
+          - { label: "Image", name: "featured_image", widget: "image", default: "", required: false }
+          - { label: "Alt text", name: "featured_image-text", widget: "string", hint: "Describe what this is an image of. This will appear if the image does not render.", required: false }
+          - { label: "Title", name: "featured_image-title", widget: "string", hint: "Add a Title to your image.", required: false }
       - label: "Intro Paragraph"
         name: "intro_paragraph"
         widget: "text"
@@ -453,16 +454,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "body"
         widget: "markdown"
         required: true
-        hint: "Use the + button to add Images or YouTube videos to the page."
-      - label: "Featured Image"
-        name: "featured_image"
-        widget: "image"
-        default: ""
-        hint: "Add <img src='/design-manual/{{page.featured_image}}'> to the body for the image to appear."
-        media_library:
-          config:
-            multiple: true
-        required: false
+        hint: "Use the '+' button to add Images or Code Blocks."
   - name: "layouts"
     label: "Layouts"
     folder: "pages/layouts"
