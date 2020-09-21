@@ -6,9 +6,9 @@
     <title>Red Hat Developer Design Manual Admin Portal</title>
     <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:500,700|Red+Hat+Text:400,500&display=swap" rel="stylesheet">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script>
+    <!-- <script>
       CMS.registerPreviewStyle("/admin.css");
-    </script>
+    </script> -->
   </head>
   <body>
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
@@ -30,26 +30,30 @@
       p {
         font-family: "Red Hat Text", sans-serif;
       }
-    `;
-    CMS.registerEditorComponent({
-      id: "youtube",
-      label: "Youtube",
-      fields: [{name: 'id', label: 'Youtube Video ID'}],
-      pattern: /^{{<\s?youtube (\S+)\s?>}}/,
-      fromBlock: function(match) {
-        return {
-          id: match[1]
-        };
-      },
-      toBlock: function(obj) {
-        return '{{< youtube ' + obj.id + ' >}}';
-      },
-      toPreview: function(obj) {
-        return (
-          '<img src="http://img.youtube.com/vi/' + obj.id + '/maxresdefault.jpg" alt="Youtube Video"/>'
-        );
+      img {
+        width: 560px;
+        height: 315px;
       }
-    });
+    `;
+    // CMS.registerEditorComponent({
+    //   id: "youtube",
+    //   label: "Youtube",
+    //   fields: [{name: 'id', label: 'Youtube Video ID'}],
+    //   pattern: /^{{<\s?youtube (\S+)\s?>}}/,
+    //   fromBlock: function(match) {
+    //     return {
+    //       id: match[1]
+    //     };
+    //   },
+    //   toBlock: function(obj) {
+    //     return '{{< youtube ' + obj.id + ' >}}';
+    //   },
+    //   toPreview: function(obj) {
+    //     return (
+    //       '<img src="http://img.youtube.com/vi/' + obj.id + '/maxresdefault.jpg" alt="Youtube Video"/>'
+    //     );
+    //   }
+    // });
       </script>
   </body>
 </html>

@@ -147,7 +147,7 @@
       <item>
         <title>Assembly Template</title>
         <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</description>
-        <status>development</status>
+        <status>unreleased</status>
         <active_nav>Assemblies</active_nav>
         <link>/design-manual/assemblies/assembly-template</link>
         <guid isPermaLink="true">/design-manual</guid>
