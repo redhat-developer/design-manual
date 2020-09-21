@@ -21,15 +21,25 @@ layout: compress
         <section class="pf-c-page__main-section pf-m-light pf-m-fill">
           <div class="pf-l-grid pf-c-content">
             <div class="pf-l-grid__item pf-m-12-col" id="main">
-              {% if page.featured_image and page.featured_image != '' %}
-                {{ page.featured_image }}
-              {% endif %}
               <h1>{{ page.title }}</h1>
-              <blockquote>{% include page-intro.html %}</blockquote>
-              {% if page.labels %}
-              <ul>
-                <li>{{ page.labels | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-              </ul>
+              {% include page-intro.html %}
+              {% if page.youtube_video and page.youtube_video != '' %}
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/{{ page.youtube_video }}"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                title="{{ page.video-title }}">
+              </iframe>  
+              {% endif %}
+              {% if page.featured_image-file and page.featured_image-file != '' %}
+                {% if jekyll.environment == 'development' %}
+                  <img src="{{ page.featured_image-file }}" alt="{{ page.featured_image-text }}"></img>
+                {% elsif jekyll.environment == 'production' %}  
+                  <img src="{{ site.baseurl }}{{ page.featured_image-file }}" alt="{{ page.featured_image-text }}"></img>
+                {% endif %}
               {% endif %}
               {{ content }}
             </div>
