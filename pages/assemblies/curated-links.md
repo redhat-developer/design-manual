@@ -10,13 +10,11 @@ active_nav: Assemblies
 permalink: /assemblies/curated-links
 featured_image-text: This is a rich text example image
 status: released
-video:
-  youtube_video: G8Zn9SDmA3M
-  video-title: RHD Curated Links Creation Demo
+youtube_video: G8Zn9SDmA3M
+video-title: RHD Curated Links Creation Demo
 intro_paragraph: The curated links assembly can be used as a way to manually
   select content to be linked off from on a page (as opposed to a collection
   assembly automatically bringing links in based on a keyword).
-youtube_video: dNeGJ4GV50I
 featured_image-file: /assets/uploads/rich-text-example.png
 ---
 
