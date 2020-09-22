@@ -448,6 +448,13 @@ collections: # A list of collections the CMS should be able to edit
         widget: "text"
         required: false
         hint: "Plain text, no markdown or code."
+      - label: "Content"
+        name: "content"
+        widget: "list"
+        hint: "Select the layout types that you wish to use on the page. Each layout can only be used once."
+        fields:
+          - { label: "Single Column Layout", name: "single-column", widget: "markdown", required: false }
+          - { label: "Two Column Layout", name: "two-column", widget: "markdown", required: false }
       - label: "Body"
         name: "body"
         widget: "markdown"
