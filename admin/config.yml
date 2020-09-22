@@ -452,9 +452,17 @@ collections: # A list of collections the CMS should be able to edit
         name: "content"
         widget: "list"
         hint: "Select the layout types that you wish to use on the page. Each layout can only be used once."
-        fields:
-          - { label: "Single Column Layout", name: "single-column", widget: "markdown", required: false }
-          - { label: "Two Column Layout", name: "two-column", widget: "markdown", required: false }
+        types:
+          - label: "Single Column Layout"
+            name: "single-column"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "single-column-text", widget: "markdown", required: false }
+          - label: "Two Column Layout"
+            name: "two-column"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "two-column-text", widget: "markdown", required: false }
       - label: "Body"
         name: "body"
         widget: "markdown"
