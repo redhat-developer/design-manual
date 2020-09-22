@@ -34,6 +34,7 @@ layout: compress
                 title="{{ page.video-title }}">
               </iframe>  
               {% endif %}
+              {{ content }}
               {% if page.featured_image-file and page.featured_image-file != '' %}
                 {% if jekyll.environment == 'development' %}
                   <img src="{{ page.featured_image-file }}" alt="{{ page.featured_image-text }}"></img>
@@ -41,7 +42,6 @@ layout: compress
                   <img src="{{ site.baseurl }}{{ page.featured_image-file }}" alt="{{ page.featured_image-text }}"></img>
                 {% endif %}
               {% endif %}
-              {{ content }}
             </div>
           </div>
         </section>

@@ -15,7 +15,7 @@ video-title: RHD Curated Links Creation Demo
 intro_paragraph: The curated links assembly can be used as a way to manually
   select content to be linked off from on a page (as opposed to a collection
   assembly automatically bringing links in based on a keyword).
-featured_image-file: /assets/uploads/rich-text-example.png
+featured_image-file:
 ---
 
 ## What content types can I add this assembly to?
