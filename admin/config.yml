@@ -448,7 +448,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: "text"
         required: false
         hint: "Plain text, no markdown or code."
-      - label: "Content"
+      - label: "Advanced Content Creation"
         name: "content"
         widget: "list"
         hint: "Select the layout types that you wish to use on the page. Each layout can only be used once."
@@ -457,16 +457,17 @@ collections: # A list of collections the CMS should be able to edit
             name: "single-column"
             widget: "object"
             fields:
-              - { label: "Text", name: "single-column-text", widget: "markdown", required: false }
+              - { label: "Single Column", name: "single-column-text", widget: "markdown", default: "<div class='pf-l-grid'><div class='pf-l-grid__item pf-m-12-col'> [ add content here ] </div></div>", required: false }
           - label: "Two Column Layout"
             name: "two-column"
             widget: "object"
             fields:
-              - { label: "Text", name: "two-column-text", widget: "markdown", required: false }
+              - { label: "Two Column", name: "two-column-text", widget: "markdown", default: "<div class='pf-l-grid'><div class='pf-l-grid__item pf-m-6-col'> [ add content here ] </div>
+  <div class='pf-l-grid__item pf-m-6-col'> [ add content here ] </div></div>", required: false }
       - label: "Body"
         name: "body"
         widget: "markdown"
-        required: true
+        required: false
         hint: "Use the '+' button to add Images or Code Blocks."
   - name: "layouts"
     label: "Layouts"
