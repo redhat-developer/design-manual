@@ -457,13 +457,19 @@ collections: # A list of collections the CMS should be able to edit
             name: "single-column"
             widget: "object"
             fields:
-              - { label: "Single Column", name: "single-column-text", widget: "markdown", default: "<div class='pf-l-grid'><div class='pf-l-grid__item pf-m-12-col'> [ add content here ] </div></div>", required: false }
+              - { label: "Single Column", name: "single-column-text", widget: "markdown", default: "<div class='pf-l-grid'><div class='pf-l-grid__item pf-m-12-col'> [ add content here ] </div></div>", hint: "Switch to Markdown view for best results", required: false }
           - label: "Two Column Layout"
             name: "two-column"
             widget: "object"
             fields:
               - { label: "Two Column", name: "two-column-text", widget: "markdown", default: "<div class='pf-l-grid'><div class='pf-l-grid__item pf-m-6-col'> [ add content here ] </div>
-  <div class='pf-l-grid__item pf-m-6-col'> [ add content here ] </div></div>", required: false }
+  <div class='pf-l-grid__item pf-m-6-col'> [ add content here ] </div></div>", hint: "Switch to Markdown view for best results", required: false }
+          - label: "Three Column Layout"
+            name: "three-column"
+            widget: "object"
+            fields:
+              - { label: "Three Column", name: "three-column-text", widget: "markdown", default: "<div class='pf-l-grid'><div class='pf-l-grid__item pf-m-4-col'> [ add content here ] </div>
+  <div class='pf-l-grid__item pf-m-4-col'> [ add content here ] </div><div class='pf-l-grid__item pf-m-4-col'> [ add content here ] </div></div>", hint: "Switch to Markdown view for best results", required: false }
       - label: "Body"
         name: "body"
         widget: "markdown"
