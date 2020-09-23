@@ -37,9 +37,11 @@ We can display curated links in three different formats using 'Display styles'.
 * Display styles: **--none--**
 
   ![curated link without display styles](/design-manual/assets/uploads/curated-link.png)
+
 * Display styles: **horizontal navigation**
 
   ![Curated link with horizontal nav display styles](/design-manual/assets/uploads/curated-link-horizontal.png)
+
 * Display styles: **two-column**
 
   ![Curated links with two column display style](/design-manual/assets/uploads/curated-link-2col.png)

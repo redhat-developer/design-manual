@@ -437,7 +437,7 @@ collections: # A list of collections the CMS should be able to edit
         required: false
       - label: "Intro Paragraph"
         name: "intro_paragraph"
-        widget: "text"
+        widget: "string"
         required: false
         hint: "Plain text, no markdown or code."
       - label: "Body"
