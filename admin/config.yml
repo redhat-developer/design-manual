@@ -435,15 +435,6 @@ collections: # A list of collections the CMS should be able to edit
         name: "video-title"
         widget: "string"
         required: false
-      - label: "Featured Image"
-        name: "featured_image-file"
-        widget: "image"
-        required: false
-      - label: "Featured Image Alt Text"
-        name: "featured_image-text"
-        widget: "string"
-        hint: "Describe what this is an image of. This will appear if the image does not render."
-        required: false
       - label: "Intro Paragraph"
         name: "intro_paragraph"
         widget: "text"

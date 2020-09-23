@@ -8,8 +8,6 @@ permalink: /assemblies/curated-links
 status: released
 youtube_video: G8Zn9SDmA3M
 video-title: RHD Curated Links Creation Demo
-featured_image-file:
-featured_image-text:
 intro_paragraph: >
   The curated links assembly can be used as a way to manually select content to be linked off from on a page (as opposed to a collection assembly automatically bringing links in based on a keyword).
 custom_css:
@@ -36,7 +34,7 @@ As with most assemblies, you can add a title. Then, there are two routes for get
 
 We can display curated links in three different formats using 'Display styles'.
 
-* Display styles: **\--none---**
+* Display styles: **--none--**
 
   ![curated link without display styles](/design-manual/assets/uploads/curated-link.png)
 * Display styles: **horizontal navigation**

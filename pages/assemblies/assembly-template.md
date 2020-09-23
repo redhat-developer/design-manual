@@ -8,8 +8,6 @@ permalink: /assemblies/assembly-template
 status: unreleased
 youtube_video: Za1ye5RWjzE
 video-title: Intro to PatternFly 4
-featured_image-file: /assets/uploads/rich-text-example.png
-featured_image-text: This is a rich text example image
 intro_paragraph: >
   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 custom_css:
