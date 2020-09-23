@@ -1,5 +1,4 @@
 ---
-custom_css: [assemblies]
 layout: create
 category: create
 section: Create
@@ -9,9 +8,11 @@ permalink: /assemblies/assembly-template
 status: unreleased
 youtube_video: Za1ye5RWjzE
 video-title: Intro to PatternFly 4
-intro_paragraph: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 featured_image-file: /assets/uploads/rich-text-example.png
 featured_image-text: This is a rich text example image
+intro_paragraph: >
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+custom_css:
 ---
 
 # The standard Lorem Ipsum passage, used since the 1500s

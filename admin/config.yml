@@ -385,11 +385,6 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{slug}}"
     type: "page"
     fields:
-      - label: "Custom CSS for Assembly examples"
-        name: "custom_css"
-        default: "assemblies"
-        required: true
-        widget: "hidden"
       - label: "Layout"
         name: "layout"
         widget: "hidden"
@@ -404,7 +399,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "section"
         widget: "hidden"
         default: "Create"
-        required: false
+        required: true
       - label: "Title"
         name: "title"
         widget: "string"
@@ -459,6 +454,11 @@ collections: # A list of collections the CMS should be able to edit
         widget: "markdown"
         required: false
         hint: "Use the '+' button to add Images or Code Blocks."
+      - label: "Custom CSS for Assembly examples"
+        name: "custom_css"
+        default: "assemblies"
+        required: false
+        widget: "hidden"
   - name: "layouts"
     label: "Layouts"
     folder: "pages/layouts"
