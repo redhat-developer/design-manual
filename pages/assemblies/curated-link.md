@@ -2,9 +2,9 @@
 layout: create
 category: create
 section: Create
-title: Curated links
+title: Curated link
 active_nav: Assemblies
-permalink: /assemblies/curated-links
+permalink: /assemblies/curated-link
 status: released
 youtube_video: G8Zn9SDmA3M
 video-title: RHD Curated Links Creation Demo
