@@ -36,13 +36,6 @@ layout: compress
                 </iframe>  
               {% endif %}
               {{ content }}
-              {% if page.featured_image-file and page.featured_image-file != '' %}
-                {% if jekyll.environment == 'development' %}
-                  <img src="{{ page.featured_image-file }}" alt="{{ page.featured_image-text }}"></img>
-                {% elsif jekyll.environment == 'production' %}  
-                  <img src="{{ site.baseurl }}{{ page.featured_image-file }}" alt="{{ page.featured_image-text }}"></img>
-                {% endif %}
-              {% endif %}
               <div class="rhddx-m-float">
                 {% if page.title == 'Create Overview / Getting Started' %}
                 <a class="pf-c-button pf-m-primary rhddx-c-button rhddx-m-edit" href="https://redhat-developer-design-manual.netlify.app/admin/#/collections/page/entries/create" title="Edit this page">
