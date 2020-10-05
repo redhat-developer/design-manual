@@ -20,8 +20,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/design-manual" # change to GitHub project repo name i.e. redhat-developer/rhddx for GitHub pages w/no custom domain
 url: "https://redhat-developer.github.io/design-manual/"
 version: 2.46.0
-NODE_VERSION: 12.18.1
-NPM_VERSION: 6.14.15
+NODE_VERSION: 12.18.4
+NPM_VERSION: 6.14.16
 RUBY_VERSION: 2.6.3
 
 # Set default configurations

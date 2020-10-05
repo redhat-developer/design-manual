@@ -20,7 +20,7 @@ Table of Contens:
 ## Technology stack:
   - [Ruby](https://www.ruby-lang.org/en/) (2.6+ - for Jekyll) - For installing Jekyll
   - [Jekyll](https://jekyllrb.com/) - static site server
-  - [Node (10+)](https://nodejs.org/en/) - managing front-end dependencies
+  - [Node (12+)](https://nodejs.org/en/) - managing front-end dependencies
     - _[NVM](https://nodejs.org/en/download/package-manager/#nvm) is recommended_
     - NPM (6+)
   - [Gulp](https://gulpjs.com/) - automation and streaming build workflow
