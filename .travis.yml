@@ -24,11 +24,3 @@ deploy:
   target_branch: gh-pages
   on:
     branch: main
-after_deploy:
-  github_token: $GH_TOKEN
-  run:
-  - git config --local user.name "GIT_USERNAME"
-  - git config --local user.email "GIT_EMAIL"
-  - scripts/./release.sh minor
-  - git tag ${{ github.ref }}
-  - git push origin ${{ github.ref }}
