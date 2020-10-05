@@ -81,18 +81,18 @@ const
   // This function is only to be used by the deployment script,
   // used by the automated build processes
   function buildSass(cb) {
-      return gulp.src([
-        './styles/custom/*.scss', // include custom component styles
-        './styles/partials/*.scss', // include the partial files for main.scss
-        './styles/main.scss' // include the customized site file
-      ])
-      .pipe(sourcemaps.init())
-      .pipe(sass(cssConfig.sassOpts).on('error', sass.logError)) // sets the configuration options for building SCSS files
-      .pipe(postcss([ autoprefixer() ]))
-      .pipe(sourcemaps.write('.'))
-      .pipe(size({ showFiles:true }))
-      .pipe(gulp.dest(cssConfig.build)); // dump compiled SCSS files to './_site/assets/'
-    }
+    return gulp.src([
+      './styles/custom/*.scss', // include custom component styles
+      './styles/partials/*.scss', // include the partial files for main.scss
+      './styles/main.scss' // include the customized site file
+    ])
+    .pipe(sourcemaps.init())
+    .pipe(sass(cssConfig.sassOpts).on('error', sass.logError)) // sets the configuration options for building SCSS files
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(sourcemaps.write('.'))
+    .pipe(size({ showFiles:true }))
+    .pipe(gulp.dest(cssConfig.build)); // dump compiled SCSS files to './_site/assets/'
+  }
 
   // convert custom scss files to css using PostCSS
   // @ts-ignore
