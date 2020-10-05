@@ -67,6 +67,9 @@ toc:
   - page: Toolbar
     url: /components/toolbar
     status: unreleased
+  - page: Topic Nav
+    url: /components/topic-nav
+    status: unreleased
   - page: Two Column Layout Hero
     url: /components/two-col-hero-layout
   - page: Video Hero
