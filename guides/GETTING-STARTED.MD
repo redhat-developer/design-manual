@@ -30,4 +30,4 @@ For example, you might use a utility class to add additional spacing between ele
 
 ## Released vs Unreleased
 
-Our components, assemblies, and page examples are labelled with either a <span class="pf-c-label label-released">released</span> or <span class="pf-c-label label-unreleased">unreleased</span> marker, easily signifying their status on developers.redhat.com. Anything with the <span class="pf-c-label label-unreleased">unreleased</span> label should be considered a work-in-progress and not recommended for use in production.
+Our components, assemblies, and page examples are labelled with either **Unreleased** or **In Development**, signifying their status on developers.redhat.com. Anything with these labels should be considered a work-in-progress and not for use in production.

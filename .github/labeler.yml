@@ -38,14 +38,13 @@ github-actions:
   - .github/**
 CMS:
   - ./admin/**
-tools:
-  - _config.yml
-  - .grenrc.json
-  - .stylelintrc.json
 bundler:
   - Gemfile
   - Gemfile.lock
-build-improvements:
+build-tools:
+  - _config.yml
+  - .grenrc.json
+  - .stylelintrc.json
   - .travis.yml
   - gulpfile.js
   - netlify.toml

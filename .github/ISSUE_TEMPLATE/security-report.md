@@ -19,7 +19,7 @@ Security reports must include:
 
 - Design Manual version
 - Operating system and version (Windows, macOS, Linux+Distribution)
-- Node Version (i.e. 12.18.1)
+- Node Version (i.e. 12.18.4)
 - Ruby Version (i.e. 2.6.3)
 - Gem version
   - `gem "jekyll", "~> 3.8.7"`
