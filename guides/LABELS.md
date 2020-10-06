@@ -7,7 +7,7 @@ Labels available for use in the repo.
 | blocked           | indicates that the item is blocked by something  |
 | brand-assets      | Changes to assets under the /brand-assets directory |
 | bug               | Something isn't working |
-| build-improvements | Improvements to the build - Netlify/Travis/GitHub |
+| build-tools       | Improvements to the build tools - Netlify/Travis/GitHub |
 | bundler           | Bundler related change or issue - used by automated processes |
 | CMS               | Updates/work to the CMS |
 | dependencies      | Pull requests that update a dependency file |
@@ -16,7 +16,7 @@ Labels available for use in the repo.
 | duplicate         | Duplicate issue or PR |
 | enhancement       | Updates to an existing feature or design |
 | feature           | Feture release - major version bump |
-| github-action     | GitHub Actions related change or issue - used by automated processes |
+| github-actions    | GitHub Actions related change or issue - used by automated processes |
 | good first issue  | Good for newcomers |
 | help wanted       | Extra attention is needed |
 | in progress       | PRs that are in progress and should not be merged |
@@ -31,6 +31,4 @@ Labels available for use in the repo.
 | question          | Further information is requested |
 | Ready to merge    | Pull request is ready to be merged |
 | security          | Denotes/Addresses a security issue or concern |
-| submodule-update  | Chagnes made to the RHDP theme |
-| tools             | |
 | wontfix           | This will not be worked on |

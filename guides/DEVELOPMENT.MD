@@ -9,10 +9,12 @@ Following the accepted Jekyll configurations, the Developer Manual directory is 
 ```bash
 /_data # Data files used for the navigations
 /_includes # Site includes
+    /quick-links # Quick links for the homepage
   | /sidenavs # Various side navigations for pages
 /_layouts # Site layouts
 /_posts
 /_sass
+/.github # GitHub config folder
 /admin # Netlify configuration directory
 /assets # Site specific images, JS files & font files
 /brand-assets # image assets for the Brand Team
@@ -29,7 +31,8 @@ Following the accepted Jekyll configurations, the Developer Manual directory is 
   | /pages
 /scripts # Various scripts for the site
 /styles # Styles for customizing the Design Manual
-  | /partials
+    /custom # Custom CSS files, loaded as defined in Frontmatter
+  | /partials # Breakout of CSS
   | main.scss # Pulls in Design Manual site specific styles
 ```
 
@@ -52,6 +55,7 @@ To view the site locally, navigate to [localhost:4000/design-manual/](http://loc
 
 Each page under is built using Jekyll Frontmatter. Due to the size and complexity of this site, we use multiple variations of the Frontmatter in order to properly sort and render the various examples and documentation.
 
+**simple example**
 ```markdown
 ---
 layout: pages
