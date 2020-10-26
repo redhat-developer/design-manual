@@ -1,7 +1,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ site.description }} | {{ page.intro_paragraph }}">
+  {% if page.intro_paragraph == '' %}
+    <meta name="description" content="{{ site.description }}">
+  {% elsif page.intro_paragraph != '' %}
+    <meta name="description" content="{{ page.intro_paragraph }}">
+  {% endif %}
   <meta name="theme-color" content="#ffffff">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link async rel="stylesheet" href="https://developers.redhat.com/themes/custom/rhdp2/rhd-frontend/dist/css/rhd.css">

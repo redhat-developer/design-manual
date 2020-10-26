@@ -16,7 +16,7 @@
 title: Red Hat Developers Design Manual
 email: adamj@redhat.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This guide will serve as a home base for the Red Hat Developer story, messaging, and visual brand language. It’s a place you can always return to when you have questions about how to best represent Red Hat Developer through messaging or visual elements.
+  This guide will serve as a home base for the Red Hat Developer story, messaging, and visual brand language.
 baseurl: "/design-manual" # change to GitHub project repo name i.e. redhat-developer/rhddx for GitHub pages w/no custom domain
 url: "https://redhat-developer.github.io/design-manual/"
 version: 2.46.0
