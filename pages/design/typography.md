@@ -15,7 +15,7 @@ custom_css:
   section {
     margin: 0 32px;
   }
-  table {
+  /* table {
     width: 100%;
     background-color: #fff;
   }
@@ -31,11 +31,61 @@ custom_css:
   table thead tr th,
   table tbody tr td {
     padding: 16px 0 16px 16px;
-  }
+  } */
 </style>
 
 <h1 class="pf-c-title">Our font family</h1>
 We use the open source Red Hat Text and Red Hat Display fonts.
+
+<table class="pf-c-table pf-m-grid-md" role="grid" aria-label="Red Hat Developer Font Family table" id="table-font-family">
+  <caption>The relationship between fonts give a brand its identity and its messages a voice. When used effectively, typography plays a critical role in establishing the tone of Red Hat Developer's brand expression. Our typography should follow the Red Hat parent brand guidelines.</caption>
+  <thead>
+    <tr role="row">
+      <th role="columnheader" scope="col">Typeface</th>
+      <th role="columnheader" scope="col">Description</th>
+      <th role="columnheader" scope="col">Example</th>
+      <th role="columnheader" scope="col">Uses</th>
+    </tr>
+  </thead>
+  <tbody role="rowgroup">
+    <tr role="row">
+      <td role="cell" data-label="Typeface" style="vertical-align: top; word-break: normal;">Interstate</td>
+      <td role="cell" data-label="Description" style="vertical-align: top;">Interstate is our corporate typeface. It’s part of a large and versatile type family, which allows us to speak in many voices—from big and bold to calm and confident. <br> Interstate looks best in print and when used for big headlines. We use it for all printed material, like collateral and stationery; for advertising, like printed ads and web banners; and anywhere text is embedded in an image, like diagrams and videos.</td>
+      <td role="cell" data-label="Example"><a href="https://raw.githubusercontent.com/redhat-developer/design-manual/main/brand-assets/RHD_Typography/RHD_Type_Examples_Uses/rh_ex_interstate.png"><img src="https://raw.githubusercontent.com/redhat-developer/design-manual/main/brand-assets/RHD_Typography/RHD_Type_Examples_Uses/rh_ex_interstate.png" width="200"></a></td>
+      <td role="cell" data-label="Uses"><a href="https://raw.githubusercontent.com/redhat-developer/design-manual/main/brand-assets/RHD_Typography/RHD_Type_Examples_Uses/rh_which_typeface_interstate1.png"><img src="https://raw.githubusercontent.com/redhat-developer/design-manual/main/brand-assets/RHD_Typography/RHD_Type_Examples_Uses/rh_which_typeface_interstate1.png" width="400"></a></td>
+    </tr>
+    <tr role="row">
+      <td role="cell" data-label="Typeface" style="vertical-align: top; word-break: normal;">
+        Overpass
+      </td>
+      <td role="cell" data-label="Description" style="vertical-align: top;">
+        Overpass is an open-licensed alternative to Interstate that is specifically for use on-screen and in our software. Like Interstate, Overpass is based on the FHWA (Federal Highway Administration) series of fonts, which has been used for US Highway signage since 1945. <br> Overpass can be used in a lot of the same ways as Interstate. We use Overpass for all web text, editable presentations, and product interfaces.
+      </td>
+      <td role="cell" data-label="Example">
+        <a href="https://raw.githubusercontent.com/redhat-developer/design-manual/main/brand-assets/RHD_Typography/RHD_Type_Examples_Uses/rh_ex_overpass.png"><img src="https://raw.githubusercontent.com/redhat-developer/design-manual/main/brand-assets/RHD_Typography/RHD_Type_Examples_Uses/rh_ex_overpass.png" width="200"></a>
+      </td>
+      <td role="cell" data-label="Uses">
+        <a href="https://raw.githubusercontent.com/redhat-developer/design-manual/main/brand-assets/RHD_Typography/RHD_Type_Examples_Uses/rh_which_typeface_overpass1.png"><img src="https://raw.githubusercontent.com/redhat-developer/design-manual/main/brand-assets/RHD_Typography/RHD_Type_Examples_Uses/rh_which_typeface_overpass1.png" width="400"></a>
+      </td>
+    </tr>
+    <tr role="row">
+      <td role="cell" data-label="Typeface" style="vertical-align: top; word-break: normal;">
+        Liberation
+      </td>
+      <td role="cell" data-label="Description" style="vertical-align: top;">
+        Liberation is metrically equivalent to the default fonts on non-Linux platforms. That means there are fewer issues with font conflicts and formatting when a document moves between platforms. <br> Use Liberation Sans for live, editable documents that will be shared outside of Red Hat. <br> Use Liberation Mono for code samples.
+      </td>
+      <td role="cell" data-label="Example">
+        <a href="https://raw.githubusercontent.com/redhat-developer/design-manual/main/brand-assets/RHD_Typography/RHD_Type_Examples_Uses/rh_ex_liberation.png"><img src="https://raw.githubusercontent.com/redhat-developer/design-manual/main/brand-assets/RHD_Typography/RHD_Type_Examples_Uses/rh_ex_liberation.png" width="200"></a>
+      </td>
+      <td role="cell" data-label="Uses">
+        <a href="https://raw.githubusercontent.com/redhat-developer/design-manual/main/brand-assets/RHD_Typography/RHD_Type_Examples_Uses/rh_which_typeface_liberation1.png"><img src="https://raw.githubusercontent.com/redhat-developer/design-manual/main/brand-assets/RHD_Typography/RHD_Type_Examples_Uses/rh_which_typeface_liberation1.png" width="400"></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+## Examples
 
 <h1 class="pf-c-title">Header XL</h1>
 
