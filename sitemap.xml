@@ -413,7 +413,7 @@ Drupal will find content (articles, blogs, videos, etc.) tagged with those selec
         <title>Color Palette</title>
         <description></description>
         <status></status>
-        <active_nav>RHD Brand Elements</active_nav>
+        <active_nav>RHD_Brand_Elements</active_nav>
         <link>/design-manual/design/color-palette</link>
         <guid isPermaLink="true">/design-manual</guid>
       </item>
@@ -1064,7 +1064,7 @@ flagged, will display a CAPTCHA challenge to the user.</description>
     
       
       <item>
-        <title>Full Logos</title>
+        <title>Logos</title>
         <description></description>
         <status></status>
         <active_nav>RHD_Brand_Elements</active_nav>
