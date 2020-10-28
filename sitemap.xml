@@ -410,6 +410,19 @@ Drupal will find content (articles, blogs, videos, etc.) tagged with those selec
     
       
       <item>
+        <title>Color Palette</title>
+        <description></description>
+        <status></status>
+        <active_nav>RHD Brand Elements</active_nav>
+        <link>/design-manual/design/color-palette</link>
+        <guid isPermaLink="true">/design-manual</guid>
+      </item>
+      
+    
+  
+    
+      
+      <item>
         <title>Combo</title>
         <description>This assembly allows for up to three types of assemblies to be combined. A WYSIWYG is available for customized content and the additional assemblies can be added as manual items or assembly items. There is a lot of flexibility with it.</description>
         <status>released</status>
