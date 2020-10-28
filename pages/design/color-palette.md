@@ -1,14 +1,13 @@
 ---
 layout: design
 category: design
-section: Color Palette
+section: RHD Brand Elements
 permalink: /design/color-palette
 title: Color Palette
-active_nav: RHD Brand Elements
+active_nav: RHD_Brand_Elements
 intro_paragraph: >
 
-custom_js:
-custom_css:
+active_header: Color Palette
 ---
 
 | Name | HEX | RGB | CMYK | PMS | Sample |
