@@ -51,4 +51,4 @@ Tenichally, yes. We can display curated links in two different formats using 'Di
 
 But, **all three currently work the same**. This is a known issue, and you can track progress on this issue here. All of them currently display like this:
 
-![curated link without display styles](/design-manual//assets/uploads/screen-shot-2020-10-30-at-12.47.28-pm.png)
+![Curated products](/design-manual//assets/uploads/curated-products.png)
