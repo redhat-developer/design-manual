@@ -8,6 +8,7 @@ status: released
 video-title: RHD Curated Products Creation Demo
 featured_image: ""
 permalink: /assemblies/curated-products
+youtube_video: qsG41sNQiyk
 intro_paragraph: >-
   This assembly allows the content creator to simply chose from any Red Hat
   product(s), it will automatically be displayed as a card with. 
