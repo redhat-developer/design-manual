@@ -687,7 +687,8 @@ flagged, will display a CAPTCHA challenge to the user.</description>
       
       <item>
         <title>Curated products</title>
-        <description>This assembly inserts a group of curated product cards on the page. Products are inputted through node references. A CTA can be added below the grouping. A title can be added above the grouping.</description>
+        <description>This assembly allows the content creator to simply chose from any Red Hat product(s), it will automatically be displayed as a card with. 
+In order to use this assembly, the desired product must exist in the CMS as a product node.</description>
         <status>released</status>
         <active_nav>Assemblies</active_nav>
         <link>/design-manual/assemblies/curated-products</link>
