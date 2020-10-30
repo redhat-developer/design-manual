@@ -12,6 +12,7 @@ backend:
     delete: 'fix: Delete [{{collection}}] {{slug}}'
     uploadMedia: 'fix: Media uploaded - {{path}}'
     deleteMedia: 'fix: Media removed - {{path}}'
+    openAuthoring: '{{author-name}} / {{message}}'
 subfolder: "/design-manual/"
 logo_url: https://redhat-developer.github.io/design-manual/assets/img/NewRHDFullLogo_black.png
 publish_mode: editorial_workflow # Enable drafts
