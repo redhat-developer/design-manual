@@ -28,7 +28,7 @@ View example usage of the 'All products listing' assembly in production on the [
 
 This assembly takes care of everything (mostly). To start, select 'All products listing' in the section dropdown and click 'Add section'.
 
-![section addition screenshot](/design-manual/assets/uploads/screen-shot-2020-11-09-at-1.52.29-pm.png)
+![section addition screenshot](/design-manual/assets/uploads/all-products-add-section.png)
 
 The backend takes care of populating all product names (anything added in as a product node) and correct links to the product overview pages. 
 
@@ -38,4 +38,4 @@ Content creators can add a 'Title' to be visible to the user as an H2. Creators 
 
 This assembly always takes on the same display appearance. Below is how the assembly will always present itself.
 
-![All products listing](/design-manual/assets/uploads/screen-shot-2020-11-09-at-2.03.26-pm.png)
+![All products listing](/design-manual/assets/uploads/all-products-listing-assembly.png)
