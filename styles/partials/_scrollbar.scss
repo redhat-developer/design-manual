@@ -1,5 +1,6 @@
 /* stylelint-disable */
 
+/* Safari, Chrome, Edge styling */
 *::-webkit-scrollbar {
   width: 16px; /* width of the entire scrollbar */
 }
@@ -14,9 +15,10 @@
   padding-left: 14px;
 }
 
+/* Firefox styling */
 body, scrollbar {
   scrollbar-width: thin !important;
-  scrollbar-color: blue orange !important;
+  scrollbar-color: #151515 #d7d7d7 !important;
 }
 
 scrollbar[orient="vertical"] {
@@ -46,6 +48,7 @@ scrollbar scrollbarbutton {
 }
 
 @media (prefers-color-scheme: dark) {
+  /* Safari, Chrome, Edge styling */
   *::-webkit-scrollbar {
     width: 16px; /* width of the entire scrollbar */
   }
@@ -60,9 +63,10 @@ scrollbar scrollbarbutton {
     padding-left: 14px;
   }
 
+  /* Firefox styling */
   body {
     scrollbar-width: thin !important;
-    scrollbar-color: blue orange !important;
+    scrollbar-color: #d7d7d7 #151515 !important;
   }
 }
 

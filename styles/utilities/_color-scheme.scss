@@ -234,5 +234,10 @@
       color: var(--text-color-light) !important;
     }
   }
+
+  .pf-c-alert {
+    background-color: transparent !important;
+    color: var(--text-color-light) !important;
+  }
 }
 /* stylelint-enable */

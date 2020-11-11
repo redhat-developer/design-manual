@@ -132,7 +132,7 @@
   }
 
   .pf-c-page__header-tools-group.pf-m-icons {
-    .pf-c-button.pf-m-plain {
+    .pf-c-button.pf-m-plain.pf-m-link {
       border-color: transparent;
       border-style: solid;
       border-width: var(--border-width-small);
@@ -146,20 +146,64 @@
         color: var(--text-color-white) !important; /* stylelint-disable-line declaration-no-important */
       }
 
-      &:hover {
-        // border-color: var(--text-color-white);
-
-        background: linear-gradient(90deg, rgba(238, 0, 0, 1) 20%, rgba(228, 128, 0, 1) 40%, rgba(146, 212, 0, 1) 60%, rgba(0, 185, 228, 1) 80%);
+      &::before,
+      &.pf-m-current::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: #151515;
+        transition: background .2s ease-in-out;
+        transform: translate3d(0, 0, 0);
       }
 
-      &:focus,
-      &:active,
-      &.pf-m-current {
-        border-top-color: var(--text-color-white);
-        border-right-color: var(--text-color-white);
-        border-bottom-color: var(--site-color-red);
-        border-left-color: var(--text-color-white);
-        box-shadow: var(--site-color-red) 0 -2px 0 0 inset;
+      &::after,
+      &.pf-m-current::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -3;
+        display: block;
+        width: 99%;
+        height: 100%;
+        content: "";
+        background: transparent;
+        background: linear-gradient(90deg, rgba(0, 185, 228, 1) 20%, rgba(146, 212, 0, 1) 40%, rgba(228, 128, 0, 1) 60%, rgba(238, 0, 0, 1) 80%);
+      }
+
+      &:hover::before,
+      &:focus::before,
+      &:active::before {
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        margin-top: 2px;
+        margin-left: 2px;
+      }
+
+      &:hover::after,
+      &:focus::after,
+      &:active::after {
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        background-color: transparent;
+      }
+
+      &:hover::after,
+      &::after,
+      &:active::after {
+        .rhddx & { /* stylelint-disable-line max-nesting-depth */
+          background: transparent;
+          background: linear-gradient(90deg, rgba(238, 0, 0, 1) 20%, rgba(228, 128, 0, 1) 40%, rgba(146, 212, 0, 1) 60%, rgba(0, 185, 228, 1) 80%);
+        }
+      }
+
+      &.pf-m-current::after {
+        height: calc(100% + 2px);
+        background-color: transparent;
       }
 
       &:visited {
