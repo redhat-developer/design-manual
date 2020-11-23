@@ -1,12 +1,12 @@
-/* stylelint-disable */
-
+/* styleint-disable */
 div.trending-nav {
   background-color: #fff;
   border-top: 1px solid #ddd;
   box-shadow: 0 5px 5px 0 #ddd;
   overflow: auto;
   white-space: nowrap;
-  max-width: 1440px;
+  max-width: 1200px;
+  height: 40px;
   margin: 0 auto;
   scrollbar-width: none; /* Firefox */
   &::-webkit-scrollbar {
@@ -16,24 +16,15 @@ div.trending-nav {
 
 div.trending-nav a {
   display: inline-block;
-  font-size: 0.85em;
   font-weight: 500;
+  font-size: 16px;
   letter-spacing: 0;
   text-transform: sentence case;
-  color: #737679;
+  color: #151515;
   text-align: center;
-  padding: 14px;
   text-decoration: none;
 }
-
-div.trending-nav a {
-  &:hover {
-    color: lighten(#151515, 50%) !important;
-    text-decoration: none;
-  }
-}
-
-.trending-nav__title {
+.trending-nav-item {
   margin-bottom: 0;
   font-size: 16px;
   white-space: nowrap;
@@ -41,45 +32,12 @@ div.trending-nav a {
   text-overflow: ellipsis;
   width: 200px;
   max-width: 250px;
+  padding: 8px 16px;
   line-height: 24px;
   color: #151515;
-  i {
-    padding-right: 6px;
+  &:hover {
+    color: #0088ce;
   }
-}
-i.fa-arrow-down {
-  color: red;
-}
-i.fa-arrow-up {
-  color: green;
-}
-.trending-nav-item ul[data-toggle="popover"] {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  max-width: 300px;
-  min-width: 200px;
-  white-space: normal;
-  text-align: left;
-  transition-property: opacity, padding, visibility;
-  transition: 0.2s ease-out;
-  background-color: #fff;
-  box-shadow: rgba(3, 3, 3, 0.12) 0 4px 8px 0, rgba(3, 3, 3, 0.06) 0 0 4px 0;
-  color: #151515;
-  font-family: "RedHatText";
-  font-weight: 400;
-  font-size: 14px;
-  list-style: none;
-  h6 {
-    font-family: "RedHatDisplay";
-    font-weight: 600;
-    font-size: 16px;
-  }
-}
-.trending-nav-item:hover ul[data-toggle="popover"] {
-  visibility: visible;
-  opacity: 1;
-  padding: 16px;
 }
 .topic-navigation__scroll-button {
   display: inline-flex !important;
@@ -94,7 +52,7 @@ i.fa-arrow-up {
   opacity: 1;
   background: rgba(256, 256, 256, 1);
   width: 40px;
-  height: 72px;
+  height: 40px;
   padding: 0 8px;
   border: 1px solid transparent;
   i {
@@ -113,4 +71,19 @@ i.fa-arrow-up {
   left: 0;
   border-right-color: #ddd;
 }
-/* stylelint-enable */
+.tooltip-box {
+  position: absolute;
+  display: flex;
+  color: #fff;
+  background-color: #151515;
+  font-size: 14px;
+  font-weight: 400px;
+  max-width: 200px;
+  overflow: hidden;
+  white-space: normal;
+  text-align: left;
+  padding: 8px;
+  border-radius: 3px;
+  z-index: 5;
+}
+/* styleint-enable */
