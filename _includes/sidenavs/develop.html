@@ -3,14 +3,14 @@
   <ul>
     <li class="rhddx-c-sub-menu rhddx-m-overview">
       {% if jekyll.environment == 'development' %}
-      <a href="/design"
+      <a href="/develop"
         {% if page.active_nav == 'Overview' %}
           class="rhddx-m-active" aria-current="page"
         {% endif %}>
         Develop Overview
       </a>
       {% elsif jekyll.environment == 'production' %}
-      <a href="{{ site.baseurl }}/design"
+      <a href="{{ site.baseurl }}/develop"
         {% if page.active_nav == 'Overview' %}
           class="rhddx-m-active" aria-current="page"
         {% endif %}>
