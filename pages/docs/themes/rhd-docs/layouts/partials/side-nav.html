@@ -1,0 +1,227 @@
+<script>
+  function expandNavOverview() {
+    var expandNavSection = document.getElementById("overview").classList;
+    if (expandNavSection.contains("pf-m-expanded")) {
+      expandNavSection.remove("pf-m-expanded");
+    } else {
+      expandNavSection.add("pf-m-expanded");
+    }
+  }
+
+  function expandNavComponents() {
+    var expandNavSection = document.getElementById("components").classList;
+    if (expandNavSection.contains("pf-m-expanded")) {
+      expandNavSection.remove("pf-m-expanded");
+    } else {
+      expandNavSection.add("pf-m-expanded");
+    }
+  }
+
+  function expandNavPages() {
+    var expandNavSection = document.getElementById("pages").classList;
+    if (expandNavSection.contains("pf-m-expanded")) {
+      expandNavSection.remove("pf-m-expanded");
+    } else {
+      expandNavSection.add("pf-m-expanded");
+    }
+  }
+
+  function expandNavPatterns() {
+    var expandNavSection = document.getElementById("patterns").classList;
+    if (expandNavSection.contains("pf-m-expanded")) {
+      expandNavSection.remove("pf-m-expanded");
+    } else {
+      expandNavSection.add("pf-m-expanded");
+    }
+  }
+
+  function expandNavhelpfulLinks() {
+    var expandNavSection = document.getElementById("helpfulLinks").classList;
+    if (expandNavSection.contains("pf-m-expanded")) {
+      expandNavSection.remove("pf-m-expanded");
+    } else {
+      expandNavSection.add("pf-m-expanded");
+    }
+  }
+</script>
+<div class="pf-c-page__sidebar pf-m-dark">
+  <div class="pf-c-page__sidebar-body">
+    <nav class="pf-c-nav pf-m-dark" id="page-expandable-nav-example-expandable-nav" aria-label="Global">
+      <ul class="pf-c-nav__list">
+        <li id="overview" class="pf-c-nav__item pf-m-expandable pf-m-expanded" onclick="expandNavOverview()">
+          <a href="#" class="pf-c-nav__link" id="expandable-sidenav-components" aria-expanded="false">Overview
+            <span class="pf-c-nav__toggle">
+              <i class="fas fa-angle-right" aria-hidden="true"></i>
+            </span>
+          </a>
+          <section class="pf-c-nav__subnav" aria-labelledby="expandable-sidenav-components">
+            <ul class="pf-c-nav__simple-list">
+              <li class="pf-c-nav__item">
+                <a href="/" class="pf-c-nav__link pf-m-current">
+                  Introduction
+                </a>
+              </li>
+              <li class="pf-c-divider" role="separator" style="height: 1px; background-color: #4f5255;"></li>
+              <li class="pf-c-nav__item">
+                <a href="#" class="pf-c-nav__link">
+                  UX Designs <i class="fab fa-sketch"></i>
+                </a>
+              </li>
+              <li class="pf-c-divider" role="separator" style="height: 1px; background-color: #4f5255;"></li>
+              <li class="pf-c-nav__item">
+                <a href="#" class="pf-c-nav__link">
+                  GitHub Repo <i class="far fa-external-link-alt"></i>
+                </a>
+              </li>
+              <li class="pf-c-nav__item">
+                <a href="#" class="pf-c-nav__link">
+                  Commit history <i class="far fa-external-link-alt"></i>
+                </a>
+              </li>
+              <li class="pf-c-nav__item">
+                <a href="#" class="pf-c-nav__link">
+                  Release history <i class="far fa-external-link-alt"></i>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </li>
+        <li id="components" class="pf-c-nav__item pf-m-expandable" onclick="expandNavComponents()">
+          <a href="#" class="pf-c-nav__link" id="expandable-sidenav-components" aria-expanded="false">Components
+            <span class="pf-c-nav__toggle">
+              <i class="fas fa-angle-right" aria-hidden="true"></i>
+            </span>
+          </a>
+          <section class="pf-c-nav__subnav" aria-labelledby="expandable-sidenav-components">
+            <ul class="pf-c-nav__simple-list">
+              {{ range sort $.Site.Taxonomies.categories.component "Title" "ascending" }}
+              <li class="pf-c-nav__item">
+                <a href="{{.Permalink}}" class="pf-c-nav__link">
+                  {{.Title}}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </section>
+        </li>
+        <li id="pages" class="pf-c-nav__item pf-m-expandable" onclick="expandNavPages()">
+          <a href="#" class="pf-c-nav__link" id="expandable-sidenav-pages" aria-expanded="false">Pages
+            <span class="pf-c-nav__toggle">
+              <i class="fas fa-angle-right" aria-hidden="true"></i>
+            </span>
+          </a>
+          <section class="pf-c-nav__subnav" aria-labelledby="expandable-sidenav-pages">
+            <ul class="pf-c-nav__simple-list">
+              {{ range sort $.Site.Taxonomies.categories.page_example "Title" "ascending" }}
+              <li class="pf-c-nav__item">
+                <a href="{{.Permalink}}" class="pf-c-nav__link">
+                  {{.Title}}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </section>
+        </li>
+        <li id="patterns" class="pf-c-nav__item pf-m-expandable" onclick="expandNavPatterns()">
+          <a href="#" class="pf-c-nav__link" id="expandable-sidenav-patterns" aria-expanded="false">Patterns
+            <span class="pf-c-nav__toggle">
+              <i class="fas fa-angle-right" aria-hidden="true"></i>
+            </span>
+          </a>
+          <section class="pf-c-nav__subnav" aria-labelledby="expandable-sidenav-patterns">
+            <ul class="pf-c-nav__simple-list">
+              {{ range sort $.Site.Taxonomies.categories.assembly "Title" "ascending" }}
+              <li class="pf-c-nav__item">
+                <a href="{{.Permalink}}" class="pf-c-nav__link">
+                  {{.Title}}
+                </a>
+              </li>
+              {{ end }}
+              <li class="pf-c-divider" role="separator" style="height: 1px; background-color: #4f5255;"></li>
+              {{ range sort $.Site.Taxonomies.categories.code "Title" "ascending" }}
+              <li class="pf-c-nav__item">
+                <a href="{{.Permalink}}" class="pf-c-nav__link">
+                  {{.Title}}
+                </a>
+              </li>
+              {{ end }}
+              <li class="pf-c-divider" role="separator" style="height: 1px; background-color: #4f5255;"></li>
+              {{ range sort $.Site.Taxonomies.categories.content "Title" "ascending" }}
+              <li class="pf-c-nav__item">
+                <a href="{{.Permalink}}" class="pf-c-nav__link">
+                  {{.Title}}
+                </a>
+              </li>
+              {{ end }}
+              <li class="pf-c-divider" role="separator" style="height: 2px; background-color: #4f5255;"></li>
+              {{ range sort $.Site.Taxonomies.categories.design "Title" "ascending" }}
+              <li class="pf-c-nav__item">
+                <a href="{{.Permalink}}" class="pf-c-nav__link">
+                  {{.Title}}
+                </a>
+              </li>
+              {{ end }}
+              <li class="pf-c-divider" role="separator" style="height: 2px; background-color: #4f5255;"></li>
+              {{ range sort $.Site.Taxonomies.categories.layout "Title" "ascending" }}
+              <li class="pf-c-nav__item">
+                <a href="{{.Permalink}}" class="pf-c-nav__link">
+                  {{.Title}}
+                </a>
+              </li>
+              {{ end }}
+              <li class="pf-c-divider" role="separator" style="height: 2px; background-color: #4f5255;"></li>
+              {{ range sort $.Site.Taxonomies.categories.misc "Title" "ascending" }}
+              <li class="pf-c-nav__item">
+                <a href="{{.Permalink}}" class="pf-c-nav__link">
+                  {{.Title}}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </section>
+        </li>
+        <li id="tags" class="pf-c-nav__item pf-m-expandable" onclick="expandNavTags()">
+          <a href="#" class="pf-c-nav__link" id="expandable-sidenav-helpful-links" aria-expanded="false">Tags
+            <span class="pf-c-nav__toggle">
+              <i class="fas fa-angle-right" aria-hidden="true"></i>
+            </span>
+          </a>
+          <section class="pf-c-nav__subnav" aria-labelledby="expandable-sidenav-helpful-links">
+            <ul class="pf-c-nav__simple-list">
+              {{ range sort $.Site.Taxonomies.categories.misc "Title" "ascending" }}
+              <li class="pf-c-nav__item">
+                <a href="{{.Permalink}}" class="pf-c-nav__link">
+                  {{.Title}}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </section>
+        </li>
+        <li id="helpfulLinks" class="pf-c-nav__item pf-m-expandable" onclick="expandNavhelpfulLinks()">
+          <a href="#" class="pf-c-nav__link" id="expandable-sidenav-helpful-links" aria-expanded="false">Helpful Links
+            <span class="pf-c-nav__toggle">
+              <i class="fas fa-angle-right" aria-hidden="true"></i>
+            </span>
+          </a>
+          <section class="pf-c-nav__subnav" aria-labelledby="expandable-sidenav-helpful-links">
+            <ul class="pf-c-nav__simple-list">
+              <li class="pf-c-nav__item">
+                <a href="https://docs.google.com/document/d/1bAb9MkrLW34wtk4RtrYvqLylXnvWhS81aDHAjhSzxMQ/edit" class="pf-c-nav__link">
+        Official Red Hat Unified Web Style Guide</a>
+              </li>
+              <li class="pf-c-nav__item">
+                <a href="https://docs.google.com/document/d/1VoHKCKPKLLNZC7N8i3KlsMSfZYpfFdRRWl3t01Sg2IA/edit#heading=h.he2yza8x0ytw" class="pf-c-nav__link">
+                  Customer Portal UX: Pattern Library Game Plan
+                </a>
+              </li>
+              <li class="pf-c-nav__item">
+                <a href="http://bit.ly/mod-css" class="pf-c-nav__link">Maintainable & Modular CSS</a>
+              </li>
+            </ul>
+          </section>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

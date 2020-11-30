@@ -1,0 +1,28 @@
+html,
+body {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  font-family: "Red Hat Text", sans-serif;
+}
+
+img {
+  width: 560px;
+  height: 315px;
+}
