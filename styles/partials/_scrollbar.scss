@@ -1,29 +1,72 @@
 /* stylelint-disable */
 
-::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+/* Safari, Chrome, Edge styling */
+*::-webkit-scrollbar {
+  width: 16px; /* width of the entire scrollbar */
 }
-::-webkit-scrollbar-track {
-  background: var(--background-color-normal);        /* color of the tracking area */
+*::-webkit-scrollbar-track {
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(204,0,0,1) 0%, rgba(240,171,0,1) 35%, rgba(146,212,0,1) 65%, rgba(0,185,228,1) 100%);
 }
-::-webkit-scrollbar-thumb {
-  background-color: var(--background-color-dark);    /* color of the scroll thumb */
-  border: var(--border-width-small) solid var(--border-color-normal);  /* creates padding around scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
+*::-webkit-scrollbar-thumb {
+  background-clip: content-box;
+  background-color: rgba(256, 256, 256, .5);
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+/* Firefox styling */
+body, scrollbar {
+  scrollbar-width: thin !important;
+  scrollbar-color: #151515 #d7d7d7 !important;
+}
+
+scrollbar[orient="vertical"] {
+  width: 16px !important;
+  min-width: 12px !important;
+}
+
+scrollbar thumb {
+	background: #3a3a3a !important;
+}
+scrollbar thumb:hover,
+scrollbar thumb:active {
+	background: #545454 !important;
+}
+
+scrollbar:inactive scrollbarbutton {
+    background-color: #444444 !important;
+}
+scrollbar scrollbarbutton:inactive {
+    background: #3a3a3a !important;
+}
+scrollbar scrollbarbutton:inactive {
+    background: #545454 !important;
+}
+scrollbar scrollbarbutton {
+    display: none !important;
 }
 
 @media (prefers-color-scheme: dark) {
-  ::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
+  /* Safari, Chrome, Edge styling */
+  *::-webkit-scrollbar {
+    width: 16px; /* width of the entire scrollbar */
   }
-  ::-webkit-scrollbar-track {
-    background: var(--background-color-dark);        /* color of the tracking area */
-  }
-  ::-webkit-scrollbar-thumb {
-    background: rgb(204,0,0);
+  *::-webkit-scrollbar-track {
+    background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(204,0,0,1) 0%, rgba(240,171,0,1) 35%, rgba(146,212,0,1) 65%, rgba(0,185,228,1) 100%);
-    border: var(--border-width-small) solid var(--border-color-dark);  /* creates padding around scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+  *::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    background-color: rgba(0, 0, 0, .5);
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  /* Firefox styling */
+  body {
+    scrollbar-width: thin !important;
+    scrollbar-color: #d7d7d7 #151515 !important;
   }
 }
 

@@ -29,12 +29,52 @@
     padding-right: 16px;
     padding-bottom: 16px;
     padding-left: 16px;
-    border: var(--border-width-small) solid transparent;
+    transition: background .4s ease-in-out;
+  }
+
+  .pf-c-nav__horizontal-list .pf-c-nav__link::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #151515;
+    transition: background .2s ease-in-out;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .pf-c-nav__horizontal-list .pf-c-nav__link::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    display: block;
+    width: 99%;
+    height: 100%;
+    content: "";
+    background: transparent;
+    background: linear-gradient(90deg, rgba(238, 0, 0, 1) 20%, rgba(228, 128, 0, 1) 40%, rgba(146, 212, 0, 1) 60%, rgba(0, 185, 228, 1) 80%);
   }
 
   .pf-c-nav__horizontal-list .pf-c-nav__link.pf-m-hover,
-  .pf-c-nav__horizontal-list .pf-c-nav__link:hover {
-    border: var(--border-width-small) solid var(--text-color-white);
+  .pf-c-nav__horizontal-list .pf-c-nav__link:hover,
+  .pf-c-nav__horizontal-list .pf-c-nav__link:focus,
+  .pf-c-nav__horizontal-list .pf-c-nav__link:active {
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+  }
+
+  .pf-c-nav__horizontal-list .pf-c-nav__link.pf-m-hover::before,
+  .pf-c-nav__horizontal-list .pf-c-nav__link:hover::before,
+  .pf-c-nav__horizontal-list .pf-c-nav__link:focus::before,
+  .pf-c-nav__horizontal-list .pf-c-nav__link:active::before {
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    margin-top: 2px;
+    margin-left: 2px;
 
     /* stylelint-disable selector-max-class */
     .pf-c-nav__link {
@@ -42,26 +82,33 @@
     }
   }
 
-  .pf-c-nav__link.pf-m-current {
-    border-top-color: var(--text-color-white);
-    border-right-color: var(--text-color-white);
-    border-bottom-color: var(--site-color-red);
-    border-left-color: var(--text-color-white);
-  }
-
-  .pf-c-nav__link.pf-m-current:hover {
-    border-bottom-color: var(--site-color-red);
-  }
-
-  .pf-c-nav__horizontal-list .pf-c-nav__link::after {
-    bottom: -1px;
-  }
-
   .pf-c-nav__horizontal-list .pf-c-nav__link.pf-m-hover::after,
-  .pf-c-nav__horizontal-list .pf-c-nav__link:hover::after {
-    .rhddx & {
-      background-color: transparent;
-    }
+  .pf-c-nav__horizontal-list .pf-c-nav__link:hover::after,
+  .pf-c-nav__horizontal-list .pf-c-nav__link:focus::after,
+  .pf-c-nav__horizontal-list .pf-c-nav__link:active::after {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    background-color: transparent;
+  }
+
+  .pf-c-nav__horizontal-list .pf-c-nav__link.pf-m-current::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: calc(100% - 2px);
+  }
+
+  .pf-c-nav__horizontal-list .pf-c-nav__link.pf-m-current:hover::before,
+  .pf-c-nav__horizontal-list .pf-c-nav__link.pf-m-current:focus::before,
+  .pf-c-nav__horizontal-list .pf-c-nav__link.pf-m-current:active::before {
+    width: calc(100% - 2px);
+  }
+
+  .pf-c-nav__link.pf-m-current {
+    border-color: transparent;
   }
 
   .pf-c-nav__horizontal-list .pf-c-nav__link:active::after,
@@ -79,12 +126,13 @@
   .pf-c-nav__list .pf-c-nav__link.pf-m-active::after,
   .pf-c-nav__list .pf-c-nav__link:active::after {
     .rhddx & {
-      background-color: var(--site-color-red);
+      background: transparent;
+      background: linear-gradient(90deg, rgba(238, 0, 0, 1) 20%, rgba(228, 128, 0, 1) 40%, rgba(146, 212, 0, 1) 60%, rgba(0, 185, 228, 1) 80%);
     }
   }
 
   .pf-c-page__header-tools-group.pf-m-icons {
-    .pf-c-button.pf-m-plain {
+    .pf-c-button.pf-m-plain.pf-m-link {
       border-color: transparent;
       border-style: solid;
       border-width: var(--border-width-small);
@@ -98,18 +146,64 @@
         color: var(--text-color-white) !important; /* stylelint-disable-line declaration-no-important */
       }
 
-      &:hover {
-        border-color: var(--text-color-white);
+      &::before,
+      &.pf-m-current::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: #151515;
+        transition: background .2s ease-in-out;
+        transform: translate3d(0, 0, 0);
       }
 
-      &:focus,
-      &:active,
-      &.pf-m-current {
-        border-top-color: var(--text-color-white);
-        border-right-color: var(--text-color-white);
-        border-bottom-color: var(--site-color-red);
-        border-left-color: var(--text-color-white);
-        box-shadow: var(--site-color-red) 0 -2px 0 0 inset;
+      &::after,
+      &.pf-m-current::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -3;
+        display: block;
+        width: 99%;
+        height: 100%;
+        content: "";
+        background: transparent;
+        background: linear-gradient(90deg, rgba(0, 185, 228, 1) 20%, rgba(146, 212, 0, 1) 40%, rgba(228, 128, 0, 1) 60%, rgba(238, 0, 0, 1) 80%);
+      }
+
+      &:hover::before,
+      &:focus::before,
+      &:active::before {
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        margin-top: 2px;
+        margin-left: 2px;
+      }
+
+      &:hover::after,
+      &:focus::after,
+      &:active::after {
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        background-color: transparent;
+      }
+
+      &:hover::after,
+      &::after,
+      &:active::after {
+        .rhddx & { /* stylelint-disable-line max-nesting-depth */
+          background: transparent;
+          background: linear-gradient(90deg, rgba(238, 0, 0, 1) 20%, rgba(228, 128, 0, 1) 40%, rgba(146, 212, 0, 1) 60%, rgba(0, 185, 228, 1) 80%);
+        }
+      }
+
+      &.pf-m-current::after {
+        height: calc(100% + 2px);
+        background-color: transparent;
       }
 
       &:visited {
@@ -129,6 +223,10 @@
     margin: 0;
     list-style: none;
     border-top: none;
+
+    & li.rhddx-c-sub-menu a { /* stylelint-disable-line */
+      justify-content: space-between;
+    }
 
     & li {
       display: block;
@@ -175,6 +273,7 @@
           display: flex;
           align-items: center;
           & a { /* stylelint-disable-line */
+            justify-content: left !important; /* stylelint-disable-line */
             width: 100%;
             color: var(--text-color-normal);
             background: var(--text-color-white);
@@ -208,7 +307,6 @@
 
       & a { /* stylelint-disable-line */
         display: flex;
-        justify-content: space-between;
         padding: 8px 16px;
         color: var(--text-color-normal);
         text-decoration: none;

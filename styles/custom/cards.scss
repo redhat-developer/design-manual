@@ -53,7 +53,6 @@
 }
 
 .rhddx-c-card-content {
-  border-top: 8px solid rgba(211, 211, 211, 1);
   opacity: .5;
   transition-duration: .3s;
 
@@ -86,19 +85,41 @@
 
   &.rhddx-m-developer {
     &.rhddx-m-active {
-      border-top-color: rgba(236, 122, 8, 1);
+      background: rgba(236, 122, 8, 1);
+      background: linear-gradient(270deg, rgba(236, 122, 8, 0) 0%, rgba(236, 122, 8, 1) 45%);
+    }
+
+    &.rhddx-m-active .pf-c-card__body {
+      background-color: #fff;
     }
   }
 
   &.rhddx-m-designer {
     &.rhddx-m-active {
-      border-top-color: rgba(0, 185, 228, 1);
+      background: rgb(0, 185, 228);
+      background: linear-gradient(270deg, rgba(0, 185, 227, 0) 0%, rgba(0, 185, 228, 1) 45%);
     }
+
+    &.rhddx-m-active .pf-c-card__body {
+      background-color: #fff;
+    }
+  }
+
+
+  &.rhddx-m-developer .pf-c-card__body,
+  &.rhddx-m-designer .pf-c-card__body,
+  &.rhddx-m-creator .pf-c-card__body {
+    margin-top: 8px;
   }
 
   &.rhddx-m-creator {
     &.rhddx-m-active {
-      border-top-color: rgba(146, 212, 0, 1);
+      background: rgba(146, 212, 0, 1);
+      background: linear-gradient(270deg, rgba(146, 212, 0, 0) 0%, rgba(146, 212, 0, 1) 45%);
+    }
+
+    &.rhddx-m-active .pf-c-card__body {
+      background-color: #fff;
     }
   }
 }

@@ -27,17 +27,17 @@
   <div class="pf-c-page__header-tools">
     <div class="pf-c-page__header-tools-group pf-m-icons">
       {% if jekyll.environment == 'development' %}
-      <a {% if page.category == 'about' %} class="pf-c-button pf-m-plain pf-m-current" aria-current="page" {% else %} class="pf-c-button pf-m-plain pf-m-link" {% endif %} aria-label="About" href="/about">
+      <a {% if page.category == 'about' %} class="pf-c-button pf-m-plain pf-m-link pf-m-current" aria-current="page" {% else %} class="pf-c-button pf-m-plain pf-m-link" {% endif %} aria-label="About" href="/about">
         <i class="fas fa-info-circle" aria-hidden="true" alt="About"></i>
       </a>
-      <a {% if page.category == 'search' %} class="pf-c-button pf-m-plain pf-m-current" aria-current="page" {% else %} class="pf-c-button pf-m-plain pf-m-link" {% endif %} aria-label="Site search" href="/search">
+      <a {% if page.category == 'search' %} class="pf-c-button pf-m-plain pf-m-link pf-m-current" aria-current="page" {% else %} class="pf-c-button pf-m-plain pf-m-link" {% endif %} aria-label="Site search" href="/search">
         <i class="fal fa-search" aria-hidden="true" alt="Site search"></i>
       </a>
       {% elsif jekyll.environment == 'production' %}
-      <a {% if page.category == 'about' %} class="pf-c-button pf-m-plain pf-m-current" aria-current="page" {% else %} class="pf-c-button pf-m-plain pf-m-link" {% endif %} aria-label="About" href="{{ site.baseurl }}/about">
+      <a {% if page.category == 'about' %} class="pf-c-button pf-m-plain pf-m-link pf-m-current" aria-current="page" {% else %} class="pf-c-button pf-m-plain pf-m-link" {% endif %} aria-label="About" href="{{ site.baseurl }}/about">
         <i class="fas fa-info-circle" aria-hidden="true" alt="About"></i>
       </a>
-      <a {% if page.category == 'search' %} class="pf-c-button pf-m-plain pf-m-current" aria-current="page" {% else %} class="pf-c-button pf-m-plain pf-m-link" {% endif %} aria-label="Site search" href="{{ site.baseurl }}/search">
+      <a {% if page.category == 'search' %} class="pf-c-button pf-m-plain pf-m-link pf-m-current" aria-current="page" {% else %} class="pf-c-button pf-m-plain pf-m-link" {% endif %} aria-label="Site search" href="{{ site.baseurl }}/search">
         <i class="fal fa-search" aria-hidden="true" alt="Site search"></i>
       </a>
       {% endif %}
@@ -45,16 +45,5 @@
         <i class="fab fa-github" aria-hidden="true" alt="GitHub"></i>
       </a>
     </div>
-    <!-- <div class="pf-c-page__header-tools-group">
-      <form class="pf-c-form" action="https://google.com/search" target="_blank" type="GET">
-        <div class="pf-c-form__group" style="display: flex; align-items: baseline;">
-          <span id="site-search-form-name" style="display: flex; align-items: center; margin-right: -20px;">
-            <i class="fal fa-search" aria-hidden="true"></i>
-          </span>
-          <input class="pf-c-form-control rhddx-c-site-search" style="padding-left: 24px;" type="search" id="site-search-form-name-input" name="q" placeholder="Search" aria-label="Search" />
-          <input type="submit" value="go" aria-hidden="true" class="pf-u-display-none"></input>
-        </div>
-      </form>
-    </div> -->
   </div>
 </header>

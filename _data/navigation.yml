@@ -1,0 +1,10 @@
+toc:
+  - page: About
+    url: /about
+    icon: fas fa-info-circle
+  - page: Search
+    url: /search
+    icon: fal fa-search
+  - page: GitHub
+    url: https://github.com/redhat-developer/design-manual
+    icon: fab fa-github
