@@ -15,7 +15,7 @@ Labels available for use in the repo.
 | documentation     | Updates to documentation |
 | duplicate         | Duplicate issue or PR |
 | enhancement       | Updates to an existing feature or design |
-| feature           | Feture release - major version bump |
+| feature           | Feature release - major version bump |
 | github-actions    | GitHub Actions related change or issue - used by automated processes |
 | good first issue  | Good for newcomers |
 | help wanted       | Extra attention is needed |
