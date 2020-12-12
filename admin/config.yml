@@ -1,0 +1,569 @@
+# Everything you need to know about configuring the CMS can be found here:-
+# https://www.netlifycms.org/docs/configuration-options/
+
+backend:
+  name: git-gateway # Netlify’s Git Gateway connects to Git provider’s API
+  repo: redhat-developer/design-manual
+  branch: main # Branch to update (main by default)
+  squash_merges: true
+  commit_messages:
+    create: 'feat: Add [{{collection}}] {{slug}}'
+    update: 'fix: Update [{{collection}}] {{slug}}'
+    delete: 'fix: Delete [{{collection}}] {{slug}}'
+    uploadMedia: 'fix: Media uploaded - {{path}}'
+    deleteMedia: 'fix: Media removed - {{path}}'
+    openAuthoring: '{{author-name}} / {{message}}'
+subfolder: "/design-manual/"
+logo_url: https://redhat-developer.github.io/design-manual/assets/img/NewRHDFullLogo_black.png
+publish_mode: editorial_workflow # Enable drafts
+media_folder: "assets/uploads" # Folder where user uploaded files should go
+pull_request_url: https://github.com/redhat-developer/design-manual/pulls
+
+collections: # A list of collections the CMS should be able to edit
+
+  # Navigation
+  - name: "options"
+    label: "Navigations"
+    delete: false
+    editor:
+      preview: false
+    type: "navigation"
+    extension: "yml"
+    files:
+      - label: "Assemblies Page Navigation"
+        name: "assemblies"
+        file: "_data/assemblies.yml"
+        description: "Used for creating the Assembly category list in the vertical navigation."
+        fields:
+          - label: "Assembly Items"
+            name: "toc"
+            widget: "list"
+            type: "navigation"
+            extension: "yml"
+            fields:
+              - {label: "Page", name: page, widget: string}
+              - {label: "URL", name: url, widget: string}
+      - label: "Components Navigation"
+        name: "components-nav"
+        file: "_data/components.yml"
+        description: "Used for creating the Components category list in the vertical navigation."
+        fields:
+          - label: "Components Items"
+            name: "toc"
+            widget: "list"
+            type: "navigation"
+            extension: "yml"
+            fields:
+              - label: "Page"
+                name: page
+                widget: string
+                required: true
+              - label: "URL"
+                name: url
+                widget: string
+                required: true
+              - label: "Release Status"
+                name: "status"
+                widget: "select"
+                hint: "Select a release status."
+                options:
+                  - { label: "Released", value: "released" }
+                  - { label: "Unreleased", value: "unreleased" }
+                  - { label: "Development", value: "development" }
+                required: true
+  # Collections
+  - name: "getting-started"
+    label: "Get Started"
+    folder: "pages/getting-started"
+    sort: "title:asc"
+    create: true # Allow users to create new Getting Started pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    type: "page"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "getting-started"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "hidden"
+        default: "getting-started"
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "string"
+        hint: "This should match the sidenav parent item. If a parent, leave blank."
+        required: false
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/{{category}}/page-title"
+        hint: "If applicable, replace page-title with the title of the page"
+        required: true
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title of the page"
+        tagname: "h1"
+        required: true
+      - label: "Intro Paragraph"
+        name: "intro_paragraph"
+        widget: "markdown"
+        required: false
+      - label: "Custom JS File"
+        name: "custom_js"
+        widget: "string"
+        default: ""
+        hint: "Add a custom JS file to the page."
+        required: false
+      - label: "Custom CSS File"
+        name: "custom_css"
+        widget: "string"
+        default: ""
+        hint: "Add a custom CSS file to the page."
+        required: false
+      - label: "File Upload"
+        name: "file-upload"
+        widget: "file"
+        default: ""
+        hint: "Update URL to add /design-manual/to the beginning of the link."
+        media_library:
+          config:
+            multiple: true
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: true
+  - name: "design"
+    label: "Design"
+    folder: "pages/design"
+    sort: "title:asc"
+    create: true # Allow users to create new Design pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    type: "page"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "design"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "hidden"
+        default: "design"
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "string"
+        hint: "This should match the sidenav parent item. If a parent item, leave blank."
+        tagname: "h3"
+        required: false
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/design/page-title"
+        hint: "If applicable, replace page-title with the title of the page"
+        required: true
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title of the page"
+        tagname: "h4"
+        required: true
+      - label: "Intro Paragraph"
+        name: "intro_paragraph"
+        widget: "markdown"
+        required: false
+      - label: "Custom JS File"
+        name: "custom_js"
+        widget: "string"
+        default: ""
+        hint: "Add a custom JS file to the page."
+        required: false
+      - label: "Custom CSS File"
+        name: "custom_css"
+        widget: "string"
+        default: ""
+        hint: "Add a custom CSS file to the page."
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: true
+  - name: "develop"
+    label: "Develop"
+    folder: "pages/develop"
+    sort: "title:asc"
+    create: true # Allow users to create new Design pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    type: "page"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "develop"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "hidden"
+        default: "develop"
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "hidden"
+        default: "Develop"
+        required: false
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title of the page"
+        tagname: "h1"
+        required: true
+      - label: "Nav"
+        name: "active_nav"
+        widget: "string"
+        hint: "Available options: Assemblies, Components, Layouts"
+        default: ""
+        required: true
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/develop/page-title"
+        hint: "Replace page-title with the title of the page."
+        required: true
+      - label: "Release Status"
+        name: "status"
+        widget: "select"
+        hint: "Select a release status."
+        options:
+          - { label: "Released", value: "released" }
+          - { label: "Unreleased", value: "unreleased" }
+          - { label: "Development", value: "development" }
+        required: true
+      - label: "Intro Paragraph"
+        name: "intro_paragraph"
+        widget: "markdown"
+        required: false
+      - label: "Custom JS File"
+        name: "custom_js"
+        widget: "string"
+        default: ""
+        hint: "Add a custom JS file to the page."
+        required: false
+      - label: "Custom CSS File"
+        name: "custom_css"
+        widget: "string"
+        default: ""
+        hint: "Add a custom CSS file to the page."
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: true
+  - name: "create"
+    label: "Create"
+    folder: "pages/create"
+    sort: "title:asc"
+    create: true # Allow users to create new Design pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    type: "page"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "pages"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "hidden"
+        default: "create"
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "string"
+        hint: "This should match the sidenav parent item. If a parent item, leave blank."
+        tagname: "h3"
+        required: false
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/create/page-title"
+        hint: "Replace page-title with the title of the page"
+        required: true
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title of the page"
+        tagname: "h4"
+        required: true
+      - label: "Nav"
+        name: "active_nav"
+        widget: "string"
+        hint: "Available options: Content_types"
+        required: true
+      - label: "Intro Paragraph"
+        name: "intro_paragraph"
+        widget: "markdown"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: true
+      - label: "Custom JS File"
+        name: "custom_js"
+        widget: "string"
+        default: ""
+        hint: "Add a custom JS file to the page."
+        required: false
+      - label: "Custom CSS File"
+        name: "custom_css"
+        widget: "string"
+        default: ""
+        hint: "Add a custom CSS file to the page."
+        required: false
+  - name: "page"
+    label: "Overviews"
+    folder: "pages"
+    sort: "title:asc"
+    create: true # Allow users to create new Overview Pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    type: "page"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "select"
+        hint: "Select a layout to use."
+        options:
+          - { label: "Getting Started", value: "getting-started" }
+          - { label: "Designer pages", value: "design" }
+          - { label: "Developer pages", value: "develop" }
+          - { label: "Creator pages", value: "create" }
+          - { label: "About pages", value: "page" }
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        hint: "Select a category to use - should match primary nav that this page will reside under."
+        options:
+          - { label: "Getting Started", value: "getting-started" }
+          - { label: "Designer pages", value: "design" }
+          - { label: "Developer pages", value: "develop" }
+          - { label: "Creator pages", value: "create" }
+          - { label: "About pages", value: "page" }
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "string"
+        hint: "This should match the sidenav parent item."
+        required: false
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/{{category}}/page-title"
+        hint: "If applicable, replace page-title with the title of the page"
+        required: true
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title of the page"
+        tagname: "h1"
+        required: true
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
+  - name: "assemblies"
+    label: "Assemblies"
+    folder: "pages/assemblies"
+    sort: "title:asc"
+    create: true # Allow users to create new Design pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    type: "page"
+    fields:
+      - label: "Custom CSS for Assembly examples"
+        name: "custom_css"
+        default: "assemblies"
+        required: true
+        widget: "hidden"
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "create"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "hidden"
+        default: "create"
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "hidden"
+        default: "Create"
+        required: false
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title of the page"
+        tagname: "h1"
+        required: true
+      - label: "Nav"
+        name: "active_nav"
+        widget: "hidden"
+        default: "Assemblies"
+        required: true
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/assemblies/page-title"
+        hint: "Replace page-title with the title of the page."
+        required: true
+      - label: "Release Status"
+        name: "status"
+        widget: "select"
+        hint: "Select a release status."
+        options:
+          - { label: "Released", value: "released" }
+          - { label: "Unreleased", value: "unreleased" }
+          - { label: "Development", value: "development" }
+        required: true
+      - label: "Featured Video"
+        name: "youtube_video"
+        widget: "string"
+        hint: "Add the YouTube video ID here (do not include https://www.youtube.com/embed/)."
+        required: false
+      - label: "Featured Video Title"
+        name: "video-title"
+        widget: "string"
+        required: false
+      - label: "Featured Image"
+        name: "featured_image-file"
+        widget: "image"
+        required: false
+      - label: "Featured Image Alt Text"
+        name: "featured_image-text"
+        widget: "string"
+        hint: "Describe what this is an image of. This will appear if the image does not render."
+        required: false
+      - label: "Intro Paragraph"
+        name: "intro_paragraph"
+        widget: "text"
+        required: false
+        hint: "Plain text, no markdown or code."
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
+        hint: "Use the '+' button to add Images or Code Blocks."
+  - name: "layouts"
+    label: "Layouts"
+    folder: "pages/layouts"
+    sort: "title:asc"
+    create: true # Allow users to create new Design pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    type: "page"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "develop"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "hidden"
+        default: "develop"
+        required: true
+      - label: "Section"
+        name: "section"
+        widget: "hidden"
+        default: "Develop"
+        required: false
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title of the page"
+        tagname: "h1"
+        required: true
+      - label: "Nav"
+        name: "active_nav"
+        widget: "hidden"
+        default: "Layouts"
+        required: true
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/layouts/page-title"
+        hint: "Replace page-title with the title of the page."
+        required: true
+      - label: "Intro Paragraph"
+        name: "intro_paragraph"
+        widget: "markdown"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        hint: "Add custom CSS inside of <style> brackets as necessary."
+        required: true
+  - name: "pages"
+    label: "Examples"
+    folder: "pages/pages"
+    sort: "title:asc"
+    create: true # Allow users to create new Page example pages in the admin UI
+    delete: true
+    slug: "{{slug}}"
+    type: "page"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "pages"
+        required: true
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The title and link to the page"
+        tagname: "h4"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "hidden"
+        default: "create"
+        tagname: "h3"
+        required: true
+      - label: "URL"
+        name: "permalink"
+        widget: "string"
+        default: "/page-title"
+        hint: "Replace page-title} with the title of the page"
+        required: true
+      - label: "Custom JS File"
+        name: "custom_js"
+        widget: "string"
+        default: ""
+        hint: "Add a custom JS file to the page."
+        required: false
+      - label: "Custom CSS File"
+        name: "custom_css"
+        widget: "string"
+        default: ""
+        hint: "Add a custom CSS file to the page."
+        required: false
+      - label: "Section"
+        name: "section"
+        widget: "select"
+        hint: "The area (section) where this page will live"
+        options:
+          - { label: "Example pages", value: "pages" }
+          - { label: "Design pages", value: "design" }
+          - { label: "Getting Started", value: "getting-started" }
+          - { label: "Assembly Examples", value: "assemblies" }
+          - { label: "About pages", value: "page" }
+        required: true
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
